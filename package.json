@@ -14,9 +14,9 @@
     "syndicate": "npx tsx scripts/ai-blogger-syndicator.ts",
     "intelligence": "npx tsx scripts/market-intelligence-brain.ts",
     "postbuild": "npm run index",
-    "cf:build": "npm run blog:compile && next build",
-    "cf:deploy": "wrangler pages deploy .next",
-    "cf:preview": "wrangler pages dev .next",
+    "cf:build": "npm run blog:compile && next build && node scripts/build-cf.js",
+    "cf:deploy": "wrangler pages deploy dist",
+    "cf:preview": "wrangler pages dev dist",
     "prepare": "husky"
   },
   "dependencies": {
