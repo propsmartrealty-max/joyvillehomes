@@ -14,6 +14,9 @@
     "syndicate": "npx tsx scripts/ai-blogger-syndicator.ts",
     "intelligence": "npx tsx scripts/market-intelligence-brain.ts",
     "postbuild": "npm run index",
+    "cf:build": "npm run blog:compile && next build",
+    "cf:deploy": "wrangler pages deploy .next",
+    "cf:preview": "wrangler pages dev .next",
     "prepare": "husky"
   },
   "dependencies": {
@@ -23,13 +26,14 @@
     "framer-motion": "^12.34.3",
     "googleapis": "^171.4.0",
     "lucide-react": "^0.575.0",
-    "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
+    "next": "^16.1.6",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-zoom-pan-pinch": "^4.0.3",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261011.1",
     "@commitlint/cli": "^21.0.2",
     "@commitlint/config-conventional": "^21.0.2",
     "@tailwindcss/postcss": "^4",
@@ -42,10 +46,11 @@
     "gray-matter": "^4.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.7",
-    "marked": "^18.0.7",
+    "marked": "^18.1.0",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.149.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
