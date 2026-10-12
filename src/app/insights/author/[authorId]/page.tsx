@@ -265,7 +265,7 @@ export default async function ExpertProfilePage({ params }: { params: Promise<{ 
                                         <Link key={project.id} href={`/projects/${project.slug}`} className="flex items-center justify-between bg-[#FFFFFF] p-6 border border-[#C5A059]/10 rounded-sm hover:border-[#1D4F9C]/40 transition-all shadow-sm group">
                                             <div className="flex items-center gap-4">
                                                 <div className="w-12 h-12 relative rounded-sm overflow-hidden">
-                                                    <Image src={project.image} fill className="object-cover grayscale group-hover:grayscale-0 transition-all" alt="" />
+                                                    <Image src={project.image} fill className="object-cover grayscale group-hover:grayscale-0 transition-all" alt={`${project.title} - Shapoorji Pallonji Pune project audit`} />
                                                 </div>
                                                 <div>
                                                     <h4 className="text-sm font-serif text-[#323334] group-hover:text-[#1D4F9C] transition-colors">{project.title}</h4>

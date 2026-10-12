@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useCurrency } from '@/context/CurrencyContext';
 import DeepLinkDirectory from './DeepLinkDirectory';
+import GoogleWebStoriesFooter from './GoogleWebStoriesFooter';
 
 const footerLinks = {
     homebuyers: [
@@ -92,6 +93,9 @@ export default function SEOFooter() {
             <DeepLinkDirectory />
             <footer className="bg-[#1A1A2E] text-[#FFFFFF] pt-20 pb-8">
             <div className="max-w-7xl mx-auto px-6">
+                {/* Google Web Stories Focused on All Shapoorji Pune Projects */}
+                <GoogleWebStoriesFooter />
+
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 mb-16">
                     {/* Column 1: Homebuyers */}
                     <div>

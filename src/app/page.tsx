@@ -7,7 +7,9 @@ import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: "Shapoorji Pallonji Pune Projects (2026) | Joyville Homes Price List, Floor Plans & RERA",
+    title: {
+        absolute: "Joyville Homes Pune | Shapoorji Pallonji Official Residences",
+    },
     description: "Official Directory: Explore all 10 Shapoorji Pallonji Joyville projects in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandhar. Verified MahaRERA, 2026 cost sheets, floor plans & site visit booking.",
     keywords: [
         "Shapoorji Pallonji Pune projects",

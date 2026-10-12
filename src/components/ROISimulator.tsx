@@ -64,7 +64,7 @@ export default function ROISimulator() {
                                     >
                                         <div className="flex items-center gap-4">
                                             <div className="w-10 h-10 relative rounded-sm overflow-hidden shrink-0">
-                                                <Image src={p.image} fill className="object-cover" alt={p.title} />
+                                                <Image src={p.image} fill className="object-cover" alt={`${p.title} - Shapoorji Pallonji Joyville Pune`} />
                                             </div>
                                             <div>
                                                 <p className="text-sm font-serif">{p.title}</p>
@@ -203,7 +203,7 @@ export default function ROISimulator() {
                                 {expert && (
                                     <Link href={`/insights/author/${expert.id}`} className="mt-12 p-6 border border-[#C5A059]/10 hover:border-[#1D4F9C]/30 bg-[#EEF2F6]/30 group transition-all flex items-center gap-6">
                                         <div className="w-12 h-12 relative rounded-full overflow-hidden shrink-0 border-2 border-white">
-                                            <Image src={expert.image} fill className="object-cover" alt={expert.name} />
+                                            <Image src={expert.image} fill className="object-cover" alt={`${expert.name} - Shapoorji Joyville Real Estate Analyst`} />
                                         </div>
                                         <div className="flex-1">
                                             <p className="text-[10px] text-[#323334]/40 font-bold uppercase tracking-widest mb-1 italic">Verified Forecast by</p>

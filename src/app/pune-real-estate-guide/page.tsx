@@ -129,7 +129,7 @@ export default async function HomebuyersGuide({
                         <Image
                             src="/images/joyville_sensorium_projectcard.webp"
                             fill
-                            alt="Pune Real Estate Market"
+                            alt="Pune Real Estate Market Investment Guide - Shapoorji Pallonji Joyville Homes"
                             className="object-cover opacity-90 grayscale hover:grayscale-0 transition-all duration-700"
                         />
                     </div>

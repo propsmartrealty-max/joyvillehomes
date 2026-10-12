@@ -126,7 +126,7 @@ export default async function TopicHubPage({ params }: { params: Promise<{ topic
             {/* Topic Hero Section */}
             <section className="relative pt-40 pb-24 overflow-hidden bg-[#FFFFFF]">
                 <div className="absolute inset-0 z-0 opacity-10">
-                    <Image src={topic.heroImage} fill className="object-cover grayscale" alt="" />
+                    <Image src={topic.heroImage} fill className="object-cover grayscale" alt={`${topic.title} - Pune Real Estate Insights`} priority />
                 </div>
                 <div className="relative z-10 max-w-7xl mx-auto px-6">
                     <div className="flex items-center gap-4 text-[#1D4F9C] font-bold text-[10px] tracking-[0.4em] uppercase mb-8">
@@ -216,7 +216,7 @@ export default async function TopicHubPage({ params }: { params: Promise<{ topic
                                                 </div>
                                             </div>
                                             <div className="shrink-0 w-full md:w-32 aspect-square relative rounded-sm overflow-hidden">
-                                                <Image src={blog.image} fill className="object-cover group-hover:scale-110 transition-transform duration-700" alt="" />
+                                                <Image src={blog.image} fill className="object-cover group-hover:scale-110 transition-transform duration-700" alt={`${blog.title} - Shapoorji Pallonji Joyville`} />
                                             </div>
                                         </div>
                                     </Link>

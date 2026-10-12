@@ -67,7 +67,7 @@ export default function RelatedProjects({ currentProject, allProjects }: Related
                             <div className="relative aspect-[4/3] overflow-hidden">
                                 <Image
                                     src={project.image}
-                                    alt={`${project.title} - ${project.location}`}
+                                    alt={`${project.title} - ${project.location} | Shapoorji Pallonji Joyville Homes`}
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                                     sizes="(max-width: 768px) 100vw, 33vw"

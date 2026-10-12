@@ -219,7 +219,7 @@ export default function InvestmentMatchmaker() {
 
                         <div className="grid lg:grid-cols-2 gap-12 items-center bg-[#EEF2F6]/50 p-8 rounded-sm">
                             <div className="relative aspect-video rounded-sm overflow-hidden shadow-2xl">
-                                <Image src={matchedProject.image} fill className="object-cover" alt={matchedProject.title} />
+                                <Image src={matchedProject.image} fill className="object-cover" alt={`${matchedProject.title} - Matched Shapoorji Pallonji Residence in ${matchedProject.location}`} />
                                 <div className="absolute top-4 left-4 bg-[#1D4F9C] text-white px-4 py-2 text-[10px] font-bold uppercase tracking-widest shadow-lg">
                                     {matchedProject.status}
                                 </div>

@@ -29,11 +29,12 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://joyville-homes.com'),
+  applicationName: "Joyville Homes",
   title: {
-    template: "%s | Joyville Homes Pune | Shapoorji Pallonji",
-    default: "Joyville Homes Pune | Shapoorji Pallonji | Top Real Estate in Pune",
+    template: "%s | Joyville Homes",
+    default: "Joyville Homes Pune | Shapoorji Pallonji Official Residences",
   },
-  description: "Official Joyville Pune by Shapoorji Pallonji Real Estate. Explore 9 premium projects across Hinjewadi, Hadapsar & Bavdhan. 2 & 3 BHK flats starting ₹65 Lakhs. RERA approved. Dive into the Pune real estate market today.",
+  description: "Official Joyville Pune by Shapoorji Pallonji Real Estate. Explore 10 premium projects across Hinjewadi, Hadapsar, Bavdhan & Purandar. 2 & 3 BHK flats starting ₹65 Lakhs. RERA approved. Dive into the Pune real estate market today.",
   keywords: [
     "Shapoorji Pallonji Pune",
     "Joyville Homes Pune",
@@ -46,10 +47,10 @@ export const metadata: Metadata = {
     "3 BHK luxury apartments Pune"
   ],
   openGraph: {
-    title: "Joyville Homes Pune | Shapoorji Pallonji Real Estate | 9 Premium Projects",
-    description: "Explore Joyville Pune by Shapoorji Pallonji – 9 premium projects across Hinjewadi, Hadapsar & Bavdhan. 2 & 3 BHK flats starting ₹65L. RERA approved.",
+    title: "Joyville Homes Pune | Shapoorji Pallonji Official Residences",
+    description: "Explore Joyville Pune by Shapoorji Pallonji – 10 premium projects across Hinjewadi, Hadapsar & Bavdhan. 2 & 3 BHK flats starting ₹65L. RERA approved.",
     url: "https://joyville-homes.com",
-    siteName: "Joyville Homes Pune",
+    siteName: "Joyville Homes",
     images: [
       {
         url: "/og-image.jpg",
@@ -210,7 +211,12 @@ export default function RootLayout({
                 "@type": "WebSite",
                 "@id": "https://joyville-homes.com/#website",
                 "url": "https://joyville-homes.com",
-                "name": "Joyville Homes Pune | Shapoorji Pallonji",
+                "name": "Joyville Homes",
+                "alternateName": [
+                  "Joyville Homes Pune",
+                  "Shapoorji Pallonji Joyville",
+                  "Joyville Pune"
+                ],
                 "publisher": { "@id": "https://joyville-homes.com/#organization" },
                 "inLanguage": "en-IN",
                 "potentialAction": {

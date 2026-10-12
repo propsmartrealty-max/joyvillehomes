@@ -44,3 +44,7 @@ next-env.d.ts
 # Security
 service_account.json
 last-indexing.json
+
+# Cloudflare
+.wrangler/
+dist/

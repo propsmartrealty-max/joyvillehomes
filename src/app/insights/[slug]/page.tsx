@@ -230,7 +230,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         <div className="relative w-24 h-24 rounded-full overflow-hidden flex-shrink-0 shadow-lg border-2 border-[#1D4F9C]/10">
                             <Image
                                 src={blog.expertAuthor.image}
-                                alt={blog.expertAuthor.name}
+                                alt={`${blog.expertAuthor.name} - Real Estate Expert Contributor at Shapoorji Pallonji Joyville`}
                                 fill
                                 className="object-cover"
                             />

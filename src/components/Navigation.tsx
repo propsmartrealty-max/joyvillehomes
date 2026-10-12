@@ -67,7 +67,7 @@ export default function Navigation() {
                     <Link href="/" aria-label="Joyville Pune Home" className="flex items-center shrink-0 z-20 group">
                         <Image 
                             src="/logo.svg" 
-                            alt="Joyville by Shapoorji Pallonji" 
+                            alt="Joyville Homes - Shapoorji Pallonji Real Estate Pune Official Logo" 
                             width={118} 
                             height={42} 
                             className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
@@ -122,7 +122,7 @@ export default function Navigation() {
                                                         <div className="w-16 h-14 relative rounded-md overflow-hidden shrink-0 bg-slate-100">
                                                             <Image 
                                                                 src={proj.image} 
-                                                                alt={proj.title} 
+                                                                alt={`${proj.title} Pune - Shapoorji Pallonji Joyville Homes`} 
                                                                 fill 
                                                                 className="object-cover group-hover/card:scale-105 transition-transform duration-500" 
                                                                 sizes="64px"

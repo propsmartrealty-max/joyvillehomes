@@ -416,7 +416,7 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
                                 <div className="relative aspect-[4/3] overflow-hidden">
                                     <Image
                                         src={project.image}
-                                        alt={project.title}
+                                        alt={`${project.title} - ${project.location} | Shapoorji Pallonji Joyville`}
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

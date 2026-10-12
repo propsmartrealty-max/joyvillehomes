@@ -46,7 +46,7 @@ export default async function ProgrammaticLandingPage({ params }: { params: { la
             {/* SEO Hero Section */}
             <section className="relative pt-32 pb-20 px-6 bg-[#1D4F9C] text-white">
                 <div className="absolute inset-0 z-0 opacity-20">
-                    <Image src="/images/hero_bg.webp" fill alt="Background" className="object-cover" priority />
+                    <Image src="/images/hero_bg.webp" fill alt={`Luxury flats near ${landmark.name} Pune - ${landmark.project}`} className="object-cover" priority />
                 </div>
                 <div className="relative z-10 max-w-7xl mx-auto text-center">
                     <h1 className="text-4xl md:text-6xl font-serif mb-6 leading-tight">
