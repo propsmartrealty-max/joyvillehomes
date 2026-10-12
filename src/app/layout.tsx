@@ -15,7 +15,6 @@ import Script from 'next/script';
 import SovereignExitIntent from "@/components/SovereignExitIntent";
 import { ENTITIES } from '@/data/entities';
 import { experts } from "@/data/experts";
-import { KEYWORD_MATRIX } from "@/data/KeywordIntelligence";
 import "./globals.css";
 
 const inter = Inter({
@@ -36,11 +35,15 @@ export const metadata: Metadata = {
   },
   description: "Official Joyville Pune by Shapoorji Pallonji Real Estate. Explore 9 premium projects across Hinjewadi, Hadapsar & Bavdhan. 2 & 3 BHK flats starting ₹65 Lakhs. RERA approved. Dive into the Pune real estate market today.",
   keywords: [
-    ...KEYWORD_MATRIX.SITE_WIDE_MASTER,
-    "Joyville Vyomora Hinjewadi price", "Joyville Sensorium for sale", "Vanaha Golfland Bavdhan floor plan", 
-    "Joyville Hadapsar Annexe ready possession", "Joyville Celestia new launch", "Joyville Skyluxe Edition ultra luxury",
-    "Wildernest at SP Kingstown Pune", "Pune real estate investment 2026", "flats near Hinjewadi Metro Station",
-    "Shapoorji Pallonji Pune projects contact", "best gated community in Pune west", "ready to move flats in Pune east"
+    "Shapoorji Pallonji Pune",
+    "Joyville Homes Pune",
+    "Joyville Vyomora Hinjewadi",
+    "Joyville Sensorium Hinjewadi",
+    "Joyville Hadapsar Annexe",
+    "Vanaha Bavdhan Pune",
+    "Shapoorji Pallonji Projects Pune",
+    "2 BHK flats in Pune",
+    "3 BHK luxury apartments Pune"
   ],
   openGraph: {
     title: "Joyville Homes Pune | Shapoorji Pallonji Real Estate | 9 Premium Projects",

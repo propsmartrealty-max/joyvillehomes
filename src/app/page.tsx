@@ -2,21 +2,24 @@ import { Metadata } from 'next';
 export const dynamic = 'force-static';
 import HomeClient from '@/components/HomeClient';
 import InfrastructurePulse from '@/components/InfrastructurePulse';
+import ShapoorjiPuneMasterSweep from '@/components/ShapoorjiPuneMasterSweep';
 import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import { KEYWORD_MATRIX } from '@/data/KeywordIntelligence';
 
 export const metadata: Metadata = {
-    title: "Pune Real Estate Market 2026 | Joyville Homes by Shapoorji Pallonji",
-    description: "Dominating the Pune Real Estate Market: Official Joyville Pune by Shapoorji Pallonji Real Estate. Explore 9 premium projects across Hinjewadi, Hadapsar & Bavdhan. 2 & 3 BHK flats starting ₹65 Lakhs. RERA approved.",
+    title: "Shapoorji Pallonji Pune Projects (2026) | Joyville Homes Price List, Floor Plans & RERA",
+    description: "Official Directory: Explore all 10 Shapoorji Pallonji Joyville projects in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandhar. Verified MahaRERA, 2026 cost sheets, floor plans & site visit booking.",
     keywords: [
-        ...KEYWORD_MATRIX.MACRO_PUNE,
-        ...KEYWORD_MATRIX.SITE_WIDE_HARDENED_KEYWORDS,
-        "Pune real estate market", "Pune real estate 2026", "buy property in Pune", "top real estate developer Pune", "Pune real estate investment",
-        "Joyville Homes Pune", "Shapoorji Pallonji Pune", "Shapoorji Pallonji Real Estate Pune", 
-        "Joyville Sensorium", "Joyville Vyomora", "Joyville Hadapsar Annexe", "Joyville Celestia", "Joyville Skyluxe Edition", "Wildernest SP Kingstown", "Vanaha Bavdhan", "Vanaha Golfland", "Vanaha Springs",
-        "2 BHK flats in Hinjewadi", "3 BHK flats in Hinjewadi", "2 BHK flats in Hadapsar", "3 BHK flats in Hadapsar", "apartments in Bavdhan Pune", "Shapoorji Pallonji projects in Pune", "Joyville Pune price list", "Joyville Pune floor plans", "Shapoorji Pallonji Pune contact", "flats near SP Infocity", "flats near Magarpatta City", "township projects in Pune", "ready to move flats Pune", "new launch projects Pune", "Hinjewadi IT park residential projects", "Shapoorji Pallonji Bavdhan township", "buy 2 BHK in Pune", "buy 3 BHK in Pune", "best residential projects in Pune", "Shapoorji Pallonji Pune sales gallery",
-        "RERA approved projects Pune", "official price list Joyville Pune", "book site visit Shapoorji Pallonji", "lowest price 2 BHK Hinjewadi", "Joyville Pune possession date 2026"
+        "Shapoorji Pallonji Pune projects",
+        "Joyville Homes Pune",
+        "Joyville Vyomora Hinjewadi",
+        "Joyville Sensorium Hinjewadi",
+        "Joyville Hadapsar Annexe",
+        "Vanaha Bavdhan Pune",
+        "flats in Hinjewadi Phase 1",
+        "apartments in Hadapsar Pune",
+        "Shapoorji Pallonji Pune price list 2026",
+        "Joyville Pune floor plans"
     ],
     alternates: {
         canonical: 'https://joyville-homes.com',
@@ -31,6 +34,8 @@ export default function Home() {
             <section className="max-w-7xl mx-auto px-6 mt-12 mb-12">
                 <InfrastructurePulse />
             </section>
+
+            <ShapoorjiPuneMasterSweep />
             
             {/* Phase 33: Homepage Matchmaker Funnel */}
             <section className="bg-[#FFFFFF] py-24 border-y border-[#C5A059]/10">

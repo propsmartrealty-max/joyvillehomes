@@ -1935,6 +1935,20 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                             Backed by the 150-year legacy of the Shapoorji Pallonji Group, this RERA-approved development is designed for absolute transparency. Explore the detailed <strong>{project.title} floor plans, master layout, and the official price list</strong> to make an informed investment decision today.
                         </p>
                     </div>
+
+                    {/* Cross-Portfolio Master Sweep Banner */}
+                    <div className="mt-8 pt-6 border-t border-[#1D4F9C]/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div className="text-xs text-[#323334]/80">
+                            Looking to compare with other micro-markets? Explore the complete <strong>2026 Shapoorji Pallonji Pune Portfolio</strong> across Hinjewadi, Hadapsar, Bavdhan, and Purandhar.
+                        </div>
+                        <Link
+                            href="/projects#all-pune-projects"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#1D4F9C] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#153a75] transition-colors shrink-0 shadow-sm"
+                        >
+                            <span>View All Pune Projects</span>
+                            <ArrowRight size={13} />
+                        </Link>
+                    </div>
                 </div>
             </section>
         </article>
