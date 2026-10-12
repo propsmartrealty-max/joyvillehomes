@@ -69,7 +69,6 @@ Crawl-delay: 2
 
 User-Agent: CCBot
 User-Agent: Omigili
-User-Agent: Twitterbot
 User-Agent: GPTBot-Mobile
 User-Agent: PetalBot
 User-Agent: ImagesiftBot

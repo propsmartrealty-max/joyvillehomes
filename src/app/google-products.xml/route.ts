@@ -5,7 +5,7 @@ export const dynamic = 'force-static';
 
 export async function GET() {
     const siteUrl = 'https://joyville-homes.com';
-    const timestamp = new Date().toISOString();
+    const timestamp = new Date().toUTCString();
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">

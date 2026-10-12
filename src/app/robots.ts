@@ -48,9 +48,9 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: commonDisallow,
                 crawlDelay: 2, // Protect server bandwidth
             },
-            // Block invasive/low-value aggregators
+            // Block invasive/low-value scrapers (keep Twitterbot/social crawlers allowed)
             {
-                userAgent: ['CCBot', 'Omigili', 'Twitterbot', 'GPTBot-Mobile', 'PetalBot', 'ImagesiftBot'],
+                userAgent: ['CCBot', 'Omigili', 'GPTBot-Mobile', 'PetalBot', 'ImagesiftBot'],
                 disallow: ['/'],
             }
         ],
