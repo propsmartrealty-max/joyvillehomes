@@ -37,20 +37,9 @@ export default function SGEAnswerHub() {
     };
 
     return (
-        <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(qaSchema) }}
-            />
-            {/* Hidden but semantic content for bot extraction */}
-            <section className="sr-only" aria-hidden="true">
-                {knowledgeBlocks.map((block, i) => (
-                    <article key={i}>
-                        <h2>{block.q}</h2>
-                        <p>{block.a}</p>
-                    </article>
-                ))}
-            </section>
-        </>
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(qaSchema) }}
+        />
     );
 }

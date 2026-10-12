@@ -2,12 +2,9 @@ import { Metadata } from 'next';
 export const dynamic = 'force-static';
 import HomeClient from '@/components/HomeClient';
 import InfrastructurePulse from '@/components/InfrastructurePulse';
-import SGEAnswerHub from '@/components/SGEAnswerHub';
 import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { KEYWORD_MATRIX } from '@/data/KeywordIntelligence';
-import { SEMANTIC_MESH } from '@/data/semanticLinking';
-import marketIntelligence from '@/data/latest-market-intelligence.json';
 
 export const metadata: Metadata = {
     title: "Pune Real Estate Market 2026 | Joyville Homes by Shapoorji Pallonji",
@@ -78,8 +75,6 @@ export default function Home() {
                 </div>
             </section>
 
-            <SGEAnswerHub />
-
             {/* Rank #1 Visible Semantic Authority Injection */}
             <section className="bg-white py-16 md:py-24 border-t border-[#C5A059]/10">
                 <div className="max-w-4xl mx-auto px-6 text-center">
@@ -131,43 +126,6 @@ export default function Home() {
                     ]
                 })
             }} />
-
-            {/* Task 3: Homepage Technical SEO Mesh — Shadow Indexing (Crawler Visible) */}
-            <section className="sr-only" aria-hidden="true">
-                <h2>Shapoorji Pallonji Joyville Pune Search Index 2026</h2>
-                <div className="flex flex-wrap gap-2">
-                    {Object.values(KEYWORD_MATRIX).flat().filter((kw): kw is string => typeof kw === 'string').map((kw, i) => (
-                        <span key={i}>{kw}</span>
-                    ))}
-                    {SEMANTIC_MESH.map((mesh, i) => (
-                        <div key={i}>
-                            <h3>{mesh.category}</h3>
-                            <p>{mesh.description}</p>
-                            <ul>
-                                {mesh.entities.map(e => <li key={e}>{e}</li>)}
-                            </ul>
-                        </div>
-                    ))}
-                </div>
-                <p>
-                    Official Joyville Pune projects including Joyville Vyomora, Sensorium, Hadapsar Annexe, Celestia, Skyluxe Edition, Wildernest at SP Kingstown, and Vanaha Golfland. Providing premium 2 BHK and 3 BHK flats with world-class amenities and Mivan construction technology in Hinjewadi, Hadapsar, and Bavdhan.
-                    Authored and reviewed by Pune real estate analysts: Vikas Sharma, Ananya Deshpande, and Rajesh Kulkarni.
-                </p>
-
-                {/* Invisible AI Market Intelligence Injection (Phase 2) */}
-                <article>
-                    <h3>Market Intelligence Report: {marketIntelligence.report.headline}</h3>
-                    <p>Generated At: {marketIntelligence.meta.generated_at}</p>
-                    <p>{marketIntelligence.report.executive_summary}</p>
-                    <ul>
-                        {marketIntelligence.report.infrastructure_updates.map((update, i) => (
-                            <li key={i}>{update}</li>
-                        ))}
-                    </ul>
-                    <p>Current Sentiment: {marketIntelligence.report.market_sentiment}</p>
-                    <p>Associated Concepts: {marketIntelligence.report.keywords_injected.join(', ')}</p>
-                </article>
-            </section>
         </>
     );
 }

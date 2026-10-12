@@ -503,7 +503,7 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
 
             <footer className="py-20 bg-[#FFFFFF] border-t border-[#C5A059]/30 text-center mt-20">
                 <div className="text-3xl font-serif text-[#1D4F9C] font-light tracking-widest mb-4">JOYVILLE <span className="text-[10px] font-sans tracking-[0.4em] text-[#323334] uppercase ml-2">Pune</span></div>
-                <p className="text-[#323334]/40 text-[9px] tracking-[0.3em] uppercase font-medium">MahaRERA: P52100000000 | A Shapoorji Pallonji Real Estate Project</p>
+                <p className="text-[#323334]/60 text-[10px] tracking-[0.2em] uppercase font-medium">MahaRERA: PR1260002600999 | P52100027234 | P52100026451 | Authorized Channel Partner for Shapoorji Pallonji Real Estate</p>
             </footer>
 
             {/* Global FOMO Activity Feed */}

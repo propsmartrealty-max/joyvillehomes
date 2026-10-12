@@ -64,7 +64,6 @@ import EntityPopularityPulse from '@/components/EntityPopularityPulse';
 import GoogleBusinessAutomation from '@/components/GoogleBusinessAutomation';
 import ProjectComparison from '@/components/ProjectComparison';
 import CommuteIntelligence from '@/components/CommuteIntelligence';
-import { KEYWORD_MATRIX, GET_EXPANDED_KEYWORDS, SITE_WIDE_HARDENED_KEYWORDS } from '@/data/KeywordIntelligence';
 
 // Pre-render all project routes at build time
 export async function generateStaticParams() {
@@ -81,7 +80,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         return { title: 'Project Not Found | Joyville Pune' };
     }
 
-    const expandedKeywords = GET_EXPANDED_KEYWORDS(project.title, project.location);
     const siteUrl = 'https://joyville-homes.com';
 
     return {
@@ -89,15 +87,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         description: `Official Details: ${project.title} by Shapoorji Pallonji in ${project.location}. Explore premium 2 & 3 BHK flats starting from ${project.price}. RERA approved with world-class amenities. ${project.description.slice(0, 100)}...`,
         keywords: [
             project.title,
-            ...project.seoKeywords,
-            ...expandedKeywords,
-            ...SITE_WIDE_HARDENED_KEYWORDS,
-            ...KEYWORD_MATRIX.TRANSACTIONAL.slice(0, 8),
+            `${project.title} ${project.location}`,
             `buy flat in ${project.location}`,
-            `${project.title} construction update`,
-            `${project.title} official price list`,
-            "Shapoorji Pallonji Real Estate Pune",
-            `Buy 2 BHK in Pune Shapoorji Pallonji Joyville`
+            `${project.title} price list`,
+            `${project.title} floor plan`,
+            `${project.title} RERA`,
+            "Shapoorji Pallonji Real Estate Pune"
         ],
         openGraph: {
             title: `${project.title} | Premium Residences in ${project.location}`,
@@ -144,7 +139,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
     const siteUrl = 'https://joyville-homes.com';
     const locality = localities.find(l => l.name.toLowerCase() === project.location.toLowerCase());
-    const expandedKeywords = GET_EXPANDED_KEYWORDS(project.title, project.location);
     const { lowPrice, highPrice } = parsePriceRangeToINR(project.price);
     const basePriceINR = parsePriceToINR(project.price);
 
@@ -1943,35 +1937,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     </div>
                 </div>
             </section>
-
-            {/* Project-Level Shadow Index (Crawler Visible for Long-Tail Searchability) */}
-            <section className="sr-only" aria-hidden="true">
-                <h2>{project.title} Detailed Property Index and Search Data</h2>
-                
-                <h3>Core Project Keywords</h3>
-                <ul>
-                    {project.seoKeywords.map((kw, i) => (
-                        <li key={`kw-${i}`}>{kw}</li>
-                    ))}
-                    {expandedKeywords.map((kw, i) => (
-                        <li key={`ekw-${i}`}>{kw}</li>
-                    ))}
-                </ul>
-
-                <h3>Configuration & Pricing Data</h3>
-                <p>
-                    {project.title} offers premium configurations including: 
-                    {project.floorPlans.map(fp => `${fp.type} (${fp.carpetArea})`).join(', ')}.
-                    The official price starts from ${project.price}. For exact cost sheets, payment plans, and floor plan PDFs, please schedule a site visit.
-                </p>
-
-                <h3>Location & Infrastructure</h3>
-                <p>
-                    Located in {project.location}, this Shapoorji Pallonji Joyville project is in close proximity to:
-                    {project.nearbyEntities ? project.nearbyEntities.join(', ') : 'major IT parks, schools, and hospitals.'}
-                </p>
-            </section>
-
         </article>
     );
 }
