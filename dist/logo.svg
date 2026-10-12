@@ -1,0 +1,23 @@
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+    <!-- Joyville Text -->
+    <g fill="#f27131" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="bold">
+        <!-- The stylized J -->
+        <!-- Head -->
+        <circle cx="50" cy="30" r="10" />
+        <!-- Arms and Body of J -->
+        <path d="M 20 40 Q 50 60 80 40 L 70 55 Q 50 70 30 55 Z" />
+        <path d="M 50 45 L 50 100 Q 50 120 30 110 L 20 120 Q 50 140 70 100 L 70 45 Z" />
+        
+        <!-- oyville -->
+        <text x="80" y="110" font-size="70" letter-spacing="-1">oyville</text>
+        <text x="365" y="60" font-size="16" font-weight="normal">®</text>
+    </g>
+
+    <!-- by Shapoorji Pallonji Text -->
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="32" transform="translate(10, 145)">
+        <text x="0" y="0" fill="#29519d" font-size="22" font-weight="bold">by</text>
+        <text x="30" y="0" fill="#29519d" letter-spacing="-1">Shapoorji</text>
+        <text x="185" y="0" fill="#188bc8" letter-spacing="-1">Pallonji</text>
+        <text x="330" y="-15" fill="#29519d" font-size="12" font-weight="normal">®</text>
+    </g>
+</svg>
