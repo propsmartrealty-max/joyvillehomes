@@ -1,6 +1,8 @@
 "use client";
 
+import { useState } from 'react';
 import { sendGAEvent } from '@next/third-parties/google';
+import QuickEnquireModal from './QuickEnquireModal';
 
 interface BrochureButtonProps {
     projectName: string;
@@ -13,9 +15,10 @@ export default function BrochureButton({
     label = "Request Brochure",
     className = "w-full bg-[#1D4F9C] text-[#FFFFFF] uppercase tracking-[0.2em] text-[10px] font-bold py-4 hover:bg-[#323334] transition-colors duration-300 shadow-[0_10px_30px_rgba(197,160,89,0.2)]"
 }: BrochureButtonProps) {
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleDownload = () => {
-        sendGAEvent('event', 'brochure_download', { project: projectName });
+        sendGAEvent('event', 'brochure_download_intent', { project: projectName });
 
         // Meta Pixel Tracking for micro-conversion
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -24,17 +27,24 @@ export default function BrochureButton({
             (window as any).fbq('track', 'Contact', { content_name: `${projectName} Brochure` });
         }
 
-        // Add actual download logic here if needed
-        alert(`Thank you! The brochure for ${projectName} will be sent to your email shortly.`);
+        setIsModalOpen(true);
     };
 
     return (
-        <button
-            onClick={handleDownload}
-            className={className}
-            aria-label={`Download brochure for ${projectName}`}
-        >
-            {label}
-        </button>
+        <>
+            <button
+                onClick={handleDownload}
+                className={className}
+                aria-label={`Download brochure for ${projectName}`}
+            >
+                {label}
+            </button>
+            <QuickEnquireModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                projectName={projectName}
+                source={`${projectName} Brochure Download`}
+            />
+        </>
     );
 }

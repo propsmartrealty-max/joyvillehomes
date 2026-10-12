@@ -9,6 +9,10 @@ export default function SovereignExitIntent() {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [hasBeenShown, setHasBeenShown] = useState(false);
 
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [submitting, setSubmitting] = useState(false);
+
     useEffect(() => {
         const handleMouseLeave = (e: MouseEvent) => {
             if (e.clientY <= 0 && !hasBeenShown) {
@@ -21,11 +25,57 @@ export default function SovereignExitIntent() {
         return () => document.removeEventListener('mouseleave', handleMouseLeave);
     }, [hasBeenShown]);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setIsSubmitted(true);
-        // Simulate Lead Capture
-        setTimeout(() => setIsVisible(false), 3000);
+        const phoneClean = phone.replace(/\D/g, '');
+        if (phoneClean.length < 10) return;
+
+        setSubmitting(true);
+
+        const leadId = `lead_exit_${Date.now()}`;
+        const leadPayload = {
+            id: leadId,
+            project: "Joyville Homes Master Collection",
+            source: "Sovereign Exit Intent",
+            data: { name, phone: phoneClean },
+            timestamp: new Date().toISOString(),
+            synced: false
+        };
+
+        try {
+            const vault = JSON.parse(localStorage.getItem('sovereign_vault') || '[]');
+            vault.push(leadPayload);
+            localStorage.setItem('sovereign_vault', JSON.stringify(vault));
+        } catch {}
+
+        try {
+            await fetch("https://formsubmit.co/ajax/propsmartrealty@gmail.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: JSON.stringify({
+                    _subject: "New Lead: Sovereign Exit Intent - 2026 Price List",
+                    name: name,
+                    phone: phoneClean,
+                    lead_magnet: "Exit Intent - 2026 Price List",
+                    _captcha: "false"
+                })
+            });
+
+            try {
+                const vault = JSON.parse(localStorage.getItem('sovereign_vault') || '[]');
+                const updatedVault = vault.map((l: { id: string; synced?: boolean }) => l.id === leadId ? { ...l, synced: true } : l);
+                localStorage.setItem('sovereign_vault', JSON.stringify(updatedVault));
+            } catch {}
+        } catch (err) {
+            console.error("Exit intent submit error:", err);
+        } finally {
+            setSubmitting(false);
+            setIsSubmitted(true);
+            setTimeout(() => setIsVisible(false), 3000);
+        }
     };
 
     return (
@@ -81,6 +131,8 @@ export default function SovereignExitIntent() {
                                                 <input 
                                                     type="text" 
                                                     placeholder="Your Name" 
+                                                    value={name}
+                                                    onChange={(e) => setName(e.target.value)}
                                                     required 
                                                     className="w-full px-5 py-4 bg-[#EEF2F6] border-none rounded-xl text-sm focus:ring-2 focus:ring-[#1D4F9C] transition-all"
                                                 />
@@ -89,12 +141,18 @@ export default function SovereignExitIntent() {
                                                 <input 
                                                     type="tel" 
                                                     placeholder="WhatsApp Number" 
+                                                    value={phone}
+                                                    onChange={(e) => setPhone(e.target.value)}
                                                     required 
                                                     className="w-full px-5 py-4 bg-[#EEF2F6] border-none rounded-xl text-sm focus:ring-2 focus:ring-[#1D4F9C] transition-all"
                                                 />
                                             </div>
-                                            <button className="w-full bg-[#1D4F9C] hover:bg-[#0A2A5E] text-white font-bold py-5 rounded-xl flex items-center justify-center gap-3 transition-all group">
-                                                <span>Send via WhatsApp</span>
+                                            <button 
+                                                type="submit"
+                                                disabled={submitting}
+                                                className="w-full bg-[#1D4F9C] hover:bg-[#0A2A5E] text-white font-bold py-5 rounded-xl flex items-center justify-center gap-3 transition-all group disabled:opacity-75"
+                                            >
+                                                <span>{submitting ? 'Submitting...' : 'Send via WhatsApp'}</span>
                                                 <Send size={18} className="group-hover:translate-x-1 transition-transform" />
                                             </button>
                                         </form>

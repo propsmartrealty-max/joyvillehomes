@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Calendar, Clock, Video, MapPin, CheckCircle2, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import QuickEnquireModal from './QuickEnquireModal';
 
 interface SiteVisitSchedulerProps {
     projectName: string;
@@ -14,6 +15,7 @@ export default function SiteVisitScheduler({ projectName, location }: SiteVisitS
     const [visitType, setVisitType] = useState<'in-person' | 'virtual' | null>(null);
     const [selectedDate, setSelectedDate] = useState<Date | null>(null);
     const [selectedTime, setSelectedTime] = useState<string | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Generate next 7 days for the date picker
     const nextDays = Array.from({ length: 7 }).map((_, i) => {
@@ -157,7 +159,7 @@ export default function SiteVisitScheduler({ projectName, location }: SiteVisitS
 
                             <button
                                 disabled={!selectedDate || !selectedTime}
-                                onClick={() => setStep(3)}
+                                onClick={() => setIsModalOpen(true)}
                                 className={`w-full py-3 flex items-center justify-center gap-2 text-xs uppercase tracking-widest font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A059] focus-visible:ring-offset-2 ${
                                     selectedDate && selectedTime
                                         ? 'bg-[#C5A059] text-[#FFFFFF] hover:bg-[#a88647]'
@@ -194,6 +196,16 @@ export default function SiteVisitScheduler({ projectName, location }: SiteVisitS
                     )}
                 </AnimatePresence>
             </div>
+
+            <QuickEnquireModal
+                isOpen={isModalOpen}
+                onClose={() => {
+                    setIsModalOpen(false);
+                    setStep(3);
+                }}
+                projectName={projectName}
+                source={`VIP Site Visit: ${visitType === 'virtual' ? 'Virtual Tour' : 'In-Person'} - ${selectedDate?.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} at ${selectedTime}`}
+            />
         </div>
     );
 }
