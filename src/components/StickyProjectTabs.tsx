@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react';
 
-const SECTIONS = ['Overview', 'Amenities', 'Specifications', 'Floor-Plans', 'Financing', 'Gallery', 'Location'];
+const SECTIONS = ['Overview', 'Master-Layout', 'Floor-Plans', 'Amenities', 'Specifications', 'Financing', 'Gallery', 'Location'];
 
 export default function StickyProjectTabs() {
     const scrollToSection = useCallback((e: React.MouseEvent<HTMLButtonElement>, section: string) => {

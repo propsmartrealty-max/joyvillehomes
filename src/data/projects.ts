@@ -6,7 +6,7 @@ export interface FloorPlan {
     image?: string;
     description?: string;
     spatialDimension?: string;
-    category?: 'Studio' | 'Apartment' | 'Penthouse' | 'Duplex';
+    category?: 'Studio' | 'Apartment' | 'Penthouse' | 'Duplex' | 'Tower Plan';
     intelligence?: { roi: string; rentalYield: string; appreciation: string };
 }
 
@@ -376,9 +376,27 @@ export const projects: Project[] = [
                 spatialDimension: "Two Dimensional", 
                 category: "Duplex", 
                 intelligence: { roi: "8.6%", rentalYield: "5.4%", appreciation: "15.0% YoY" } 
+            },
+            { 
+                type: "Tower 03 (Infinia) Duplex Floor Plate", 
+                carpetArea: "Tower Plate (6 Units / Level)", 
+                image: "/images/projects/vyomora/floor-plans/floor-plan1.webp", 
+                description: "Typical cluster floor plate for Tower 03 (Infinia) featuring central high-speed elevator core, dedicated fire exits, and 6 duplex residences per level.", 
+                spatialDimension: "Two Dimensional Cluster Plate", 
+                category: "Tower Plan", 
+                intelligence: { roi: "8.6%", rentalYield: "5.4%", appreciation: "15.0% YoY" } 
+            },
+            { 
+                type: "Tower 02 (Cygnus) Typical Floor Plate", 
+                carpetArea: "Tower Plate (8 Units / Level)", 
+                image: "/images/projects/vyomora/floor-plans/floor-plan15.webp", 
+                description: "Architectural tower cluster floor plate for Tower 02 (Cygnus) showing 8 luxury residences per floor with wide central corridor and cross-ventilation.", 
+                spatialDimension: "Two Dimensional Cluster Plate", 
+                category: "Tower Plan", 
+                intelligence: { roi: "7.4%", rentalYield: "4.8%", appreciation: "12.5% YoY" } 
             }
         ],
-        masterLayout: "/images/projects/vyomora/floor-plans/floor-plan1.webp",
+        masterLayout: "/images/projects/vyomora/master-layout.webp",
         gallery: [
             "/images/projects/vyomora/gallery/photo_gallery1.webp",
             "/images/projects/vyomora/gallery/photo_gallery2.webp",

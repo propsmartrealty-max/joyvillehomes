@@ -36,6 +36,7 @@ import ConstructionMilestones from '@/components/ConstructionMilestones';
 import RealEstateGlossary from '@/components/RealEstateGlossary';
 import EMICalculator from '@/components/EMICalculator';
 import ProjectClientWrapper from '@/components/ProjectClientWrapper';
+import MasterLayoutViewer from '@/components/MasterLayoutViewer';
 import StickyProjectTabs from '@/components/StickyProjectTabs';
 import ProximityIndex from '@/components/ProximityIndex';
 import PredictiveNavigation from '@/components/PredictiveNavigation';
@@ -1307,30 +1308,33 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                             </div>
                         </section>
 
-                        {/* 4. Master Layout & Floor Plans */}
-                        <section id="floor-plans" className="scroll-mt-32">
-                            <div className="flex items-center gap-3 mb-8">
+                        {/* 4. Master Layout & Macro Development Plan */}
+                        <section id="master-layout" className="scroll-mt-32">
+                            <div className="flex items-center gap-3 mb-4">
                                 <span className="w-8 h-[1px] bg-[#1D4F9C]"></span>
-                                <h2 className="text-3xl font-serif text-[#323334] font-light">{project.title} Master Layout & Floor Plans</h2>
+                                <h2 className="text-3xl font-serif text-[#323334] font-light">{project.title} Master Layout & Site Development Plan</h2>
                             </div>
+                            <p className="text-[#323334]/80 text-sm font-light mb-8 max-w-3xl leading-relaxed">
+                                Macro architectural site development plan for {project.title}. Visualizing full land boundary zoning, tower footprints, 32,000+ sq. ft. signature clubhouse, elevated podium eco-deck, landscaped central greens, and sports arena infrastructure across {project.location}.
+                            </p>
 
-                            <div className="mb-12 relative group rounded-sm overflow-hidden border border-[#C5A059]/60 cursor-pointer">
-                                <div className="aspect-[16/9] bg-[#EEF2F6] relative">
-                                    <Image
-                                        src={project.masterLayout}
-                                        alt={`${project.title} Conceptual Master Layout`}
-                                        fill
-                                        className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                                        sizes="(max-width: 1200px) 100vw, 1200px"
-                                        priority={true}
-                                    />
-                                </div>
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#F4F6F9] via-transparent to-transparent flex items-end p-6">
-                                    <div className="text-[#1D4F9C] flex items-center gap-2 text-xs tracking-widest uppercase bg-[#FFFFFF]/80 px-4 py-2 backdrop-blur-md rounded-full border border-[#C5A059]/60">
-                                        <LucideMap size={14} /> View Conceptual Master Layout
-                                    </div>
-                                </div>
+                            <MasterLayoutViewer
+                                masterLayoutUrl={project.masterLayout}
+                                projectName={project.title}
+                                location={project.location}
+                                reraNumber={project.reraNumber}
+                            />
+                        </section>
+
+                        {/* 5. Architectural Floor Plans & Unit Blueprints */}
+                        <section id="floor-plans" className="scroll-mt-32">
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="w-8 h-[1px] bg-[#1D4F9C]"></span>
+                                <h2 className="text-3xl font-serif text-[#323334] font-light">{project.title} Floor Plans & Unit Blueprints</h2>
                             </div>
+                            <p className="text-[#323334]/80 text-sm font-light mb-8 max-w-3xl leading-relaxed">
+                                Detailed 2D architectural unit blueprints and structural floor plates for residences at {project.title}. Inspect certified RERA carpet areas, room dimensions, sun-deck balconies, and living-dining layouts across all configurations.
+                            </p>
 
                             <ProjectClientWrapper 
                                 floorPlans={project.floorPlans} 
