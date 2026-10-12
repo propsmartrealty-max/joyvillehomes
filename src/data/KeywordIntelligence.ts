@@ -67,18 +67,26 @@ export const LEVEL_1_MASTER = {
 
 const MODIFIERS = {
     TRANSACTIONAL: [
-        "Price", "Price List", "Cost", "Offers", "Booking", "Book Now", "Site Visit", 
-        "Brochure", "Brochure PDF", "Floor Plan", "Master Plan", "Payment Plan", 
-        "Contact Number", "Inventory", "Availability", "Possession Date", 
-        "Construction Status", "RERA", "Reviews", "Resale"
+        "Price", "Price List", "Starting Price", "Cost", "Offers", "Launch Offers", "Booking", "Book Now", "Site Visit", 
+        "Brochure", "Brochure PDF", "Floor Plan", "Master Plan", "Payment Plan", "Cost Sheet", "All Inclusive Price",
+        "Contact Number", "Inventory", "Availability", "Possession Date", "Construction Update",
+        "Construction Status", "RERA", "Reviews", "Resale", "ROI Analysis", "Sample Flat Video"
     ],
     PROPERTY_TYPE: [
-        "2 BHK", "3 BHK", "Luxury Apartments", "Premium Apartments", "Family Homes", 
-        "Smart Homes", "Gated Community", "Township", "Investment Property", "Ready Possession"
+        "1 BHK", "2 BHK", "3 BHK", "4 BHK", "Duplex", "Duplex Sky Villa", "Penthouse", 
+        "Villament", "Luxury Villa", "Golf View Apartments", "Biophilic Homes", "Township Residences",
+        "Luxury Apartments", "Premium Apartments", "Family Homes", "Smart Homes", "Gated Community", 
+        "Township", "Investment Property", "Ready Possession"
     ],
     AUDIENCE: [
         "For IT Professionals", "For Families", "For Investors", "For NRIs", 
         "For First-Time Buyers", "For Working Couples", "For Senior Citizens"
+    ],
+    CATALYSTS: [
+        "Near Hinjewadi Phase 1", "Near Rajiv Gandhi Infotech Park", "Near Maan Road",
+        "Near SP Infocity", "Near Magarpatta City", "Near EON IT Park Kharadi", "Near Amanora Mall",
+        "Near Oxford Golf Resort", "Near Chandni Chowk", "Near Mumbai Pune Expressway",
+        "Near Pune Solapur Highway", "Near Purandar Airport", "Near Hadapsar"
     ]
 };
 
@@ -112,27 +120,43 @@ const PLOT_MODIFIERS = {
 const PROJECT_SEEDS = {
     VANAHA: [
         "Vanaha", "Vanaha Pune", "Vanaha Bavdhan", "Shapoorji Vanaha", "Vanaha by Shapoorji Pallonji",
-        "Vanaha Township", "Vanaha Forest Township", "Vanaha Phase 1", "Vanaha Phase 2"
+        "Vanaha Township", "Vanaha Forest Township", "Vanaha 1000 Acre Township", "Vanaha Bavdhan Valley",
+        "Vanaha Phase 1", "Vanaha Phase 2", "Shapoorji Pallonji Bavdhan", "Vanaha Near Oxford Golf Resort"
     ],
     VANAHA_GOLFLAND: [
         "Vanaha Golfland", "Golfland Pune", "Golfland Bavdhan", "Golf View Apartments Pune", 
-        "Vanaha Golfland Luxury Apartments"
+        "Vanaha Golfland Luxury Apartments", "Shapoorji Golfland", "Vanaha Golfland Bavdhan",
+        "Vanaha Golf Course Flats", "Golfland by Shapoorji Pallonji", "Shapoorji Pallonji Golfland Pune"
     ],
     SENSORIUM: [
         "Joyville Sensorium", "Joyville Sensorium Pune", "Joyville Sensorium Hinjawadi", 
-        "Sensorium by Joyville", "Sensorium by Shapoorji Pallonji"
+        "Joyville Sensorium Hinjewadi Phase 1", "Sensorium by Joyville", "Sensorium by Shapoorji Pallonji",
+        "Shapoorji Sensorium Hinjewadi", "Sensorium Maan Road", "Joyville Sensorium 2 BHK",
+        "Joyville Sensorium 3 BHK", "Shapoorji Pallonji Sensorium Pune"
     ],
     SKYLUXE: [
-        "Joyville Sky-Luxe Edition", "Sky-Luxe Pune", "Sky-Luxe Hadapsar", "Sky-Luxe 3 BHK"
+        "Joyville Sky-Luxe Edition", "Joyville Skyluxe", "Sky-Luxe Pune", "Sky-Luxe Hadapsar", 
+        "Sky-Luxe 3 BHK", "Skyluxe Hadapsar Annexe", "Joyville Hadapsar Skyluxe", "Shapoorji Skyluxe",
+        "Skyluxe Luxury Residences Pune", "Joyville Skyluxe Penthouse"
     ],
     HADAPSAR_ANNEXE: [
-        "Joyville Hadapsar Annexe", "Joyville Hadapsar", "Joyville Manjari", "Joyville Manjri"
+        "Joyville Hadapsar Annexe", "Joyville Hadapsar", "Joyville Manjari", "Joyville Manjri",
+        "Shapoorji Hadapsar", "Shapoorji Joyville Hadapsar", "Joyville Hadapsar Annexe Pune",
+        "Shapoorji Pallonji Hadapsar Annexe", "Joyville Shewalewadi", "Joyville Pune East Township"
     ],
     CELESTIA: [
-        "Joyville Celestia", "Celestia Pune", "Celestia Manjari"
+        "Joyville Celestia", "Celestia Pune", "Celestia Manjari", "Celestia Hadapsar",
+        "Joyville Celestia Hadapsar Annexe", "Celestia by Shapoorji Pallonji", "Joyville Celestia 2 BHK",
+        "Joyville Celestia 3 BHK", "Shapoorji Celestia Pune"
     ],
     WILDERNEST: [
-        "Wildernest Pune", "Wildernest SP Kingstown", "SP Kingstown Pune", "Wildernest Villas"
+        "Wildernest", "Shapoorji Wildernest", "Wildernest Pune", "Wildernest at SP Kingstown", 
+        "Wildernest SP Kingstown", "SP Kingstown Wildernest", "Shapoorji Pallonji Wildernest",
+        "Wildernest Hadapsar", "Wildernest Shewalewadi", "Wildernest Manjri", "SP Kingstown Pune",
+        "Mango Tree Villa Wildernest", "Wildernest 3 BHK", "Wildernest 4 BHK", "Wildernest Villaments",
+        "Wildernest Luxury Villas", "Wildernest Pune Solapur Highway", "Wildernest by Shapoorji Pallonji",
+        "Wildernest Mango Orchard", "Shapoorji Kingstown Wildernest", "Wildernest Hadapsar Annexe",
+        "Wildernest Luxury Residences", "Wildernest Sky Residences Pune"
     ],
     HINJAWADI_LEGACY: [
         "Shapoorji Joyville Homes Hinjewadi", "Shapoorji Joyville Hinjewadi", "Joyville Homes Hinjewadi",
@@ -144,7 +168,9 @@ const PROJECT_SEEDS = {
     VYOMORA: [
         "Shapoorji Vyomora", "Vyomora Pune", "Vyomora Hinjawadi", "Vyomora Hinjawadi Phase 1",
         "Shapoorji Pallonji Vyomora", "Joyville Vyomora", "Joyville Vyomora Pune", 
-        "Vyomora by Shapoorji Pallonji", "Vyomora Duplex", "Vyomora 3 BHK Duplex"
+        "Vyomora by Shapoorji Pallonji", "Vyomora Duplex", "Vyomora 3 BHK Duplex",
+        "Joyville Vyomora Hinjewadi Phase 1", "Vyomora Tower 2 Cygnus", "Vyomora Tower 3 Infinia",
+        "Vyomora Price List", "Vyomora Floor Plan", "Vyomora Brochure"
     ],
     TREETOPIA: [
         "Shapoorji Treetopia", "Treetopia Pune", "Shapoorji Pallonji Treetopia",
@@ -198,9 +224,18 @@ export const generateEnterpriseKeywords = (projectId: keyof typeof PROJECT_SEEDS
                 generated.add(`${seed} ${loc}`);
                 generated.add(`${seed} ${loc} Price`);
             });
-        } else if (!isPlot && MODIFIERS.AUDIENCE) {
+        } else if (!isPlot) {
+            // Seed + Location Catalysts
+            if (MODIFIERS.CATALYSTS) {
+                MODIFIERS.CATALYSTS.forEach(cat => {
+                    generated.add(`${seed} ${cat}`);
+                    generated.add(`${seed} ${cat} Price`);
+                });
+            }
             // Seed + Audience (e.g., "Vanaha For IT Professionals")
-            MODIFIERS.AUDIENCE.forEach(a => generated.add(`${seed} ${a}`));
+            if (MODIFIERS.AUDIENCE) {
+                MODIFIERS.AUDIENCE.forEach(a => generated.add(`${seed} ${a}`));
+            }
         }
     });
 

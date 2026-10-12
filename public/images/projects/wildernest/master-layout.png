@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wildernest at SP Kingstown</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta name="ROBOTS" content="index, follow" />
+    <meta name="ROBOTS" content="ALL" />
+    <meta name="Slurp" content="index,follow,archive" />
+    <meta name="geo.region" content="IN" />
+    <meta name="allow-search" content="yes" />
+    <meta name="revisit-after" content="daily" />
+    <meta name="distribution" content="global" />
+    <meta name="expires" content="never" />
+    <meta property="og:image" content="">
+    <link rel="canonical" href="" />
+    <!-- favicon -->
+    <link href="assets/images/favicon.png" rel="icon">
+    <!-- <link href="assets/images/apple-touch-icon.ico" rel="apple-touch-icon"> -->
+    <!-- stylesheets -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/intlTelInput.css"> -->
+    <script>
+        function getAllParams() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+                function (m, key, value) {
+                    vars[key] = value;
+                });
+            return vars;
+        }
+        var queryParams = getAllParams();
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TMC9394L');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMC9394L" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- ======= Header =======  -->
+    <button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+    <header id="header" class="d-flex align-items-center navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <!-- <div class="col-md-1 logo-mr sm-none">
+                    <a href="index.html"><img loading="lazy" src="assets/images/logo.png" alt="logo" class="img-fluid logo"></a>
+                </div> -->
+                <div class="logo-desk col-md-2">
+                    <div class="logo-mr">
+                        <a href="index.html">
+                            <img loading="lazy" src="assets/images/project-logo.png" alt="logo"
+                                class="img-fluid mob-logo project-logo"></a>
+                    </div>
+                    <div class="md-none">
+                        <a href="index.html"><img loading="lazy" src="assets/images/developer-logo.svg" alt="logo"
+                                class="img-fluid developer-logo-header"></a>
+                    </div>
+                </div>
+                <!-- <div class="col-md-2 logo-show sm-none">
+                    <a href="index.html"><img loading="lazy" src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                </div> -->
+                <nav class="nav-menu d-none d-lg-block col-md-7" id="nav-head">
+                    <ul class="nav-inner" id="navbar">
+                        <!-- <li class="nav-logo"><a href="index"><img loading="lazy" loading="lazy" src="assets/images/logo-white.png" alt="logo" class="img-fluid"></a></li> -->
+                        <li><a onclick="scroll_to_view('about')" class="page-scroll"> <strong>ABOUT US </strong></a></li>
+                        <li><a onclick="scroll_to_view('highlights')" class="page-scroll"> <strong>HIGHLIGHTS </strong></a></li>
+                        <li><a onclick="scroll_to_view('location')" class="page-scroll"> <strong>LOCATION </strong></a></li>
+                        <li class="sm-none"><a onclick="scroll_to_view('gallery')" class="page-scroll"> <strong>GALLERY </strong></a></li>
+                        <li class="sm-none"><a onclick="scroll_to_view('amenities')" class="page-scroll"> <strong>AMENITIES </strong></a>
+                        </li>
+                        <li class="md-none"><a onclick="scroll_to_view('amenities-mob')"
+                                class="page-scroll"> <strong>AMENITIES </strong></a></li>
+                        <li><a onclick="scroll_to_view('contact')" class="page-scroll"> <strong>CONTACT US </strong></a></li>
+                    </ul>
+                </nav>
+                <div class="col-md-2 logo-mr sm-none">
+                    <a href="index.html"><img loading="lazy" src="assets/images/developer-logo.svg" alt="logo"
+                            class="img-fluid developer-logo-header"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <main id="main">
+        <div class="home-section">
+            <div class="section-bg" id="home">
+                <div class="main-slider-banner">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <!-- <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div> -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/banner-1.jpg" class="w-100 img-responsive d-none d-lg-block"
+                                    alt="" srcset="">
+                                <img src="./assets/images/mobile-banner-1.jpg" class="w-100 img-responsive d-lg-none"
+                                    alt="" srcset="">
+                            </div>
+                          <!--<div class="carousel-item">
+                                <img src="./assets/images/banner-2.jpg" class="w-100 img-responsive d-none d-lg-block"
+                                    alt="" srcset="">
+                                <img src="./assets/images/mobile-banner-2.jpg" class="w-100 img-responsive d-lg-none"
+                                    alt="" srcset="">
+                            </div>
+                             <div class="carousel-item">
+                                <img src="./assets/images/banner-3.jpg" class="w-100 img-responsive d-none d-lg-block" alt="" srcset="">
+                                <img src="./assets/images/mobile-banner-3.jpg" class="w-100 img-responsive d-lg-none" alt="" srcset="">
+                            </div> -->
+                        </div>
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="luxury-text" data-aos="fade-left">
+                <h4 alt="luxury">TWIN TOWERS<br>SOARING TO THE SKY</h4>
+            </div> -->
+        </div>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row about-details " data-aos="fade-top">
+                    <div class="col-lg-3 col-md-2 col-6 text-center details-col" data-aos="fade-right">
+                        <div class="title">TYPE</div>
+                        <p>3 & 4 BHK Residential Apartments </p>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-2 col-6 text-center details-col" data-aos="fade-right">
+                        <div class="title">PRICE</div>
+                        <p> ₹3.15 Cr.* </p>
+                    </div> -->
+                    <div class="col-lg-3 col-md-2 col-6 text-center  details-col" data-aos="fade-left">
+                        <div class="title">PRICE</div>
+                        <p>₹1.84 Cr* Onwards</p>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-6 text-center pad-top-3 details-col" data-aos="fade-left">
+                        <div class="title"> UNIT SIZES</div>
+                        <p>1384 - 1909 sq.ft.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-6 text-center pad-top-3 details-col" data-aos="fade-left">
+                        <div class="title">LOCATION</div>
+                        <p class="rera"> Hadapsar, Pune
+                        </p>
+                    </div>
+                </div>
+                <!-- <p class="launch-text">
+                    <span>  New Launch | Possession: March 2029</span> <span class="sm-none">|</span>
+                    <span>
+                       Payment plan: 35:35:30
+                    </span><span class="sm-none">|</span>
+                    <span>
+                        Exclusive Freedom Fest Offers: Pay Just 5% Now & Nothing till Dec 2026^
+                    </span>
+                </p> -->
+            </div>
+        </section>
+        <section class="highlight" id="highlight-section">
+            <div class="container">
+                <h2 class="about-heading great-vibes blue-color" data-aos="fade-top">
+                    Where Nature Meets Luxury – Wildernest at SP Kingstown
+                </h2>
+                <div class="image-container">
+                    <div class="position-relative">
+                        <img src="./assets/images/about.jpg" alt="" srcset="" class="about-img" data-aos="fade-right">
+                        <p class="about-para" data-aos="fade-top">
+                            Step into Wildernest – a rare blend of serene landscapes and urban sophistication by
+                            Shapoorji Pallonji. Nestled in a 200-acre green township in Hadapsar, Pune, Wildernest
+                            offers expansive 3 & 4 Bed residences with large private decks, sunlit interiors, and
+                            vastu-friendly design. Surrounded by mango orchards, scenic canals, and panoramic Sahyadri
+                            views, this thoughtfully crafted community invites you to slow down and breathe easy—without
+                            disconnecting from the city's convenience. This is the time to claim your perfect balance of comfort,
+                            nature, and connectivity.
+                        </p>
+                    </div>
+                    <button class="download-brochure" data-bs-toggle="modal" data-bs-target="#enquire-now"
+                        id="download_brochure"><i class="icofont-download"></i> DOWNLOAD
+                        BROCHURE</button>
+                </div>
+            </div>
+        </section>
+        <section class="highlight" id="highlights">
+            <div class="container-fluid">
+                <div class="row highlight-row">
+                    <div class="col-md-6 grandeur-column" data-aos="fade-right">
+                        <h2 class="sm-none">
+                            <span class="great-vibes">
+                                A fresh vision of vertical living, <br> where Home is A Sanctuary.
+                            </span>
+                        </h2>
+                        <ul class="highlight-detail">
+                            <!-- <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Limited Period Freedom Fest Offer – Pay 5% Now, Rest in Dec 2026^
+                            </li> -->
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Spacious 3 & 4 BHK Homes Crafted for Spacious, Sunlit Living
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Large Private Decks with Panoramic Views
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Located within a 200-Acre Township at Hadapsar, Pune
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Low density only 35 families per acre
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Serene Sahyadri Views, Mango Orchards & Canals All Around
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Vastu-Compliant Layouts
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Scenic views from every residence
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Spacious floor plans ideal for modern families
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Excellent Natural Light & Ventilation
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Premium Amenities: Infinity Pool, Library, Outdoor Work Pods, Movie Lounge
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Just 10 mins from Seasons Mall & Magarpatta IT Park
+                            </li>
+                            <li class="highlight-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                ~16 km from the upcoming Chhatrapati Sambhaji Raje Airport
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6  p-0" data-aos="fade-left">
+                        <h2 class="md-none great-vibes about-heading mt-3">
+                            A fresh vision of vertical living, where Home is A Sanctuary.
+                        </h2>
+                        <div class="image-block">
+                            <img loading="lazy" src="assets/images/highlight.png" class="img-fluid highlight-image"
+                                alt="about us">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="connectivity" id="location">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 locationimg" data-aos="fade-right">
+                        <h2 class="md-none mt-4 mb-4">
+                            <span class="great-vibes">A Natural Retreat Just Minutes from Pune’s Pulse.</span>
+                        </h2>
+                        <img loading="lazy" src="assets/images/location-map.jpg" class="img-fluid location-img" alt="location"
+                            style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="col-md-6  location-info" data-aos="fade-left">
+                        <h2 class="sm-none">
+                            <span class="great-vibes blue-color">
+                                A Natural Retreat Just Minutes from Pune’s Pulse.
+                            </span>
+                        </h2>
+                        <p>
+                            Wildernest exists in the midst of all prominent infrastructures and commercial facilities to
+                            offer you the best of both worlds.
+                        </p>
+                        <ul class="location-detail">
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                10 mins to Season Mall & Magarpatta IT Park
+                            </li>
+                            <!-- <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                1 Km to Success School
+                            </li> -->
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                4.7 Km to Noble Hospitals & Research Centre
+                            </li>
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                7.2 Km to G Mall
+                            </li>
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                6 km from Pune-Solapur Highway
+                            </li>
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                10.9 km from EON IT Park & World Trade Centre
+                            </li>
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                10.4 Km to Ghorpuri
+                            </li>
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                12.5 km to Pune Railway Station
+                            </li>
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                12.2 km to Pune Airport &  14.4 Km to Pune Int Airport
+                            </li>
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                12.3 Km to Southern Star Golf
+                            </li>
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                16 km from the upcoming Chhatrapati Sambhaji Raje Airport
+                            </li>
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                18.7 Km to Savitribai Phule Pune
+                            </li>
+                           
+                            <li class="location-detail-list">
+                                <img src="./assets/images/highlight-icon.png" alt="">
+                                Surrounded by top schools, hospitals, retail, and leisure hubs
+                            </li>
+                        </ul>
+                        <button data-bs-toggle="modal" data-bs-target="#enquire-now" class="download-brochure mb-2 knowmore"
+                            style="margin: 0px; width: max-content;">KNOW
+                            MORE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sm-none" id="gallery" data-aos="fade-down">
+            <section class="gallery">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="section-heading great-vibes">
+                            Where Wellness, Leisure & Community Converge in Perfect Harmony
+                        </h1>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="gallery-grid mt-2">
+                        <div class="item">
+                            <a href="assets/images/gallery-1.jpg" data-fancybox="unit-plan">
+                                <img src="assets/images/gallery-1.jpg" alt="Tower A - 5BHK Series 1" />
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="assets/images/gallery-2.jpg" data-fancybox="unit-plan">
+                                <img src="assets/images/gallery-2.jpg" alt="Tower A - 5BHK Series 1" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="assets/images/gallery-3.jpg" data-fancybox="unit-plan">
+                                <img src="assets/images/gallery-3.jpg" alt="Tower A - 5BHK Series 1" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="assets/images/gallery-4.jpg" data-fancybox="unit-plan">
+                                <img src="assets/images/gallery-4.jpg" alt="Tower A - 5BHK Series 1" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="assets/images/gallery-5.jpg" data-fancybox="unit-plan">
+                                <img src="assets/images/gallery-5.jpg" alt="Tower A - 5BHK Series 1" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="assets/images/gallery-6.jpg" data-fancybox="unit-plan">
+                                <img src="assets/images/gallery-6.jpg" alt="Tower A - 5BHK Series 1" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <button data-bs-toggle="modal" data-bs-target="#enquire-now" class="exploreMore-btn m-auto d-block">ENQUIRE
+                NOW</button>
+        </div>
+        <div class="owl-slider md-none">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section-heading great-vibes">
+                        Where Wellness, Leisure & Community Converge in Perfect Harmony
+                    </h1>
+                </div>
+            </div>
+            <div id="amenities-carousel" class="owl-carousel">
+                <div class="item">
+                    <img loading="lazy" src="assets/images/gallery-1.jpg" class="d-block w-100" alt="gallery">
+                </div>
+                <div class="item">
+                    <img loading="lazy" src="assets/images/gallery-2.jpg" class="d-block w-100" alt="gallery">
+                </div>
+                <div class="item">
+                    <img loading="lazy" src="assets/images/gallery-3.jpg" class="d-block w-100" alt="gallery">
+                </div>
+                <div class="item">
+                    <img loading="lazy" src="assets/images/gallery-4.jpg" class="d-block w-100" alt="gallery">
+                </div>
+                <div class="item">
+                    <img loading="lazy" src="assets/images/gallery-5.jpg" class="d-block w-100" alt="gallery">
+                </div>
+                <div class="item">
+                    <img loading="lazy" src="assets/images/gallery-6.jpg" class="d-block w-100" alt="gallery">
+                </div>
+            </div>
+        </div>
+        <section class="amenities sm-none" id="amenities">
+            <div class="container">
+                <div class="row" data-aos="fade-down">
+                    <h1 class="section-heading great-vibes">Amenities</h1>
+                </div>
+            </div>
+            <div class="container-fluid p-5 amenitiesbg-img">
+                <div class="container">
+                    <div class="row amenities-row-container">
+                        <div class="col-md-6 amenities-left-box position-relative" data-aos="fade-right">
+                            <img loading="lazy" src="assets/images/amenities.jpg" class="img-fluid" alt="amenities">
+                        </div>
+                        <div class="col-md-6 amenities-right-box-text" data-aos="fade-left">
+                            <h2 class="amenities-heading">
+                                More Than Just Amenities – It’s a Lifestyle Upgrade.
+                            </h2>
+                            <div class="position-relative">
+                                <div class="col-md-12 amenities-right-box">
+                                    <div class="amenities-row" data-aos="fade-down">
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/infinity-pool.png" alt="pool">
+                                            </div>
+                                            <p> Infinity Pool </p>
+                                        </div>
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/outdoor-work-pods.png" alt="Conference room">
+                                            </div>
+                                            <p> Outdoor Work Pods </p>
+                                        </div>
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/library.png" alt="indoor games">
+                                            </div>
+                                            <p> Library</p>
+                                        </div>
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/clubhouse.png" alt="indoor games">
+                                            </div>
+                                            <p> Clubhouse</p>
+                                        </div>
+                                    </div>
+                                    <div class="amenities-row" data-aos="fade-up">
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/movie-lounge.png" alt="sky gym">
+                                            </div>
+                                            <p> Movie Lounge </p>
+                                        </div>
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/indoor-games-room.png" alt="library"></div>
+                                            <p> Indoor Games Room</p>
+                                        </div>
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/mini-golf.png" alt="sky Cabanas">
+                                            </div>
+                                            <p> Mini Golf </p>
+                                        </div>
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/cricket-pitch.png" alt="indoor games">
+                                            </div>
+                                            <p> Cricket Pitch</p>
+                                        </div>
+                                    </div>
+                                    <div class="amenities-row">
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/terrace-garden.png" alt="sky Cabanas">
+                                            </div>
+                                            <p> Terrace Garden</p>
+                                        </div>
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/kids-play-areas.png" alt="sky Cabanas">
+                                            </div>
+                                            <p> Kids Play Areas</p>
+                                        </div>
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/outdoor-gym.png" alt="sky Cabanas">
+                                            </div>
+                                            <p> Outdoor Gym</p>
+                                        </div>
+                                        <div class="amenities-set">
+                                            <div class="icon-box"><img loading="lazy"
+                                                    src="assets/images/amenities-icon/jogging-tracks.png" alt="indoor games">
+                                            </div>
+                                            <p> Jogging Tracks</p>
+                                        </div>
+                                    </div>
+                                    <!-- <button class="exploreMore-btn" data-bs-toggle="modal" data-bs-target="#enquire-now"
+                                            class="enquire-now">ENQUIRE NOW </button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="amenities md-none" id="amenities-mob">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section-heading m-0 blue-color great-vibes">Amenities</h1>
+                </div>
+                <h2 class="amenities-heading">
+                    More Than Just Amenities – It’s a Lifestyle Upgrade.
+                </h2>
+            </div>
+            <div class="position-relative" data-aos="fade-right">
+                <div class="col-md-6">
+                    <img loading="lazy" src="assets/images/amenities.jpg" class="img-fluid" alt="amenities">
+                </div>
+            </div>
+            <div class="container-fluid p-0">
+                <div class="pt-4">
+                    <div class="amenities-row" data-aos="fade-down">
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/infinity-pool.png"
+                                    alt="pool">
+                            </div>
+                            <p> Infinity Pool </p>
+                        </div>
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/outdoor-work-pods.png"
+                                    alt="Conference room"></div>
+                            <p> Outdoor Work Pods </p>
+                        </div>
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/library.png"
+                                    alt="indoor games">
+                            </div>
+                            <p> Library</p>
+                        </div>
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/clubhouse.png"
+                                    alt="indoor games">
+                            </div>
+                            <p> Clubhouse</p>
+                        </div>
+                    </div>
+                    <div class="amenities-row" data-aos="fade-up">
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/movie-lounge.png"
+                                    alt="sky gym">
+                            </div>
+                            <p> Movie Lounge </p>
+                        </div>
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/indoor-games-room.png"
+                                    alt="library"></div>
+                            <p> Indoor Games Room</p>
+                        </div>
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/mini-golf.png"
+                                    alt="sky Cabanas">
+                            </div>
+                            <p> Mini Golf </p>
+                        </div>
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/cricket-pitch.png"
+                                    alt="indoor games">
+                            </div>
+                            <p> Cricket Pitch</p>
+                        </div>
+                    </div>
+                    <div class="amenities-row">
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/terrace-garden.png"
+                                    alt="sky Cabanas">
+                            </div>
+                            <p> Terrace Garden</p>
+                        </div>
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/kids-play-areas.png"
+                                    alt="sky Cabanas">
+                            </div>
+                            <p> Kids Play Areas</p>
+                        </div>
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/outdoor-gym.png"
+                                    alt="sky Cabanas">
+                            </div>
+                            <p> Outdoor Gym</p>
+                        </div>
+                        <div class="amenities-set">
+                            <div class="icon-box"><img loading="lazy" src="assets/images/amenities-icon/jogging-tracks.png"
+                                    alt="indoor games">
+                            </div>
+                            <p> Jogging Tracks</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button class="exploreMore-btn" data-bs-toggle="modal" data-bs-target="#enquire-now"
+                            class="enquire-now">ENQUIRE NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="master-plain" id="masterPlain">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section-heading">Master Plan</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container tabs-content">
+                    <div class="tab-content tab-content-1 active">
+                        <div class="masterPlain">
+                            <a href="assets/images/master-plan.png" data-fancybox="unit-plan">
+                                <img src="assets/images/master-plan.png" alt="Tower A - 5BHK Series 1" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- <section class="floor-plain pt-0" id="floorPlain">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section-heading great-vibes">Unit Plan</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="tab-container text-center">
+                    <a href="#" class="tab active" data-bs-toggle-target=".tab-content-1">VILLA TYPE A</a>
+                    <a href="#" class="tab" data-bs-toggle-target=".tab-content-2">VILLA TYPE B</a>
+                </div>
+                <div class="container tabs-content">
+                    <div class="tab-content tab-content-1 active">
+                        <div class="fp-list">
+                            <div class="fp-list-item">
+                                <a href="assets/images/floor-plan/unit-plan-1.png" data-fancybox="unit-plan">
+                                    <img src="assets/images/floor-plan/unit-plan-1.png" alt="Tower A - 5BHK Series 1" />
+                                </a>
+                            </div>
+                            <div class="fp-list-item">
+                                <a href="assets/images/floor-plan/unit-plan-2.png" data-fancybox="unit-plan">
+                                    <img src="assets/images/floor-plan/unit-plan-2.png" alt="Tower A - 4BHK Series 2" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content tab-content-2">
+                        <div class="fp-list">
+                            <div class="fp-list-item">
+                                <a href="assets/images/floor-plan/fp-5.jpg" data-fancybox="unit-plan">
+                                    <img src="assets/images/floor-plan/fp-5.jpg" alt="Tower A - 5BHK Series 1" />
+                                </a>
+                            </div>
+                            <div class="fp-list-item">
+                                <a href="assets/images/floor-plan/fp-6.jpg" data-fancybox="unit-plan">
+                                    <img src="assets/images/floor-plan/fp-6.jpg" alt="Tower A - 4BHK Series 2" />
+                                </a>
+                            </div>
+                            <div class="fp-list-item">
+                                <a href="assets/images/floor-plan/fp-7.jpg" data-fancybox="unit-plan">
+                                    <img src="assets/images/floor-plan/fp-7.jpg" alt="Tower A - 5BHK Series 3" />
+                                </a>
+                            </div>
+                            <div class="fp-list-item">
+                                <a href="assets/images/floor-plan/fp-8.jpg" data-fancybox="unit-plan">
+                                    <img src="assets/images/floor-plan/fp-8.jpg" alt="Tower A - 4BHK Series 4" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <div class="section-bg" id="contact">
+            <section class="contact">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <h2 class="great-vibes text-center text-light">Contact us</h2>
+                        <div class="col-md-6 " data-aos="fade-right">
+                            <div class="company-detail">
+                                <img loading="lazy" src="assets/images/project-logo.png" alt="logo" class="footer-logo">
+                                <div class="address-container px-0 py-4">
+                                    <p>
+                                        SITE ADDRESS <br>
+                                        <span>
+                                            Hadapsar, Pune </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 align-self-center form-pad" data-aos="fade-left">
+                            <div class="contact-form" id="contact_form">
+                                <!-- <p class="contact-title">CONTACT US</p> -->
+                                <div class="col-lg-12 col-md-12 form-group">
+                                    <input type="text" name="name" class="form-control" id="footer_name"
+                                        placeholder="Name*" data-rule="minlen:4" />
+                                </div>
+                                <div class="col-lg-12 col-md-12 form-group d-flex">
+                                    <input type="text" name="Phone" class="form-control" id="country_code" value="+91"
+                                        placeholder="+91" disabled / style="padding: 10px;">
+                                    <input type="text" name="Phone" class="form-control" id="footer_phone"
+                                        placeholder="Mobile*" data-rule="minlen:10" maxlength="10"
+                                        onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g, '')" />
+                                </div>
+                                <div class="col-lg-12 col-md-12 form-group">
+                                    <input type="email" class="form-control" name="email" id="footer_email"
+                                        placeholder="Email" data-rule="email" />
+                                </div>
+                                <div class="text-center"><button type="button" class="submit-btn"
+                                        id="contactus_footer">Submit</button>
+                                    <button type="button" class="ftbuttonload  submit-btn"
+                                        style="display: none;">Sending...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="footer-about" id="footer-about">
+            <div class="container">
+                <div class="text-center" data-aos="fade-down">
+                    <h2 class="footer-about-heading">About Developer</h2>
+                    <img loading="lazy" src="assets/images/developer-logo.svg" alt="logo" class="developer-logo">
+                </div>
+                <p class="text-center mt-3" data-aos="fade-down">
+                   With a rich legacy spanning over 150 years, Shapoorji Pallonji Group has evolved into a globally diversified conglomerate known for engineering excellence and innovation. Operating across six key sectors—engineering & construction, infrastructure, real estate, water, energy, and financial services—the group comprises 15 major companies and a workforce of over 33000 professionals serving more than 40 countries. Renowned for delivering complex megastructures and iconic landmarks, Shapoorji Pallonji has led the way in adopting cutting-edge technologies, being the first Indian construction company to expand overseas and pioneer top-down construction methods in India. From luxury residences and IT parks to mass housing and sustainable infrastructure, the group consistently blends scale with sustainability. Notably, Shapoorji Pallonji also holds a significant stake in Tata Sons, reinforcing its stature as one of India’s most trusted and influential corporate houses.
+                </p>
+                <p class="text-center">
+                    <b> MahaRERA Registration No.: Mango Tree Villa Tower 1 - P52100052683 | Mango Tree Villa Tower 2 - P52100053177 | Mango Tree Villa Tower 4 - P52100053966. | https://maharera.maharashtra.gov.in/ | *T&C APPLY</b>
+                </p>
+                <div class="text-center" data-aos="fade-down">
+                    <h2 class="footer-about-heading">Disclaimer</h2>
+                </div>
+                <p class="text-center mt-3" data-aos="fade-down">
+                   Palchin Real Estates Private Limited is one of the participants in the larger scheme of development to be named as SP Kingstown. Palchin Real Estates Private Limited is presently developing residential buildings on a portion of the lands wherein it has acquired rights, which lands have been offered to form part of SP Kingstown. ₹1.84 Cr^ is the starting price for a 3 BHK Unit, Tower 2 – 8th Floor to 14th floor, Series 3 and 4. This price is the base consideration value and excludes applicable taxes, other charges, stamp duty, registration charges or any other statutory charges as applicable. ^This is a bank subvention scheme offered by ICICI Bank; subject to eligibility and for bookings done till 31st December 2025. The amount of ₹9.9 lakh is calculated for flats of series 3 & 4 from the 15th floor and above in Tower 2. As per this Scheme, the customer’s total self-contribution would be 25% of the sale consideration value and the balance 75% of the sale consideration value shall be disbursed by the bank on behalf of the customer based on the payment schedule/plan. Towers 1, 2 & 4 at Mango Tree Villa are mortgaged to Vistra ITCL (India) Limited, whose NOC will be provided for the sale of flats therein.T&C apply.
+
+                </p> <!-- <p class="text-center mb-0">
+                    <img src="./assets/images/qr-code.jpg" alt="" srcset="">
+                </p> -->
+                <div class="row justify-content-center">
+
+                    <p class="text-center mt-3 font-14 disclaimer"><a href="privacy.html"> Privacy Policy</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="section-bg copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">© Copyright 2023. All Rights Reserved</div>
+                    <div class="col-md-6"> Designed & Developed by <a href="https://www.aurumanalytica.in/"
+                            target="_blank"> Aurum Analytica</a></div>
+                </div>
+            </div>
+        </div> -->
+        <div class="enq-btn-mob cta-show">
+            <button data-bs-toggle="modal" data-bs-target="#enquire-now" class="enquire-now pulse">ENQUIRE NOW</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="enquire-now" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document" style="top: 15%">
+                <div class="modal-content">
+                    <div class="modal-body popup-form">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close"
+                            class="modal-close-btn">X</button>
+                        <h4 class="modal-title" align="center"><strong>ENQUIRE NOW</strong>
+                        </h4>
+                        <p class="modal-para mb-0">Please leave your details here. We will get back to you!</p>
+                        <div id="modal_form">
+                            <div class="form-group col-md-12 mt-2">
+                                <input type="text" name="name" class="form-control" placeholder="Name*" id="modal_name">
+                            </div>
+                            <div class="col-lg-12 col-md-12 form-group d-flex">
+                                <input type="text" name="Phone" class="form-control" id="country_code_modal" value="+91"
+                                    placeholder="+91" disabled / style="padding: 10px;">
+                                <input type="text" name="Phone" class="form-control" id="modal_phone"
+                                    placeholder="Mobile*" data-rule="minlen:10" maxlength="10"
+                                    onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g, '')" />
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" name="email" placeholder="Email"
+                                    id="modal_email">
+                            </div>
+                            <div align="center">
+                                <button id="contactus_modal" class="submit-btn-modal">Submit</button>
+                                <button class="button modalbuttonload submit-btn-modal"
+                                    style="display: none;">Sending...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document" style="top: 15%">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close"
+                            class="modal-close-btn">X</button>
+                        <h4 class="secondmodal-title" align="center"><strong>DOWNLOAD BROCHURE</strong></h4>
+                        <input type="hidden" id="brochure_download" value="brochure_download">
+                        <p class="modal-para">Please leave your details here. We will get back to you!</p>
+                        <div id="modal_form">
+                            <div class="form-group col-md-12">
+                                <input type="text" name="name" class="form-control" placeholder="Name*"
+                                    id="secondmodal_name">
+                                <!-- <span id="secondmodalerror_name" class="error-modal">Please Enter Your Name</span> -->
+                            </div>
+                            <div class="col-lg-12 col-md-12 form-group d-flex">
+                                <input type="text" name="Phone" class="form-control" id="country_code_modal" value="+91"
+                                    placeholder="+91" disabled / style="padding: 10px;">
+                                <input type="text" name="Phone" class="form-control" id="secondmodal_phone"
+                                    placeholder="Mobile*" data-rule="minlen:10" maxlength="10"
+                                    onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g, '')" />
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" name="email" placeholder="Email ID"
+                                    id="secondmodal_email">
+                                <!-- <span id="secondmodalerror_email" class="error-modal">Please Enter Valid Email
+                                    Address</span> -->
+                            </div>
+
+                            <div align="center">
+                                <button id="secondcontactus_modal" class="submit-btn-modal">Submit</button>
+                                <button class="submit-btn-modal secondmodalbuttonload"
+                                    style="display: none;">Sending...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Footer -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="assets/js/contact.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/intlTelInput.js"></script> -->
+    <script type="text/javascript">
+        function scroll_to_view(id) {
+            document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        }
+    </script>
+    <script>
+        $('a').one('click', function (e) {
+            if (e.currentTarget.className != "page-scroll") {
+                e.preventDefault();
+                if (window.location.href.indexOf('?') != -1) {
+                    this.href = this.href + "?" + window.location.href.slice(window.location.href.indexOf('?') + 1);
+                }
+                this.click();
+            }
+        });
+        // show modal after  10sec
+        // $(window).on('load', function () {
+        //     setTimeout(function () {
+        //         $('#enquire-now').modal('show');
+        //     }, 10000);
+        // })
+
+        // floor plain tabber js 
+        $('.tab').on('click', function (evt) {
+            evt.preventDefault();
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+            var sel = this.getAttribute('data-bs-toggle-target');
+            $('.tab-content').removeClass('active').filter(sel).addClass('active');
+        });
+
+        // modal heading name 
+        $('.download-brochure').on('click', function () {
+            $('.modal-title').html('DOWNLOAD BROCHURE')
+        })
+        $('.knowmore.download-brochure').on('click', function () {
+            $('.modal-title').html('KNOW MORE')
+        })
+        $('.enquire-now, .exploreMore-btn').on('click', function () {
+            $('.modal-title').html('ENQUIRE NOW')
+        })
+    </script>
+    <script>
+        if (sessionStorage.getItem('scrollToSection') != null) {
+            document.addEventListener("DOMContentLoaded", function (event) {
+                const scrollToSection = sessionStorage.getItem('scrollToSection');
+                document.getElementById(scrollToSection).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+
+                const navbar = document.getElementById('navbar');
+                const navitem = navbar.querySelectorAll('li');
+
+                navitem.forEach(item => {
+                    item.classList.remove('current')
+                    let itemText = item.innerText.toLowerCase();
+                    if (itemText == scrollToSection) {
+                        item.classList.add('current');
+                    }
+                })
+                sessionStorage.removeItem('scrollToSection');
+            });
+        }
+    </script>
+    <script>
+        // var input = document.querySelector("#secondmodal_phone");
+        // var itiSecondModal = window.intlTelInput(input, {
+        //     autoPlaceholder: "off",
+        //     formatOnDisplay: true,
+        //     geoIpLookup: function (callback) {
+        //         $.get("https://ipapi.co/json", function () { }).always(function (resp) {
+        //             var countryCode = (resp && resp.country) ? resp.country : "";
+        //             callback(countryCode);
+        //         });
+        //     },
+        //     initialCountry: "auto",
+        //     separateDialCode: true,
+        //     utilsScript: "assets/js/utils.js",
+        // });
+        // var input = document.querySelector("#modal_phone");
+        // var itiModal = window.intlTelInput(input, {
+        //     autoPlaceholder: "off",
+        //     formatOnDisplay: true,
+        //     geoIpLookup: function (callback) {
+        //         $.get("https://ipapi.co/json", function () { }).always(function (resp) {
+        //             var countryCode = (resp && resp.country) ? resp.country : "";
+        //             callback(countryCode);
+        //         });
+        //     },
+        //     initialCountry: "auto",
+        //     separateDialCode: true,
+        //     utilsScript: "assets/js/utils.js",
+        // });
+        // var input = document.querySelector("#footer_phone");
+        // var itiFooter = window.intlTelInput(input, {
+        //     autoPlaceholder: "off",
+        //     formatOnDisplay: true,
+        //     geoIpLookup: function (callback) {
+        //         $.get("https://ipapi.co/json", function () { }).always(function (resp) {
+        //             var countryCode = (resp && resp.country) ? resp.country : "";
+        //             callback(countryCode);
+        //         });
+        //     },
+        //     initialCountry: "auto",
+        //     separateDialCode: true,
+        //     utilsScript: "assets/js/utils.js",
+        // });
+    </script>
+    </main>
+    <noscript>
+        <style>
+            *[data-aos] {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transform: none !important;
+            }
+
+            .owl-carousel {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        </style>
+    </noscript>
+</body>
+
+</html>

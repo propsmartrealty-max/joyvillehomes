@@ -304,54 +304,54 @@ const WEB_STORIES: WebStory[] = [
     },
     {
         id: 'story-wildernest',
-        projectSlug: 'wildernest-sp-kingstown',
+        projectSlug: 'wildernest-sp-kingstown-pune',
         title: 'Wildernest at SP Kingstown',
-        location: 'SP Kingstown, Shewalewadi Road, Pune',
-        coverImage: '/images/desktop-poster.webp',
-        status: 'Premium Launch',
-        price: '₹1.85 Cr Onwards',
+        location: 'SP Kingstown, Shewalewadi Road, Hadapsar, Pune',
+        coverImage: '/images/projects/wildernest/desktop_banner.webp',
+        status: 'Under Construction',
+        price: '₹1.84 Cr Onwards',
         reraNumber: 'P52100052683',
         slidesCount: 5,
         slides: [
             {
                 title: 'Wildernest at SP Kingstown',
-                subtitle: 'Forest-Themed Luxury Living',
-                description: 'An opulent hillside enclave nestled inside the 200+ acre SP Kingstown mega development in Eastern Pune.',
-                image: '/images/desktop-poster.webp',
+                subtitle: 'Low-Density Vertical Sanctuary',
+                description: 'An exclusive low-density enclave of 4 towers, villaments, and signature villas with just 35 families per acre inside the 200-acre SP Kingstown township.',
+                image: '/images/projects/wildernest/desktop_banner.webp',
                 tag: 'Overview',
-                metrics: [{ label: 'Theme', value: 'Forest Sanctuary' }, { label: 'Township', value: 'SP Kingstown' }, { label: 'Acreage', value: '200+ Acres' }]
+                metrics: [{ label: 'Density', value: '35 Families/Acre' }, { label: 'Township', value: '200-Acre SP Kingstown' }, { label: 'Ceiling', value: '10 Ft. Clear' }]
             },
             {
-                title: 'Miyawaki Forest Canopy',
-                subtitle: 'Pure Air & Natural Ecosystem',
-                description: 'Over 10,000 native trees, nature trails, butterfly gardens, and forest gazebos offering tranquil retreat living.',
-                image: '/images/hero_bg.webp',
+                title: 'Preserved Mango Orchard',
+                subtitle: 'Centuries-Old Natural Sanctuary',
+                description: 'Built amidst a vast mature mango orchard with 100+ preserved trees, sweeping canal views, and the scenic Sahyadri mountain skyline.',
+                image: '/images/projects/wildernest/gallery_2.webp',
                 tag: 'Landscape',
-                metrics: [{ label: 'Trees', value: '10,000+ Native' }, { label: 'Nature Trail', value: '2.2 Km' }, { label: 'AQI Level', value: 'Sub-50 Pristine' }]
+                metrics: [{ label: 'Mango Trees', value: '100+ Preserved' }, { label: 'Open Space', value: '75%+ Green' }, { label: 'Air Quality', value: 'Pristine Biophilic' }]
             },
             {
-                title: '3 & 4 BHK Forest Residences',
-                subtitle: 'Expansive Villa-Style Suites',
-                description: 'Lavish carpet configurations with sprawling sit-out balconies facing serene dense forest greens.',
-                image: '/images/projects/vyomora/floor-plans/3bhk-2.webp',
+                title: '3 & 4 Bed Residences & Villas',
+                subtitle: '1,384 to 1,909 Sq. Ft. Luxury Suites',
+                description: 'Spacious 4-to-a-floor residences with imported Italian marble, split ACs, 8 ft. acoustic windows, and generous sun decks.',
+                image: '/images/projects/wildernest/floorplan_3bhk_1.webp',
                 tag: 'Floor Plans',
-                metrics: [{ label: '3 BHK Carpet', value: '1250 - 1480 sq.ft.' }, { label: '4 BHK Carpet', value: '1750+ sq.ft.' }, { label: 'Balconies', value: 'Dual Facing' }]
+                metrics: [{ label: '3 BHK', value: '1384 - 1504 sq.ft.' }, { label: '4 BHK', value: '1909 - 2100 sq.ft.' }, { label: 'Finish', value: 'Imported Marble' }]
             },
             {
-                title: 'SP Infocity & Pune-Solapur Link',
-                subtitle: 'Strategic Connectivity',
-                description: 'Quick transit to Hadapsar commercial hub while living completely away from city pollution and congestion.',
-                image: '/images/desktop-poster.webp',
-                tag: 'Location',
-                metrics: [{ label: 'To Hadapsar', value: '10 Mins' }, { label: 'To Airport', value: '25 Mins' }, { label: 'Ring Road', value: 'Nearby' }]
+                title: 'Estate Master Layout Plan',
+                subtitle: '~50,000 Sq. Ft. Grand Clubhouse',
+                description: 'World-class amenities including an infinity-edge pool, private rooftop villa pools, mini theatre, library, and outdoor work pods.',
+                image: '/images/projects/wildernest/master-layout.jpg',
+                tag: 'Master Plan',
+                metrics: [{ label: 'Clubhouse', value: '~50,000 Sq.Ft.' }, { label: 'Pool', value: 'Infinity Edge' }, { label: 'Amenities', value: '30+ Curated' }]
             },
             {
-                title: 'MahaRERA: P52100052683',
-                subtitle: 'Starting ₹1.85 Cr',
-                description: 'Ultra-exclusive residential enclave by Shapoorji Pallonji for discerning homebuyers wanting forest tranquility.',
-                image: '/images/desktop-poster.webp',
-                tag: 'Pricing & RERA',
-                metrics: [{ label: 'Starting Price', value: '₹1.85 Cr' }, { label: 'RERA', value: 'P52100052683' }, { label: 'Status', value: 'Active Booking' }]
+                title: 'Pune-Solapur Highway & Magarpatta',
+                subtitle: 'Starting ₹1.84 Cr* | MahaRERA P52100052683',
+                description: 'Strategically located 10 mins from Magarpatta IT Park and Seasons Mall, 10.9 km from EON Kharadi, and 16 km from Purandar Airport.',
+                image: '/images/projects/wildernest/location-map.jpg',
+                tag: 'Location & RERA',
+                metrics: [{ label: 'Starting Price', value: '₹1.84 Cr*' }, { label: 'Magarpatta', value: '10 Mins' }, { label: 'Purandar Airport', value: '16 Km' }]
             }
         ]
     },

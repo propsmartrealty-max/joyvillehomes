@@ -691,10 +691,17 @@ export const SEO_ROUTES = [
     {
         slug: 'sp-kingstown-pune-township',
         title: 'SP Kingstown Pune | Shapoorji Pallonji Mega Township Hadapsar',
-        description: 'SP Kingstown Pune East is a mega-township by Shapoorji Pallonji featuring luxury homes, premium apartments, and Wildernest residences near SP Infocity.',
-        h1: 'SP Kingstown Mega-Township, Pune East',
-        keywords: ['SP Kingstown Pune', 'Shapoorji Pallonji Kingstown', 'SP Kingstown Hadapsar', 'SP Kingstown Township', 'SP Kingstown Apartments', 'SP Kingstown Luxury Homes'],
-        filters: { locationMatch: 'Shewalewadi|Hadapsar', typeMatch: 'Kingstown' }
+        description: 'SP Kingstown Pune East is a 200-acre master township by Shapoorji Pallonji featuring Wildernest low-density luxury residences, 3 & 4 BHK apartments, and signature villas starting at ₹1.84 Cr* near SP Infocity & Magarpatta.',
+        h1: 'SP Kingstown Mega-Township & Wildernest, Pune East',
+        keywords: [
+            'SP Kingstown Pune', 'Shapoorji Pallonji Kingstown', 'SP Kingstown Hadapsar', 'SP Kingstown Township', 
+            'SP Kingstown Apartments', 'SP Kingstown Luxury Homes', 'Wildernest at SP Kingstown', 'Shapoorji Wildernest', 
+            'Wildernest Pune', 'Wildernest Hadapsar', 'Wildernest 3 BHK price', 'Wildernest 4 BHK price',
+            'Wildernest floor plan', 'Wildernest brochure PDF', 'Wildernest Shewalewadi', 'Wildernest villas Pune', 
+            'Mango Tree Villa Wildernest', 'SP Kingstown master plan', 'Wildernest RERA P52100052683',
+            'Shapoorji Pallonji Wildernest price list', 'low density homes Hadapsar', 'biophilic luxury apartments Pune'
+        ],
+        filters: { locationMatch: 'Shewalewadi|Hadapsar', typeMatch: '' }
     },
     {
         slug: 'luxury-apartments-in-wakad-tathawade',

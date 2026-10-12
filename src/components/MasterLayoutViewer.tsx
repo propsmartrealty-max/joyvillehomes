@@ -57,14 +57,28 @@ const TREETOPIA_ZONING_POINTS = [
     { id: '10', title: 'Hiking & Canopy Trails', desc: 'Native dense canopy trails, lemongrass groves & banyan trees', icon: Trees },
 ];
 
+const WILDERNEST_ZONING_POINTS = [
+    { id: '1', title: 'High-Rise Residential Towers (1-4)', desc: 'G+2P+22 storeys with 3 & 4 BHK residences and 4 units per floor', icon: Building2 },
+    { id: '2', title: 'Villaments & Luxury Villas', desc: 'Private rooftop pool villas and duplex villaments nestled in orchards', icon: Sparkles },
+    { id: '3', title: 'Preserved Central Mango Orchard', desc: 'Centuries-old mango grove with 100+ mature trees & walking paths', icon: Trees },
+    { id: '4', title: 'Grand Clubhouse (~50,000 sq.ft.)', desc: 'Multi-level recreational hub with mini theatre, library & indoor games', icon: Layers },
+    { id: '5', title: 'Infinity Edge Swimming Pool', desc: 'Resort pool with sun decks, cabanas & poolside loungers', icon: Waves },
+    { id: '6', title: 'Themed Botanical Gardens', desc: 'Fern, Orchid, Star Jasmine, Pollinator & Stream-front gardens', icon: Trees },
+    { id: '7', title: 'Outdoor Work Pods & Library', desc: 'Alfresco co-working pods with Wi-Fi & quiet reading pavilions', icon: Compass },
+    { id: '8', title: 'Multi-Sport Turf & Mini Golf', desc: 'Cricket pitch, mini golf putting green & outdoor fitness stations', icon: Dumbbell },
+    { id: '9', title: 'Kids Adventure Play Enclave', desc: 'Nature-inspired children play area, skating rink & sensory trail', icon: ShieldCheck },
+    { id: '10', title: 'Perimeter Canal & Jogging Trails', desc: 'Sweeping canal-side walkways and tree-lined jogging circuits', icon: Waves },
+];
+
 export default function MasterLayoutViewer({ 
     masterLayoutUrl, 
     projectName, 
-    location,
+    location, 
     reraNumber 
 }: MasterLayoutViewerProps) {
     const isTreetopia = projectName.toLowerCase().includes('treetopia');
-    const zoningPoints = isTreetopia ? TREETOPIA_ZONING_POINTS : ZONING_POINTS;
+    const isWildernest = projectName.toLowerCase().includes('wildernest');
+    const zoningPoints = isTreetopia ? TREETOPIA_ZONING_POINTS : isWildernest ? WILDERNEST_ZONING_POINTS : ZONING_POINTS;
     const [isLightboxOpen, setIsLightboxOpen] = useState(false);
     const [zoomLevel, setZoomLevel] = useState(1);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -92,11 +106,13 @@ export default function MasterLayoutViewer({
                     </div>
                     <div>
                         <div className="text-[11px] font-bold tracking-[0.15em] uppercase text-[#1D4F9C]">
-                            {isTreetopia ? 'Macro 105-Acre Estate Development Plan' : 'Macro Estate Development Plan'}
+                            {isTreetopia ? 'Macro 105-Acre Estate Development Plan' : isWildernest ? 'Macro 200-Acre SP Kingstown Master Plan' : 'Macro Estate Development Plan'}
                         </div>
                         <p className="text-xs text-[#323334] font-light mt-0.5 max-w-2xl">
                             {isTreetopia 
                                 ? 'The Master Layout visualizes the 105-acre estate land zoning, 25-acre natural lake, central avenue, and villa plot sectors. Looking for individual plot dimensions and typology blueprints? Explore the Plot Layouts section below.'
+                                : isWildernest
+                                ? 'The Master Layout visualizes the 11-acre low-density enclave, 4 residential towers, villaments, preserved mango orchards, and the ~50,000 sq.ft. clubhouse within the 200-acre SP Kingstown township. Looking for apartment blueprints? Explore the Floor Plans section below.'
                                 : 'The Master Layout visualizes overall land zoning, tower placements, access roads, and recreational spaces. Looking for room dimensions and apartment blueprints? Explore the Floor Plans section below.'
                             }
                         </p>

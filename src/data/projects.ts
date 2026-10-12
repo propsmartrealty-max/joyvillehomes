@@ -3,7 +3,9 @@ import { KEYWORD_MATRIX } from './KeywordIntelligence';
 export interface FloorPlan {
     type: string;
     carpetArea: string;
+    price?: string;
     image?: string;
+    imageUrl?: string;
     description?: string;
     spatialDimension?: string;
     category?: 'Studio' | 'Apartment' | 'Penthouse' | 'Duplex' | 'Tower Plan';
@@ -1618,96 +1620,227 @@ export const projects: Project[] = [
         id: "p5",
         slug: "wildernest-sp-kingstown-pune",
         title: "Wildernest at SP Kingstown",
-        location: "SP Kingstown, Shewalewadi Road, Pune",
-        price: "₹1.85 Cr - ₹2.75 Cr",
-        type: "Residential Apartments",
-        status: "Ongoing",
-        reraNumber: ["P52100052683", "P52100053177", "P52100053966", "P52100054077"],
-        image: "/images/desktop-poster.webp",
-        highlights: [
-            "Part of SP Kingstown (Asset Integrity)",
-            "Lush Green Surroundings (Biophilic ROI)",
-            "Premium Township Amenities",
-            "Mivan Technology Perfection"
+        location: "SP Kingstown, Shewalewadi Road, Hadapsar, Pune",
+        price: "Starting ₹1.84 Cr*",
+        type: "3 & 4 BHK Luxury Residences, Villaments & Villas (1,384 - 1,909 Sq. Ft.)",
+        status: "Under Construction (Possession: June 2027 onwards)",
+        reraNumber: [
+            "P52100052683", 
+            "P52100053177", 
+            "P52100054077", 
+            "P52100053966", 
+            "P52100053978", 
+            "P52100053927", 
+            "P52100053977"
         ],
-        description: "Discover a life of biophilic elegance at Wildernest at SP Kingstown by Shapoorji Pallonji. Offering a serene lifestyle with state-of-the-art facilities, high capital appreciation potential, and natural beauty in the Hadapsar-Shewalewadi growth corridor.",
+        image: "/images/projects/wildernest/desktop_banner.webp",
+        highlights: [
+            "Low-Density Sanctuary (Only 35 Families Per Acre across 11 Acres in 200-Acre SP Kingstown)",
+            "Centuries-Old Preserved Central Mango Orchard with 100+ Mature Trees",
+            "Spacious 3 & 4 Bed Residences (1,384 - 1,909 Sq. Ft.) with Private Decks",
+            "10-Foot Ceiling Heights & 8-Foot Tall Acoustic Windows with Mosquito Mesh",
+            "Imported Italian Marble in Living/Dining & Master Suite + Split ACs Included",
+            "Grand ~50,000 Sq. Ft. Multi-Level Clubhouse with Infinity Pool & Mini Theatre",
+            "10 Mins from Magarpatta IT Park & Seasons Mall | 16 km from Purandar Airport"
+        ],
+        description: "Live the rare at Wildernest at SP Kingstown by Shapoorji Pallonji. Nestled amidst centuries-old mango orchards in a 200-acre master township in Hadapsar-Shewalewadi along the Pune-Solapur Highway, Wildernest offers low-density vertical living with only 35 families per acre, featuring expansive 3 & 4 BHK luxury residences, villaments, and villas starting at ₹1.84 Cr*.",
         overview: [
-            "Wildernest at SP Kingstown offers luxury flats that define high-end real estate in Pune, characterized by extensive open spaces and sustainable features.",
-            "This serene residential project is perfectly situated near prominent schools and hospitals, providing an elegant lifestyle home for families.",
-            "Residents of these premium apartments enjoy a balanced lifestyle with dedicated wellness zones, grand clubhouses, and beautifully landscaped gardens."
+            "Wildernest at SP Kingstown redefines vertical living with a low-density sanctuary of just 4 towers, 12 villaments, and 13 villas situated within an 11-acre dedicated enclave in the 200-acre master township. With only 35 families per acre and four individual residences per floor, privacy and natural immersion are absolute.",
+            "Surrounded by sweeping canals and the scenic Sahyadri mountain skyline, each residence is designed with 10 ft. clear ceiling heights, 8 ft. tall windows with integrated mosquito mesh, expansive private viewing decks, and imported marble flooring. All homes come pre-fitted with split air conditioning systems across the living, dining, and bedroom areas.",
+            "Positioned along the Pune-Solapur Highway just 10 minutes from Magarpatta IT Park and Seasons Mall, 10.9 km from EON IT Park & World Trade Centre Kharadi, and 16 km from the proposed Chhatrapati Sambhaji Raje International Airport, Wildernest unites serene orchard living with unmatched connectivity."
         ],
         amenities: [
             {
-                category: "Lifestyle",
-                items: ["Grand Clubhouse", "Swimming Pool", "Landscaped Gardens", "Children's Play Area"]
+                category: "Health & Wellness",
+                items: [
+                    "Open Podium Gymnasium", 
+                    "Outdoor Fitness Stations", 
+                    "Jogging & Cycling Circuits", 
+                    "Acupressure Reflexology Walkway", 
+                    "Yoga & Meditation Lawn"
+                ]
             },
             {
-                category: "Fitness & Sports",
-                items: ["Fully Equipped Gymnasium", "Jogging Track", "Multipurpose Court"]
+                category: "Leisure & Nature",
+                items: [
+                    "Infinity Edge Swimming Pool", 
+                    "Rooftop Pools in Signature Villas", 
+                    "Rooftop Sit-Out Terraces", 
+                    "Central Mango Orchard Garden", 
+                    "Fern Garden", 
+                    "Orchid Garden", 
+                    "Star Jasmine Garden", 
+                    "Stream Front Garden", 
+                    "Pollinator Garden", 
+                    "Poolside Cabanas & Sun Loungers", 
+                    "Leisure Party Lawn", 
+                    "Terrace Gardens"
+                ]
+            },
+            {
+                category: "Community & Entertainment",
+                items: [
+                    "Grand Central Clubhouse (~50,000 Sq. Ft.)", 
+                    "Private Mini Theatre & Movie Lounge", 
+                    "Curated Reading Library", 
+                    "Alfresco Outdoor Work Pods", 
+                    "Children's Sensory Play Area", 
+                    "Cricket Simulator & Pitch", 
+                    "Mini Golf Putting Green", 
+                    "Indoor Games & Billiards Room"
+                ]
             }
         ],
         specifications: [
             {
-                category: "Finishes",
-                items: ["Premium vitrified flooring", "High-quality modular switches", "Modern kitchen layout"]
+                category: "Living, Dining & Bedrooms",
+                items: [
+                    "Imported Italian marble flooring in living, dining, and master bedroom",
+                    "Split air conditioning units installed in living room and all bedrooms",
+                    "8 ft. high acoustic glazed windows with integrated mosquito mesh",
+                    "10 ft. floor-to-ceiling clear room heights for natural passive cooling"
+                ]
+            },
+            {
+                category: "Kitchen & Utility",
+                items: [
+                    "Granite / engineered stone kitchen platform with stainless steel sink",
+                    "Piped gas provision and dedicated utility balcony area",
+                    "Vitrified tile flooring and anti-skid surfaces in service areas"
+                ]
+            },
+            {
+                category: "Bathrooms & Sanitary",
+                items: [
+                    "Premium CP and sanitary ware from Kohler / Grohe",
+                    "Concealed flush cisterns and toughened glass shower partitions in master bath",
+                    "Energy-efficient geysers installed in all bathrooms"
+                ]
             }
         ],
         technicalSpecs: [
-            { label: "Construction Technology", value: "Mivan Monolithic Concrete" },
-            { label: "Flooring Standard", value: "Vitrified Tiles (Nitco / Kajaria)" },
-            { label: "Electrical Systems", value: "Finolex Cables & Legrand Switches" },
-            { label: "Kitchen Fittings", value: "Stainless Steel Sink (Carysil/Nirali)" },
-            { label: "Security Tech", value: "Honeywell Video Door Phone" }
+            { label: "Construction Technology", value: "Mivan Monolithic Concrete System" },
+            { label: "Ceiling Height", value: "10 Feet Clear Height" },
+            { label: "Flooring Standard", value: "Imported Italian Marble (Living & Master)" },
+            { label: "Air Conditioning", value: "Split ACs in Living & All Bedrooms Included" },
+            { label: "Window Specifications", value: "8 Ft. Tall Acoustic Windows with Mosquito Mesh" },
+            { label: "Sanitary & CP Ware", value: "Kohler / Grohe Fixtures with Geysers Included" },
+            { label: "Elevators", value: "High-Speed Passenger & Service Elevators (4 Units/Floor)" },
+            { label: "Township Scale", value: "200-Acre Master Township (SP Kingstown)" },
+            { label: "Enclave Density", value: "35 Families Per Acre (11-Acre Gated Phase)" },
+            { label: "Official Brochure", value: "/documents/wildernest-brochure.pdf" }
         ],
         floorPlans: [
-            { type: "Premium Residences", carpetArea: "Available on request" }
+            { 
+                type: "3 BHK Luxury Residence", 
+                carpetArea: "1,384 Sq. Ft. (128.60 Sq.M.)",
+                price: "₹1.84 Cr* Onwards",
+                image: "/images/projects/wildernest/floorplan_3bhk_1.webp"
+            },
+            { 
+                type: "3 BHK Grande Residence", 
+                carpetArea: "1,504 Sq. Ft. (139.72 Sq.M.)",
+                price: "₹1.98 Cr* Onwards",
+                image: "/images/projects/wildernest/floorplan_3bhk_2.webp"
+            },
+            { 
+                type: "4 BHK Sky Residence", 
+                carpetArea: "1,909 Sq. Ft. (177.31 Sq.M.)",
+                price: "₹2.40 Cr* Onwards",
+                image: "/images/projects/wildernest/floorplan_4bhk_1.webp"
+            },
+            { 
+                type: "4 BHK Signature Villament", 
+                carpetArea: "2,100 Sq. Ft. (195.09 Sq.M.)",
+                price: "₹2.65 Cr* Onwards",
+                image: "/images/projects/wildernest/floorplan_4bhk_2.webp"
+            },
+            { 
+                type: "4 BHK Estate Villa", 
+                carpetArea: "4,000 - 5,500 Sq. Ft.",
+                price: "Price on Request",
+                image: "/images/projects/wildernest/floorplan_4bhk_3.webp"
+            }
         ],
-        masterLayout: "/images/desktop-poster.webp",
+        masterLayout: "/images/projects/wildernest/master-layout.jpg",
         gallery: [
-            "/images/desktop-poster.webp",
-            "/images/desktop-poster.webp"
+            "/images/projects/wildernest/gallery_1.webp",
+            "/images/projects/wildernest/gallery_2.webp",
+            "/images/projects/wildernest/gallery_3.webp",
+            "/images/projects/wildernest/gallery_4.webp",
+            "/images/projects/wildernest/gallery_5.webp",
+            "/images/projects/wildernest/gallery_6.webp"
         ],
         galleryItems: [
-            { url: "/images/desktop-poster.webp", caption: "Wildernest at SP Kingstown Biophilic Living", alt: "Wildernest Luxury Apartments Hadapsar Pune", category: "Exterior" }
+            { url: "/images/projects/wildernest/gallery_1.webp", caption: "Wildernest Architectural Facade & Sunlit Balconies", alt: "Wildernest at SP Kingstown High-Rise Towers Hadapsar Pune", category: "Exterior" },
+            { url: "/images/projects/wildernest/gallery_2.webp", caption: "Preserved Centuries-Old Mango Orchard Sanctuary", alt: "Wildernest Preserved Mango Orchard Landscape SP Kingstown", category: "Landscape" },
+            { url: "/images/projects/wildernest/gallery_3.webp", caption: "Resort-Style Infinity Edge Swimming Pool & Decks", alt: "Wildernest Infinity Swimming Pool Hadapsar", category: "Amenities" },
+            { url: "/images/projects/wildernest/gallery_4.webp", caption: "Grand Double-Height Entrance Lobby & Lounge", alt: "Wildernest Grand Entrance Lobby SP Kingstown", category: "Interior" },
+            { url: "/images/projects/wildernest/gallery_5.webp", caption: "Lush Themed Gardens with Walking Canals", alt: "Wildernest Themed Botanical Gardens Shewalewadi", category: "Landscape" },
+            { url: "/images/projects/wildernest/gallery_6.webp", caption: "Private Rooftop Villa Pools and Viewing Terraces", alt: "Wildernest Rooftop Villa Pool Hadapsar Annexe", category: "Amenities" },
+            { url: "/images/projects/wildernest/gallery_7.webp", caption: "Expansive Living Room with Imported Italian Marble", alt: "Wildernest 3 BHK 4 BHK Living Room Interior", category: "Interior" },
+            { url: "/images/projects/wildernest/gallery_8.webp", caption: "Outdoor Co-Working Pods & Reading Pavilions", alt: "Wildernest Alfresco Work Pods SP Kingstown", category: "Amenities" },
+            { url: "/images/projects/wildernest/gallery_9.webp", caption: "Children's Sensory Play Enclave & Activity Lawn", alt: "Wildernest Kids Play Area Shewalewadi", category: "Amenities" }
         ],
         locationDetails: {
             iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5042!2d73.9786!3d18.5042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1c!2sJoyville%20Hadapsar!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin",
             landmarks: [
-                { name: "Saswad Road", distance: "2.0 km", wikidataUri: "https://www.wikidata.org/wiki/Q2721869" },
-                { name: "Proposed Purandar Airport", distance: "15.0 km", wikidataUri: "https://www.wikidata.org/wiki/Q30645638" },
-                { name: "SP Infocity", distance: "8.0 km", wikidataUri: "https://www.wikidata.org/wiki/Q151996" }
+                { name: "Magarpatta IT Park & City", distance: "6.0 km (10 mins)", wikidataUri: "https://www.wikidata.org/wiki/Q6729729" },
+                { name: "Seasons Mall & Amanora Mall", distance: "6.2 km (10 mins)", wikidataUri: "https://www.wikidata.org/wiki/Q16950284" },
+                { name: "SP Infocity IT Park Phursungi", distance: "8.0 km (15 mins)", wikidataUri: "https://www.wikidata.org/wiki/Q151996" },
+                { name: "EON IT Park & World Trade Centre Kharadi", distance: "10.9 km (20 mins)", wikidataUri: "https://www.wikidata.org/wiki/Q5324546" },
+                { name: "Noble Hospitals & Research Centre", distance: "4.7 km (10 mins)", wikidataUri: "https://www.wikidata.org/wiki/Q151996" },
+                { name: "Pune International Airport (Lohegaon)", distance: "12.2 km (25 mins)", wikidataUri: "https://www.wikidata.org/wiki/Q1432439" },
+                { name: "Pune Railway Station", distance: "12.5 km (25 mins)", wikidataUri: "https://www.wikidata.org/wiki/Q7260384" },
+                { name: "Proposed Chhatrapati Sambhaji Raje Purandar Airport", distance: "16.0 km (25 mins)", wikidataUri: "https://www.wikidata.org/wiki/Q30645638" }
             ]
         },
         infrastructureScores: {
-            metro: 6.5,
+            metro: 7.5,
             ringRoad: 9.8,
-            itHub: 8.5
+            itHub: 9.2
         },
         constructionUpdate: {
-            percentage: 45,
-            statusText: "Phase 1 structure completed; internal finishing and amenity development in progress.",
-            lastUpdated: "April 2024"
+            percentage: 42,
+            statusText: "Tower 1 & 2 superstructure progressing rapidly; Mango Tree Villa Phase 1 & 2 foundation work underway. On track for June 2027 handover.",
+            lastUpdated: "January 2025"
         },
         expertReview: {
-            rating: 4.6,
-            summary: "Wildernest at SP Kingstown offers a tranquil living experience within a well-planned township, ideal for those seeking peace and modern conveniences.",
-            pros: ["Part of a large integrated township", "Lush green surroundings and open spaces", "Proximity to schools and hospitals"],
+            rating: 4.8,
+            summary: "Wildernest at SP Kingstown represents an ultra-rare low-density biophilic sanctuary in East Pune, marrying a preserved 100+ tree mango orchard with institutional Shapoorji construction quality and 10-minute access to Magarpatta.",
+            pros: [
+                "Exceptional low-density planning (only 35 families per acre)", 
+                "Centuries-old preserved central mango orchard landscape", 
+                "Spacious 3 & 4 BHK residences with 10 ft ceilings and imported marble",
+                "Grand ~50,000 sq. ft. multi-level clubhouse with infinity pool"
+            ],
             ratings: {
-                connectivity: 4,
-                amenities: 4,
-                valueForMoney: 4,
+                connectivity: 4.8,
+                amenities: 5,
+                valueForMoney: 4.7,
                 constructionQuality: 5
             }
         },
         macroEconomicDrivers: [
-            { name: "SP Kingstown Mega-Township Plan", wikidataUri: "https://www.wikidata.org/wiki/Q16950284", impact: "Self-Sustaining Economy Trigger" }
+            { name: "SP Kingstown 200-Acre Master Township", wikidataUri: "https://www.wikidata.org/wiki/Q16950284", impact: "Integrated Self-Sustaining Economy Trigger" },
+            { name: "Magarpatta - Kharadi IT Corridor Spillover", wikidataUri: "https://www.wikidata.org/wiki/Q6729729", impact: "Premium Rental & Capital Appreciation Anchor" },
+            { name: "Proposed Purandar International Airport Connectivity", wikidataUri: "https://www.wikidata.org/wiki/Q30645638", impact: "High-Velocity Aerotropolis Appreciation Catalyst" }
         ],
         seoKeywords: [
             ...KEYWORD_MATRIX.PROJECT_EXPANSIONS.WILDERNEST,
-            "Wildernest at SP Kingstown price", "Wildernest SP Kingstown floor plan", "Wildernest SP Kingstown brochure", "Wildernest SP Kingstown possession date", "Wildernest SP Kingstown amenities", "Wildernest SP Kingstown reviews", "premium apartments Manjri Pune", "nature living residences Pune", "flats near Lexicon School Hadapsar", "Wildernest Kingstown site visit",
+            "Wildernest at SP Kingstown price", "Wildernest SP Kingstown floor plan", "Wildernest SP Kingstown brochure", 
+            "Wildernest SP Kingstown possession date", "Wildernest SP Kingstown amenities", "Wildernest SP Kingstown reviews", 
+            "Shapoorji Wildernest Hadapsar", "Shapoorji Wildernest Pune", "Wildernest 3 BHK price Hadapsar", 
+            "Wildernest 4 BHK price Hadapsar", "Wildernest villaments Pune", "Wildernest luxury villas Hadapsar",
             "Shapoorji Pallonji Kingstown Pune price", "SP Kingstown township layout", "Wildernest Hadapsar new launch",
-            "biophilic residences Pune", "nature integrated homes Hadapsar", "Shapoorji Pallonji Kingstown reviews", "Wildernest tower plan", "premium flats in Manjri area", "SP Kingstown master plan", "Wildernest construction update", "sustainable living Pune east", "eco friendly homes Pune", "Wildernest possession status", "Kingstown Pune site office", "SP Infocity township Wildernest", "Wildernest brochure download", "RERA registered projects Manjri", "best investment in Pune east township", "Shapoorji Pallonji new township Pune", "Wildernest price list 2026", "amenities at SP Kingstown", "forest themed homes Pune",
-            "Wildernest at SP Kingstown all inclusive price", "Wildernest at SP Kingstown cost sheet", "Wildernest at SP Kingstown payment plan", "Wildernest at SP Kingstown ROI analysis"
+            "biophilic residences Pune", "nature integrated homes Hadapsar", "Shapoorji Pallonji Kingstown reviews", 
+            "Wildernest tower plan", "premium flats in Manjri area", "SP Kingstown master plan", "Wildernest construction update", 
+            "sustainable living Pune east", "eco friendly homes Pune", "Wildernest possession status", "Kingstown Pune site office", 
+            "SP Infocity township Wildernest", "Wildernest brochure download", "RERA registered projects Manjri", 
+            "best investment in Pune east township", "Shapoorji Pallonji new township Pune", "Wildernest price list 2026", 
+            "amenities at SP Kingstown", "forest themed homes Pune", "Mango Tree Villa Wildernest Pune",
+            "Wildernest at SP Kingstown all inclusive price", "Wildernest at SP Kingstown cost sheet", 
+            "Wildernest at SP Kingstown payment plan", "Wildernest at SP Kingstown ROI analysis"
         ],
         latitude: 18.502989,
         longitude: 73.971248,
@@ -1743,7 +1876,7 @@ export const projects: Project[] = [
         videoUploadDate: "2024-01-20",
         featuredAmenities: ["Lush Green Surroundings", "Grand Clubhouse", "Swimming Pool", "Children's Play Area"],
         lastDataAudit: "2026-03-13",
-        reraProjectUrl: "https://maharerait.mahaonline.gov.in/PrintPreview/PrintPreview?q=wildernest_mock",
+        reraProjectUrl: "https://maharera.maharashtra.gov.in/",
         personaTags: ['Luxury', 'TechProfessional', 'Investor'],
         answerGraph: [
             { 

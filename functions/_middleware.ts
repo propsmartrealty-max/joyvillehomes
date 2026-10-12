@@ -143,17 +143,17 @@ const PUNE_PROJECTS_EDGE_CATALOG: Record<string, EdgeProjectInfo> = {
   'wildernest-sp-kingstown-pune': {
     name: 'Wildernest at SP Kingstown Pune by Shapoorji Pallonji',
     title: 'Wildernest at SP Kingstown',
-    description: 'Forest-themed luxury residences in SP Kingstown, Shewalewadi Road, Pune. Serene hillside living with high-speed connectivity to Hadapsar IT corridors.',
-    lowPrice: 18500000,
+    description: 'Low-density vertical sanctuary of 3 & 4 BHK luxury residences, villaments, and villas nestled in centuries-old mango orchards across 11 acres in the 200-acre SP Kingstown township, Hadapsar along Pune-Solapur Highway.',
+    lowPrice: 18400000,
     highPrice: 27500000,
     rera: 'P52100052683',
-    placename: 'SP Kingstown, Shewalewadi Road, Pune',
-    lat: 18.4890,
-    lng: 73.9620,
-    reviews: 390,
-    image: 'https://joyville-homes.com/images/desktop-poster.webp',
-    status: 'InStock',
-    propertyType: '3 & 4 BHK Luxury Nature Residences'
+    placename: 'SP Kingstown, Shewalewadi Road, Hadapsar, Pune',
+    lat: 18.5030,
+    lng: 73.9712,
+    reviews: 420,
+    image: 'https://joyville-homes.com/images/projects/wildernest/desktop_banner.webp',
+    status: 'PreOrder',
+    propertyType: '3 & 4 BHK Luxury Residences, Villaments & Villas'
   },
   'vanaha-golfland-pune': {
     name: 'Shapoorji Pallonji Vanaha Golfland Bavdhan',
