@@ -77,21 +77,25 @@ export const PROJECT_INSIDER_DATA: Record<string, ProjectInsider> = {
         projectId: 'joyville-vyomora-hinjewadi',
         maintenancePremium: '₹4.50 per sq.ft.',
         parkingDetails: {
-            covered: 'Multi-level car parking (MLCP)'
+            covered: 'Multi-level car parking (MLCP) with EV charging bays'
         },
         constructionStatus: {
-            currentPhase: 'Foundation & Plinth',
+            currentPhase: 'Substructure Piling & Foundation Works',
             slabsCompleted: 2,
-            totalSlabs: 22,
-            lastUpdate: '2026-03-10',
-            nextMilestone: 'Podium Level Completion'
+            totalSlabs: 24,
+            lastUpdate: '2026-10-01',
+            nextMilestone: 'Podium Level Slab Completion'
         },
         inventoryStatus: {
             twoBHK: 'Selling Fast (Early Bird Pricing)',
-            threeBHK: 'Available (Priority View)'
+            threeBHK: 'Available (Corner Units)',
+            duplex: 'Exclusive Sky Villa Duplexes (Limited 12 Units with Private Decks)'
         },
         civicRoadmap: [
-            { event: 'IT Park Expansion (Phase 4)', distance: '1.5km', impact: 'Rental demand surge from 40k+ new employees', eta: '2027-28' }
+            { event: 'Pune Metro Line 3 Station', distance: '0.4km', impact: 'Direct rapid transit connectivity to Shivajinagar & Pune University', eta: 'Q4 2026' },
+            { event: 'Mhalunge-Hinjewadi Bridge Link', distance: '1.2km', impact: 'Cuts travel time to Balewadi High Street & Baner to under 10 minutes', eta: 'Mid 2026' },
+            { event: 'Hinjewadi-Wakad Ring Road Expansion', distance: '2.0km', impact: 'Decongests Phase 1 peak-hour corporate transit', eta: '2027' },
+            { event: 'IT Park Phase 4 Expansion', distance: '1.5km', impact: 'Rental demand surge from 45,000+ new tech professionals', eta: '2027-28' }
         ]
     }
 };

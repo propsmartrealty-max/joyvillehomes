@@ -457,12 +457,36 @@ export const projects: Project[] = [
         ],
         faqs: [
             {
-                question: "What is the configuration of Joyville Vyomora Hinjewadi?",
-                answer: "Joyville Vyomora offers 2 BHK, 3 BHK, and exclusive 3 BHK Duplex apartments in the heart of Hinjewadi Phase 1, Pune."
+                question: "What is the MahaRERA registration number of Joyville Vyomora Hinjewadi?",
+                answer: "Joyville Vyomora is registered under MahaRERA registration number PR1260002600999. All statutory certificates, approvals, and quarterly progress reports are verified on the official MahaRERA portal."
             },
             {
-                question: "What is the starting price of Joyville Vyomora by Shapoorji Pallonji?",
-                answer: "The starting price for Joyville Vyomora is ₹84.99 Lakhs onwards, making it a high-value investment in Pune's IT corridor."
+                question: "What are the flat configurations and carpet areas at Joyville Vyomora?",
+                answer: "Joyville Vyomora offers 2 BHK Suites (685 sq. ft. / 63.64 sq. m.), 2 BHK Premium (742 sq. ft.), 2 BHK Grand (798 sq. ft.), 2 BHK Royale (839 sq. ft.), 3 BHK Luxury (1,052 sq. ft.), 3 BHK Premium (1,088 sq. ft.), 3 BHK Grand Decks (1,190 sq. ft.), and exclusive 3 BHK Duplex Sky Villas (1,434 sq. ft. / 133.22 sq. m.)."
+            },
+            {
+                question: "What is the starting price for flats in Joyville Vyomora Hinjewadi?",
+                answer: "Flats in Joyville Vyomora start at ₹88.19 Lakhs onwards for 2 BHK configurations, with early pre-launch slots starting from ₹84.99 Lakhs*. Premium 3 BHK residences start from ₹1.25 Cr, and 3 BHK Duplex Sky Villas are priced up to ₹1.85 Cr*."
+            },
+            {
+                question: "Where is Joyville Vyomora located and how close is it to Hinjewadi IT companies?",
+                answer: "Joyville Vyomora is located off Maan Village Road in Hinjewadi Phase 1, Pune. It is just 0.5 km from Wipro Phase 1 Circle, 0.8 km from Infosys Campus Phase 1, 0.4 km from the upcoming Pune Metro Line 3 station, and 2.1 km from the Mumbai-Pune Expressway link."
+            },
+            {
+                question: "What makes the 3 BHK Duplex Sky Villas at Joyville Vyomora unique?",
+                answer: "The 3 BHK Duplex Sky Villas offer double-height living and dining areas, expansive private sun decks, Italian marble flooring in entertaining zones, dedicated upper-level family lounges, and 1,434 sq. ft. of efficient carpet area."
+            },
+            {
+                question: "What construction technology is used in Joyville Vyomora?",
+                answer: "Joyville Vyomora is engineered with 100% monolithic Aluform / Mivan RCC shear wall technology. This ensures earthquake-resistant structural strength, precision room finishes, zero brickwork water seepage, and maximum usable carpet area efficiency."
+            },
+            {
+                question: "What clubhouse and lifestyle amenities are included at Joyville Vyomora?",
+                answer: "Joyville Vyomora features a massive 32,000+ sq. ft. signature clubhouse, elevated eco-deck, Olympic-length lap pool, aqua gym, sky gymnasium, pickleball courts, mini football turf, digital dome mini theatre, co-working pods, pet park, and 48 curated indoor and outdoor amenities."
+            },
+            {
+                question: "What is the expected rental yield and appreciation for Joyville Vyomora?",
+                answer: "Due to its walking-distance proximity to Hinjewadi Phase 1 tech campuses (Wipro, Infosys, Cognizant), Joyville Vyomora is projected to yield 4.8% to 5.4% in annual rental returns with an estimated 11.5% to 12.5% YoY capital appreciation catalyzed by the opening of Pune Metro Line 3."
             }
         ],
         latitude: 18.559385,

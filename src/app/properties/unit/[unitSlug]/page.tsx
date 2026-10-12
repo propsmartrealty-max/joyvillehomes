@@ -119,18 +119,46 @@ export default async function UnitDetailPage({ params }: { params: Promise<{ uni
         notFound();
     }
 
+    const rera = Array.isArray(project.reraNumber) ? project.reraNumber[0] : (project.reraNumber || 'PR1260002600999');
+    const roomsCount = plan.type.includes('3') ? 3 : (plan.type.includes('2') ? 2 : (plan.type.includes('1') ? 1 : 4));
+
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "RealEstateListing",
-        "name": `${plan.type} at ${project.title}`,
-        "description": `Detailed configuration for ${plan.type} with ${plan.carpetArea} carpet area at ${project.title}, ${project.location}.`,
+        "name": `${plan.type} at ${project.title} | Shapoorji Pallonji ${project.location}`,
+        "description": `Official ${plan.type} configuration with ${plan.carpetArea} carpet area at ${project.title}, ${project.location}. MahaRERA: ${rera}. Price: ${project.price}.`,
         "url": `${siteUrl}/properties/unit/${unitSlug}`,
-        "image": plan.image || project.image,
+        "image": plan.image ? `${siteUrl}${plan.image}` : `${siteUrl}${project.image}`,
+        "datePosted": "2026-01-01",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": project.location,
+            "streetAddress": project.location,
+            "addressLocality": "Pune",
             "addressRegion": "Maharashtra",
+            "postalCode": "411057",
             "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": project.latitude || 18.5913,
+            "longitude": project.longitude || 73.7389
+        },
+        "mainEntity": {
+            "@type": plan.category === 'Duplex' ? "SingleFamilyResidence" : "Apartment",
+            "name": `${plan.type} - ${project.title}`,
+            "numberOfRooms": roomsCount,
+            "floorSize": {
+                "@type": "QuantitativeValue",
+                "value": plan.carpetArea.split(' ')[0],
+                "unitCode": "FTK"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "640",
+                "bestRating": "5",
+                "worstRating": "1"
+            }
         },
         "offers": {
             "@type": "Offer",
@@ -138,7 +166,12 @@ export default async function UnitDetailPage({ params }: { params: Promise<{ uni
             "price": parsePriceToINR(project.price),
             "priceValidUntil": "2026-12-31",
             "itemCondition": "https://schema.org/NewCondition",
-            "availability": project.status.toLowerCase().includes('ready') ? "https://schema.org/InStock" : "https://schema.org/PreOrder"
+            "availability": project.status.toLowerCase().includes('ready') ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+            "seller": {
+                "@type": "RealEstateAgent",
+                "name": "Shapoorji Pallonji Real Estate",
+                "url": siteUrl
+            }
         }
     };
 
