@@ -518,52 +518,52 @@ const WEB_STORIES: WebStory[] = [
         id: 'story-treetopia',
         projectSlug: 'shapoorji-treetopia-pune',
         title: 'Shapoorji Pallonji Treetopia',
-        location: 'Jadhavwadi, Purandar, Pune',
-        coverImage: '/images/desktop-poster.webp',
+        location: 'Jadhavwadi, Pune Growth Corridor',
+        coverImage: '/images/projects/treetopia/desktop_banner.webp',
         status: 'NA Plots Launch',
-        price: '₹84 L Onwards',
+        price: '₹99 L Onwards',
         reraNumber: 'PP1261012501803',
         slidesCount: 5,
         slides: [
             {
                 title: 'Shapoorji Pallonji Treetopia',
-                subtitle: 'NA-Sanctioned Villa Plots',
-                description: 'Gated villa plot community in the rapid growth corridor of Purandar, Southern Pune.',
-                image: '/images/desktop-poster.webp',
+                subtitle: "Nature's Own ~105-Acre Estate",
+                description: 'Nestled between hills on three sides, Treetopia is a serene valley of growth where custom villas coexist with nature.',
+                image: '/images/projects/treetopia/desktop_banner.webp',
                 tag: 'Overview',
-                metrics: [{ label: 'Format', value: 'NA Gated Plots' }, { label: 'Sanctions', value: '100% Clear Title' }, { label: 'Gated Security', value: '24x7 Multi-Tier' }]
+                metrics: [{ label: 'Estate Area', value: '~105 Acres' }, { label: 'Natural Lake', value: '25 Acres' }, { label: 'Surroundings', value: '3-Sided Hills' }]
             },
             {
-                title: 'New Pune International Airport Hub',
-                subtitle: 'Exponential Growth Corridor',
-                description: 'Strategically positioned in the immediate influence zone of the proposed Chhatrapati Sambhaji Raje International Airport.',
-                image: '/images/hero_bg.webp',
+                title: '10 Mins from Purandar Airport',
+                subtitle: 'Pune Growth Corridor Connectivity',
+                description: 'Around 10 mins from proposed Purandar Airport, 10 mins to Saswad & Wadki, 30 mins to SP Infocity, and direct links to Hadapsar.',
+                image: '/images/projects/treetopia/location-map.jpg',
                 tag: 'Growth Driver',
-                metrics: [{ label: 'Airport Zone', value: 'Purandar Corridor' }, { label: 'Ring Road', value: 'Planned Access' }, { label: 'Land Capital', value: 'High Appreciation' }]
+                metrics: [{ label: 'Purandar Airport', value: '10 Mins' }, { label: 'Saswad & Wadki', value: '10 Mins' }, { label: 'SP Infocity', value: '30 Mins' }]
             },
             {
-                title: 'Plot Sizes & Infrastructure',
-                subtitle: 'Grand & Regal Villa Plots',
-                description: 'Wide asphalt internal roads, underground electrical cabling, water connections, and individual plot demarcation.',
-                image: '/images/projects/vyomora/floor-plans/floor-plan1.webp',
-                tag: 'Plot Layout',
-                metrics: [{ label: 'Grand Plots', value: '1800 - 2400 sq.ft.' }, { label: 'Regal Plots', value: '3000+ sq.ft.' }, { label: 'Road Width', value: '9m - 12m' }]
+                title: '105-Acre Master Layout Plan',
+                subtitle: 'Bespoke Villa Plots (1800 - 5000+ sq.ft.)',
+                description: 'Wide 18-metre paved tree-lined Central Avenue, underground utilities, and clear individual 7/12 extract titles.',
+                image: '/images/projects/treetopia/master-layout.jpg',
+                tag: 'Master Plan',
+                metrics: [{ label: 'Regal Plots', value: '1800 - 2500 sq.ft.' }, { label: 'Grand Plots', value: '3000 - 5000+ sq.ft.' }, { label: 'Central Avenue', value: '18 Metres' }]
             },
             {
-                title: 'Resort-Style Club Amenities',
-                subtitle: 'Clubhouse & Weekend Leisure',
-                description: 'Swimming pool, clubhouse, organic farming zones, orchard walks, and outdoor barbecue pavilions.',
-                image: '/images/projects/vyomora/gallery/photo_gallery10.webp',
-                tag: 'Clubhouse',
-                metrics: [{ label: 'Clubhouse', value: 'Resort Theme' }, { label: 'Organic Farming', value: 'Community Plots' }, { label: 'Security', value: 'CCTV Guarded' }]
+                title: '25-Acre Lake & 30+ Amenities',
+                subtitle: 'Clubhouse, Lake Promenade & Trails',
+                description: 'Nature clubhouse, swimming pools, lakeside promenade, eco-pond with island, fishing deck, and riding trails.',
+                image: '/images/projects/treetopia/page_18.jpg',
+                tag: 'Amenities',
+                metrics: [{ label: 'Natural Lake', value: '25 Acres' }, { label: 'Amenities', value: '30+ Curated' }, { label: 'Lifestyle', value: 'Resort Theme' }]
             },
             {
                 title: 'MahaRERA: PP1261012501803',
-                subtitle: 'Starting ₹84 Lakhs',
-                description: '100% legal compliance, clear 7/12 land titles, and immediate demarcation by Shapoorji Pallonji.',
-                image: '/images/desktop-poster.webp',
+                subtitle: 'Starting at ₹99 Lakhs Onwards',
+                description: '100% legal compliance, individual 7/12 extract ownership, and title mortgaged to Beacon Trusteeship Ltd. (NOC available).',
+                image: '/images/projects/treetopia/gallery_1.webp',
                 tag: 'Pricing & RERA',
-                metrics: [{ label: 'Starting Price', value: '₹84 L' }, { label: 'RERA', value: 'PP1261012501803' }, { label: 'Plot Type', value: 'Immediate Registry' }]
+                metrics: [{ label: 'Starting Price', value: '₹99 L*' }, { label: 'RERA Number', value: 'PP1261012501803' }, { label: 'Title', value: 'Individual 7/12' }]
             }
         ]
     }

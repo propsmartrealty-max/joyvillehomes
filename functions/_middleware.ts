@@ -201,19 +201,19 @@ const PUNE_PROJECTS_EDGE_CATALOG: Record<string, EdgeProjectInfo> = {
     propertyType: '1, 2, 3 & 4 BHK Township Residences'
   },
   'shapoorji-treetopia-pune': {
-    name: 'Shapoorji Pallonji Treetopia Purandar NA Plots',
+    name: 'Shapoorji Pallonji Treetopia Pune Growth Corridor',
     title: 'Shapoorji Pallonji Treetopia',
-    description: 'Exclusive NA-sanctioned gated villa plots in the fast-growing Purandar corridor, Pune. Close to the proposed New Pune International Airport.',
-    lowPrice: 8400000,
-    highPrice: 16000000,
+    description: 'Spread over ~105 acres in Jadhavwadi nestled between hills on three sides, Treetopia offers bespoke NA residential villa plots from 1,800 to 5,000+ sq. ft. centred around a 25-acre lake, 10 mins from proposed Purandar Airport.',
+    lowPrice: 9900000,
+    highPrice: 18400000,
     rera: 'PP1261012501803',
-    placename: 'Jadhavwadi, Purandar, Pune',
-    lat: 18.2833,
-    lng: 74.0167,
-    reviews: 310,
-    image: 'https://joyville-homes.com/images/desktop-poster.webp',
+    placename: 'Jadhavwadi, Pune Growth Corridor, Maharashtra',
+    lat: 18.3582,
+    lng: 74.0041,
+    reviews: 420,
+    image: 'https://joyville-homes.com/images/projects/treetopia/desktop_banner.webp',
     status: 'InStock',
-    propertyType: 'NA Villa Plots'
+    propertyType: 'NA Residential Villa Plots (1,800 - 5,000+ Sq. Ft.)'
   }
 };
 

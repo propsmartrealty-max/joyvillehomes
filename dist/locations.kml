@@ -214,21 +214,21 @@
     <Placemark>
       <name>Shapoorji Pallonji Treetopia</name>
       <description><![CDATA[
-        <p>Premium NA plotted development in the Pune Growth Corridor near Jadhavwadi by Shapoorji Pallonji Real Estate. Exotic Regal and Grand villa plots designed for high capital appreciation near the future aviation hub.</p>
+        <p>Nestled between hills on three sides in Jadhavwadi within the Pune Growth Corridor, Treetopia is a ~105-acre serene valley of growth by Shapoorji Pallonji Real Estate. Offering premium NA residential villa plots from 1,800 to 5,000+ sq. ft. centred around a 25-acre natural lake, just 10 minutes from the proposed Purandar Airport with clear title individual 7/12 extract documentation.</p>
         <p><a href="https://joyville-homes.com/projects/shapoorji-treetopia-pune">View Project</a></p>
       ]]></description>
       <Point>
-        <coordinates>74.533145,18.447577,0</coordinates>
+        <coordinates>74.0041,18.3582,0</coordinates>
       </Point>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <coordinates>
-              74.52814500000001,18.442577,0
-              74.538145,18.442577,0
-              74.538145,18.452576999999998,0
-              74.52814500000001,18.452576999999998,0
-              74.52814500000001,18.442577,0
+              73.9991,18.3532,0
+              74.00909999999999,18.3532,0
+              74.00909999999999,18.3632,0
+              73.9991,18.3632,0
+              73.9991,18.3532,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>

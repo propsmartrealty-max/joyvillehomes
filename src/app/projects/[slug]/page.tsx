@@ -1312,10 +1312,14 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                         <section id="master-layout" className="scroll-mt-32">
                             <div className="flex items-center gap-3 mb-4">
                                 <span className="w-8 h-[1px] bg-[#1D4F9C]"></span>
-                                <h2 className="text-3xl font-serif text-[#323334] font-light">{project.title} Master Layout & Site Development Plan</h2>
+                                <h2 className="text-3xl font-serif text-[#323334] font-light">
+                                    {project.title} {project.type.toLowerCase().includes('plot') ? 'Estate Master Layout & Zoning Plan' : 'Master Layout & Site Development Plan'}
+                                </h2>
                             </div>
                             <p className="text-[#323334]/80 text-sm font-light mb-8 max-w-3xl leading-relaxed">
-                                Macro architectural site development plan for {project.title}. Visualizing full land boundary zoning, tower footprints, 32,000+ sq. ft. signature clubhouse, elevated podium eco-deck, landscaped central greens, and sports arena infrastructure across {project.location}.
+                                {project.type.toLowerCase().includes('plot') 
+                                    ? `Macro estate development plan for ${project.title}. Visualizing the ~105-acre land boundary zoning, 25-acre natural lake promenade, 18-metre paved central avenue, nature clubhouse, bespoke villa plot clusters, and 30+ experiential amenities across ${project.location}.`
+                                    : `Macro architectural site development plan for ${project.title}. Visualizing full land boundary zoning, tower footprints, signature clubhouse, elevated podium eco-deck, landscaped central greens, and sports arena infrastructure across ${project.location}.`}
                             </p>
 
                             <MasterLayoutViewer
@@ -1330,10 +1334,14 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                         <section id="floor-plans" className="scroll-mt-32">
                             <div className="flex items-center gap-3 mb-4">
                                 <span className="w-8 h-[1px] bg-[#1D4F9C]"></span>
-                                <h2 className="text-3xl font-serif text-[#323334] font-light">{project.title} Floor Plans & Unit Blueprints</h2>
+                                <h2 className="text-3xl font-serif text-[#323334] font-light">
+                                    {project.title} {project.type.toLowerCase().includes('plot') ? 'Plot Layouts & Typology Blueprints' : 'Floor Plans & Unit Blueprints'}
+                                </h2>
                             </div>
                             <p className="text-[#323334]/80 text-sm font-light mb-8 max-w-3xl leading-relaxed">
-                                Detailed 2D architectural unit blueprints and structural floor plates for residences at {project.title}. Inspect certified RERA carpet areas, room dimensions, sun-deck balconies, and living-dining layouts across all configurations.
+                                {project.type.toLowerCase().includes('plot')
+                                    ? `Detailed plot dimensions and layout configurations for land parcels at ${project.title}. Inspect certified RERA plot areas (1,800 to 5,000+ sq. ft.), frontage widths, private lawn set-backs, and villa footprint options.`
+                                    : `Detailed 2D architectural unit blueprints and structural floor plates for residences at ${project.title}. Inspect certified RERA carpet areas, room dimensions, sun-deck balconies, and living-dining layouts across all configurations.`}
                             </p>
 
                             <ProjectClientWrapper 

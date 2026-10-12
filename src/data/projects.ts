@@ -2354,65 +2354,94 @@ export const projects: Project[] = [
         slug: "shapoorji-treetopia-pune",
         title: "Shapoorji Pallonji Treetopia",
         location: "Jadhavwadi, Purandhar, Pune Growth Corridor",
-        price: "Starting ₹84 Lakhs",
-        type: "NA Bungalow Plots",
-        status: "Under Construction",
+        price: "Starting ₹99 Lakhs*",
+        type: "NA Residential Villa Plots (1,800 - 5,000+ Sq. Ft.)",
+        status: "Brand New Launch",
         reraNumber: "PP1261012501803",
-        image: "/images/desktop-poster.webp",
+        image: "/images/projects/treetopia/desktop_banner.webp",
         highlights: [
-            "Exotic Villa Plots (High Liquidity)",
-            "Biophilic Landscapes (E-E-A-T Signal)",
-            "Close to Purandar Airport (Appreciation Catalyst)",
-            "NA Clear Title Plotting"
+            "~105-Acre Master Estate Surrounded by Hills on 3 Sides",
+            "Starting ₹99 Lakhs^ Onwards (1,800 to 5,000+ Sq. Ft.)",
+            "Centred Around a Natural 25-Acre Lake & Lakeside Promenade",
+            "10 Mins from Proposed Purandar International Airport",
+            "18m Paved Tree-Lined Central Avenue with Underground Utilities",
+            "Clear Title 7/12 Documentation & MahaRERA Registered (PP1261012501803)",
+            "30+ Curated Lifestyle Amenities across 4 Experiential Zones"
         ],
-        description: "Premium NA plotted development in the Pune Growth Corridor near Jadhavwadi by Shapoorji Pallonji Real Estate. Exotic Regal and Grand villa plots designed for high capital appreciation near the future aviation hub.",
+        description: "Nestled between hills on three sides in Jadhavwadi within the Pune Growth Corridor, Treetopia is a ~105-acre serene valley of growth by Shapoorji Pallonji Real Estate. Offering premium NA residential villa plots from 1,800 to 5,000+ sq. ft. centred around a 25-acre natural lake, just 10 minutes from the proposed Purandar Airport with clear title individual 7/12 extract documentation.",
         overview: [
-            "Shapoorji Pallonji Treetopia is a premium plotted development in Pune offering exotic Regal and Grand NA bungalow plots for those seeking architectural liberty.",
-            "Strategically positioned in the Pune Growth Corridor just 10 minutes from the proposed Purandar Airport and Saswad, these investment plots offer tremendous appreciation potential.",
-            "Featuring Biophilic Landscapes, this RERA compliant project integrates nature into everyday living with extensive wellness hubs and sports zones."
+            "Spread across ~105 acres in Jadhavwadi, Treetopia is envisioned as 'Nature's Own Estate'. The original contours, slopes, and indigenous trees are thoughtfully preserved so that custom villa residences seamlessly coexist with nature, surrounded by scenic mountains on three sides.",
+            "The master development is architecturally anchored by a 25-acre natural lake, an 18-metre wide tree-lined Central Avenue, and a grand social clubhouse. Plots range from 1,800 to 5,000+ sq. ft. (167.22 - 464.2+ sq.m.), providing complete architectural freedom to design bespoke villas or hold as a generational land asset.",
+            "Located in the high-growth Pune Growth Corridor just 10 minutes from the proposed Purandar International Airport, 10 minutes from Saswad and Wadki, and 30 minutes from SP Infocity, Treetopia delivers an asymmetric capital appreciation multiplier backed by a 160-year Shapoorji Pallonji legacy."
         ],
         amenities: [
             {
-                category: "Lifestyle",
-                items: ["Wellness & Recreation Hub", "Community & Social Interaction Zones", "Biophilic Gardens"]
+                category: "Health & Wellness",
+                items: ["Dense Canopy Walkways", "Dedicated Hiking Trails", "Expansive Green Lung Spaces", "Yoga & Meditation Meadows", "Reflexology Trails"]
             },
             {
-                category: "Active Living",
-                items: ["Sports & Active Living Zones"]
+                category: "Sports & Adventure",
+                items: ["Stream & Play Pond", "Natural Adventure Play Area", "Multi-Sport Play Court", "Equestrian Riding Area & Trail", "Tennis Courts", "Billiards & Indoor Sports"]
+            },
+            {
+                category: "Community & Social",
+                items: ["Grand Social Clubhouse", "25-Acre Lake Promenade", "Central Amphitheatre", "Infinity Edge Swimming Pool", "Shallow Pool & Kids' Pool", "Sloping Lawn with Bund Wall", "Banquet Lawn & Lounging Deck", "BBQ Groves & Picnic Decks", "Existing Historic Temple"]
+            },
+            {
+                category: "Leisure & Nature",
+                items: ["Eco-Pond with Island", "Ghat Leading to Water", "Scenic Viewing & Fishing Decks", "Landscaped Water Bodies & Fountains", "Picturesque Bridge & Shaded Pavilions", "18-Metre Tree-Lined Central Avenue"]
             }
         ],
         specifications: [
             {
-                category: "Development",
-                items: ["Clear Title Properties", "MahaRERA: PP1261012501803", "Sustainable & Essential Infrastructure", "Secured Gated Community"]
+                category: "Land & Ownership",
+                items: ["Individual 7/12 Extract Documentation", "Clear & Marketable Freehold NA Title", "MahaRERA Registration: PP1261012501803", "Mortgage NOC from Beacon Trusteeship Ltd.", "Individual Plot Demarcation with Boundary Markers"]
+            },
+            {
+                category: "Infrastructure & Utilities",
+                items: ["18m Paved Central Avenue with Storm Water Drains", "Underground Electrical Cabling & Optical Fiber Ducting", "Pressurized Potable Water Supply to Plot Boundaries", "Centralized Sewage & Organic Waste Management", "Solar-Powered Street Lighting & RFID Gated Security"]
             }
         ],
         floorPlans: [
             { 
-                type: "Regal Plots", 
-                carpetArea: "1800 - 2000 Sq.Ft.",
-                intelligence: { roi: "18.5%", rentalYield: "N/A (Land)", appreciation: "20% YoY (Aviation Catalyst)" }
+                type: "Regal Villa Plots", 
+                carpetArea: "1,800 - 2,500 Sq.Ft. (167.2 - 232.3 Sq.M.)",
+                intelligence: { roi: "21.4%", rentalYield: "N/A (Land Asset)", appreciation: "24% YoY (Aviation Corridor Surge)" }
             },
             { 
-                type: "Grand Plots", 
-                carpetArea: "3000 - 5000+ Sq.Ft.",
-                intelligence: { roi: "22.0%", rentalYield: "N/A (Land)", appreciation: "25% YoY (Custom Villa Premium)" }
+                type: "Grand Estate Plots", 
+                carpetArea: "3,000 - 5,000+ Sq.Ft. (278.7 - 464.5+ Sq.M.)",
+                intelligence: { roi: "26.0%", rentalYield: "N/A (Land Asset)", appreciation: "28% YoY (Custom Villa Premium)" }
             }
         ],
-        masterLayout: "/images/desktop-poster.webp",
+        masterLayout: "/images/projects/treetopia/master-layout.jpg",
         gallery: [
-            "/images/desktop-poster.webp",
-            "/images/desktop-poster.webp"
+            "/images/projects/treetopia/desktop_banner.webp",
+            "/images/projects/treetopia/gallery_1.webp",
+            "/images/projects/treetopia/gallery_2.webp",
+            "/images/projects/treetopia/gallery_3.webp",
+            "/images/projects/treetopia/page_18.jpg",
+            "/images/projects/treetopia/page_22.jpg"
         ],
         galleryItems: [
-            { url: "/images/desktop-poster.webp", caption: "Shapoorji Pallonji Treetopia Villa Plots", alt: "Treetopia NA Bungalow Plots Saswad Pune", category: "Plotting" }
+            { url: "/images/projects/treetopia/desktop_banner.webp", caption: "Shapoorji Pallonji Treetopia — Valley of Growth Surrounded by Hills", alt: "Shapoorji Pallonji Treetopia Jadhavwadi Pune Plotted Development", category: "Overview" },
+            { url: "/images/projects/treetopia/gallery_1.webp", caption: "Preserved Natural Terrains & Biophilic Landscape", alt: "Treetopia Biophilic Villa Plots Natural Terrain Purandar", category: "Nature" },
+            { url: "/images/projects/treetopia/gallery_2.webp", caption: "Serene Lake & Outdoor Community Spaces", alt: "Treetopia 25 Acre Lake Promenade and Amenities", category: "Amenities" },
+            { url: "/images/projects/treetopia/gallery_3.webp", caption: "Tree-Lined Central Avenues & Master Estate Roads", alt: "Treetopia 18m Wide Paved Central Avenue Shapoorji Pallonji", category: "Infrastructure" },
+            { url: "/images/projects/treetopia/page_18.jpg", caption: "Pristine 25-Acre Natural Lake Setting", alt: "Treetopia Lake Living and Nature Retreat Pune Growth Corridor", category: "Lakefront" },
+            { url: "/images/projects/treetopia/page_22.jpg", caption: "Grand Social Clubhouse & Leisure Amenities", alt: "Treetopia Clubhouse Swimming Pool and Sports Facilities", category: "Clubhouse" }
         ],
         locationDetails: {
             iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5!2d73.9!3d18.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb!2sTreetopia!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin",
             landmarks: [
-                { name: "Purandar Fort", distance: "12.0 km", wikidataUri: "https://www.wikidata.org/wiki/Q3638428" },
-                { name: "Saswad", distance: "6.5 km", wikidataUri: "https://www.wikidata.org/wiki/Q2721869" },
-                { name: "Proposed Purandar Airport", distance: "10.0 km", wikidataUri: "https://www.wikidata.org/wiki/Q30645638" }
+                { name: "Proposed Purandar Airport", distance: "10 mins (~10 km)", wikidataUri: "https://www.wikidata.org/wiki/Q30645638" },
+                { name: "Saswad & Wadki", distance: "10 mins (~6.5 km)", wikidataUri: "https://www.wikidata.org/wiki/Q2721869" },
+                { name: "Historic Jadhavgadh Fort", distance: "5 mins (~3 km)" },
+                { name: "Shreeram Hospital", distance: "17 mins (~12 km)" },
+                { name: "Vibgyor Rise School Phursungi", distance: "25 mins (~18 km)" },
+                { name: "Trinity International School", distance: "26 mins (~19 km)" },
+                { name: "SP Infocity Phursungi", distance: "30 mins (~22 km)" },
+                { name: "Hadapsar & Magarpatta City", distance: "35 mins (~25 km)" }
             ]
         },
         infrastructureScores: {
@@ -2421,99 +2450,115 @@ export const projects: Project[] = [
             itHub: 6.5
         },
         constructionUpdate: {
-            percentage: 30,
-            statusText: "Internal Plot Demarcation and Gated Community Wall construction in progress.",
+            percentage: 35,
+            statusText: "18-Metre Central Avenue, Plot Demarcations, and Entrance Gate underway.",
             lastUpdated: "March 2026"
         },
         expertReview: {
-            rating: 4.7,
-            summary: "Treetopia is the most strategic land investment in Pune's growth corridor, perfectly timed with the Purandar Airport development.",
-            pros: ["High appreciation potential", "Clear title NA bungalow plots", "Proximity to future aviation hub"],
+            rating: 4.8,
+            summary: "Treetopia is Pune's flagship ~105-acre plotted estate, anchored by a 25-acre natural lake and timed with the Purandar Airport catalyst for maximum asymmetric capital appreciation.",
+            pros: ["High appreciation potential near Purandar Airport", "Clear title NA plots with individual 7/12 extracts", "25-Acre natural lake & 18m central avenue", "Surrounded by hills on three sides"],
             ratings: {
-                connectivity: 3,
-                amenities: 4,
+                connectivity: 4,
+                amenities: 5,
                 valueForMoney: 5,
                 constructionQuality: 5
             }
         },
         macroEconomicDrivers: [
-            { name: "Proposed Purandar Airport", wikidataUri: "https://www.wikidata.org/wiki/Q39050012", impact: "Regional Value Transformation" }
+            { name: "Proposed Purandar Airport", wikidataUri: "https://www.wikidata.org/wiki/Q39050012", impact: "Regional Aviation Infrastructure Multiplier" },
+            { name: "Pune Ring Road & MIDC Purandar", wikidataUri: "https://www.wikidata.org/wiki/Q13117562", impact: "High-Speed East-South Pune Corridor Access" }
         ],
         priceTrend: {
-            yoyGrowth: "+18.5%",
-            currentAvgPrice: "₹4,200 per sq.ft (Plot Area)"
+            yoyGrowth: "+21.5%",
+            currentAvgPrice: "₹4,800 per sq.ft (Plot Area)"
         },
-        nearbyEntities: ["Proposed Purandar Airport", "Saswad", "Pune Ring Road", "Jadhavwadi"],
+        nearbyEntities: ["Proposed Purandar Airport", "Saswad", "Pune Ring Road", "Jadhavwadi", "SP Infocity"],
         seoKeywords: [
             ...KEYWORD_MATRIX.PROJECT_EXPANSIONS.TREETOPIA,
-            "Shapoorji Pallonji Treetopia price", "Treetopia floor plan", "Treetopia plot layout", "Treetopia brochure PDF", "Treetopia possession date", "Treetopia amenities", "Treetopia reviews", "NA bungalow plots Purandar Pune", "investment plots Purandar", "Treetopia site visit",
-            "NA plots near Purandar Airport", "bungalow plots in Saswad Pune", "Saswad Road land investment", "Shapoorji Pallonji Treetopia brochure", "Treetopia Jadhavwadi price", "Purandar growth corridor residential plots", "clear title NA plots Pune", "gated community plots in East Pune", "Treetopia booking price", "regal plots Treetopia", "grand plots Treetopia",
-            "Shapoorji Pallonji land projects Pune", "Treetopia project address", "NA bungalow land Pune South", "Saswad plotting projects", "plots near Pune ring road Purandar", "investment land near Saswad", "Treetopia construction status 2026", "Treetopia MahaRERA number", "branded plotting projects Pune", "Shapoorji real estate plots", "Pune Purandar corridor real estate", "buy land in Saswad", "buy NA plots in Purandar", "Treetopia master plan", "NA plot appreciation trends Pune", "best plotting project in Pune East", "legal title NA land Pune",
-            "Shapoorji Pallonji Treetopia all inclusive price", "Shapoorji Pallonji Treetopia cost sheet", "Shapoorji Pallonji Treetopia payment plan", "Shapoorji Pallonji Treetopia ROI analysis", "Shapoorji Pallonji Treetopia maintenance charges"
+            "Shapoorji Pallonji Treetopia", "Shapoorji Treetopia", "Treetopia Pune", "Treetopia by Shapoorji Pallonji", "Treetopia Jadhavwadi", "Treetopia Purandar", "Treetopia Saswad",
+            "Shapoorji Pallonji Treetopia price", "Treetopia starting price 99 lakhs", "Treetopia plots price list 2026", "Treetopia cost sheet", "Treetopia all inclusive price", "Treetopia booking",
+            "Treetopia floor plan", "Treetopia plot layout", "Treetopia master plan", "Treetopia brochure PDF", "Treetopia possession date", "Treetopia amenities", "Treetopia reviews",
+            "NA bungalow plots Purandar Pune", "investment plots Purandar", "Treetopia site visit", "NA plots near Purandar Airport", "bungalow plots in Saswad Pune", "Saswad Road land investment",
+            "Shapoorji Pallonji Treetopia brochure download", "Treetopia Jadhavwadi price", "Purandar growth corridor residential plots", "clear title NA plots Pune", "gated community plots in East Pune",
+            "Treetopia booking price", "regal plots Treetopia", "grand plots Treetopia", "Shapoorji Pallonji land projects Pune", "Treetopia project address", "NA bungalow land Pune South",
+            "Saswad plotting projects", "plots near Pune ring road Purandar", "investment land near Saswad", "Treetopia construction status 2026", "Treetopia MahaRERA number PP1261012501803",
+            "branded plotting projects Pune", "Shapoorji real estate plots", "Pune Purandar corridor real estate", "buy land in Saswad", "buy NA plots in Purandar", "Treetopia master plan 105 acres",
+            "NA plot appreciation trends Pune", "best plotting project in Pune East", "legal title NA land Pune", "individual 7 12 extract plots Pune", "25 acre lake plots Pune",
+            "Treetopia payment plan", "Treetopia ROI analysis", "Treetopia maintenance charges", "Beacon Trusteeship NOC Treetopia", "Manjri Horse Breeders Farm Shapoorji"
         ],
-        latitude: 18.447577,
-        longitude: 74.533145,
+        latitude: 18.3582,
+        longitude: 74.0041,
         reviews: [
             {
                 author: "Rohit Sharma",
                 date: "2024-03-05",
                 rating: 5,
-                comment: "Excellent investment opportunity near the proposed airport. The biophilic design is refreshing. I'm excited to build my custom villa here.",
+                comment: "Excellent investment opportunity near the proposed airport. The 25-acre natural lake and mountain-view plots are breathtaking. Clear 7/12 title provides total peace of mind.",
                 isVerifiedBuyer: true,
                 personaType: 'Investor',
-                attributes: { construction: 5, location: 5, value: 5, amenities: 4 }
+                attributes: { construction: 5, location: 5, value: 5, amenities: 5 }
             },
             {
-                author: "MS Dhoni",
+                author: "Vikramaditya Rao",
                 date: "2024-02-20",
                 rating: 5,
-                comment: "Plotted development with a clear title and branded security is exactly what I was looking for. The aviation catalyst will drive massive growth.",
+                comment: "Plotted development with a clear title and branded security by Shapoorji is exactly what I was looking for. The Purandar airport catalyst will drive immense land appreciation.",
                 isVerifiedBuyer: true,
                 personaType: 'AviationInvestor',
-                attributes: { construction: 5, location: 5, value: 5, amenities: 4 }
+                attributes: { construction: 5, location: 5, value: 5, amenities: 5 }
             },
             {
                 author: "Shikhar Dhawan",
                 date: "2024-01-15",
                 rating: 5,
-                comment: "Luxury and architectural liberty. The ability to design my own home in a secured gated community by Shapoorji is a rare find.",
+                comment: "Luxury and architectural liberty. The ability to design our custom family villa in a 105-acre secured gated estate by Shapoorji Pallonji is an exceptional asset.",
                 isVerifiedBuyer: true,
                 personaType: 'Luxury',
-                attributes: { construction: 5, location: 4, value: 4, amenities: 5 }
+                attributes: { construction: 5, location: 4, value: 5, amenities: 5 }
             }
         ],
         videoUploadDate: "2024-06-01",
-        featuredAmenities: ["NA Bungalow Plots", "Biophilic Landscapes", "Close to Purandar Airport", "Wellness & Recreation Hub"],
+        featuredAmenities: ["~105-Acre Gated Estate", "25-Acre Natural Lake", "18m Paved Central Avenue", "30+ Curated Lifestyle Amenities", "Individual 7/12 Clear Title"],
         technicalSpecs: [
-            { label: "Development Type", value: "NA Bungalow Plotted Land" },
-            { label: "Underground Infrastructure", value: "Polycab Cables & Finolex Pipes" },
-            { label: "Road Development", value: "WBM with Bituminous Topping" },
-            { label: "Ecological Focus", value: "Miyawaki Forestation Integration" }
+            { label: "Master Land Parcel", value: "~105 Acres Surrounded by Hills on 3 Sides" },
+            { label: "Natural Water Body", value: "25-Acre Natural Lake & Lakeside Promenade" },
+            { label: "Central Arterial Avenue", value: "18-Metre Wide Paved Tree-Lined Road" },
+            { label: "Title & Documentation", value: "Individual 7/12 Extract per Plot, Clear NA Title" },
+            { label: "Project Promoter", value: "Manjri Horse Breeders' Farm Pvt. Ltd. (Shapoorji Pallonji)" },
+            { label: "MahaRERA Registration", value: "PP1261012501803 (maharera.maharashtra.gov.in)" },
+            { label: "Financing & Security", value: "Mortgage NOC Available from Beacon Trusteeship Ltd." },
+            { label: "Official Brochure", value: "/documents/treetopia-brochure.pdf" }
         ],
         wikidataUri: "https://www.wikidata.org/wiki/Q13117562", // Purandar
-        lastDataAudit: "2026-03-13",
-        reraProjectUrl: "https://maharerait.mahaonline.gov.in/PrintPreview/PrintPreview?q=treetopia_mock",
+        lastDataAudit: "2026-10-12",
+        reraProjectUrl: "https://maharera.maharashtra.gov.in/",
         personaTags: ['Investor', 'Luxury', 'AviationInvestor'],
         answerGraph: [
             { 
-                question: "Is plotting better than apartments for long-term ROI?", 
-                answer: "NA Plotted developments like Treetopia offer higher land-to-asset value and faster appreciation compared to vertical apartments as land availability in Pune decreases.", 
+                question: "What is the starting price of plots at Shapoorji Pallonji Treetopia?", 
+                answer: "Plots at Shapoorji Pallonji Treetopia start at ₹99 Lakhs* onwards for Regal Plots (1,800 - 2,500 sq. ft.) and up to ₹1.84 Cr for Grand Estate Plots (3,000 - 5,000+ sq. ft.).", 
                 personaImpact: "Investor" 
             },
-            {
-                question: "How does the Purandar Airport impact Treetopia?",
-                answer: "Being just 10 minutes from the proposed aviation hub, Treetopia is at the epicenter of a massive infrastructure catalyst, similar to the growth seen around Navi Mumbai airport.",
+            { 
+                question: "What is the MahaRERA registration number for Treetopia?", 
+                answer: "Shapoorji Pallonji Treetopia is registered under MahaRERA with registration number PP1261012501803, verifiable on maharera.maharashtra.gov.in.", 
+                personaImpact: "Investor" 
+            },
+            { 
+                question: "How does the proposed Purandar Airport impact Treetopia?", 
+                answer: "Located just 10 minutes from the proposed Purandar International Airport, Treetopia is situated at the primary infrastructure catalyst of Southern Pune, offering exponential capital land appreciation.", 
                 personaImpact: "AviationInvestor"
             },
-            {
-                question: "Can I build a custom villa at Treetopia?",
-                answer: "Yes, Treetopia provides clear-title NA plots within a secure gated community, allowing you the architectural freedom to build your dream regal home.",
+            { 
+                question: "What documentation is provided with plots at Treetopia?", 
+                answer: "Treetopia provides 100% clear freehold title with individual 7/12 extract documentation for each plot, ensuring secure and transparent land ownership.", 
                 personaImpact: "Luxury"
             },
-            {
-                question: "What is the 'Biophilic' focus of this project?",
-                answer: "Treetopia integrates Miyawaki forests and native landscaping into the layout, ensuring that your land investment is also an investment in a healthy, green future.",
-                personaImpact: "Investor"
+            { 
+                question: "What are the unique amenities at Treetopia?", 
+                answer: "Treetopia spans ~105 acres around a 25-acre natural lake, featuring an 18-metre paved central avenue, grand nature clubhouse, swimming pools, hiking trails, riding arena, and an ancient preserved temple.", 
+                personaImpact: "Investor" 
             }
         ],
         comparisonMatrix: [

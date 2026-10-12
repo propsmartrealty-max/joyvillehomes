@@ -29,9 +29,12 @@ export const SEO_ROUTES = [
     {
         slug: 'na-bungalow-plots-near-purandar-airport',
         title: 'NA Bungalow Plots Near Purandar Airport — Shapoorji Treetopia Pune',
-        description: 'Invest in RERA approved NA Bungalow Plots near the upcoming Purandar Airport in Pune. Shapoorji Pallonji Treetopia plots from ₹84 Lakhs. Gated community with biophilic landscapes.',
+        description: 'Official Shapoorji Pallonji Treetopia NA villa plots near proposed Purandar Airport, Pune. ~105-acre estate, 25-acre lake, clear 7/12 title from ₹99 Lakhs. MahaRERA approved.',
         h1: 'Premium NA Bungalow Plots Near Upcoming Purandar Airport',
-        keywords: [...KEYWORD_MATRIX.MACRO_PUNE.slice(10, 20), 'NA bungalow plots Pune', 'plots near Purandar Airport', 'Shapoorji Treetopia price', 'villa plots Pune'],
+        keywords: [
+            ...KEYWORD_MATRIX.PROJECT_EXPANSIONS.TREETOPIA.slice(0, 15),
+            'NA bungalow plots Pune', 'plots near Purandar Airport', 'Shapoorji Treetopia price', 'villa plots Pune', 'Jadhavwadi plots', 'Saswad Road plots for sale'
+        ],
         filters: { locationMatch: 'Jadhavwadi|Purandar', typeMatch: 'Plots' }
     },
 
@@ -500,10 +503,13 @@ export const SEO_ROUTES = [
     },
     {
         slug: 'shapoorji-treetopia-plots-price-list',
-        title: 'Shapoorji Treetopia NA Plots — Price List & Master Plan | Purandar Pune',
-        description: 'Official Treetopia NA bungalow plot price list. Gated plotted development near Purandar Airport by Shapoorji Pallonji. Starting ₹84 Lakhs. View master plan.',
+        title: 'Shapoorji Treetopia NA Plots — Price List & Master Plan 2026 | Purandar Pune',
+        description: 'Official Shapoorji Pallonji Treetopia NA villa plot price list 2026. ~105-acre master estate near Purandar Airport. Regal & Grand plots starting ₹99 Lakhs*. Download cost sheet.',
         h1: 'Shapoorji Treetopia Plots — Pricing & Master Plan',
-        keywords: ['Treetopia plots price', 'Shapoorji Treetopia cost', 'NA plots Purandar price list', 'Treetopia master plan', 'bungalow plots Pune price'],
+        keywords: [
+            ...KEYWORD_MATRIX.PROJECT_EXPANSIONS.TREETOPIA.slice(0, 20),
+            'Treetopia plots price', 'Shapoorji Treetopia cost', 'NA plots Purandar price list', 'Treetopia master plan', 'bungalow plots Pune price', 'Treetopia 99 lakhs price'
+        ],
         filters: { locationMatch: 'Jadhavwadi|Purandar', typeMatch: 'Plots' }
     },
     {

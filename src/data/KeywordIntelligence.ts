@@ -85,18 +85,23 @@ const MODIFIERS = {
 // Plot-specific modifiers for Treetopia
 const PLOT_MODIFIERS = {
     TRANSACTIONAL: [
-        "Price", "Price List", "Cost", "Offers", "Launch Offers", "Booking", "Site Visit", 
+        "Price", "Price List", "Starting Price", "Cost", "Offers", "Launch Offers", "Booking", "Site Visit", 
         "Brochure", "Brochure PDF", "Layout Plan", "Site Plan", "Master Plan", "Payment Plan", 
-        "Contact Number", "RERA", "Reviews", "Possession Date"
+        "Contact Number", "RERA", "Reviews", "Possession Date", "Cost Sheet", "All Inclusive Price"
     ],
     PROPERTY_TYPE: [
         "NA Plot", "Premium NA Plot", "Luxury NA Plot", "Residential NA Plot", 
         "Clear Title NA Plot", "RERA Approved Plot", "Gated Plot", "Investment Plot",
-        "Villa Plot", "Luxury Villa Plot", "Bungalow Plot", "Custom Home Plot", "Estate Plot"
+        "Villa Plot", "Luxury Villa Plot", "Bungalow Plot", "Custom Home Plot", "Estate Plot",
+        "Regal Plot", "Grand Plot", "Lakefront Plot", "Clear Title 7/12 Land"
     ],
     SIZES: [
         "1800 sq ft Plot", "2000 sq ft Plot", "2200 sq ft Plot", "2500 sq ft Plot", 
-        "3000 sq ft Plot", "4000 sq ft Plot", "5000 sq ft Plot", "Large Plot", "Corner Plot"
+        "3000 sq ft Plot", "4000 sq ft Plot", "5000 sq ft Plot", "1800 to 5000 sq ft", "Large Plot", "Corner Plot"
+    ],
+    LOCATION_CATALYSTS: [
+        "Near Purandar Airport", "Saswad Road", "Jadhavwadi", "Pune Growth Corridor", 
+        "Near Jadhavgadh Fort", "Near SP Infocity", "Ring Road Connectivity", "Purandar Taluka"
     ]
 };
 
@@ -144,7 +149,10 @@ const PROJECT_SEEDS = {
     TREETOPIA: [
         "Shapoorji Treetopia", "Treetopia Pune", "Shapoorji Pallonji Treetopia",
         "Treetopia by Shapoorji Pallonji", "Treetopia Plots", "Treetopia Jadhavwadi",
-        "Treetopia Saswad", "Treetopia Purandar"
+        "Treetopia Saswad", "Treetopia Purandar", "Treetopia Pune Growth Corridor",
+        "SP Kingstown Treetopia", "SP Treetopia", "Treetopia Plotted Development",
+        "Treetopia Villa Plots", "Shapoorji Pallonji Treetopia Pune", "Treetopia Purandar Airport",
+        "Shapoorji Treetopia Plots", "Shapoorji Plots Pune", "Shapoorji Pallonji Plots Pune"
     ]
 };
 
@@ -184,6 +192,11 @@ export const generateEnterpriseKeywords = (projectId: keyof typeof PROJECT_SEEDS
             PLOT_MODIFIERS.SIZES.forEach(s => {
                 generated.add(`${seed} ${s}`);
                 generated.add(`${seed} ${s} Price`);
+            });
+            // Seed + Location Catalysts
+            PLOT_MODIFIERS.LOCATION_CATALYSTS.forEach(loc => {
+                generated.add(`${seed} ${loc}`);
+                generated.add(`${seed} ${loc} Price`);
             });
         } else if (!isPlot && MODIFIERS.AUDIENCE) {
             // Seed + Audience (e.g., "Vanaha For IT Professionals")

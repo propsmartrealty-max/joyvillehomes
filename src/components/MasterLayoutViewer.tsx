@@ -19,7 +19,8 @@ import {
     Dumbbell, 
     Waves, 
     Car,
-    Sparkles
+    Sparkles,
+    Landmark
 } from 'lucide-react';
 import QuickEnquireModal from './QuickEnquireModal';
 
@@ -43,12 +44,27 @@ const ZONING_POINTS = [
     { id: '10', title: 'Covered & Visitor Parking', desc: 'Basement + podium ventilated vehicle parking bays', icon: Car },
 ];
 
+const TREETOPIA_ZONING_POINTS = [
+    { id: '1', title: 'Regal Villa Plots', desc: '1,800 - 2,500 sq. ft. clear title NA plots with individual 7/12 extract', icon: Building2 },
+    { id: '2', title: 'Grand Estate Plots', desc: '3,000 - 5,000+ sq. ft. signature plots overlooking the 25-acre lake', icon: Sparkles },
+    { id: '3', title: '25-Acre Natural Lake', desc: 'Central water body with eco-pond, fountain & water ghats', icon: Waves },
+    { id: '4', title: '18m Tree-Lined Central Avenue', desc: 'Paved arterial roadway with underground power & fiber optic lines', icon: Compass },
+    { id: '5', title: 'Grand Social Clubhouse', desc: 'Multi-level recreational hub with swimming pool, gym & billiards', icon: Layers },
+    { id: '6', title: 'Multi-Sport & Riding Arenas', desc: 'Tennis courts, play courts & equestrian riding area and trail', icon: Dumbbell },
+    { id: '7', title: 'Lakeside Promenade & Decks', desc: 'Scenic viewing decks, fishing deck, and continuous water walkway', icon: Waves },
+    { id: '8', title: 'Grand Ceremonial Entrance', desc: 'RFID boom barriers, security check-in, and boundary walls', icon: ShieldCheck },
+    { id: '9', title: 'Ancient Preserved Temple', desc: 'Heritage temple sanctum within the natural terrain', icon: Landmark },
+    { id: '10', title: 'Hiking & Canopy Trails', desc: 'Native dense canopy trails, lemongrass groves & banyan trees', icon: Trees },
+];
+
 export default function MasterLayoutViewer({ 
     masterLayoutUrl, 
     projectName, 
     location,
     reraNumber 
 }: MasterLayoutViewerProps) {
+    const isTreetopia = projectName.toLowerCase().includes('treetopia');
+    const zoningPoints = isTreetopia ? TREETOPIA_ZONING_POINTS : ZONING_POINTS;
     const [isLightboxOpen, setIsLightboxOpen] = useState(false);
     const [zoomLevel, setZoomLevel] = useState(1);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -76,10 +92,13 @@ export default function MasterLayoutViewer({
                     </div>
                     <div>
                         <div className="text-[11px] font-bold tracking-[0.15em] uppercase text-[#1D4F9C]">
-                            Macro Estate Development Plan
+                            {isTreetopia ? 'Macro 105-Acre Estate Development Plan' : 'Macro Estate Development Plan'}
                         </div>
                         <p className="text-xs text-[#323334] font-light mt-0.5 max-w-2xl">
-                            The Master Layout visualizes overall land zoning, tower placements, access roads, and recreational spaces. Looking for room dimensions and apartment blueprints? Explore the <strong className="font-semibold text-[#1D4F9C]">Floor Plans</strong> section below.
+                            {isTreetopia 
+                                ? 'The Master Layout visualizes the 105-acre estate land zoning, 25-acre natural lake, central avenue, and villa plot sectors. Looking for individual plot dimensions and typology blueprints? Explore the Plot Layouts section below.'
+                                : 'The Master Layout visualizes overall land zoning, tower placements, access roads, and recreational spaces. Looking for room dimensions and apartment blueprints? Explore the Floor Plans section below.'
+                            }
                         </p>
                     </div>
                 </div>
@@ -87,7 +106,7 @@ export default function MasterLayoutViewer({
                     onClick={scrollToFloorPlans}
                     className="shrink-0 flex items-center gap-1.5 px-3 py-2 bg-white border border-[#1D4F9C]/30 text-[#1D4F9C] hover:bg-[#1D4F9C] hover:text-white rounded-sm text-[10px] tracking-widest uppercase font-bold transition-all shadow-sm"
                 >
-                    Jump to Floor Plans <ArrowDownCircle size={13} />
+                    {isTreetopia ? 'Jump to Plot Layouts' : 'Jump to Floor Plans'} <ArrowDownCircle size={13} />
                 </button>
             </div>
 
@@ -151,7 +170,7 @@ export default function MasterLayoutViewer({
                 </div>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 pt-6">
-                    {ZONING_POINTS.map((zone) => {
+                    {zoningPoints.map((zone) => {
                         const Icon = zone.icon;
                         const isSelected = activeZone === zone.id;
                         return (
@@ -272,7 +291,12 @@ export default function MasterLayoutViewer({
 
                     {/* Lightbox Footer */}
                     <div className="h-12 px-6 border-t border-white/10 flex items-center justify-between text-xs text-white/70 shrink-0">
-                        <span>Tip: Use zoom controls above or scroll to inspect tower footprints and zoning keys.</span>
+                        <span>
+                            {isTreetopia 
+                                ? 'Tip: Use zoom controls above or scroll to inspect estate sectors and natural lake features.' 
+                                : 'Tip: Use zoom controls above or scroll to inspect tower footprints and zoning keys.'
+                            }
+                        </span>
                         <button
                             onClick={() => {
                                 setIsLightboxOpen(false);
@@ -280,7 +304,7 @@ export default function MasterLayoutViewer({
                             }}
                             className="text-[#C5A059] hover:underline uppercase text-[10px] tracking-wider font-semibold"
                         >
-                            Switch to Unit Floor Plans →
+                            {isTreetopia ? 'Switch to Plot Typologies →' : 'Switch to Unit Floor Plans →'}
                         </button>
                     </div>
                 </div>
