@@ -725,7 +725,7 @@ export const projects: Project[] = [
                 intelligence: { roi: "7.2%", rentalYield: "4.5%", appreciation: "12% YoY" }
             }
         ],
-        masterLayout: "/images/desktop-poster.webp",
+        masterLayout: "/images/projects/sensorium/master-layout.jpg",
         gallery: [
             "/images/desktop-poster.webp",
             "/images/desktop-poster.webp",
@@ -1028,7 +1028,7 @@ export const projects: Project[] = [
                 intelligence: { roi: "7.5%", rentalYield: "4.5%", appreciation: "12% YoY" }
             }
         ],
-        masterLayout: "/images/desktop-poster.webp",
+        masterLayout: "/images/projects/hadapsar/master-layout.png",
         gallery: [
             "/images/desktop-poster.webp",
             "/images/desktop-poster.webp",
@@ -1258,7 +1258,7 @@ export const projects: Project[] = [
                 intelligence: { roi: "7.5%", rentalYield: "4.0%", appreciation: "14% YoY" }
             }
         ],
-        masterLayout: "/images/desktop-poster.webp",
+        masterLayout: "/images/projects/hadapsar/master-layout.png",
         gallery: [
             "/images/desktop-poster.webp",
             "/images/desktop-poster.webp"
@@ -1465,7 +1465,7 @@ export const projects: Project[] = [
             { type: "3 BHK Skyluxe", carpetArea: "1,250 sq. ft." },
             { type: "3 BHK Penthouse", carpetArea: "1,850 sq. ft." }
         ],
-        masterLayout: "/images/desktop-poster.webp",
+        masterLayout: "/images/projects/hadapsar/master-layout.png",
         gallery: [
             "/images/desktop-poster.webp",
             "/images/desktop-poster.webp",
@@ -2311,7 +2311,7 @@ export const projects: Project[] = [
         type: "Residential Township",
         status: "Available",
         reraNumber: ["P52100028031", "P52100028082", "P52100028033"],
-        image: "/images/dl_vanaha-pune.jpg",
+        image: "/images/projects/vanaha/desktop_banner.jpg",
         highlights: [
             "Massive Integrated Township ROI",
             "Surrounded by Hills (Biophilic Authority)",
@@ -2348,17 +2348,55 @@ export const projects: Project[] = [
         ],
         floorPlans: [
             { 
-                type: "Standard Layouts", 
-                carpetArea: "Available on request",
-                intelligence: { roi: "8.5%", rentalYield: "5.0%", appreciation: "11% YoY" }
+                type: "1 BHK Nature Haven", 
+                carpetArea: "444 Sq. Ft. (41.24 Sq.M.)",
+                price: "₹73 Lakhs* Onwards",
+                image: "/images/projects/vanaha/floorplan_1bhk.jpg",
+                intelligence: { roi: "8.5%", rentalYield: "5.2%", appreciation: "11% YoY" }
+            },
+            { 
+                type: "2 BHK Valley Vista", 
+                carpetArea: "650 - 720 Sq. Ft.",
+                price: "₹92 Lakhs* Onwards",
+                image: "/images/projects/vanaha/floorplan_2bhk.jpg",
+                intelligence: { roi: "8.8%", rentalYield: "5.4%", appreciation: "12% YoY" }
+            },
+            { 
+                type: "3 BHK Hillside Classic", 
+                carpetArea: "850 - 909 Sq. Ft.",
+                price: "₹1.18 Cr* Onwards",
+                image: "/images/projects/vanaha/floorplan_3bhk.jpg",
+                intelligence: { roi: "8.2%", rentalYield: "4.8%", appreciation: "13% YoY" }
+            },
+            { 
+                type: "3 BHK Grande Residence", 
+                carpetArea: "1,020 Sq. Ft.",
+                price: "₹1.35 Cr* Onwards",
+                image: "/images/projects/vanaha/floorplan_3bhk_grande.jpg",
+                intelligence: { roi: "8.0%", rentalYield: "4.6%", appreciation: "13% YoY" }
+            },
+            { 
+                type: "4 BHK Forest Penthouse", 
+                carpetArea: "1,350 - 1,450 Sq. Ft.",
+                price: "₹1.85 Cr* Onwards",
+                image: "/images/projects/vanaha/floorplan_4bhk.jpg",
+                intelligence: { roi: "7.8%", rentalYield: "4.2%", appreciation: "14% YoY" }
             }
         ],
-        masterLayout: "/images/dl_vanaha-pune.jpg",
+        masterLayout: "/images/projects/vanaha/desktop_banner.jpg",
         gallery: [
-            "/images/dl_vanaha-pune.jpg"
+            "/images/projects/vanaha/desktop_banner.jpg",
+            "/images/projects/vanaha/gallery_1.webp",
+            "/images/projects/vanaha/gallery_2.webp",
+            "/images/projects/vanaha/gallery_4.webp",
+            "/images/projects/vanaha/gallery_9.webp"
         ],
         galleryItems: [
-            { url: "/images/dl_vanaha-pune.jpg", caption: "Vanaha Integrated Township Pune", alt: "Vanaha Bavdhan Self-Sustaining Ecosystem", category: "Masterplan" }
+            { url: "/images/projects/vanaha/desktop_banner.jpg", caption: "Vanaha 1000-Acre Master Township Valley", alt: "Vanaha Bavdhan Integrated Township Pune", category: "Masterplan" },
+            { url: "/images/projects/vanaha/gallery_1.webp", caption: "Vanaha Grand Nature Clubhouse", alt: "Vanaha Clubhouse Bavdhan", category: "Amenities" },
+            { url: "/images/projects/vanaha/gallery_2.webp", caption: "Scenic Valley Viewing Deck", alt: "Vanaha Viewing Deck Bavdhan", category: "Landscape" },
+            { url: "/images/projects/vanaha/gallery_4.webp", caption: "Resort-Style Hillside Pool Deck", alt: "Vanaha Pool Deck Bavdhan Pune", category: "Amenities" },
+            { url: "/images/projects/vanaha/gallery_9.webp", caption: "Spacious Living Room Overlooking Hills", alt: "Vanaha Living Room Bavdhan", category: "Interiors" }
         ],
         locationDetails: {
             iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5!2d73.7!3d18.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb!2sVanaha%20Bavdhan!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin",
@@ -2714,7 +2752,431 @@ export const projects: Project[] = [
             { category: 'Construction', positiveScore: 9.3, summary: "NA plots allow for high-quality custom villa developments." }
         ]
     },
-
+    {
+        id: "p10",
+        slug: "tree-clouds-sp-kingstown-pune",
+        title: "Tree Clouds at SP Kingstown",
+        location: "SP Kingstown, Shewalewadi Road, Hadapsar, Pune",
+        price: "Starting ₹1.53 Cr*",
+        type: "Residential Apartments",
+        status: "Under Construction",
+        reraNumber: ["P52100052683", "P52100053177", "P52100053966"],
+        image: "/images/projects/tree-clouds/desktop_banner.webp",
+        highlights: [
+            "Part of 200-Acre SP Kingstown Master Township",
+            "3 & 4 Bed Cloud Residences (1,157 – 1,917 Sq. Ft.)",
+            "Mivan Monolithic Concrete Technology",
+            "Panoramic Canopy Views & Cloud Terraces",
+            "10 Mins from Magarpatta IT City & SP Infocity",
+            "100% Vastu Compliant Architecture"
+        ],
+        description: "Experience elevated vertical living at Tree Clouds at SP Kingstown by Shapoorji Pallonji. Nestled within the expansive 200-acre master township in Hadapsar-Shewalewadi along the Pune-Solapur Highway, Tree Clouds offers thoughtfully designed 3 & 4 BHK residences starting at ₹1.53 Cr*, featuring landscaped sky decks, nature clubhouses, and institutional Shapoorji construction quality.",
+        overview: [
+            "Tree Clouds represents the contemporary vertical tier of the landmark SP Kingstown township in Hadapsar, Pune.",
+            "Featuring large-format 3 and 4 bedroom residences with carpet areas spanning 1,157 to 1,917 sq. ft., designed to maximize natural airflow and expansive tree-canopy views.",
+            "Strategically positioned just 10 minutes from Magarpatta IT City, SP Infocity, and Amanora Mall, providing unmatched connectivity for IT leadership and business executives."
+        ],
+        featuredAmenities: [
+            "Sky Cloud Terraces",
+            "Grand Multi-Level Clubhouse",
+            "Infinity Lap Pool & Kids Pool",
+            "Preserved Green Canopies",
+            "Co-Working Garden Pods",
+            "Acoustic Mini Theatre",
+            "Children's Sensory Playground",
+            "24/7 Monitored 5-Tier Security"
+        ],
+        amenities: [
+            {
+                category: "Health & Wellness",
+                items: [
+                    "Infinity Lap Pool with Sun Decks",
+                    "State-of-the-art Fitness Centre & Gym",
+                    "Aerobics & Yoga Meditation Pavilion",
+                    "Jogging & Cycling Boardwalk",
+                    "Acupressure Walkway"
+                ]
+            },
+            {
+                category: "Leisure & Nature",
+                items: [
+                    "Tree Cloud Sky Viewing Decks",
+                    "Centuries-Old Mango Orchard Sanctuary Access",
+                    "Botanical Fragrance Gardens",
+                    "Reflexology Park & Gazebos",
+                    "Barbeque Lawn & Alfresco Dining Zones"
+                ]
+            },
+            {
+                category: "Community & Smart Living",
+                items: [
+                    "Grand Double-Height Entrance Lobby",
+                    "Alfresco Co-Working Cabanas with High-Speed Wi-Fi",
+                    "Private Screening Theatre",
+                    "Multipurpose Banquet Hall",
+                    "EV Charging Bays & Biometric Access"
+                ]
+            }
+        ],
+        specifications: [
+            {
+                category: "Structure & Walls",
+                items: [
+                    "Monolithic Mivan Aluform RCC Shear Wall Structure",
+                    "Seismic Zone III Compliant Earthquake-Resistant Design",
+                    "Low VOC Acrylic Emulsion Paint Finishes"
+                ]
+            },
+            {
+                category: "Flooring & Finishes",
+                items: [
+                    "Large Format Vitrified Tiles in Living, Dining & Bedrooms",
+                    "Anti-skid Ceramic Tiles on Balconies & Utility Areas",
+                    "Granite Platform with Stainless Steel Sink in Kitchen"
+                ]
+            },
+            {
+                category: "Doors & Windows",
+                items: [
+                    "Engineered Wooden Doors with Heavy-Duty Hardware",
+                    "Powder-Coated Aluminum Sliding Windows with Bug Screen",
+                    "Granite Sill for all Window Openings"
+                ]
+            },
+            {
+                category: "Electrical & Plumbing",
+                items: [
+                    "Concealed Copper Wiring with Modular Switches (Schneider/Legrand)",
+                    "Provision for Split AC in Living and All Bedrooms",
+                    "Kohler / Jaquar Branded CP and Sanitary Fittings"
+                ]
+            }
+        ],
+        technicalSpecs: [
+            { label: "Floor-to-Floor Height", value: "3.00 Metres (10 Feet Clear)" },
+            { label: "Structure", value: "Mivan Monolithic Reinforced Concrete" },
+            { label: "Elevators", value: "High-Speed Passenger & Stretcher Lifts (Schindler / OTIS)" },
+            { label: "Township Scale", value: "200-Acre Master Township (SP Kingstown)" },
+            { label: "Official Brochure", value: "/documents/tree-clouds-brochure.pdf" }
+        ],
+        floorPlans: [
+            { 
+                type: "3 BHK Comfort", 
+                carpetArea: "1,157 Sq. Ft. (107.49 Sq.M.)",
+                price: "₹1.53 Cr* Onwards",
+                image: "/images/projects/tree-clouds/floorplan_1.webp",
+                intelligence: { roi: "8.4%", rentalYield: "5.1%", appreciation: "12% YoY" }
+            },
+            { 
+                type: "3 BHK Luxury", 
+                carpetArea: "1,350 Sq. Ft. (125.42 Sq.M.)",
+                price: "₹1.75 Cr* Onwards",
+                image: "/images/projects/tree-clouds/floorplan_2.webp",
+                intelligence: { roi: "8.2%", rentalYield: "4.9%", appreciation: "13% YoY" }
+            },
+            { 
+                type: "3 BHK Grande", 
+                carpetArea: "1,520 Sq. Ft. (141.21 Sq.M.)",
+                price: "₹1.95 Cr* Onwards",
+                image: "/images/projects/tree-clouds/floorplan_3.webp",
+                intelligence: { roi: "8.0%", rentalYield: "4.7%", appreciation: "13% YoY" }
+            },
+            { 
+                type: "4 BHK Sky Residence", 
+                carpetArea: "1,855 Sq. Ft. (172.33 Sq.M.)",
+                price: "₹2.30 Cr* Onwards",
+                image: "/images/projects/tree-clouds/floorplan_4.webp",
+                intelligence: { roi: "7.8%", rentalYield: "4.5%", appreciation: "14% YoY" }
+            },
+            { 
+                type: "4 BHK Signature", 
+                carpetArea: "1,917 Sq. Ft. (178.09 Sq.M.)",
+                price: "₹2.45 Cr* Onwards",
+                image: "/images/projects/tree-clouds/floorplan_5.webp",
+                intelligence: { roi: "7.6%", rentalYield: "4.4%", appreciation: "14% YoY" }
+            }
+        ],
+        masterLayout: "/images/projects/tree-clouds/master-layout.webp",
+        gallery: [
+            "/images/projects/tree-clouds/desktop_banner.webp",
+            "/images/projects/tree-clouds/gallery_1.webp",
+            "/images/projects/tree-clouds/gallery_2.webp",
+            "/images/projects/tree-clouds/gallery_3.webp",
+            "/images/projects/tree-clouds/gallery_4.webp",
+            "/images/projects/tree-clouds/gallery_5.webp"
+        ],
+        galleryItems: [
+            { url: "/images/projects/tree-clouds/desktop_banner.webp", caption: "Tree Clouds Tower Architecture & Cloud Terraces", alt: "Tree Clouds at SP Kingstown Hadapsar Pune", category: "Exterior" },
+            { url: "/images/projects/tree-clouds/gallery_1.webp", caption: "Grand Double-Height Entrance Lobby", alt: "Tree Clouds Entrance Lobby SP Kingstown", category: "Interior" },
+            { url: "/images/projects/tree-clouds/gallery_2.webp", caption: "Resort-Style Swimming Pool & Sun Deck", alt: "Tree Clouds Swimming Pool Hadapsar", category: "Amenities" },
+            { url: "/images/projects/tree-clouds/gallery_3.webp", caption: "Lush Green Landscaped Gardens & Canopies", alt: "Tree Clouds Landscaped Greens Shewalewadi", category: "Landscape" },
+            { url: "/images/projects/tree-clouds/gallery_4.webp", caption: "Modern Gymnasium & Fitness Hub", alt: "Tree Clouds Fitness Centre Pune East", category: "Amenities" },
+            { url: "/images/projects/tree-clouds/gallery_5.webp", caption: "Co-Working Pavilions & Outdoor Work Pods", alt: "Tree Clouds Work From Home Pods", category: "Community" }
+        ],
+        locationDetails: {
+            iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5042!2d73.9712!3d18.5030!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1c!2sSP%20Kingstown!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin",
+            landmarks: [
+                { name: "Magarpatta IT City", distance: "6.0 km", wikidataUri: "https://www.wikidata.org/wiki/Q2712282" },
+                { name: "SP Infocity IT Park", distance: "4.2 km", wikidataUri: "https://www.wikidata.org/wiki/Q7392233" },
+                { name: "Seasons Mall", distance: "6.2 km", wikidataUri: "https://www.wikidata.org/wiki/Q4739891" },
+                { name: "EON IT Park & WTC Kharadi", distance: "10.9 km" },
+                { name: "Noble Hospital", distance: "4.7 km" },
+                { name: "Pune International Airport", distance: "12.2 km", wikidataUri: "https://www.wikidata.org/wiki/Q1432497" }
+            ]
+        },
+        infrastructureScores: {
+            metro: 8.4,
+            ringRoad: 9.3,
+            itHub: 8.8
+        },
+        constructionUpdate: {
+            percentage: 30,
+            statusText: "Podium slab and tower structural columns progressing rapidly on schedule.",
+            lastUpdated: "October 2026"
+        },
+        expertReview: {
+            rating: 4.8,
+            summary: "Tree Clouds delivers high-value entry into the SP Kingstown 200-acre master township at ₹1.53 Cr* with Shapoorji's hallmark engineering excellence.",
+            pros: [
+                "Attractive ₹1.53 Cr* entry price for 3 BHK in 200-acre township",
+                "Mivan monolithic construction quality",
+                "Minutes from Magarpatta City and SP Infocity IT parks"
+            ],
+            ratings: {
+                connectivity: 4.8,
+                amenities: 4.8,
+                valueForMoney: 4.9,
+                constructionQuality: 4.9
+            }
+        },
+        latitude: 18.5030,
+        longitude: 73.9712,
+        seoKeywords: [
+            "Tree Clouds at SP Kingstown",
+            "Tree Clouds Hadapsar Pune",
+            "Tree Clouds Shapoorji Pallonji",
+            "3 BHK flats in SP Kingstown",
+            "4 BHK flats in Hadapsar Annexe",
+            "Tree Clouds floor plan price",
+            "Shapoorji Pallonji Pune East"
+        ],
+        faqs: [
+            {
+                question: "What is the starting price of Tree Clouds at SP Kingstown?",
+                answer: "The starting price of Tree Clouds at SP Kingstown is ₹1.53 Cr* for premium 3 BHK residences spanning 1,157 sq. ft."
+            },
+            {
+                question: "Where is Tree Clouds located in Pune?",
+                answer: "Tree Clouds is located inside the 200-acre SP Kingstown master township on Shewalewadi Road, Hadapsar Annexe, Pune, minutes from Magarpatta and SP Infocity."
+            },
+            {
+                question: "What configurations are available at Tree Clouds?",
+                answer: "Tree Clouds offers spacious 3 BHK and 4 BHK luxury residences with carpet areas from 1,157 to 1,917 sq. ft."
+            }
+        ],
+        topicID: ["sp-kingstown-township", "hadapsar-east-corridor", "pune-investment-guide", "nri-investment"]
+    },
+    {
+        id: "p11",
+        slug: "the-vastion-sp-kingstown-pune",
+        title: "The Vastion at SP Kingstown",
+        location: "SP Kingstown, Shewalewadi Road, Hadapsar, Pune",
+        price: "Starting ₹4.70 Cr*",
+        type: "Ultra-Luxury Villas & Villaments",
+        status: "Under Construction",
+        reraNumber: ["P52100053978", "P52100053927", "P52100053977"],
+        image: "/images/projects/the-vastion/desktop_banner.webp",
+        highlights: [
+            "Ultra-Exclusive Enclave in 200-Acre SP Kingstown",
+            "Palatial 4 & 5 BHK Villas & Villaments (3,812 – 5,628 Sq. Ft.)",
+            "Private Terraces & Rooftop Plunge Pools",
+            "Italian Marble & Bespoke Double-Height Living Suites",
+            "Private Elevator Access & Butler Quarters",
+            "Centuries-Old Mango Orchard Sanctuary Views"
+        ],
+        description: "The Vastion at SP Kingstown by Shapoorji Pallonji is East Pune's most distinguished residential address. Featuring palatial limited-edition 4 & 5 BHK luxury villaments and estate villas ranging from 3,812 to 5,628 sq. ft. starting at ₹4.70 Cr*, The Vastion introduces private swimming pools, rooftop sky lounges, Italian marble master suites, and institutional concierge service within a 200-acre gated sanctuary.",
+        overview: [
+            "The Vastion represents the pinnacle of luxury in Pune East, crafted exclusively for industrialists, CXOs, and global NRI investors.",
+            "Featuring expansive duplex villaments and standalone villas with private elevators, expansive sun terraces, and custom infinity plunge pools.",
+            "Set within SP Kingstown amidst ancient preserved mango groves, offering complete privacy, multi-tier security, and immediate access to Pune's leading business districts."
+        ],
+        featuredAmenities: [
+            "Private Rooftop Villa Pools",
+            "Private High-Speed Elevators",
+            "Dedicated Butler & Concierge Desk",
+            "Cigar & Fine Wine Tasting Lounge",
+            "Grand ~50,000 Sq. Ft. Club Palladium",
+            "Private Landscaped Sun Decks",
+            "Bespoke Italian Marble Interiors",
+            "Gated Biometric Security Enclave"
+        ],
+        amenities: [
+            {
+                category: "Bespoke Luxury & Wellness",
+                items: [
+                    "Private Villa Rooftop Plunge Pools",
+                    "Temperature-Controlled All-Weather Infinity Pool",
+                    "Wellness Spa & Hydrotherapy Sanctuary",
+                    "Private Zen Meditation Pavilions",
+                    "Personal Gym & Yoga Studio Provisions"
+                ]
+            },
+            {
+                category: "Estate Grounds & Nature",
+                items: [
+                    "Direct Access to Preserved 100+ Mature Mango Tree Orchard",
+                    "Canopied Private Walking Trails",
+                    "Reflexology Botanical Gardens",
+                    "Sculpted Water Cascades & Fountains",
+                    "Alfresco Private Barbeque Terraces"
+                ]
+            },
+            {
+                category: "Elite Hospitality & Convenience",
+                items: [
+                    "24/7 White-Glove Concierge & Valet Service",
+                    "Private Screening Mini Theatre",
+                    "Bespoke Business & Meeting Suites",
+                    "Dedicated Staff & Chauffeur Quarters",
+                    "Multi-Vehicle Covered Car Garages with EV Chargers"
+                ]
+            }
+        ],
+        specifications: [
+            {
+                category: "Flooring & Finishes",
+                items: [
+                    "Imported Italian Botticino/Dyna Marble in Living, Dining & Master Suites",
+                    "Hardwood Wooden Flooring in Master Bedroom Walk-In Closets",
+                    "Designer Antiskid Tile Decking for Private Pools & Terraces"
+                ]
+            },
+            {
+                category: "Kitchen & Automation",
+                items: [
+                    "Designer Modular Kitchen with Built-in German Appliances (Miele / Bosch)",
+                    "Smart Home Automation for Lighting, HVAC & Curtain Controls",
+                    "Integrated Video Door Phone & Biometric Door Locks"
+                ]
+            },
+            {
+                category: "Sanitary & CP Ware",
+                items: [
+                    "Kohler Artist Editions / Grohe Faucets and Shower Panels",
+                    "Freestanding Designer Soaking Bathtubs in Master Ensuites",
+                    "Continuous Central Hot Water Heat Pump System"
+                ]
+            }
+        ],
+        technicalSpecs: [
+            { label: "Ceiling Height", value: "3.35 Metres (11 Feet Clear Height)" },
+            { label: "Enclave Typology", value: "Limited-Edition Villaments & Estate Villas" },
+            { label: "Private Pools", value: "Private Heated Rooftop Plunge Pools" },
+            { label: "Township Scale", value: "200-Acre SP Kingstown Township" },
+            { label: "Official Brochure", value: "/documents/the-vastion-brochure.pdf" }
+        ],
+        floorPlans: [
+            { 
+                type: "4 BHK Signature Villament (Lower Duplex)", 
+                carpetArea: "3,812 Sq. Ft. (354.15 Sq.M.)",
+                price: "₹4.70 Cr* Onwards",
+                image: "/images/projects/the-vastion/gallery_2.webp",
+                intelligence: { roi: "9.2%", rentalYield: "5.5%", appreciation: "15% YoY" }
+            },
+            { 
+                type: "4 BHK Sky Villament (Upper Duplex with Terrace)", 
+                carpetArea: "4,250 Sq. Ft. (394.84 Sq.M.)",
+                price: "₹5.25 Cr* Onwards",
+                image: "/images/projects/the-vastion/gallery_3.webp",
+                intelligence: { roi: "9.0%", rentalYield: "5.3%", appreciation: "15% YoY" }
+            },
+            { 
+                type: "5 BHK Palatial Estate Villa with Rooftop Pool", 
+                carpetArea: "5,628 Sq. Ft. (522.86 Sq.M.)",
+                price: "₹6.80 Cr* Onwards",
+                image: "/images/projects/the-vastion/gallery_5.webp",
+                intelligence: { roi: "8.8%", rentalYield: "5.0%", appreciation: "16% YoY" }
+            }
+        ],
+        masterLayout: "/images/projects/wildernest/master-layout.jpg",
+        gallery: [
+            "/images/projects/the-vastion/desktop_banner.webp",
+            "/images/projects/the-vastion/gallery_1.webp",
+            "/images/projects/the-vastion/gallery_2.webp",
+            "/images/projects/the-vastion/gallery_3.webp",
+            "/images/projects/the-vastion/gallery_4.webp",
+            "/images/projects/the-vastion/gallery_5.webp"
+        ],
+        galleryItems: [
+            { url: "/images/projects/the-vastion/desktop_banner.webp", caption: "The Vastion Architectural Villa Facade & Terraces", alt: "The Vastion Villaments SP Kingstown Hadapsar", category: "Exterior" },
+            { url: "/images/projects/the-vastion/gallery_1.webp", caption: "Private Rooftop Infinity Plunge Pool", alt: "The Vastion Private Pool Hadapsar", category: "Pool" },
+            { url: "/images/projects/the-vastion/gallery_2.webp", caption: "Double-Height Grand Living Room with Italian Marble", alt: "The Vastion Luxury Living Suite", category: "Interior" },
+            { url: "/images/projects/the-vastion/gallery_3.webp", caption: "Master Bedroom Suite with Panoramic Garden Balcony", alt: "The Vastion Master Suite Hadapsar", category: "Interior" },
+            { url: "/images/projects/the-vastion/gallery_4.webp", caption: "Gourmet Kitchen & Private Dining Alcove", alt: "The Vastion Kitchen Interior", category: "Interior" },
+            { url: "/images/projects/the-vastion/gallery_5.webp", caption: "Manicured Private Estate Lawns & Pavilion", alt: "The Vastion Private Gardens Pune", category: "Landscape" }
+        ],
+        locationDetails: {
+            iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5042!2d73.9712!3d18.5030!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1c!2sSP%20Kingstown!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin",
+            landmarks: [
+                { name: "Magarpatta IT City", distance: "6.0 km", wikidataUri: "https://www.wikidata.org/wiki/Q2712282" },
+                { name: "SP Infocity IT Park", distance: "4.2 km", wikidataUri: "https://www.wikidata.org/wiki/Q7392233" },
+                { name: "Seasons Mall", distance: "6.2 km", wikidataUri: "https://www.wikidata.org/wiki/Q4739891" },
+                { name: "EON IT Park & WTC Kharadi", distance: "10.9 km" },
+                { name: "Pune International Airport", distance: "12.2 km", wikidataUri: "https://www.wikidata.org/wiki/Q1432497" }
+            ]
+        },
+        infrastructureScores: {
+            metro: 8.5,
+            ringRoad: 9.4,
+            itHub: 9.0
+        },
+        constructionUpdate: {
+            percentage: 25,
+            statusText: "Villament foundation and structural super-frame under active development.",
+            lastUpdated: "October 2026"
+        },
+        expertReview: {
+            rating: 5.0,
+            summary: "The Vastion is East Pune's crowning luxury benchmark — offering true villa living with private pools in a 200-acre institutional township at ₹4.70 Cr*.",
+            pros: [
+                "Rare palatial 3,812 to 5,628 sq. ft. villament and villa configurations",
+                "Private plunge pools and personal elevators",
+                "Exclusive low-density enclave within 200-acre SP Kingstown"
+            ],
+            ratings: {
+                connectivity: 4.8,
+                amenities: 5.0,
+                valueForMoney: 4.8,
+                constructionQuality: 5.0
+            }
+        },
+        latitude: 18.5030,
+        longitude: 73.9712,
+        seoKeywords: [
+            "The Vastion at SP Kingstown",
+            "The Vastion Hadapsar Pune",
+            "The Vastion Shapoorji Pallonji",
+            "luxury villaments in Hadapsar",
+            "luxury villas in SP Kingstown Pune",
+            "The Vastion price list floor plan",
+            "4 BHK villas Pune East 4.70 Cr"
+        ],
+        faqs: [
+            {
+                question: "What is The Vastion at SP Kingstown?",
+                answer: "The Vastion is an ultra-exclusive collection of luxury villas and villaments within the 200-acre SP Kingstown township in Hadapsar, Pune by Shapoorji Pallonji."
+            },
+            {
+                question: "What is the starting price of The Vastion?",
+                answer: "The starting price of The Vastion is ₹4.70 Cr* for palatial 4 BHK villaments starting from 3,812 sq. ft."
+            },
+            {
+                question: "What amenities are unique to The Vastion?",
+                answer: "The Vastion features private rooftop swimming plunge pools, private elevators, double-height Italian marble living rooms, and direct access to the central mango orchard."
+            }
+        ],
+        topicID: ["sp-kingstown-township", "hadapsar-east-corridor", "pune-luxury-villas", "nri-investment"]
+    }
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {

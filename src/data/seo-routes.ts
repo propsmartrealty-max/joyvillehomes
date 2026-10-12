@@ -793,5 +793,27 @@ export const SEO_ROUTES = [
             '3 BHK duplex Hinjewadi'
         ],
         filters: { locationMatch: 'Hinjewadi', typeMatch: '' }
+    },
+    {
+        slug: 'tree-clouds-sp-kingstown-hadapsar',
+        title: 'Tree Clouds at SP Kingstown Pune | 3 & 4 BHK Luxury Flats Hadapsar',
+        description: 'Explore Tree Clouds at SP Kingstown by Shapoorji Pallonji. Premium 3 & 4 BHK cloud-touch residences starting ₹1.53 Cr* in Hadapsar Annexe, Pune. MahaRERA registered: P52100052683.',
+        h1: 'Tree Clouds at SP Kingstown, Hadapsar Annexe, Pune',
+        keywords: [
+            ...KEYWORD_MATRIX.PROJECT_EXPANSIONS.TREE_CLOUDS.slice(0, 15),
+            'Tree Clouds SP Kingstown', 'Tree Clouds Hadapsar', 'Tree Clouds Pune', '3 BHK Hadapsar Annexe', '4 BHK Hadapsar Annexe'
+        ],
+        filters: { locationMatch: 'Shewalewadi|Hadapsar', typeMatch: 'Clouds' }
+    },
+    {
+        slug: 'the-vastion-sp-kingstown-villas',
+        title: 'The Vastion at SP Kingstown | 4 & 5 BHK Luxury Villaments & Villas Pune',
+        description: 'The Vastion at SP Kingstown by Shapoorji Pallonji. Palatial 4 & 5 BHK luxury villaments and signature standalone villas with private swimming pools starting ₹4.70 Cr* in Hadapsar, Pune. MahaRERA P52100053978.',
+        h1: 'The Vastion at SP Kingstown — Luxury Villaments & Villas',
+        keywords: [
+            ...KEYWORD_MATRIX.PROJECT_EXPANSIONS.THE_VASTION.slice(0, 15),
+            'The Vastion SP Kingstown', 'The Vastion Hadapsar', 'The Vastion Pune', 'luxury villaments Hadapsar', 'villas with private pool Pune'
+        ],
+        filters: { locationMatch: 'Shewalewadi|Hadapsar', typeMatch: 'Vastion' }
     }
 ];

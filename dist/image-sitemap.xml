@@ -67,6 +67,10 @@
       <image:title><![CDATA[Joyville Sensorium - Off Maan Village Road, Hinjewadi Phase 1, Pune]]></image:title>
     </image:image>
     <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/sensorium/master-layout.jpg</image:loc>
+      <image:title><![CDATA[Joyville Sensorium - Off Maan Village Road, Hinjewadi Phase 1, Pune]]></image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://joyville-homes.com/images/desktop-poster.webp</image:loc>
       <image:title><![CDATA[Joyville Sensorium - Off Maan Village Road, Hinjewadi Phase 1, Pune]]></image:title>
     </image:image>
@@ -75,6 +79,10 @@
     <loc>https://joyville-homes.com/projects/joyville-hadapsar-annexe-pune</loc>
     <image:image>
       <image:loc>https://joyville-homes.com/images/joyville_hadapsar_projectcard.webp</image:loc>
+      <image:title><![CDATA[Joyville Hadapsar Annexe - Shewalewadi, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/hadapsar/master-layout.png</image:loc>
       <image:title><![CDATA[Joyville Hadapsar Annexe - Shewalewadi, Hadapsar, Pune]]></image:title>
     </image:image>
     <image:image>
@@ -89,6 +97,10 @@
       <image:title><![CDATA[Joyville Celestia - Shewalewadi, Off Pune-Solapur Highway, Pune]]></image:title>
     </image:image>
     <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/hadapsar/master-layout.png</image:loc>
+      <image:title><![CDATA[Joyville Celestia - Shewalewadi, Off Pune-Solapur Highway, Pune]]></image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://joyville-homes.com/images/desktop-poster.webp</image:loc>
       <image:title><![CDATA[Joyville Celestia - Shewalewadi, Off Pune-Solapur Highway, Pune]]></image:title>
     </image:image>
@@ -97,6 +109,10 @@
     <loc>https://joyville-homes.com/projects/joyville-skyluxe-hadapsar</loc>
     <image:image>
       <image:loc>https://joyville-homes.com/images/joyville_hadapsar_projectcard.webp</image:loc>
+      <image:title><![CDATA[Joyville Skyluxe Edition - Shewalewadi, Off Pune-Solapur Highway, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/hadapsar/master-layout.png</image:loc>
       <image:title><![CDATA[Joyville Skyluxe Edition - Shewalewadi, Off Pune-Solapur Highway, Pune]]></image:title>
     </image:image>
     <image:image>
@@ -164,7 +180,23 @@
   <url>
     <loc>https://joyville-homes.com/projects/vanaha-pune</loc>
     <image:image>
-      <image:loc>https://joyville-homes.com/images/dl_vanaha-pune.jpg</image:loc>
+      <image:loc>https://joyville-homes.com/images/projects/vanaha/desktop_banner.jpg</image:loc>
+      <image:title><![CDATA[Vanaha - Bavdhan, Pune (Near Oxford Golf Resort)]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/vanaha/gallery_1.webp</image:loc>
+      <image:title><![CDATA[Vanaha - Bavdhan, Pune (Near Oxford Golf Resort)]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/vanaha/gallery_2.webp</image:loc>
+      <image:title><![CDATA[Vanaha - Bavdhan, Pune (Near Oxford Golf Resort)]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/vanaha/gallery_4.webp</image:loc>
+      <image:title><![CDATA[Vanaha - Bavdhan, Pune (Near Oxford Golf Resort)]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/vanaha/gallery_9.webp</image:loc>
       <image:title><![CDATA[Vanaha - Bavdhan, Pune (Near Oxford Golf Resort)]]></image:title>
     </image:image>
   </url>
@@ -197,6 +229,68 @@
     <image:image>
       <image:loc>https://joyville-homes.com/images/projects/treetopia/page_22.jpg</image:loc>
       <image:title><![CDATA[Shapoorji Pallonji Treetopia - Jadhavwadi, Purandhar, Pune Growth Corridor]]></image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://joyville-homes.com/projects/tree-clouds-sp-kingstown-pune</loc>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/tree-clouds/desktop_banner.webp</image:loc>
+      <image:title><![CDATA[Tree Clouds at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/tree-clouds/master-layout.webp</image:loc>
+      <image:title><![CDATA[Tree Clouds at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/tree-clouds/gallery_1.webp</image:loc>
+      <image:title><![CDATA[Tree Clouds at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/tree-clouds/gallery_2.webp</image:loc>
+      <image:title><![CDATA[Tree Clouds at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/tree-clouds/gallery_3.webp</image:loc>
+      <image:title><![CDATA[Tree Clouds at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/tree-clouds/gallery_4.webp</image:loc>
+      <image:title><![CDATA[Tree Clouds at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/tree-clouds/gallery_5.webp</image:loc>
+      <image:title><![CDATA[Tree Clouds at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://joyville-homes.com/projects/the-vastion-sp-kingstown-pune</loc>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/the-vastion/desktop_banner.webp</image:loc>
+      <image:title><![CDATA[The Vastion at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/wildernest/master-layout.jpg</image:loc>
+      <image:title><![CDATA[The Vastion at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/the-vastion/gallery_1.webp</image:loc>
+      <image:title><![CDATA[The Vastion at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/the-vastion/gallery_2.webp</image:loc>
+      <image:title><![CDATA[The Vastion at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/the-vastion/gallery_3.webp</image:loc>
+      <image:title><![CDATA[The Vastion at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/the-vastion/gallery_4.webp</image:loc>
+      <image:title><![CDATA[The Vastion at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://joyville-homes.com/images/projects/the-vastion/gallery_5.webp</image:loc>
+      <image:title><![CDATA[The Vastion at SP Kingstown - SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></image:title>
     </image:image>
   </url>
 </urlset>

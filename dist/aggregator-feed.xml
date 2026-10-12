@@ -219,7 +219,7 @@
         <longitude><![CDATA[73.782777]]></longitude>
         <pictures>
             <picture>
-                <picture_url><![CDATA[https://joyville-homes.com/images/dl_vanaha-pune.jpg]]></picture_url>
+                <picture_url><![CDATA[https://joyville-homes.com/images/projects/vanaha/desktop_banner.jpg]]></picture_url>
                 <picture_title><![CDATA[Vanaha Exterior]]></picture_title>
             </picture>
         </pictures>
@@ -250,5 +250,55 @@
         </pictures>
         <date><![CDATA[2026-10-12]]></date>
         <is_new><![CDATA[0]]></is_new>
+    </ad>
+    <ad>
+        <id><![CDATA[p10]]></id>
+        <url><![CDATA[https://joyville-homes.com/projects/tree-clouds-sp-kingstown-pune]]></url>
+        <title><![CDATA[Tree Clouds at SP Kingstown | Premium Residential Apartments in Pune]]></title>
+        <type><![CDATA[For Sale]]></type>
+        <agency><![CDATA[Shapoorji Pallonji Real Estate]]></agency>
+        <content><![CDATA[Experience elevated vertical living at Tree Clouds at SP Kingstown by Shapoorji Pallonji. Nestled within the expansive 200-acre master township in Hadapsar-Shewalewadi along the Pune-Solapur Highway, Tree Clouds offers thoughtfully designed 3 & 4 BHK residences starting at ₹1.53 Cr*, featuring landscaped sky decks, nature clubhouses, and institutional Shapoorji construction quality.]]></content>
+        <price><![CDATA[15300000]]></price>
+        <property_type><![CDATA[Apartment]]></property_type>
+        <address><![CDATA[SP Kingstown, Shewalewadi Road, Hadapsar, Pune, Pune, Maharashtra, India]]></address>
+        <city><![CDATA[Pune]]></city>
+        <city_area><![CDATA[SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></city_area>
+        <region><![CDATA[Maharashtra]]></region>
+        <postcode><![CDATA[411000]]></postcode>
+        <latitude><![CDATA[18.503]]></latitude>
+        <longitude><![CDATA[73.9712]]></longitude>
+        <pictures>
+            <picture>
+                <picture_url><![CDATA[https://joyville-homes.com/images/projects/tree-clouds/desktop_banner.webp]]></picture_url>
+                <picture_title><![CDATA[Tree Clouds at SP Kingstown Exterior]]></picture_title>
+            </picture>
+        </pictures>
+        <date><![CDATA[2026-10-12]]></date>
+        <is_new><![CDATA[1]]></is_new>
+    </ad>
+    <ad>
+        <id><![CDATA[p11]]></id>
+        <url><![CDATA[https://joyville-homes.com/projects/the-vastion-sp-kingstown-pune]]></url>
+        <title><![CDATA[The Vastion at SP Kingstown | Premium Ultra-Luxury Villas & Villaments in Pune]]></title>
+        <type><![CDATA[For Sale]]></type>
+        <agency><![CDATA[Shapoorji Pallonji Real Estate]]></agency>
+        <content><![CDATA[The Vastion at SP Kingstown by Shapoorji Pallonji is East Pune's most distinguished residential address. Featuring palatial limited-edition 4 & 5 BHK luxury villaments and estate villas ranging from 3,812 to 5,628 sq. ft. starting at ₹4.70 Cr*, The Vastion introduces private swimming pools, rooftop sky lounges, Italian marble master suites, and institutional concierge service within a 200-acre gated sanctuary.]]></content>
+        <price><![CDATA[47000000]]></price>
+        <property_type><![CDATA[Apartment]]></property_type>
+        <address><![CDATA[SP Kingstown, Shewalewadi Road, Hadapsar, Pune, Pune, Maharashtra, India]]></address>
+        <city><![CDATA[Pune]]></city>
+        <city_area><![CDATA[SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></city_area>
+        <region><![CDATA[Maharashtra]]></region>
+        <postcode><![CDATA[411000]]></postcode>
+        <latitude><![CDATA[18.503]]></latitude>
+        <longitude><![CDATA[73.9712]]></longitude>
+        <pictures>
+            <picture>
+                <picture_url><![CDATA[https://joyville-homes.com/images/projects/the-vastion/desktop_banner.webp]]></picture_url>
+                <picture_title><![CDATA[The Vastion at SP Kingstown Exterior]]></picture_title>
+            </picture>
+        </pictures>
+        <date><![CDATA[2026-10-12]]></date>
+        <is_new><![CDATA[1]]></is_new>
     </ad>
 </trovit>

@@ -234,5 +234,51 @@
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
+    <Placemark>
+      <name>Tree Clouds at SP Kingstown</name>
+      <description><![CDATA[
+        <p>Experience elevated vertical living at Tree Clouds at SP Kingstown by Shapoorji Pallonji. Nestled within the expansive 200-acre master township in Hadapsar-Shewalewadi along the Pune-Solapur Highway, Tree Clouds offers thoughtfully designed 3 & 4 BHK residences starting at ₹1.53 Cr*, featuring landscaped sky decks, nature clubhouses, and institutional Shapoorji construction quality.</p>
+        <p><a href="https://joyville-homes.com/projects/tree-clouds-sp-kingstown-pune">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.9712,18.503,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.9662,18.498,0
+              73.97619999999999,18.498,0
+              73.97619999999999,18.508,0
+              73.9662,18.508,0
+              73.9662,18.498,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>The Vastion at SP Kingstown</name>
+      <description><![CDATA[
+        <p>The Vastion at SP Kingstown by Shapoorji Pallonji is East Pune's most distinguished residential address. Featuring palatial limited-edition 4 & 5 BHK luxury villaments and estate villas ranging from 3,812 to 5,628 sq. ft. starting at ₹4.70 Cr*, The Vastion introduces private swimming pools, rooftop sky lounges, Italian marble master suites, and institutional concierge service within a 200-acre gated sanctuary.</p>
+        <p><a href="https://joyville-homes.com/projects/the-vastion-sp-kingstown-pune">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.9712,18.503,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.9662,18.498,0
+              73.97619999999999,18.498,0
+              73.97619999999999,18.508,0
+              73.9662,18.508,0
+              73.9662,18.498,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
   </Document>
 </kml>

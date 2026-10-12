@@ -179,6 +179,20 @@ const PROJECT_SEEDS = {
         "SP Kingstown Treetopia", "SP Treetopia", "Treetopia Plotted Development",
         "Treetopia Villa Plots", "Shapoorji Pallonji Treetopia Pune", "Treetopia Purandar Airport",
         "Shapoorji Treetopia Plots", "Shapoorji Plots Pune", "Shapoorji Pallonji Plots Pune"
+    ],
+    TREE_CLOUDS: [
+        "Tree Clouds", "Tree Clouds Pune", "Tree Clouds at SP Kingstown", "Tree Clouds SP Kingstown",
+        "Shapoorji Tree Clouds", "Tree Clouds by Shapoorji Pallonji", "Shapoorji Pallonji Tree Clouds",
+        "Tree Clouds Hadapsar", "Tree Clouds Shewalewadi", "Tree Clouds Hadapsar Annexe",
+        "Tree Clouds 3 BHK", "Tree Clouds 4 BHK", "Tree Clouds Price", "Tree Clouds Floor Plan",
+        "Tree Clouds Brochure", "Tree Clouds RERA", "Tree Clouds Possession Date"
+    ],
+    THE_VASTION: [
+        "The Vastion", "The Vastion Pune", "The Vastion at SP Kingstown", "The Vastion SP Kingstown",
+        "Shapoorji The Vastion", "The Vastion by Shapoorji Pallonji", "The Vastion Villaments",
+        "The Vastion Luxury Villas", "The Vastion Hadapsar", "The Vastion Shewalewadi",
+        "The Vastion 4 BHK", "The Vastion 5 BHK", "The Vastion Price", "The Vastion Floor Plan",
+        "The Vastion Brochure", "The Vastion Private Pool", "The Vastion Villament Brochure"
     ]
 };
 
@@ -259,6 +273,8 @@ export const KEYWORD_MATRIX = {
         HINJAWADI_LEGACY: generateEnterpriseKeywords("HINJAWADI_LEGACY"),
         VYOMORA: generateEnterpriseKeywords("VYOMORA"),
         TREETOPIA: generateEnterpriseKeywords("TREETOPIA", true),
+        TREE_CLOUDS: generateEnterpriseKeywords("TREE_CLOUDS"),
+        THE_VASTION: generateEnterpriseKeywords("THE_VASTION"),
     },
 
     // Global layout keywords for domain authority

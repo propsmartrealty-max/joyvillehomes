@@ -4,7 +4,7 @@
         <title>Joyville Homes Pune | Premium Real Estate</title>
         <link>https://joyville-homes.com</link>
         <description>Shapoorji Pallonji Joyville Homes Premium Residences</description>
-        <lastBuildDate>Mon, 12 Oct 2026 17:37:56 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Oct 2026 18:15:00 GMT</lastBuildDate>
 
         <item>
             <g:id>joyville-vyomora-hinjewadi</g:id>
@@ -147,7 +147,7 @@
             <g:title><![CDATA[Vanaha | Shapoorji Pallonji Bavdhan, Pune (Near Oxford Golf Resort)]]></g:title>
             <g:description><![CDATA[Vanaha by Shapoorji Pallonji is not just a residence; it's an entire 1000-acre self-sustaining ecosystem thoughtfully poised in the magnificent valleys of Bavdhan, Pune for long-term wealth creation and biophilic living. MahaRERA: P52100028031. Price: ₹82 L - ₹2.50 Cr.]]></g:description>
             <g:link>https://joyville-homes.com/projects/vanaha-pune</g:link>
-            <g:image_link>https://joyville-homes.com/images/dl_vanaha-pune.jpg</g:image_link>
+            <g:image_link>https://joyville-homes.com/images/projects/vanaha/desktop_banner.jpg</g:image_link>
             <g:condition>new</g:condition>
             <g:availability>in_stock</g:availability>
             <g:price>8200000.00 INR</g:price>
@@ -175,6 +175,40 @@
             <g:custom_label_1>NA Residential Villa Plots (1,800 - 5,000+ Sq. Ft.)</g:custom_label_1>
             <g:custom_label_2>Brand New Launch</g:custom_label_2>
             <g:mpn>PP1261012501803</g:mpn>
+        </item>
+        <item>
+            <g:id>p10</g:id>
+            <g:title><![CDATA[Tree Clouds at SP Kingstown | Shapoorji Pallonji SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></g:title>
+            <g:description><![CDATA[Experience elevated vertical living at Tree Clouds at SP Kingstown by Shapoorji Pallonji. Nestled within the expansive 200-acre master township in Hadapsar-Shewalewadi along the Pune-Solapur Highway, Tree Clouds offers thoughtfully designed 3 & 4 BHK residences starting at ₹1.53 Cr*, featuring landscaped sky decks, nature clubhouses, and institutional Shapoorji construction quality. MahaRERA: P52100052683. Price: Starting ₹1.53 Cr*.]]></g:description>
+            <g:link>https://joyville-homes.com/projects/tree-clouds-sp-kingstown-pune</g:link>
+            <g:image_link>https://joyville-homes.com/images/projects/tree-clouds/desktop_banner.webp</g:image_link>
+            <g:condition>new</g:condition>
+            <g:availability>in_stock</g:availability>
+            <g:price>15300000.00 INR</g:price>
+            <g:brand>Shapoorji Pallonji</g:brand>
+            <g:google_product_category>Real Estate &gt; Residential Properties</g:google_product_category>
+            <g:product_type>Real Estate &gt; Residential &gt; Residential Apartments</g:product_type>
+            <g:custom_label_0>SP Kingstown, Shewalewadi Road, Hadapsar, Pune</g:custom_label_0>
+            <g:custom_label_1>Residential Apartments</g:custom_label_1>
+            <g:custom_label_2>Under Construction</g:custom_label_2>
+            <g:mpn>P52100052683</g:mpn>
+        </item>
+        <item>
+            <g:id>p11</g:id>
+            <g:title><![CDATA[The Vastion at SP Kingstown | Shapoorji Pallonji SP Kingstown, Shewalewadi Road, Hadapsar, Pune]]></g:title>
+            <g:description><![CDATA[The Vastion at SP Kingstown by Shapoorji Pallonji is East Pune's most distinguished residential address. Featuring palatial limited-edition 4 & 5 BHK luxury villaments and estate villas ranging from 3,812 to 5,628 sq. ft. starting at ₹4.70 Cr*, The Vastion introduces private swimming pools, rooftop sky lounges, Italian marble master suites, and institutional concierge service within a 200-acre gated sanctuary. MahaRERA: P52100053978. Price: Starting ₹4.70 Cr*.]]></g:description>
+            <g:link>https://joyville-homes.com/projects/the-vastion-sp-kingstown-pune</g:link>
+            <g:image_link>https://joyville-homes.com/images/projects/the-vastion/desktop_banner.webp</g:image_link>
+            <g:condition>new</g:condition>
+            <g:availability>in_stock</g:availability>
+            <g:price>47000000.00 INR</g:price>
+            <g:brand>Shapoorji Pallonji</g:brand>
+            <g:google_product_category>Real Estate &gt; Residential Properties</g:google_product_category>
+            <g:product_type>Real Estate &gt; Residential &gt; Ultra-Luxury Villas & Villaments</g:product_type>
+            <g:custom_label_0>SP Kingstown, Shewalewadi Road, Hadapsar, Pune</g:custom_label_0>
+            <g:custom_label_1>Ultra-Luxury Villas & Villaments</g:custom_label_1>
+            <g:custom_label_2>Under Construction</g:custom_label_2>
+            <g:mpn>P52100053978</g:mpn>
         </item>
     </channel>
 </rss>

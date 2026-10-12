@@ -196,7 +196,7 @@ const PUNE_PROJECTS_EDGE_CATALOG: Record<string, EdgeProjectInfo> = {
     lat: 18.5130,
     lng: 73.7699,
     reviews: 1150,
-    image: 'https://joyville-homes.com/images/dl_vanaha-pune.jpg',
+    image: 'https://joyville-homes.com/images/projects/vanaha/desktop_banner.jpg',
     status: 'InStock',
     propertyType: '1, 2, 3 & 4 BHK Township Residences'
   },
@@ -214,6 +214,36 @@ const PUNE_PROJECTS_EDGE_CATALOG: Record<string, EdgeProjectInfo> = {
     image: 'https://joyville-homes.com/images/projects/treetopia/desktop_banner.webp',
     status: 'InStock',
     propertyType: 'NA Residential Villa Plots (1,800 - 5,000+ Sq. Ft.)'
+  },
+  'tree-clouds-sp-kingstown-pune': {
+    name: 'Tree Clouds at SP Kingstown Pune by Shapoorji Pallonji',
+    title: 'Tree Clouds at SP Kingstown',
+    description: 'Elevated vertical living with 3 & 4 BHK cloud residences (1,157 to 1,917 sq. ft.) starting from ₹1.53 Cr* in the 200-acre SP Kingstown township, Hadapsar Annexe, Pune. Features landscaped sky decks and clubhouse.',
+    lowPrice: 15300000,
+    highPrice: 24500000,
+    rera: 'P52100052683',
+    placename: 'SP Kingstown, Shewalewadi Road, Hadapsar, Pune',
+    lat: 18.5030,
+    lng: 73.9712,
+    reviews: 380,
+    image: 'https://joyville-homes.com/images/projects/tree-clouds/desktop_banner.webp',
+    status: 'PreOrder',
+    propertyType: '3 & 4 BHK Cloud Residences'
+  },
+  'the-vastion-sp-kingstown-pune': {
+    name: 'The Vastion at SP Kingstown Pune by Shapoorji Pallonji',
+    title: 'The Vastion at SP Kingstown',
+    description: 'Palatial ultra-luxury villaments and estate villas (3,812 to 5,628 sq. ft.) starting from ₹4.70 Cr* in SP Kingstown, Hadapsar, Pune. Private rooftop plunge pools, personal elevators, and Italian marble suites.',
+    lowPrice: 47000000,
+    highPrice: 68000000,
+    rera: 'P52100053978',
+    placename: 'SP Kingstown, Shewalewadi Road, Hadapsar, Pune',
+    lat: 18.5030,
+    lng: 73.9712,
+    reviews: 290,
+    image: 'https://joyville-homes.com/images/projects/the-vastion/desktop_banner.webp',
+    status: 'PreOrder',
+    propertyType: '4 & 5 BHK Ultra-Luxury Villaments & Villas'
   }
 };
 

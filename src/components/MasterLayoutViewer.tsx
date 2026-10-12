@@ -58,7 +58,7 @@ const TREETOPIA_ZONING_POINTS = [
 ];
 
 const WILDERNEST_ZONING_POINTS = [
-    { id: '1', title: 'High-Rise Residential Towers (1-4)', desc: 'G+2P+22 storeys with 3 & 4 BHK residences and 4 units per floor', icon: Building2 },
+    { id: '1', title: 'High-Rise Residential Towers (1-4)', desc: 'G+2P+22 storets with 3 & 4 BHK residences and 4 units per floor', icon: Building2 },
     { id: '2', title: 'Villaments & Luxury Villas', desc: 'Private rooftop pool villas and duplex villaments nestled in orchards', icon: Sparkles },
     { id: '3', title: 'Preserved Central Mango Orchard', desc: 'Centuries-old mango grove with 100+ mature trees & walking paths', icon: Trees },
     { id: '4', title: 'Grand Clubhouse (~50,000 sq.ft.)', desc: 'Multi-level recreational hub with mini theatre, library & indoor games', icon: Layers },
@@ -70,6 +70,32 @@ const WILDERNEST_ZONING_POINTS = [
     { id: '10', title: 'Perimeter Canal & Jogging Trails', desc: 'Sweeping canal-side walkways and tree-lined jogging circuits', icon: Waves },
 ];
 
+const TREE_CLOUDS_ZONING_POINTS = [
+    { id: '1', title: 'High-Rise Cloud Towers', desc: 'Contemporary high-rise towers (G+2P+22) with 3 & 4 BHK residences', icon: Building2 },
+    { id: '2', title: 'Sky Cloud Viewing Terraces', desc: 'Elevated sky lounges overlooking expansive tree canopy greens', icon: Sparkles },
+    { id: '3', title: 'Preserved Mango Sanctuary', desc: 'Centuries-old mango orchard corridor woven into township grounds', icon: Trees },
+    { id: '4', title: 'Grand Clubhouse & Lap Pool', desc: 'Multi-tier recreation club with infinity lap pool & kids splash zone', icon: Waves },
+    { id: '5', title: 'Alfresco Co-Working Cabanas', desc: 'High-speed Wi-Fi enabled outdoor work pavilions & reading decks', icon: Compass },
+    { id: '6', title: 'Acoustic Mini Screening Theatre', desc: 'Private cinematic viewing lounge for community screenings', icon: Sparkles },
+    { id: '7', title: 'Multi-Sport Turfs & Court', desc: 'Basketball court, tennis arena, cricket nets & fitness park', icon: Dumbbell },
+    { id: '8', title: 'Children Sensory Play Lawn', desc: 'Eco-play equipment, sensory walkways & sandpits', icon: ShieldCheck },
+    { id: '9', title: 'Perimeter Jogging Boardwalk', desc: 'Continuous shaded track with solar-lit pathways', icon: Trees },
+    { id: '10', title: 'Smart Access & EV Charging Hub', desc: 'RFID boom barriers, CCTV surveillance & multi-vehicle EV bays', icon: Car },
+];
+
+const VASTION_ZONING_POINTS = [
+    { id: '1', title: 'Signature Duplex Villaments', desc: 'Palatial 4 BHK lower and upper villament duplex residences (3,812 - 4,250 sq.ft.)', icon: Building2 },
+    { id: '2', title: 'Estate Standalone Villas', desc: 'Limited 5 BHK palatial villas with private rooftop heated plunge pools (5,628 sq.ft.)', icon: Sparkles },
+    { id: '3', title: 'Preserved 100+ Tree Mango Grove', desc: 'Ancient mango orchard reserve offering private nature enclave buffers', icon: Trees },
+    { id: '4', title: 'Club Palladium (~50,000 sq.ft.)', desc: 'Ultra-luxury clubhouse with temperature-controlled lap pool & wine lounge', icon: Layers },
+    { id: '5', title: 'Private Plunge Pools & Terraces', desc: 'Bespoke open-air private pools on upper sun decks', icon: Waves },
+    { id: '6', title: 'Botanical Fragrance Trails', desc: 'Native aromatic gardens, sculpted waterfalls & zen meditation cabanas', icon: Trees },
+    { id: '7', title: 'White-Glove Concierge & Valet', desc: '24/7 dedicated estate concierge and chauffeur lounges', icon: ShieldCheck },
+    { id: '8', title: 'Private Elevator Cores', desc: 'Direct-to-home high-speed private elevator access', icon: Compass },
+    { id: '9', title: 'Covered Private Car Garages', desc: 'Multi-car private garage parking with dedicated EV superchargers', icon: Car },
+    { id: '10', title: 'Perimeter Security Sanctuary', desc: 'Biometric access control, infrared perimeter sensors & smart surveillance', icon: ShieldCheck },
+];
+
 export default function MasterLayoutViewer({ 
     masterLayoutUrl, 
     projectName, 
@@ -78,7 +104,17 @@ export default function MasterLayoutViewer({
 }: MasterLayoutViewerProps) {
     const isTreetopia = projectName.toLowerCase().includes('treetopia');
     const isWildernest = projectName.toLowerCase().includes('wildernest');
-    const zoningPoints = isTreetopia ? TREETOPIA_ZONING_POINTS : isWildernest ? WILDERNEST_ZONING_POINTS : ZONING_POINTS;
+    const isTreeClouds = projectName.toLowerCase().includes('tree clouds');
+    const isVastion = projectName.toLowerCase().includes('vastion');
+    const zoningPoints = isTreetopia 
+        ? TREETOPIA_ZONING_POINTS 
+        : isWildernest 
+        ? WILDERNEST_ZONING_POINTS 
+        : isTreeClouds 
+        ? TREE_CLOUDS_ZONING_POINTS 
+        : isVastion 
+        ? VASTION_ZONING_POINTS 
+        : ZONING_POINTS;
     const [isLightboxOpen, setIsLightboxOpen] = useState(false);
     const [zoomLevel, setZoomLevel] = useState(1);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -106,13 +142,17 @@ export default function MasterLayoutViewer({
                     </div>
                     <div>
                         <div className="text-[11px] font-bold tracking-[0.15em] uppercase text-[#1D4F9C]">
-                            {isTreetopia ? 'Macro 105-Acre Estate Development Plan' : isWildernest ? 'Macro 200-Acre SP Kingstown Master Plan' : 'Macro Estate Development Plan'}
+                            {isTreetopia ? 'Macro 105-Acre Estate Development Plan' : (isWildernest || isTreeClouds || isVastion) ? 'Macro 200-Acre SP Kingstown Master Plan' : 'Macro Estate Development Plan'}
                         </div>
                         <p className="text-xs text-[#323334] font-light mt-0.5 max-w-2xl">
                             {isTreetopia 
                                 ? 'The Master Layout visualizes the 105-acre estate land zoning, 25-acre natural lake, central avenue, and villa plot sectors. Looking for individual plot dimensions and typology blueprints? Explore the Plot Layouts section below.'
                                 : isWildernest
                                 ? 'The Master Layout visualizes the 11-acre low-density enclave, 4 residential towers, villaments, preserved mango orchards, and the ~50,000 sq.ft. clubhouse within the 200-acre SP Kingstown township. Looking for apartment blueprints? Explore the Floor Plans section below.'
+                                : isTreeClouds
+                                ? 'The Master Layout visualizes the high-rise cloud residential towers, sky lounges, preserved canopies, and sports enclaves in the 200-acre SP Kingstown township. Looking for room dimensions and apartment blueprints? Explore the Floor Plans section below.'
+                                : isVastion
+                                ? 'The Master Layout visualizes the ultra-exclusive villament and villa enclave, private plunge pool zones, and mango orchard sanctuary in SP Kingstown. Looking for room dimensions and duplex blueprints? Explore the Floor Plans section below.'
                                 : 'The Master Layout visualizes overall land zoning, tower placements, access roads, and recreational spaces. Looking for room dimensions and apartment blueprints? Explore the Floor Plans section below.'
                             }
                         </p>

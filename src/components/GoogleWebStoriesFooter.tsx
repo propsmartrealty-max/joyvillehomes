@@ -113,7 +113,7 @@ const WEB_STORIES: WebStory[] = [
                 title: '2.8-Acre Sunken Sensory Park',
                 subtitle: 'Interactive Nature Living',
                 description: 'A multi-level sunken garden featuring aroma trails, tree-hug decks, cascading water walls, and open-air meditation zones.',
-                image: '/images/hero_bg.webp',
+                image: '/images/projects/sensorium/master-layout.jpg',
                 tag: 'Landscape',
                 metrics: [{ label: 'Sensory Zones', value: '5 Dimensions' }, { label: 'Aroma Groves', value: 'Yes' }, { label: 'Lap Pool', value: 'Infinity Edge' }]
             },
@@ -129,7 +129,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Riverfront Connectivity',
                 subtitle: 'Maan Village Road Corridor',
                 description: 'Direct access to Infosys, Wipro, and Cognizant campuses. Fast exit to Mumbai-Pune Expressway.',
-                image: '/images/desktop-poster.webp',
+                image: '/images/joyville_sensorium_projectcard.webp',
                 tag: 'Location',
                 metrics: [{ label: 'To Infosys', value: '4 Mins' }, { label: 'Expressway', value: '8 Mins' }, { label: 'Metro Station', value: '1.2 Km' }]
             },
@@ -166,7 +166,7 @@ const WEB_STORIES: WebStory[] = [
                 title: '60+ Curated Lifestyle Amenities',
                 subtitle: 'Central Park Recreation',
                 description: 'Equipped with multiple swimming pools, vehicular drop-offs, cricket pitch, tennis courts, and amphitheatre.',
-                image: '/images/hero_bg.webp',
+                image: '/images/projects/hadapsar/master-layout.png',
                 tag: 'Amenities',
                 metrics: [{ label: 'Clubhouse Levels', value: 'G+2' }, { label: 'Swimming Pools', value: '2' }, { label: 'Walking Track', value: '1 Km+' }]
             },
@@ -182,7 +182,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'SP Infocity & Magarpatta Hub',
                 subtitle: 'Prime East Pune Corridor',
                 description: 'Directly off Pune-Solapur Highway. Just 10 mins from SP Infocity Phursungi and Magarpatta City IT SEZ.',
-                image: '/images/desktop-poster.webp',
+                image: '/images/joyville_hadapsar_projectcard.webp',
                 tag: 'Location',
                 metrics: [{ label: 'To SP Infocity', value: '8 Mins' }, { label: 'To Magarpatta', value: '12 Mins' }, { label: 'Highway Access', value: 'Direct' }]
             },
@@ -219,7 +219,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Stargazing Decks & Infinity Pool',
                 subtitle: 'Sky Lounge Amenities',
                 description: 'Rooftop observatory, sky gym, co-working pods, and landscaped party decks overlooking the countryside.',
-                image: '/images/hero_bg.webp',
+                image: '/images/projects/hadapsar/master-layout.png',
                 tag: 'Amenities',
                 metrics: [{ label: 'Rooftop Decks', value: 'Yes' }, { label: 'Co-Working', value: 'High-Speed' }, { label: 'EV Stations', value: 'Provided' }]
             },
@@ -235,7 +235,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Fast Access to Hadapsar Tech Hubs',
                 subtitle: 'Shewalewadi Growth Node',
                 description: 'Seamless road connectivity to EON IT Park Kharadi via Manjri bridge, Amanora Mall, and upcoming Ring Road.',
-                image: '/images/desktop-poster.webp',
+                image: '/images/joyville_celestia_projectcard.webp',
                 tag: 'Location',
                 metrics: [{ label: 'To Kharadi IT', value: '18 Mins' }, { label: 'To Amanora Mall', value: '10 Mins' }, { label: 'Ring Road', value: '5 Mins' }]
             },
@@ -360,7 +360,7 @@ const WEB_STORIES: WebStory[] = [
         projectSlug: 'vanaha-golfland-pune',
         title: 'Vanaha Golfland',
         location: 'Bavdhan, Western Pune',
-        coverImage: '/images/dl_vanaha-pune.jpg',
+        coverImage: '/images/projects/vanaha/desktop_banner.jpg',
         status: 'Under Construction',
         price: '₹1.55 Cr Onwards',
         reraNumber: 'P52100052531',
@@ -370,7 +370,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Vanaha Golfland Bavdhan',
                 subtitle: 'Golf-Facing Luxury Residences',
                 description: 'Perched in Western Pune overlooking the Oxford Golf Resort inside the 1,000-acre Vanaha master township.',
-                image: '/images/dl_vanaha-pune.jpg',
+                image: '/images/projects/vanaha/desktop_banner.jpg',
                 tag: 'Overview',
                 metrics: [{ label: 'Township', value: '1,000 Acres' }, { label: 'Golf View', value: 'Oxford Resort' }, { label: 'Open Space', value: '90+ Acres Green' }]
             },
@@ -378,7 +378,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Unobstructed Golf Course Views',
                 subtitle: 'Lush Greens & Valley Panoramas',
                 description: 'Wake up to the rolling fairways of championship golf course and surrounding Sahyadri hills.',
-                image: '/images/dl_vanaha-pune.jpg',
+                image: '/images/projects/vanaha/gallery_1.jpg',
                 tag: 'Views',
                 metrics: [{ label: 'Course View', value: '18-Hole Championship' }, { label: 'Air Quality', value: 'Pristine Valley' }, { label: 'Elevation', value: 'High Vantage' }]
             },
@@ -386,7 +386,7 @@ const WEB_STORIES: WebStory[] = [
                 title: '2, 3 & 4 BHK Golf Suites',
                 subtitle: 'Premium Architectural Layouts',
                 description: 'Spacious floor plans with wide sun decks, imported fixtures, modular kitchen provisions, and grand master suites.',
-                image: '/images/projects/vyomora/floor-plans/3bhk-3.webp',
+                image: '/images/projects/vanaha/floorplan_3bhk.jpg',
                 tag: 'Floor Plans',
                 metrics: [{ label: '2 BHK Carpet', value: '850 sq.ft.' }, { label: '3 BHK Carpet', value: '1180 - 1450 sq.ft.' }, { label: '4 BHK Carpet', value: '1900 sq.ft.' }]
             },
@@ -394,7 +394,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Kothrud & Chandani Chowk Corridor',
                 subtitle: 'Bavdhan Expressway Access',
                 description: 'Just 5 mins from Chandani Chowk interchange, 10 mins from Kothrud, and 20 mins from Hinjewadi IT Park.',
-                image: '/images/desktop-poster.webp',
+                image: '/images/projects/vanaha/gallery_2.jpg',
                 tag: 'Location',
                 metrics: [{ label: 'To Chandani Chowk', value: '5 Mins' }, { label: 'To Kothrud', value: '10 Mins' }, { label: 'To Hinjewadi', value: '20 Mins' }]
             },
@@ -402,7 +402,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'MahaRERA: P52100052531',
                 subtitle: 'Starting ₹1.55 Cr',
                 description: 'Invest in one of India largest and most scenic integrated townships with Shapoorji Pallonji.',
-                image: '/images/dl_vanaha-pune.jpg',
+                image: '/images/projects/vanaha/desktop_banner.jpg',
                 tag: 'Pricing & RERA',
                 metrics: [{ label: 'Starting Price', value: '₹1.55 Cr' }, { label: 'RERA', value: 'P52100052531' }, { label: 'Amenities', value: '90+ Township' }]
             }
@@ -413,7 +413,7 @@ const WEB_STORIES: WebStory[] = [
         projectSlug: 'vanaha-springs-pune',
         title: 'Vanaha Springs',
         location: 'Bavdhan, Western Pune',
-        coverImage: '/images/dl_vanaha-pune.jpg',
+        coverImage: '/images/projects/vanaha/desktop_banner.jpg',
         status: 'Ready & Under Construction',
         price: '₹95 L Onwards',
         reraNumber: 'P52100028031',
@@ -423,7 +423,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Vanaha Springs',
                 subtitle: 'Nature-Embraced Mountain Homes',
                 description: '1, 2 & 3 BHK residences nestled amidst valley breezes and scenic hills in Bavdhan, Pune West.',
-                image: '/images/dl_vanaha-pune.jpg',
+                image: '/images/projects/vanaha/desktop_banner.jpg',
                 tag: 'Overview',
                 metrics: [{ label: 'Township', value: '1,000 Acres' }, { label: 'Nature Trails', value: 'Extensive' }, { label: 'Clubhouse', value: 'Signature' }]
             },
@@ -431,7 +431,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Over 90+ Curated Township Amenities',
                 subtitle: 'Health, Leisure & Sports',
                 description: 'Full sports infrastructure, jogging circuits, healthcare clinic, retail high street, and outdoor amphitheatre.',
-                image: '/images/hero_bg.webp',
+                image: '/images/projects/vanaha/gallery_3.jpg',
                 tag: 'Amenities',
                 metrics: [{ label: 'Amenities', value: '90+' }, { label: 'Turf Sports', value: 'Multiple' }, { label: 'Retail', value: 'On-Site' }]
             },
@@ -439,7 +439,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Smart 1, 2 & 3 BHK Blueprints',
                 subtitle: 'Efficient Cross-Ventilated Living',
                 description: 'Designed to capture year-round hill breezes with maximized carpet efficiency and sunlit living rooms.',
-                image: '/images/projects/vyomora/floor-plans/2bhk-1.webp',
+                image: '/images/projects/vanaha/floorplan_2bhk.jpg',
                 tag: 'Floor Plans',
                 metrics: [{ label: '1 BHK Carpet', value: '500 sq.ft.' }, { label: '2 BHK Carpet', value: '720 sq.ft.' }, { label: '3 BHK Carpet', value: '980 sq.ft.' }]
             },
@@ -447,7 +447,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Western Pune Golden Triangle',
                 subtitle: 'Bavdhan - Kothrud - Hinjewadi',
                 description: 'Direct flyover connectivity to Pune central areas while preserving unmatched air quality and greenery.',
-                image: '/images/desktop-poster.webp',
+                image: '/images/projects/vanaha/gallery_4.jpg',
                 tag: 'Location',
                 metrics: [{ label: 'To Kothrud', value: '10 Mins' }, { label: 'To Baner', value: '15 Mins' }, { label: 'Air Quality', value: 'Exceptional' }]
             },
@@ -455,7 +455,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'MahaRERA: P52100028031',
                 subtitle: 'Starting ₹95 Lakhs',
                 description: 'Affordable luxury backed by Shapoorji Pallonji with fast possession timelines.',
-                image: '/images/dl_vanaha-pune.jpg',
+                image: '/images/projects/vanaha/desktop_banner.jpg',
                 tag: 'Pricing & RERA',
                 metrics: [{ label: 'Starting Price', value: '₹95 L' }, { label: 'RERA', value: 'P52100028031' }, { label: 'Rental Yield', value: '4.7%' }]
             }
@@ -466,7 +466,7 @@ const WEB_STORIES: WebStory[] = [
         projectSlug: 'vanaha-bavdhan-springs',
         title: 'Vanaha Bavdhan Mega Township',
         location: 'Bavdhan, Pune',
-        coverImage: '/images/dl_vanaha-pune.jpg',
+        coverImage: '/images/projects/vanaha/desktop_banner.jpg',
         status: 'Master Township',
         price: '₹82 L Onwards',
         reraNumber: 'P52100028031',
@@ -476,7 +476,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Vanaha 1,000-Acre Township',
                 subtitle: 'One of Western India Largest',
                 description: 'A transformative urban sanctuary built across a natural valley with over 90,000 trees in Bavdhan, Pune.',
-                image: '/images/dl_vanaha-pune.jpg',
+                image: '/images/projects/vanaha/desktop_banner.jpg',
                 tag: 'Overview',
                 metrics: [{ label: 'Total Area', value: '1,000 Acres' }, { label: 'Trees', value: '90,000+' }, { label: 'Township School', value: 'Planned' }]
             },
@@ -484,7 +484,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Sustainable Smart Township',
                 subtitle: 'EDGE Certified Infrastructure',
                 description: 'Solar microgrid, complete zero-discharge rainwater harvesting, EV charging stations, and eco-cycling tracks.',
-                image: '/images/hero_bg.webp',
+                image: '/images/projects/vanaha/gallery_1.jpg',
                 tag: 'Sustainability',
                 metrics: [{ label: 'Green Certification', value: 'EDGE Green' }, { label: 'Rainwater', value: '100% Harvested' }, { label: 'STP Grid', value: 'Centralized' }]
             },
@@ -492,7 +492,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Diverse Housing Typologies',
                 subtitle: 'Flats, Penthouses & Villas',
                 description: 'From smart starter homes to ultra-luxury penthouses overlooking Oxford Golf course.',
-                image: '/images/projects/vyomora/floor-plans/2bhk-2.webp',
+                image: '/images/projects/vanaha/floorplan_1bhk.jpg',
                 tag: 'Options',
                 metrics: [{ label: '1 BHK', value: 'From ₹55 L' }, { label: '2 BHK', value: 'From ₹82 L' }, { label: '3 BHK', value: 'From ₹1.25 Cr' }]
             },
@@ -500,7 +500,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Strategic Foothill Location',
                 subtitle: 'Minutes to Paud Road & Chandani Chowk',
                 description: 'The premier choice for IT professionals working in Hinjewadi wanting lush natural hill surroundings.',
-                image: '/images/desktop-poster.webp',
+                image: '/images/projects/vanaha/gallery_2.jpg',
                 tag: 'Connectivity',
                 metrics: [{ label: 'To Hinjewadi IT', value: '20 Mins' }, { label: 'To University', value: '15 Mins' }, { label: 'To Airport', value: '35 Mins' }]
             },
@@ -508,7 +508,7 @@ const WEB_STORIES: WebStory[] = [
                 title: 'Official MahaRERA: P52100028031',
                 subtitle: 'Starting ₹82 Lakhs',
                 description: 'Join over 2,500+ homebuyer families already invested in Vanaha grand vision.',
-                image: '/images/dl_vanaha-pune.jpg',
+                image: '/images/projects/vanaha/desktop_banner.jpg',
                 tag: 'Pricing & RERA',
                 metrics: [{ label: 'Starting Price', value: '₹82 L' }, { label: 'Families', value: '2500+' }, { label: 'Developer', value: 'Shapoorji Pallonji' }]
             }
@@ -564,6 +564,112 @@ const WEB_STORIES: WebStory[] = [
                 image: '/images/projects/treetopia/gallery_1.webp',
                 tag: 'Pricing & RERA',
                 metrics: [{ label: 'Starting Price', value: '₹99 L*' }, { label: 'RERA Number', value: 'PP1261012501803' }, { label: 'Title', value: 'Individual 7/12' }]
+            }
+        ]
+    },
+    {
+        id: 'story-tree-clouds',
+        projectSlug: 'tree-clouds-sp-kingstown-pune',
+        title: 'Tree Clouds at SP Kingstown',
+        location: 'SP Kingstown, Shewalewadi Road, Hadapsar, Pune',
+        coverImage: '/images/projects/tree-clouds/desktop_banner.webp',
+        status: 'Under Construction',
+        price: '₹1.53 Cr Onwards',
+        reraNumber: 'P52100052683',
+        slidesCount: 5,
+        slides: [
+            {
+                title: 'Tree Clouds at SP Kingstown',
+                subtitle: '3 & 4 BHK Cloud-Touch Residences',
+                description: 'Set within the 200-acre SP Kingstown integrated township with 35 curated lifestyle amenities and over 75% lush open green cover.',
+                image: '/images/projects/tree-clouds/desktop_banner.webp',
+                tag: 'Overview',
+                metrics: [{ label: 'Township', value: '200 Acres' }, { label: 'Typologies', value: '3 & 4 BHK' }, { label: 'Open Space', value: '75%+' }]
+            },
+            {
+                title: 'Certified Macro Master Plan',
+                subtitle: 'Tree Clouds at SP Kingstown',
+                description: 'Comprehensive zoning featuring high-rise towers, mango orchard buffers, elevated podiums, and dedicated pedestrian corridors.',
+                image: '/images/projects/tree-clouds/master-layout.webp',
+                tag: 'Master Plan',
+                metrics: [{ label: 'Towers', value: 'High Rise' }, { label: 'Green Spine', value: 'Lush Canopies' }, { label: 'Vehicular Flow', value: 'Zero Surface Flow' }]
+            },
+            {
+                title: '3 & 4 BHK Architectural Blueprints',
+                subtitle: '1,157 to 1,917 Sq. Ft. Carpet Area',
+                description: 'Expansive private living decks, en-suite bedrooms, imported Italian vitrified flooring, and maximized natural cross-ventilation.',
+                image: '/images/projects/tree-clouds/floorplan_1.webp',
+                tag: 'Floor Plans',
+                metrics: [{ label: '3 BHK Carpet', value: '1,157 - 1,480 sq.ft.' }, { label: '4 BHK Carpet', value: '1,720 - 1,917 sq.ft.' }, { label: 'Balcony', value: 'Extra-Wide Sundeck' }]
+            },
+            {
+                title: '35+ Curated Lifestyle Amenities',
+                subtitle: 'Grand Clubhouse & Infinity Pool',
+                description: 'Full sports clubhouse, multi-level infinity pool, landscaped jogging loop, tree canopies, pickleball court, and yoga deck.',
+                image: '/images/projects/tree-clouds/gallery_1.webp',
+                tag: 'Amenities',
+                metrics: [{ label: 'Clubhouse', value: 'Grand Facility' }, { label: 'Amenities', value: '35+ Curated' }, { label: 'Sports', value: 'Pickleball / Turf' }]
+            },
+            {
+                title: 'Fast Access to Magarpatta & Kharadi',
+                subtitle: 'MahaRERA: P52100052683',
+                description: 'Just 10 mins from Magarpatta City IT SEZ, SP Infocity Phursungi, Amanora Mall, and upcoming Pune Ring Road corridor.',
+                image: '/images/projects/tree-clouds/gallery_2.webp',
+                tag: 'Location & RERA',
+                metrics: [{ label: 'Starting Price', value: '₹1.53 Cr*' }, { label: 'Magarpatta', value: '10 Mins' }, { label: 'SP Infocity', value: '8 Mins' }]
+            }
+        ]
+    },
+    {
+        id: 'story-the-vastion',
+        projectSlug: 'the-vastion-sp-kingstown-pune',
+        title: 'The Vastion at SP Kingstown',
+        location: 'SP Kingstown, Shewalewadi Road, Hadapsar, Pune',
+        coverImage: '/images/projects/the-vastion/desktop_banner.webp',
+        status: 'Exclusive Luxury Launch',
+        price: '₹4.70 Cr Onwards',
+        reraNumber: 'P52100053978',
+        slidesCount: 5,
+        slides: [
+            {
+                title: 'The Vastion at SP Kingstown',
+                subtitle: 'Ultra-Luxury Villaments & Standalone Villas',
+                description: 'The pinnacle of Shapoorji Pallonji luxury in Pune East. Palatial 4 & 5 BHK villaments and signature standalone villas with private swimming pools.',
+                image: '/images/projects/the-vastion/desktop_banner.webp',
+                tag: 'Overview',
+                metrics: [{ label: 'Format', value: 'Villaments & Villas' }, { label: 'Carpet Area', value: '3,812 - 5,628 sq.ft.' }, { label: 'Privacy', value: 'Ultra HNI' }]
+            },
+            {
+                title: 'Estate Master Layout',
+                subtitle: '200-Acre SP Kingstown Enclave',
+                description: 'Low-density sanctuary with private driveway access, mango tree reserves, canal views, and separate service entries.',
+                image: '/images/projects/wildernest/master-layout.jpg',
+                tag: 'Master Plan',
+                metrics: [{ label: 'Density', value: 'Ultra Low' }, { label: 'Privacy', value: 'Private Driveways' }, { label: 'Security', value: 'Tier-4 Multi-Layer' }]
+            },
+            {
+                title: 'Private Rooftop Pools & Double-Height Decks',
+                subtitle: 'Bespoke Architectural Grandeur',
+                description: 'Each villa features a private heated plunge pool, double-height 22-foot living ceilings, personal elevator shafts, and private manicured lawn gardens.',
+                image: '/images/projects/the-vastion/gallery_1.webp',
+                tag: 'Architecture',
+                metrics: [{ label: 'Ceiling Height', value: '22 Ft Double Height' }, { label: 'Private Pool', value: 'Rooftop Heated' }, { label: 'Private Lift', value: 'Included' }]
+            },
+            {
+                title: '3,812 to 5,628 Sq. Ft. Palatial Layouts',
+                subtitle: '4 & 5 BHK Duplex & Villa Suites',
+                description: 'Master suite with private terrace, his-and-her walk-in closets, chef show kitchen, separate wet kitchen, and attached quarters.',
+                image: '/images/projects/the-vastion/gallery_2.webp',
+                tag: 'Floor Plans',
+                metrics: [{ label: 'Villament Carpet', value: '3,812 - 4,250 sq.ft.' }, { label: 'Villa Carpet', value: '4,800 - 5,628 sq.ft.' }, { label: 'Car Bays', value: '3-4 Covered' }]
+            },
+            {
+                title: 'MahaRERA: P52100053978 / P52100053927',
+                subtitle: 'Starting ₹4.70 Cr*',
+                description: 'Rare low-density Pune asset engineered for generational wealth, located 10 mins from Magarpatta City and 16 km from Purandar Airport.',
+                image: '/images/projects/the-vastion/gallery_3.webp',
+                tag: 'Pricing & RERA',
+                metrics: [{ label: 'Starting Price', value: '₹4.70 Cr*' }, { label: 'Magarpatta', value: '10 Mins' }, { label: 'Purandar Airport', value: '16 Km' }]
             }
         ]
     }
