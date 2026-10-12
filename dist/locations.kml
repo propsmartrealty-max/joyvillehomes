@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Joyville Homes Pune Locations</name>
+    <description>Premium residential projects by Shapoorji Pallonji across Pune.</description>
+
+    <Placemark>
+      <name>Joyville Vyomora</name>
+      <description><![CDATA[
+        <p>Premium large-format residential community spread across 25 acres in Hinjawadi, Pune by Shapoorji Pallonji Real Estate. Spacious flats and duplexes from 685 sq. ft. to 1434 sq. ft., minutes from Hinjewadi Phase 1, Rajiv Gandhi Infotech Park, and the Mumbai-Pune Expressway.</p>
+        <p><a href="https://joyville-homes.com/projects/joyville-vyomora-hinjewadi">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.7389,18.5913,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.7339,18.5863,0
+              73.7439,18.5863,0
+              73.7439,18.5963,0
+              73.7339,18.5963,0
+              73.7339,18.5863,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Joyville Sensorium</name>
+      <description><![CDATA[
+        <p>Experience the pinnacle of sky-luxe living at Joyville Sensorium by Shapoorji Pallonji. A premier residential project in Hinjewadi Phase 1 offering sprawling biophilic green spaces, high-liquidity investment potential, and over 60 majestic amenities near the Rajiv Gandhi Infotech Park.</p>
+        <p><a href="https://joyville-homes.com/projects/joyville-sensorium-hinjewadi">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.7389,18.5913,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.7339,18.5863,0
+              73.7439,18.5863,0
+              73.7439,18.5963,0
+              73.7339,18.5963,0
+              73.7339,18.5863,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Joyville Hadapsar Annexe</name>
+      <description><![CDATA[
+        <p>Joyville Hadapsar Annexe by Shapoorji Pallonji offers thoughtfully designed homes in East Pune. An oasis of calm with seamless connectivity to major IT hubs and retail destinations.</p>
+        <p><a href="https://joyville-homes.com/projects/joyville-hadapsar-annexe-pune">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.9259,18.5089,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.9209,18.5039,0
+              73.9309,18.5039,0
+              73.9309,18.5139,0
+              73.9209,18.5139,0
+              73.9209,18.5039,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Joyville Celestia</name>
+      <description><![CDATA[
+        <p>The newest celestial landmark in East Pune by Shapoorji Pallonji. Joyville Celestia redefines modern urban living with celestial designs, high-end finishing, and Vastu-optimized architecture for premium capital appreciation in Hadapsar Near SP Infocity.</p>
+        <p><a href="https://joyville-homes.com/projects/joyville-celestia-hadapsar">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.9259,18.5089,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.9209,18.5039,0
+              73.9309,18.5039,0
+              73.9309,18.5139,0
+              73.9209,18.5139,0
+              73.9209,18.5039,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Joyville Skyluxe Edition</name>
+      <description><![CDATA[
+        <p>Limited edition sky-residences for the discerning few in East Pune. The Skyluxe Edition at Joyville Hadapsar by Shapoorji Pallonji offers an incredibly rare combination of vast spaces, elite privacy, Italian marble, and 360-degree panoramic views for ultimate capital preservation near Magarpatta City.</p>
+        <p><a href="https://joyville-homes.com/projects/joyville-skyluxe-hadapsar">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.9259,18.5089,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.9209,18.5039,0
+              73.9309,18.5039,0
+              73.9309,18.5139,0
+              73.9209,18.5139,0
+              73.9209,18.5039,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Wildernest at SP Kingstown</name>
+      <description><![CDATA[
+        <p>Discover a life of biophilic elegance at Wildernest at SP Kingstown by Shapoorji Pallonji. Offering a serene lifestyle with state-of-the-art facilities, high capital appreciation potential, and natural beauty in the Hadapsar-Shewalewadi growth corridor.</p>
+        <p><a href="https://joyville-homes.com/projects/wildernest-sp-kingstown-pune">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.9259,18.5089,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.9209,18.5039,0
+              73.9309,18.5039,0
+              73.9309,18.5139,0
+              73.9209,18.5139,0
+              73.9209,18.5039,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Vanaha Golfland</name>
+      <description><![CDATA[
+        <p>Vanaha Golfland by Shapoorji Pallonji offers an extraordinary resort-style lifestyle in Bavdhan Pune, featuring spectacular views of an 18-hole lush golf course and premium investment-grade residences near Chandni Chowk.</p>
+        <p><a href="https://joyville-homes.com/projects/vanaha-golfland-pune">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.7819,18.5158,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.7769,18.5108,0
+              73.78689999999999,18.5108,0
+              73.78689999999999,18.520799999999998,0
+              73.7769,18.520799999999998,0
+              73.7769,18.5108,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Vanaha Springs</name>
+      <description><![CDATA[
+        <p>Embrace nature at Vanaha Springs in Bavdhan by Shapoorji Pallonji. Offering breathtaking valley views, premium investment-grade finished apartments, and a pristine environment away from the city's hustle near Chandni Chowk.</p>
+        <p><a href="https://joyville-homes.com/projects/vanaha-springs-pune">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.7819,18.5158,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.7769,18.5108,0
+              73.78689999999999,18.5108,0
+              73.78689999999999,18.520799999999998,0
+              73.7769,18.520799999999998,0
+              73.7769,18.5108,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Vanaha</name>
+      <description><![CDATA[
+        <p>Vanaha by Shapoorji Pallonji is not just a residence; it's an entire 1000-acre self-sustaining ecosystem thoughtfully poised in the magnificent valleys of Bavdhan, Pune for long-term wealth creation and biophilic living.</p>
+        <p><a href="https://joyville-homes.com/projects/vanaha-pune">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.7819,18.5158,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.7769,18.5108,0
+              73.78689999999999,18.5108,0
+              73.78689999999999,18.520799999999998,0
+              73.7769,18.520799999999998,0
+              73.7769,18.5108,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Shapoorji Pallonji Treetopia</name>
+      <description><![CDATA[
+        <p>Premium NA plotted development in the Pune Growth Corridor near Jadhavwadi by Shapoorji Pallonji Real Estate. Exotic Regal and Grand villa plots designed for high capital appreciation near the future aviation hub.</p>
+        <p><a href="https://joyville-homes.com/projects/shapoorji-treetopia-pune">View Project</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.7389,18.5913,0</coordinates>
+      </Point>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              73.7339,18.5863,0
+              73.7439,18.5863,0
+              73.7439,18.5963,0
+              73.7339,18.5963,0
+              73.7339,18.5863,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

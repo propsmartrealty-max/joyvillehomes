@@ -127,19 +127,19 @@ export default function RootLayout({
         <link rel="prefetch" href="/projects" />
         <link rel="prefetch" href="/press-research" />
         <link rel="prefetch" href="/locality/compare" />
-        {projects.slice(0, 4).map(project => (
+        {projects.map(project => (
           <GoogleProductBridge 
             key={project.id}
             id={project.id}
-            name={project.title}
+            name={`${project.title} | Shapoorji Pallonji ${project.location}`}
             description={project.description}
             image={project.image}
-            price={project.price.split(' ')[0] || "65"} 
+            price={project.price}
             currency="INR"
             availability={project.status}
             url={`https://joyville-homes.com/projects/${project.slug}`}
-            sku={project.id}
-            brand="Shapoorji Pallonji Joyville"
+            sku={Array.isArray(project.reraNumber) ? project.reraNumber[0] : (project.reraNumber || project.id)}
+            brand="Shapoorji Pallonji"
             category="Real Estate > Residential"
           />
         ))}

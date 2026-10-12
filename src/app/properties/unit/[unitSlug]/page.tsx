@@ -3,7 +3,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { projects } from '@/data/projects';
-import { generateUnitSlug } from '@/utils/seo-utils';
+import { generateUnitSlug, parsePriceToINR } from '@/utils/seo-utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, ArrowRight, CheckCircle2, Shield, Clock, TrendingUp, BarChart3, Smartphone, Building2 } from 'lucide-react';
@@ -135,8 +135,10 @@ export default async function UnitDetailPage({ params }: { params: Promise<{ uni
         "offers": {
             "@type": "Offer",
             "priceCurrency": "INR",
-            "price": project.price.replace(/[^0-9.]/g, ''),
-            "availability": "https://schema.org/InStock"
+            "price": parsePriceToINR(project.price),
+            "priceValidUntil": "2026-12-31",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": project.status.toLowerCase().includes('ready') ? "https://schema.org/InStock" : "https://schema.org/PreOrder"
         }
     };
 

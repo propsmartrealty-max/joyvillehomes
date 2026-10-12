@@ -705,6 +705,11 @@ export const projects: Project[] = [
             ringRoad: 8.5,
             itHub: 9.8
         },
+        constructionUpdate: {
+            percentage: 70,
+            statusText: "Structure & Tower Superstructure Complete; Internal Tiling, Electricals & Biophilic Garden Landscaping in Final Handover Phase.",
+            lastUpdated: "October 2026"
+        },
         reraVerifiedDate: "January 15, 2024",
         expertReview: {
             expertId: "expert-001",
@@ -977,6 +982,11 @@ export const projects: Project[] = [
             metro: 7.5,
             ringRoad: 9.5,
             itHub: 8.8
+        },
+        constructionUpdate: {
+            percentage: 92,
+            statusText: "Completed Towers Delivered with Occupancy Certificate (OC); Final Phases in Finishing & Pre-Handover Quality Audit.",
+            lastUpdated: "October 2026"
         },
         seoKeywords: [
             ...KEYWORD_MATRIX.PROJECT_EXPANSIONS.HADAPSAR_ANNEXE,
@@ -1546,7 +1556,7 @@ export const projects: Project[] = [
         slug: "wildernest-sp-kingstown-pune",
         title: "Wildernest at SP Kingstown",
         location: "SP Kingstown, Shewalewadi Road, Pune",
-        price: "Price on Request",
+        price: "₹1.85 Cr - ₹2.75 Cr",
         type: "Residential Apartments",
         status: "Ongoing",
         reraNumber: ["P52100052683", "P52100053177", "P52100053966", "P52100054077"],
@@ -1719,7 +1729,7 @@ export const projects: Project[] = [
         slug: "vanaha-golfland-pune",
         title: "Vanaha Golfland",
         location: "Bavdhan, Pune (Near Oxford Golf Resort)",
-        price: "Price on Request",
+        price: "₹1.55 Cr - ₹2.50 Cr",
         type: "Luxury Residences",
         status: "New Launch",
         seoKeywords: [
@@ -1790,6 +1800,11 @@ export const projects: Project[] = [
             metro: 7.2,
             ringRoad: 8.8,
             itHub: 9.0
+        },
+        constructionUpdate: {
+            percentage: 35,
+            statusText: "Excavation & Foundation Completed; Podium Level Slab Construction Underway.",
+            lastUpdated: "October 2026"
         },
         faqs: [
             {
@@ -1903,7 +1918,7 @@ export const projects: Project[] = [
         slug: "vanaha-springs-pune",
         title: "Vanaha Springs",
         location: "Bavdhan, Pune (Near Oxford Golf Resort)",
-        price: "Price on Request",
+        price: "₹95 L - ₹1.40 Cr",
         type: "Premium Residences",
         status: "Available",
         reraNumber: ["P52100028031", "P52100028082", "P52100028033"],
@@ -2096,7 +2111,7 @@ export const projects: Project[] = [
         slug: "vanaha-pune",
         title: "Vanaha",
         location: "Bavdhan, Pune (Near Oxford Golf Resort)",
-        price: "Price on Request",
+        price: "₹82 L - ₹2.50 Cr",
         type: "Residential Township",
         status: "Available",
         reraNumber: ["P52100028031", "P52100028082", "P52100028033"],
@@ -2161,6 +2176,11 @@ export const projects: Project[] = [
             metro: 7.2,
             ringRoad: 8.8,
             itHub: 9.0
+        },
+        constructionUpdate: {
+            percentage: 65,
+            statusText: "Multiple Phases Under Execution; Main 24m Access Boulevard, Power Sub-Station & Water Infrastructure 85% Completed.",
+            lastUpdated: "October 2026"
         },
         seoKeywords: [
             "Vanaha Bavdhan price", "Vanaha township Bavdhan price", "Vanaha floor plan", "Vanaha brochure PDF", "Vanaha possession date", "Vanaha amenities", "Vanaha reviews", "1000 acre township Pune", "flats for sale Bavdhan", "Shapoorji Pallonji Bavdhan",

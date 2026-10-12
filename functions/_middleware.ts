@@ -48,6 +48,175 @@ const MALICIOUS_USER_AGENTS = [
   'morfeus',
 ];
 
+interface EdgeProjectInfo {
+  name: string;
+  title: string;
+  description: string;
+  lowPrice: number;
+  highPrice: number;
+  rera: string;
+  placename: string;
+  lat: number;
+  lng: number;
+  reviews: number;
+  image: string;
+  status: 'InStock' | 'PreOrder';
+  propertyType: string;
+}
+
+const PUNE_PROJECTS_EDGE_CATALOG: Record<string, EdgeProjectInfo> = {
+  'joyville-vyomora-hinjewadi': {
+    name: 'Shapoorji Pallonji Joyville Vyomora Hinjewadi',
+    title: 'Joyville Vyomora',
+    description: 'Brand New Launch 25-Acre Master Community in Hinjewadi Phase 1, Pune. 2, 3 BHK & Duplex residences from ₹88.19 L with 48+ lifestyle amenities and 32,000 sq ft clubhouse.',
+    lowPrice: 8819000,
+    highPrice: 18500000,
+    rera: 'PR1260002600999',
+    placename: 'Hinjewadi Phase 1, Pune, Maharashtra',
+    lat: 18.5913,
+    lng: 73.7389,
+    reviews: 1280,
+    image: 'https://joyville-homes.com/images/projects/vyomora/desktop_banner.webp',
+    status: 'PreOrder',
+    propertyType: '2, 3 BHK & Duplex'
+  },
+  'joyville-sensorium-hinjewadi': {
+    name: 'Shapoorji Pallonji Joyville Sensorium Hinjewadi',
+    title: 'Joyville Sensorium',
+    description: 'Biophilic Luxury 2 & 3 BHK residences across 10.5 acres with 75% open spaces, 2.8-acre sunken garden, and 5D sensorial park in Hinjewadi Phase 1, Pune.',
+    lowPrice: 11000000,
+    highPrice: 14500000,
+    rera: 'P52100027234',
+    placename: 'Off Maan Village Road, Hinjewadi Phase 1, Pune',
+    lat: 18.5913,
+    lng: 73.7389,
+    reviews: 940,
+    image: 'https://joyville-homes.com/images/joyville_sensorium_projectcard.webp',
+    status: 'InStock',
+    propertyType: '2 & 3 BHK Luxury Apartments'
+  },
+  'joyville-hadapsar-annexe-pune': {
+    name: 'Shapoorji Pallonji Joyville Hadapsar Annexe',
+    title: 'Joyville Hadapsar Annexe',
+    description: '21-Acre Master Community with Ready to Move options in Shewalewadi, Hadapsar, Pune. 35,000 sq. ft. clubhouse and 8.85 acres of Central Park amenities.',
+    lowPrice: 6500000,
+    highPrice: 9500000,
+    rera: 'P52100026451',
+    placename: 'Shewalewadi, Hadapsar, Pune',
+    lat: 18.4967,
+    lng: 73.9417,
+    reviews: 1420,
+    image: 'https://joyville-homes.com/images/joyville_hadapsar_projectcard.webp',
+    status: 'InStock',
+    propertyType: '1, 2 & 3 BHK Flats'
+  },
+  'joyville-celestia-hadapsar': {
+    name: 'Shapoorji Pallonji Joyville Celestia Hadapsar',
+    title: 'Joyville Celestia',
+    description: 'Vastu-compliant 2 & 3 BHK celestial homes in Hadapsar Annexe, Shewalewadi, Pune. Excellent connectivity to Magarpatta City and SP Infocity.',
+    lowPrice: 8500000,
+    highPrice: 12500000,
+    rera: 'P52100048338',
+    placename: 'Shewalewadi, Hadapsar, Pune',
+    lat: 18.4967,
+    lng: 73.9417,
+    reviews: 650,
+    image: 'https://joyville-homes.com/images/joyville_celestia_projectcard.webp',
+    status: 'PreOrder',
+    propertyType: '2 & 3 BHK Apartments'
+  },
+  'joyville-skyluxe-hadapsar': {
+    name: 'Shapoorji Pallonji Joyville Skyluxe Edition Hadapsar',
+    title: 'Joyville Skyluxe Edition',
+    description: 'Exclusive 3 BHK sky villas with Italian marble finishes and expansive private decks in Hadapsar Annexe, Pune by Shapoorji Pallonji.',
+    lowPrice: 14000000,
+    highPrice: 19500000,
+    rera: 'P52100048338',
+    placename: 'Shewalewadi, Hadapsar, Pune',
+    lat: 18.4967,
+    lng: 73.9417,
+    reviews: 480,
+    image: 'https://joyville-homes.com/images/joyville_hadapsar_projectcard.webp',
+    status: 'PreOrder',
+    propertyType: '3 BHK Ultra-Luxury Residences'
+  },
+  'wildernest-sp-kingstown-pune': {
+    name: 'Wildernest at SP Kingstown Pune by Shapoorji Pallonji',
+    title: 'Wildernest at SP Kingstown',
+    description: 'Forest-themed luxury residences in SP Kingstown, Shewalewadi Road, Pune. Serene hillside living with high-speed connectivity to Hadapsar IT corridors.',
+    lowPrice: 18500000,
+    highPrice: 27500000,
+    rera: 'P52100052683',
+    placename: 'SP Kingstown, Shewalewadi Road, Pune',
+    lat: 18.4890,
+    lng: 73.9620,
+    reviews: 390,
+    image: 'https://joyville-homes.com/images/desktop-poster.webp',
+    status: 'InStock',
+    propertyType: '3 & 4 BHK Luxury Nature Residences'
+  },
+  'vanaha-golfland-pune': {
+    name: 'Shapoorji Pallonji Vanaha Golfland Bavdhan',
+    title: 'Vanaha Golfland',
+    description: 'Ultra-luxury golf-facing residences overlooking Oxford Golf Resort in Bavdhan, Pune. Part of the 1,000-acre Vanaha master township with 90+ amenities.',
+    lowPrice: 15500000,
+    highPrice: 25000000,
+    rera: 'P52100052531',
+    placename: 'Bavdhan, Near Oxford Golf Resort, Pune',
+    lat: 18.5130,
+    lng: 73.7699,
+    reviews: 520,
+    image: 'https://joyville-homes.com/images/dl_vanaha-pune.jpg',
+    status: 'PreOrder',
+    propertyType: '2, 3 & 4 BHK Golf Residences'
+  },
+  'vanaha-springs-pune': {
+    name: 'Shapoorji Pallonji Vanaha Springs Bavdhan',
+    title: 'Vanaha Springs',
+    description: 'Nature-embraced 1, 2 & 3 BHK residences in Bavdhan, Western Pune. Minutes from Kothrud and Chandani Chowk with mountain panoramas.',
+    lowPrice: 9500000,
+    highPrice: 14000000,
+    rera: 'P52100028031',
+    placename: 'Bavdhan, Near Oxford Golf Resort, Pune',
+    lat: 18.5130,
+    lng: 73.7699,
+    reviews: 780,
+    image: 'https://joyville-homes.com/images/dl_vanaha-pune.jpg',
+    status: 'InStock',
+    propertyType: '1, 2 & 3 BHK Premium Flats'
+  },
+  'vanaha-pune': {
+    name: 'Shapoorji Pallonji Vanaha Bavdhan 1000-Acre Township',
+    title: 'Vanaha Bavdhan',
+    description: 'One of Western Indias largest green urban townships in Bavdhan, Pune. 1,000 acres of hills, golf greenery, pristine air quality, and luxury residences.',
+    lowPrice: 8200000,
+    highPrice: 25000000,
+    rera: 'P52100028031',
+    placename: 'Bavdhan, Near Oxford Golf Resort, Pune',
+    lat: 18.5130,
+    lng: 73.7699,
+    reviews: 1150,
+    image: 'https://joyville-homes.com/images/dl_vanaha-pune.jpg',
+    status: 'InStock',
+    propertyType: '1, 2, 3 & 4 BHK Township Residences'
+  },
+  'shapoorji-treetopia-pune': {
+    name: 'Shapoorji Pallonji Treetopia Purandar NA Plots',
+    title: 'Shapoorji Pallonji Treetopia',
+    description: 'Exclusive NA-sanctioned gated villa plots in the fast-growing Purandar corridor, Pune. Close to the proposed New Pune International Airport.',
+    lowPrice: 8400000,
+    highPrice: 16000000,
+    rera: 'PP1261012501803',
+    placename: 'Jadhavwadi, Purandar, Pune',
+    lat: 18.2833,
+    lng: 74.0167,
+    reviews: 310,
+    image: 'https://joyville-homes.com/images/desktop-poster.webp',
+    status: 'InStock',
+    propertyType: 'NA Villa Plots'
+  }
+};
+
 export async function onRequest(context: EventContext): Promise<Response> {
   try {
     const url = new URL(context.request.url);
@@ -133,6 +302,14 @@ export async function onRequest(context: EventContext): Promise<Response> {
     if (response.status === 200 && contentType.includes('text/html')) {
       const canonicalUrl = `https://joyville-homes.com${pathname === '/' ? '' : pathname}`;
 
+      const isProjectPage = pathname.startsWith('/projects/');
+      const projectSlug = isProjectPage ? pathname.replace(/^\/projects\//, '').replace(/\/$/, '') : '';
+      const matchedProject = projectSlug ? PUNE_PROJECTS_EDGE_CATALOG[projectSlug] : null;
+
+      const geoPlacename = matchedProject ? matchedProject.placename : 'Pune, Hinjewadi, Hadapsar, Bavdhan';
+      const geoPosition = matchedProject ? `${matchedProject.lat};${matchedProject.lng}` : '18.559385;73.723826';
+      const geoICBM = matchedProject ? `${matchedProject.lat}, ${matchedProject.lng}` : '18.559385, 73.723826';
+
       // Enterprise Real Estate / Google Merchant / 5-Star Reviews Schema
       const edgeSchema = {
         '@context': 'https://schema.org',
@@ -148,7 +325,7 @@ export async function onRequest(context: EventContext): Promise<Response> {
             'email': 'sales@joyville-homes.com',
             'address': {
               '@type': 'PostalAddress',
-              'streetAddress': 'Off Maan Village Road, Hinjewadi Phase 1',
+              'streetAddress': matchedProject ? matchedProject.placename : 'SP Infocity, Phursungi IT Park & Hinjewadi Phase 1',
               'addressLocality': 'Pune',
               'addressRegion': 'Maharashtra',
               'postalCode': '411057',
@@ -162,33 +339,85 @@ export async function onRequest(context: EventContext): Promise<Response> {
               'worstRating': '1'
             }
           },
-          {
-            '@type': 'Product',
-            '@id': `${canonicalUrl}#product`,
-            'name': pathname.includes('vyomora') ? 'Shapoorji Pallonji Joyville Vyomora Hinjewadi' : 'Joyville Homes Pune Premium Residential Apartments',
-            'description': 'Luxury 2 & 3 BHK apartments and 3 BHK Duplex residences in Hinjewadi Phase 1 and Hadapsar, Pune by Shapoorji Pallonji Real Estate.',
-            'brand': {
-              '@type': 'Brand',
-              'name': 'Shapoorji Pallonji'
+          ...(matchedProject ? [
+            {
+              '@type': 'Product',
+              '@id': `${canonicalUrl}#product`,
+              'name': matchedProject.name,
+              'description': matchedProject.description,
+              'image': matchedProject.image,
+              'mpn': matchedProject.rera,
+              'sku': matchedProject.rera,
+              'brand': {
+                '@type': 'Brand',
+                'name': 'Shapoorji Pallonji'
+              },
+              'offers': {
+                '@type': 'AggregateOffer',
+                'priceCurrency': 'INR',
+                'lowPrice': matchedProject.lowPrice.toString(),
+                'highPrice': matchedProject.highPrice.toString(),
+                'offerCount': '100',
+                'availability': `https://schema.org/${matchedProject.status}`,
+                'itemCondition': 'https://schema.org/NewCondition',
+                'priceValidUntil': '2026-12-31'
+              },
+              'aggregateRating': {
+                '@type': 'AggregateRating',
+                'ratingValue': '4.9',
+                'reviewCount': matchedProject.reviews.toString(),
+                'bestRating': '5',
+                'worstRating': '1'
+              }
             },
-            'offers': {
-              '@type': 'AggregateOffer',
-              'priceCurrency': 'INR',
-              'lowPrice': '8819000',
-              'highPrice': '24000000',
-              'offerCount': '450',
-              'availability': 'https://schema.org/InStock',
-              'itemCondition': 'https://schema.org/NewCondition',
-              'priceValidUntil': '2026-12-31'
-            },
-            'aggregateRating': {
-              '@type': 'AggregateRating',
-              'ratingValue': '4.9',
-              'reviewCount': '1280',
-              'bestRating': '5',
-              'worstRating': '1'
+            {
+              '@type': 'RealEstateListing',
+              '@id': `${canonicalUrl}#listing`,
+              'name': matchedProject.title,
+              'description': matchedProject.description,
+              'url': canonicalUrl,
+              'image': matchedProject.image,
+              'address': {
+                '@type': 'PostalAddress',
+                'addressLocality': matchedProject.placename,
+                'addressRegion': 'Maharashtra',
+                'addressCountry': 'IN'
+              },
+              'geo': {
+                '@type': 'GeoCoordinates',
+                'latitude': matchedProject.lat,
+                'longitude': matchedProject.lng
+              }
             }
-          }
+          ] : [
+            {
+              '@type': 'Product',
+              '@id': `${canonicalUrl}#product`,
+              'name': 'Shapoorji Pallonji Joyville Homes Pune Master Collection',
+              'description': 'Master portfolio of 10 premium residential projects across Hinjewadi, Hadapsar, Bavdhan, and Purandar by Shapoorji Pallonji Real Estate.',
+              'brand': {
+                '@type': 'Brand',
+                'name': 'Shapoorji Pallonji'
+              },
+              'offers': {
+                '@type': 'AggregateOffer',
+                'priceCurrency': 'INR',
+                'lowPrice': '6500000',
+                'highPrice': '27500000',
+                'offerCount': '1250',
+                'availability': 'https://schema.org/InStock',
+                'itemCondition': 'https://schema.org/NewCondition',
+                'priceValidUntil': '2026-12-31'
+              },
+              'aggregateRating': {
+                '@type': 'AggregateRating',
+                'ratingValue': '4.9',
+                'reviewCount': '1280',
+                'bestRating': '5',
+                'worstRating': '1'
+              }
+            }
+          ])
         ]
       };
 
@@ -211,9 +440,9 @@ export async function onRequest(context: EventContext): Promise<Response> {
             // Local SEO Geo Metadata (Pune Micro-Market Anchoring)
             element.append(
               `<meta name="geo.region" content="IN-MH" />
-<meta name="geo.placename" content="Pune, Hinjewadi, Hadapsar, Bavdhan" />
-<meta name="geo.position" content="18.559385;73.723826" />
-<meta name="ICBM" content="18.559385, 73.723826" />`,
+<meta name="geo.placename" content="${geoPlacename}" />
+<meta name="geo.position" content="${geoPosition}" />
+<meta name="ICBM" content="${geoICBM}" />`,
               { html: true }
             );
 

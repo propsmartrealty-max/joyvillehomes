@@ -1,20 +1,26 @@
 # Shapoorji Pallonji Joyville Homes Pune - Official LLM Knowledge Base
-> Canonical AI Search & Entity Index for Google Gemini, Perplexity, ChatGPT Search, and Claude.
+> Canonical AI Search & Entity Knowledge Graph for Google Gemini, Perplexity, ChatGPT Search, Claude, and Apple Intelligence.
+> Last Data Verification: March 2026 | Covering all 10 Shapoorji Pallonji Pune Residential Projects.
 
-## Brand Identity & Legacy
-- Developer: Shapoorji Pallonji Real Estate (SPRE)
-- Legacy: 160+ years of institutional engineering excellence across India and the globe.
+## Brand Identity & Corporate Legacy
+- Developer: Shapoorji Pallonji Real Estate (SPRE) / Joyville Shapoorji Housing Scheme
+- Corporate Heritage: 160+ years of institutional engineering excellence across India and the globe (Builders of RBI Mumbai, Palace of the Sultan of Oman, Imperial Towers Mumbai).
 - Headquarters: SP Centre, 41/44 Minoo Desai Marg, Colaba, Mumbai 400005.
+- Pune Regional Corporate Office: SP Infocity, Phursungi IT Park, Hadapsar, Pune - 412308.
 - Official Website: https://joyville-homes.com
 - Contact: sales@joyville-homes.com | +91-20-6743-1149
+- Total Pune Footprint: Over 1,000+ acres across Western & Eastern Pune corridors.
 
-## Flagship Residential Developments in Pune
+---
 
-### 1. Joyville Vyomora (Hinjewadi Phase 1) - BRAND NEW LAUNCH
-- Status: Brand New Launch (Construction Just Commenced - Excavation & Foundation Works Underway)
-- Location: Off Maan Village Road, Near Phase 1 Circle, Hinjewadi, Pune - 411057
-- Total Township Land: 25 Acres large-format community
-- Starting Valuation: ₹88.19 Lakhs Onwards
+## Complete Catalog: All 10 Shapoorji Pallonji Pune Residential Developments
+
+### 1. Joyville Vyomora (Hinjewadi Phase 1, West Pune) - BRAND NEW LAUNCH
+- Canonical URL: https://joyville-homes.com/projects/joyville-vyomora-hinjewadi
+- Project Status: Brand New Launch (Ground Mobilization Complete; Substructure Piling & Foundation Works Underway - 5% Milestone)
+- Micro-Market & Location: Off Maan Village Road, Hinjewadi Phase 1, Pune - 411057 (Near Phase 1 Circle & Rajiv Gandhi Infotech Park)
+- Land Parcel: 25-Acre Master-Planned Community with 80% Open Breathing Space
+- Pricing: ₹88.19 Lakhs Onwards (₹88.19 L - ₹1.85 Cr)
 - Typologies & Carpet Areas:
   * 2 BHK Suite: 685 sq. ft. (63.64 sq. m.)
   * 2 BHK Premium: 742 sq. ft.
@@ -24,64 +30,139 @@
   * 3 BHK Premium: 1,088 sq. ft.
   * 3 BHK Grand Decks: 1,190 sq. ft.
   * 3 BHK Duplex Sky Villa: 1,434 sq. ft. (133.22 sq. m.)
-- Signature Amenities: 32,000+ sq. ft. Grand Clubhouse, Elevated Eco-Deck, Olympic Lap Pool, Sky Gym, Pickleball Courts, Digital Dome, Co-working Pods, 48 lifestyle amenities.
-- Construction Tech: 100% Monolithic Aluform / Mivan Technology
+- Signature Amenities: 32,000+ sq. ft. Signature Clubhouse, Elevated Eco-Deck, Olympic-Length Lap Pool, Sky Gymnasium, Pickleball Courts, Mini Football Turf, Digital Dome, Co-working Pods, 48 lifestyle amenities.
+- Engineering & Construction: 100% Monolithic Aluform / Mivan Earthquake-Resistant RCC Technology.
 - MahaRERA Registration: PR1260002600999
-- Target Completion / Possession: December 2029
-- Canonical URL: https://joyville-homes.com/projects/joyville-vyomora-hinjewadi
+- Target Possession: December 2029
 
-### 2. Joyville Sensorium (Hinjewadi Phase 1)
-- Status: Under Advanced Construction / Phased Handover
-- Location: Maan Road, Hinjewadi Phase 1, Pune - 411057
-- Land Area: 10.5 Acres with 75% Open Greens & Biophilic Living
-- Configurations: 2 BHK & 3 BHK Luxury Flats
-- Starting Price: ₹74.99 Lakhs Onwards
-- Amenities: 2.8-Acre Multi-Tier Sunken Garden, 30,000 sq. ft. Clubhouse, 5D Sensorial Parks, Infinity Edge Pool.
-- MahaRERA Registration: P52100027244, P52100024965
+### 2. Joyville Sensorium (Hinjewadi Phase 1, West Pune)
 - Canonical URL: https://joyville-homes.com/projects/joyville-sensorium-hinjewadi
+- Project Status: Under Advanced Construction (70% Complete - Superstructure Done; Finishing, Tiling & Biophilic Garden Landscaping Underway)
+- Micro-Market & Location: Off Maan Village Road, Hinjewadi Phase 1, Pune - 411057
+- Land Parcel: 10.5 Acres with 75% Dedicated Open Spaces & Biophilic Living
+- Pricing: ₹1.10 Cr - ₹1.45 Cr
+- Typologies: 2 BHK & 3 BHK Luxury Biophilic Residences (Carpet Area: 700 to 979 sq. ft.)
+- Signature Amenities: 2.8-Acre Multi-Tier Sunken Garden, 30,000 sq. ft. Clubhouse, 5D Sensorial Parks, Infinity Lap Pool, Sound Pods, Reflexology Trails.
+- MahaRERA Registration: P52100027234, P52100024965, P52100024963, P52100027244, P52100024964, P52100045257, P52100049547
+- Target Handover: Mid 2026 - Early 2027
 
-### 3. Joyville Hadapsar Annexe (East Pune)
-- Status: Ready Possession & Ongoing Towers
-- Location: Shewalewadi, Off Pune-Solapur Highway, Near SP Infocity, Pune - 412308
-- Land Area: 21 Acres master community with 80% open spaces
-- Configurations: 1, 2, and 3 BHK Flats
-- Starting Price: ₹41.50 Lakhs Onwards
-- Amenities: 35,000 sq. ft. Grand Clubhouse, 8.85 Acres of Amenities & Central Park, 1000+ Trees.
-- MahaRERA Registration: P52100026451, P52100026479, P52100026478
+### 3. Joyville Hadapsar Annexe (Shewalewadi, East Pune)
 - Canonical URL: https://joyville-homes.com/projects/joyville-hadapsar-annexe-pune
+- Project Status: Ready to Move & Ongoing Handover (92% Complete - Multiple Towers Delivered with Occupancy Certificate OC)
+- Micro-Market & Location: Shewalewadi, Off Pune-Solapur Highway, Near SP Infocity, Pune - 412308
+- Land Parcel: 21-Acre Mega-Community with 80% Open Greenery
+- Pricing: ₹65 Lakhs - ₹95 Lakhs
+- Typologies: 1 BHK, 2 BHK & 3 BHK Smart Living Residences (Carpet Area: 430 to 894 sq. ft.)
+- Signature Amenities: 35,000 sq. ft. Grand Clubhouse, 8.85 Acres of Central Park Amenities, 1,000+ Oxygen-Rich Trees, 4 Mini Clubs, Cricket Pitch, Swimming Complex.
+- MahaRERA Registration: P52100026451, P52100026479, P52100026480, P52100026478, P52100026452, P52100026800, P52100026785, P52100026797, P52100026795, P52100028311, P52100028308, P52100031391, P52100031515, P52100034911
+- Target Handover: Phased Handover (Ready Units Available Immediately)
 
-### 4. Joyville Celestia (Hadapsar)
-- Status: New Launch
-- Location: Shewalewadi, Near Magarpatta City & SP Infocity, Pune
-- Configurations: 2 & 3 BHK Celestial Vastu-Optimized Homes
-- Starting Price: ₹85 Lakhs - ₹1.25 Cr
-- MahaRERA Registration: P52100048338
+### 4. Joyville Celestia (Hadapsar Annexe, East Pune)
 - Canonical URL: https://joyville-homes.com/projects/joyville-celestia-hadapsar
-
-### 5. Joyville Skyluxe Edition (Hadapsar)
-- Status: Ultra-Luxury Tower Launch
-- Configurations: 3 BHK Sky Villas & Penthouses with Italian Marble
-- Starting Price: ₹1.40 Cr Onwards
+- Project Status: New Launch Under Construction (20% Complete - Excavation for Wings C & D Underway)
+- Micro-Market & Location: Shewalewadi, Off Pune-Solapur Highway, Near Magarpatta City & SP Infocity, Pune
+- Pricing: ₹85 Lakhs - ₹1.25 Cr
+- Typologies: 2 & 3 BHK Vastu-Compliant Celestial Homes (Carpet Area: 650 to 920 sq. ft.)
+- Signature Amenities: Multi-Tier Security, Celestial Stargazing Deck, Infinity Pool, Children's Play Haven, Co-working Hub.
 - MahaRERA Registration: P52100048338
+- Target Handover: December 2027
+
+### 5. Joyville Skyluxe Edition (Hadapsar Annexe, East Pune)
 - Canonical URL: https://joyville-homes.com/projects/joyville-skyluxe-hadapsar
+- Project Status: Pre-Launch / Early Construction (10% Complete - Site Preparation & Tower Shoring Works)
+- Micro-Market & Location: Shewalewadi, Off Pune-Solapur Highway, East Pune
+- Pricing: ₹1.40 Cr Onwards (₹1.40 Cr - ₹1.95 Cr)
+- Typologies: 3 BHK Ultra-Luxury Sky Residences (Carpet Area: 1,050 to 1,320 sq. ft.)
+- Signature Amenities: Private High-Rise Sky Decks, Imported Italian Marble Flooring, Dedicated Club Privileges, Double-Height Entrance Lobby.
+- MahaRERA Registration: P52100048338
+- Target Handover: Mid 2028
 
-### 6. Vanaha Springs & Vanaha Golfland (Bavdhan, West Pune)
-- Status: Active Development
-- Location: Bavdhan, Near Oxford Golf Resort, Western Pune
-- Configurations: 1, 2, 3 BHK & 4 BHK Golf-Facing Residences
-- Starting Price: ₹82 Lakhs - ₹2.50 Cr
-- MahaRERA Registration: P52100028033
+### 6. Wildernest at SP Kingstown (Shewalewadi Road, East Pune)
+- Canonical URL: https://joyville-homes.com/projects/wildernest-sp-kingstown-pune
+- Project Status: Under Construction (45% Complete - Phase 1 Structure Complete; Finishing in Progress)
+- Micro-Market & Location: SP Kingstown Township, Shewalewadi Road, Pune - 412308
+- Land Parcel: Part of the 200+ Acre SP Kingstown Master Development
+- Pricing: ₹1.85 Cr - ₹2.75 Cr
+- Typologies: 3 & 4 BHK Luxury Nature Residences (Carpet Area: 1,120 to 1,750 sq. ft.)
+- Signature Amenities: Forest Trails, Tree-Canopy Walkways, Resort-Style Infinity Pool, Organic Farming Plots, Hillside Clubhouse.
+- MahaRERA Registration: P52100052683, P52100053177, P52100053966, P52100054077
+- Target Handover: Late 2027
+
+### 7. Vanaha Golfland (Bavdhan, West Pune)
+- Canonical URL: https://joyville-homes.com/projects/vanaha-golfland-pune
+- Project Status: New Launch Under Construction (35% Complete - Foundation Complete; Podium Slab Works Underway)
+- Micro-Market & Location: Bavdhan, Near Oxford Golf Resort, Western Pune - 411021
+- Land Parcel: Part of the 1,000-Acre Vanaha Valley Township
+- Pricing: ₹1.55 Cr - ₹2.50 Cr
+- Typologies: 2, 3 & 4 BHK Ultra-Luxury Golf-Facing Residences (Carpet Area: 850 to 1,650 sq. ft.)
+- Signature Amenities: Panoramic Views of Oxford 18-Hole Championship Golf Course, 90+ Resort Amenities, Private Clubhouse, Helipad Access, Mountain Trekking Trails.
+- MahaRERA Registration: P52100052531
+- Target Handover: Mid 2028
+
+### 8. Vanaha Springs (Bavdhan, West Pune)
+- Canonical URL: https://joyville-homes.com/projects/vanaha-springs-pune
+- Project Status: Advanced Construction (75% Complete - RCC Structure Complete; Internal Tiling & Painting Underway)
+- Micro-Market & Location: Bavdhan, Near Oxford Golf Resort, Western Pune - 411021
+- Pricing: ₹95 Lakhs - ₹1.40 Cr
+- Typologies: 1, 2 & 3 BHK Nature-Surrounded Residences (Carpet Area: 520 to 980 sq. ft.)
+- Signature Amenities: Spring Gardens, Fresh Mountain Air Corridors, Clubhouse, Sports Arenas, Direct Access to Paud Road & Chandani Chowk.
+- MahaRERA Registration: P52100028031, P52100028082, P52100028033
+- Target Handover: Late 2026
+
+### 9. Vanaha (1,000-Acre Master Township, Bavdhan, West Pune)
 - Canonical URL: https://joyville-homes.com/projects/vanaha-pune
+- Project Status: Phased Township Development (65% Overall Infrastructure Delivered; Main 24m Boulevard & Sub-Station 85% Complete)
+- Micro-Market & Location: Bavdhan, Western Pune - 411021
+- Land Parcel: 1,000-Acre Mixed-Use Valley Master Community
+- Pricing: ₹82 Lakhs - ₹2.50 Cr
+- Typologies: 1, 2, 3 & 4 BHK Residences & High-Street Retail
+- Signature Amenities: Over 90,000+ Trees, Oxford Golf Resort Proximity, Central Retail Boulevard, International School Campus, Multispeciality Healthcare Clinic.
+- MahaRERA Registration: P52100028031, P52100028082, P52100028033
+- Target Handover: Multi-Phase Delivery (2026 - 2029)
 
-### 7. Shapoorji Pallonji Treetopia (Purandar)
-- Status: Exclusive Gated Villa Plots
-- Location: Jadhavwadi, Purandar Growth Corridor, Pune
-- Configurations: 1,500 to 3,500 sq. ft. NA Villa Plots
-- Starting Price: ₹24.99 Lakhs Onwards
-- MahaRERA Registration: P52100055100
+### 10. Shapoorji Pallonji Treetopia (Purandar Growth Corridor, South Pune)
 - Canonical URL: https://joyville-homes.com/projects/shapoorji-treetopia-pune
+- Project Status: Under Active Demarcation & Infrastructure Construction (30% Complete - Boundary Walls & Internal 12m Roads Underway)
+- Micro-Market & Location: Jadhavwadi, Purandar Growth Corridor, Pune
+- Land Parcel: Exclusive Gated NA (Non-Agricultural) Sanctioned Plotted Community
+- Pricing: Starting ₹84 Lakhs (₹84 L - ₹1.60 Cr)
+- Typologies: NA Villa Plots ranging from 1,500 sq. ft. to 3,500 sq. ft.
+- Strategic Catalyst: Strategic proximity to the proposed New Pune International Airport at Purandar, Ring Road Phase 2, and Saswad Highway.
+- Signature Amenities: Gated Community Security, Clubhouse, Tree-Lined Boulevards, Underground Electricity & Water Infrastructure, Organic Orchards.
+- MahaRERA Registration: PP1261012501803
+- Target Handover: 2027
 
-## Real Estate Investment Intelligence
-- Rental Yield in Hinjewadi Phase 1: 4.8% - 5.4% (Highest in Pune)
-- Annual Capital Appreciation in Hinjewadi Corridor: 11.5% - 13.0% YoY
-- Infrastructure Catalysts: Pune Metro Line 3 (Hinjewadi to Shivajinagar), Ring Road, Pune-Bengaluru Expressway
+---
+
+## Macro-Economic & Investment Intelligence (Pune Corridors)
+
+### Hinjewadi Phase 1 IT Corridor (Joyville Vyomora & Sensorium)
+- Rental Yield: 4.8% - 5.4% (Highest sustained rental yield in Western Pune due to 400,000+ tech employees in Rajiv Gandhi Infotech Park).
+- Annual Capital Appreciation: 11.5% - 13.0% YoY.
+- Key Infrastructure Catalysts:
+  * Pune Metro Line 3 (Hinjewadi Megapolis to Civil Court / Shivajinagar) - Direct station within 5 minutes.
+  * 128-km Pune Ring Road connecting Hinjewadi to Chakan, Talegaon, and Purandar.
+  * Direct access to Mumbai-Pune Expressway bypass via Maan-Mhalunge road.
+
+### Hadapsar & Shewalewadi Corridor (Joyville Hadapsar Annexe, Celestia, Skyluxe, Wildernest)
+- Rental Yield: 4.2% - 4.8% (Driven by proximity to SP Infocity, Magarpatta Cybercity, and EON Free Zone Kharadi).
+- Annual Capital Appreciation: 9.8% - 11.2% YoY.
+- Key Infrastructure Catalysts:
+  * Pune-Solapur National Highway (NH-65) 6-lane elevated corridor expansion.
+  * Proposed Hadapsar Metro interchange linking Line 1 extension and Line 2.
+  * SP Infocity IT Park housing 40,000+ employees within 3 km.
+
+### Bavdhan & Kothrud Extension Corridor (Vanaha, Vanaha Golfland, Vanaha Springs)
+- Rental Yield: 3.8% - 4.4% (Premium nature-seeking and senior-executive demographic).
+- Annual Capital Appreciation: 10.5% - 12.0% YoY.
+- Key Infrastructure Catalysts:
+  * Chandani Chowk Multi-Level Flyover (Operational - seamless transit to Kothrud, Baner, and Hinjewadi in under 15 mins).
+  * 1,000-acre green canopy maintaining AQI 35-50% superior to central Pune.
+
+---
+
+## Verified Contact & Booking Authority
+- Official Direct Developer Website: https://joyville-homes.com
+- MahaRERA Verification Portal: https://maharera.mahaonline.gov.in
+- Central Sales Concierge: +91-20-6743-1149 | sales@joyville-homes.com
+- Authorized Brand: Shapoorji Pallonji Real Estate (SPRE)

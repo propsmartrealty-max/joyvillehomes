@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "last_updated": "2026-10-12T07:17:12.031Z",
+    "source": "Joyville Homes Central Architecture",
+    "schema_version": "1.1.0"
+  },
+  "business_entities": [
+    {
+      "id": "joyville-homes-pune-hq",
+      "name": "Shapoorji Pallonji Real Estate Pune",
+      "legal_name": "Shapoorji Pallonji & Company Pvt. Ltd.",
+      "categories": [
+        "Real Estate Developer",
+        "Home Builder",
+        "Real Estate Agency"
+      ],
+      "description": "Official Shapoorji Pallonji Joyville Homes Pune platform. Providing premium 1, 2 & 3 BHK residences across Hinjewadi, Hadapsar, and Bavdhan.",
+      "url": "https://joyville-homes.com",
+      "phone": "+912067210000",
+      "address": {
+        "street": "SP Infocity, Phursungi IT Park",
+        "city": "Pune",
+        "region": "Maharashtra",
+        "postal_code": "412308",
+        "country": "IN"
+      },
+      "coordinates": {
+        "lat": 18.49,
+        "lng": 73.97
+      },
+      "hours": {
+        "monday": "09:30-18:30",
+        "tuesday": "09:30-18:30",
+        "wednesday": "09:30-18:30",
+        "thursday": "09:30-18:30",
+        "friday": "09:30-18:30",
+        "saturday": "09:30-18:30",
+        "sunday": "Closed"
+      },
+      "social_profiles": [
+        "https://en.wikipedia.org/wiki/Shapoorji_Pallonji_Group",
+        "https://www.linkedin.com/company/shapoorji-pallonji-real-estate",
+        "https://twitter.com/SPRealEstate_In",
+        "https://www.facebook.com/ShapoorjiPallonjiRealEstate/",
+        "https://www.wikidata.org/wiki/Q7489503",
+        "https://www.crunchbase.com/organization/shapoorji-pallonji-group",
+        "https://maharera.mahaonline.gov.in",
+        "https://www.instagram.com/shapoorjipallonjirealestate/",
+        "https://www.youtube.com/user/ShapoorjiPallonjiRE"
+      ]
+    }
+  ]
+}

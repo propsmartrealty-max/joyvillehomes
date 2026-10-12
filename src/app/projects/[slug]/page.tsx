@@ -7,6 +7,7 @@ import { localities } from '@/data/localities';
 import { ENTITIES } from '@/data/entities';
 import { getExpertById } from '@/data/experts';
 import { getTopicById } from '@/data/TopicIntelligence';
+import { parsePriceToINR, parsePriceRangeToINR } from '@/utils/seo-utils';
 import Link from 'next/link';
 import Image from 'next/image';
 import VerifiedDataBadge from '@/components/VerifiedDataBadge';
@@ -144,6 +145,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
     const siteUrl = 'https://joyville-homes.com';
     const locality = localities.find(l => l.name.toLowerCase() === project.location.toLowerCase());
     const expandedKeywords = GET_EXPANDED_KEYWORDS(project.title, project.location);
+    const { lowPrice, highPrice } = parsePriceRangeToINR(project.price);
+    const basePriceINR = parsePriceToINR(project.price);
 
     const jsonLd = {
         "@context": "https://schema.org",
@@ -221,7 +224,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 "offers": {
                     "@type": "AggregateOffer",
                     "priceCurrency": "INR",
-                    "lowPrice": project.price.replace(/[^0-9.]/g, ''),
+                    "lowPrice": lowPrice,
+                    "highPrice": highPrice,
                     "offerCount": "100",
                     "priceRange": project.price,
                     "priceValidUntil": project.lastPriceUpdate ? new Date(new Date(project.lastPriceUpdate).getTime() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0] : new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
@@ -534,9 +538,9 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                         "offers": {
                             "@type": "Offer",
                             "priceCurrency": "INR",
-                            "price": (parseFloat(project.price.replace(/[^0-9.]/g, '')) || 85) * (project.price.includes('Cr') ? 10000000 : 100000),
+                            "price": basePriceINR,
                             "priceValidUntil": "2026-12-31",
-                            "availability": "https://schema.org/InStock",
+                            "availability": project.status.toLowerCase().includes('ready') ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
                             "url": `${siteUrl}/projects/${project.slug}`
                         },
                         "additionalProperty": [
@@ -765,7 +769,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     "name": `${project.title} ${fp.type}`,
                     "description": fp.description || `Premium ${fp.type} residence with carpet area of ${fp.carpetArea} at ${project.title}, ${project.location}.`,
                     "priceCurrency": "INR",
-                    "price": (parseFloat(project.price.replace(/[^0-9.]/g, '')) || 85) * (project.price.includes('Cr') ? 10000000 : 100000),
+                    "price": basePriceINR,
                     "priceValidUntil": "2026-12-31",
                     "availability": project.status.toLowerCase().includes('ready') ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
                     "itemCondition": "https://schema.org/NewCondition",

@@ -1,4 +1,5 @@
 import { projects } from '@/data/projects';
+import { parsePriceToINR } from '@/utils/seo-utils';
 
 export const dynamic = 'force-static';
 
@@ -11,11 +12,7 @@ export async function GET() {
 `;
 
     projects.forEach((project) => {
-        // Strip out non-numeric characters from price string and assume lakhs/crores parsing
-        const priceClean = project.price.replace(/[^0-9.]/g, '');
-        const numericPrice = project.price.includes('Cr') 
-            ? parseFloat(priceClean) * 10000000 
-            : parseFloat(priceClean) * 100000;
+        const numericPrice = parsePriceToINR(project.price);
 
         xml += `
     <ad>
@@ -32,8 +29,8 @@ export async function GET() {
         <city_area><![CDATA[${project.location}]]></city_area>
         <region><![CDATA[Maharashtra]]></region>
         <postcode><![CDATA[411000]]></postcode>
-        <latitude><![CDATA[18.5204]]></latitude>
-        <longitude><![CDATA[73.8567]]></longitude>
+        <latitude><![CDATA[${project.latitude || 18.5204}]]></latitude>
+        <longitude><![CDATA[${project.longitude || 73.8567}]]></longitude>
         <pictures>
             <picture>
                 <picture_url><![CDATA[${siteUrl}${project.image}]]></picture_url>

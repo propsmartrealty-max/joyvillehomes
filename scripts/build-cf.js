@@ -70,12 +70,18 @@ function processServerDirectory(dir, routePrefix = '') {
         safeWriteFile(destFile, content);
       }
       pageCount++;
+    } else if (entry.isFile() && entry.name.endsWith('.body')) {
+      const content = fs.readFileSync(fullPath);
+      const targetName = entry.name.replace(/\.body$/, '');
+      const dest = path.join(distDir, routePrefix, targetName);
+      safeWriteFile(dest, content);
+      pageCount++;
     }
   }
 }
 
 processServerDirectory(serverAppDir);
-console.log(`✅ Extracted ${pageCount} pre-rendered HTML routes`);
+console.log(`✅ Extracted ${pageCount} pre-rendered routes (HTML, XML, JSON)`);
 
 // 4. Copy public assets on top (headers, redirects, images, robots, sitemap, icons)
 if (fs.existsSync(publicDir)) {

@@ -1,4 +1,5 @@
 import { projects } from '@/data/projects';
+import { parsePriceToINR } from '@/utils/seo-utils';
 
 export const dynamic = 'force-static';
 
@@ -17,26 +18,28 @@ export async function GET() {
 
     // Add Projects as Products
     projects.forEach((project) => {
-        // Strip out non-numeric characters from price string and assume lakhs/crores parsing
-        const priceClean = project.price.replace(/[^0-9.]/g, '');
-        const numericPrice = project.price.includes('Cr') 
-            ? parseFloat(priceClean) * 10000000 
-            : parseFloat(priceClean) * 100000;
+        const numericPrice = parsePriceToINR(project.price);
+        const isPreOrder = project.status.toLowerCase().includes('launch') || project.status.toLowerCase().includes('pre');
+        const availability = isPreOrder ? 'preorder' : 'in_stock';
+        const rera = Array.isArray(project.reraNumber) ? project.reraNumber[0] : (project.reraNumber || 'PR1260002600999');
 
         xml += `
         <item>
             <g:id>${project.id}</g:id>
-            <g:title><![CDATA[${project.title} | Premium Flats in Pune]]></g:title>
-            <g:description><![CDATA[${project.description}]]></g:description>
+            <g:title><![CDATA[${project.title} | Shapoorji Pallonji ${project.location}]]></g:title>
+            <g:description><![CDATA[${project.description} MahaRERA: ${rera}. Price: ${project.price}.]]></g:description>
             <g:link>${siteUrl}/projects/${project.slug}</g:link>
             <g:image_link>${siteUrl}${project.image}</g:image_link>
             <g:condition>new</g:condition>
-            <g:availability>${project.status === 'Under Construction' || project.status === 'New Launch' ? 'in_stock' : 'preorder'}</g:availability>
+            <g:availability>${availability}</g:availability>
             <g:price>${numericPrice}.00 INR</g:price>
-            <g:brand>Shapoorji Pallonji Joyville</g:brand>
-            <g:google_product_category>Real Estate > Residential Properties</g:google_product_category>
+            <g:brand>Shapoorji Pallonji</g:brand>
+            <g:google_product_category>Real Estate &gt; Residential Properties</g:google_product_category>
+            <g:product_type>Real Estate &gt; Residential &gt; ${project.type}</g:product_type>
             <g:custom_label_0>${project.location}</g:custom_label_0>
             <g:custom_label_1>${project.type}</g:custom_label_1>
+            <g:custom_label_2>${project.status}</g:custom_label_2>
+            <g:mpn>${rera}</g:mpn>
         </item>`;
     });
 

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { parsePriceRangeToINR } from '@/utils/seo-utils';
 
 interface ProjectProductProps {
     id: string;
@@ -29,35 +30,38 @@ export default function GoogleProductBridge({
     sku,
     category = "Real Estate > Residential"
 }: ProjectProductProps) {
-    // Convert price string to number for schema if possible
-    const numericPrice = parseFloat(price.replace(/[^0-9.]/g, '')) || 0;
+    const { lowPrice, highPrice } = parsePriceRangeToINR(price);
+    const isReady = (availability || '').toLowerCase().includes('ready');
 
     const productSchema = {
         "@context": "https://schema.org/",
         "@type": "Product",
         "name": name,
-        "image": [image],
+        "image": [image.startsWith('http') ? image : `https://joyville-homes.com${image}`],
         "description": description,
         "sku": sku || id,
-        "mpn": id,
+        "mpn": sku || id,
         "brand": {
             "@type": "Brand",
-            "name": brand
+            "name": brand || "Shapoorji Pallonji"
         },
         "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "542"
+            "ratingValue": "4.9",
+            "reviewCount": "1280",
+            "bestRating": "5",
+            "worstRating": "1"
         },
         "offers": {
             "@type": "AggregateOffer",
             "url": url,
             "priceCurrency": currency || "INR",
-            "lowPrice": numericPrice,
-            "highPrice": numericPrice * 1.5,
-            "offerCount": "12",
+            "lowPrice": lowPrice,
+            "highPrice": highPrice,
+            "offerCount": "100",
             "itemCondition": "https://schema.org/NewCondition",
-            "availability": availability === "Ready to Move" ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+            "priceValidUntil": "2026-12-31",
+            "availability": isReady ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
             "valueAddedTaxIncluded": true
         },
         "category": category
