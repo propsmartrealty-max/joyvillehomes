@@ -13,6 +13,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { KEYWORD_MATRIX, SITE_WIDE_HARDENED_KEYWORDS } from '@/data/KeywordIntelligence';
 import { SEO_ROUTES } from '@/data/seo-routes';
 import SemanticSynthesizer from '@/components/SemanticSynthesizer';
+import { parsePriceRangeToINR } from '@/utils/seo-utils';
 
 // Define the supported SEO Slugs based on our strategy matrix
 const siteUrl = 'https://joyville-homes.com';
@@ -79,10 +80,12 @@ export async function generateMetadata({ params }: { params: Promise<{ seoSlug: 
 // FAQ data for programmatic pages — enables Google rich snippets
 const PAGE_FAQS: Record<string, { q: string; a: string }[]> = {
     'hinjewadi': [
-        { q: 'What is the starting price of flats in Hinjewadi Phase 1?', a: 'Premium 2 BHK flats in Hinjewadi Phase 1 by Shapoorji Pallonji start from ₹1.10 Cr. 3 BHK options are available from ₹1.30 Cr at Joyville Sensorium.' },
-        { q: 'Are Joyville Hinjewadi projects RERA approved?', a: 'Yes, all Joyville projects in Hinjewadi are MahaRERA registered. Joyville Sensorium RERA: P52100053806.' },
-        { q: 'How far are Joyville Hinjewadi projects from IT parks?', a: 'Joyville Sensorium is located in Hinjewadi Phase 1, just 2-5 minutes from Infosys, Wipro, TCS, and Cognizant campuses — offering true walk-to-work convenience.' },
-        { q: 'What is the expected rental yield in Hinjewadi?', a: 'Premium apartments in Hinjewadi Phase 1 command 4.5-5.5% rental yield, significantly higher than the Mumbai average of 2.5-3%.' },
+        { q: 'What is the starting price of flats at Shapoorji Joyville Hinjewadi?', a: 'Flats across Shapoorji Pallonji Joyville projects in Hinjewadi Phase 1 start from ₹88.19 Lakhs onwards for 2 BHK residences at Joyville Vyomora (with pre-launch allocation slots from ₹84.99 L*). Premium 3 BHK residences start from ₹1.25 Cr, and luxury 3 BHK Duplex Sky Villas are priced up to ₹1.85 Cr*. At Joyville Sensorium, 2 & 3 BHK biophilic residences range between ₹1.10 Cr and ₹1.45 Cr.' },
+        { q: 'Which projects are included under Shapoorji Pallonji Joyville Homes Hinjewadi?', a: 'Shapoorji Pallonji has two landmark developments in Hinjewadi Phase 1: 1. Joyville Sensorium (10.5-acre biophilic luxury development with 2.8-acre sunken garden, infinity pool, and EDGE green certification). 2. Joyville Vyomora (25-acre grand master community featuring 80% open spaces, 32,000+ sq. ft. clubhouse, and exclusive 3 BHK Duplex Sky Villas).' },
+        { q: 'Are Shapoorji Joyville Hinjewadi projects MahaRERA registered?', a: 'Yes, all projects are 100% MahaRERA approved. Joyville Vyomora is registered under MahaRERA PR1260002600999. Joyville Sensorium phases are registered under MahaRERA P52100027234, P52100024965, P52100024963, P52100027244, P52100024964, P52100045257, and P52100049547.' },
+        { q: 'How far are Joyville Hinjewadi developments from major IT parks?', a: 'Both Joyville Sensorium and Joyville Vyomora are situated off Maan Village Road in Hinjewadi Phase 1, just 500 meters to 1.5 km from Infosys Circle, Wipro Circle, TCS, and Cognizant campuses. This ensures true 5-minute walk-to-work convenience.' },
+        { q: 'What is the expected rental yield and appreciation in Hinjewadi Phase 1?', a: 'Hinjewadi Phase 1 generates top-tier rental yields between 4.8% and 5.4% per annum, driven by steady demand from corporate IT executives. Capital appreciation is projected at 11% to 14% YoY, catalyzed by the commercial operations of Pune Metro Line 3.' },
+        { q: 'What construction technology is utilized by Shapoorji Pallonji in Hinjewadi?', a: 'Both projects utilize 100% monolithic Aluform / Mivan RCC shear wall engineering. This delivers superior earthquake resistance (Zone 3), silky smooth wall finishes, zero brick joints to prevent water seepage, and maximum usable carpet area.' },
     ],
     'hadapsar': [
         { q: 'What is the price range for flats in Hadapsar?', a: 'Joyville Hadapsar Annexe offers 1 BHK from ₹65 Lakhs, 2 BHK from ₹80 Lakhs. Luxury 3 BHK at Skyluxe Edition starts from ₹1.40 Cr.' },
@@ -194,9 +197,11 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
                 "offers": {
                     "@type": "AggregateOffer",
                     "priceCurrency": "INR",
-                    "price": project.price,
-                    "offerCount": "1",
-                    "availability": "https://schema.org/InStock"
+                    "lowPrice": parsePriceRangeToINR(project.price).lowPrice,
+                    "highPrice": parsePriceRangeToINR(project.price).highPrice,
+                    "priceRange": project.price,
+                    "offerCount": "100",
+                    "availability": project.status.toLowerCase().includes('ready') ? "https://schema.org/InStock" : "https://schema.org/PreOrder"
                 }
             }
         }))

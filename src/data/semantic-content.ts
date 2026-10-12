@@ -46,11 +46,24 @@ export const SEMANTIC_BLOCKS = {
             "The city is currently undergoing an unprecedented infrastructure overhaul. The comprehensive Metro network, the expansive 128-km Ring Road, and the proposed Purandar International Airport are reshaping the urban sprawl, unlocking massive value in peripheral micro-markets.",
             "Investing in a Shapoorji Pallonji Joyville property is not just a real estate transaction; it is a stake in a 150-year-old legacy of trust. With every project fully MahaRERA registered and backed by the engineering prowess that built some of India's most iconic structures, buyers are guaranteed absolute transparency, timely delivery, and unparalleled construction quality."
         ]
+    },
+    joyvilleHinjewadiCluster: {
+        title: "Shapoorji Pallonji Joyville Homes in Hinjewadi: Sensorium & Vyomora Ecosystem",
+        content: [
+            "Shapoorji Pallonji Real Estate has anchored its Western Pune presence in Hinjewadi Phase 1 with two world-class residential benchmarks: Joyville Sensorium and Joyville Vyomora. Designed around the modern tech professional's need for walk-to-work convenience and biophilic wellness, these communities represent the pinnacle of engineering by a 150-year-old infrastructure titan.",
+            "Joyville Sensorium spans 10.5 acres with 75% open greens, spotlighting Pune's first 2.8-acre multi-tier sunken garden, an infinity-edge pool, and EDGE green building certification. Offering premium 2 & 3 BHK residences from ₹1.10 Cr onwards, it caters to buyers desiring mature luxury with imminent possession timelines.",
+            "Joyville Vyomora marks the newest mega-expansion, sprawling across 25 master-planned acres with over 80% open spaces. Featuring a 32,000+ sq. ft. signature clubhouse, 48 lifestyle amenities, and rare 3 BHK Duplex Sky Villas, Vyomora delivers accessible pre-launch pricing from ₹88.19 L* (slots from ₹84.99 L*). Both developments benefit from 100% Aluform/Mivan monolithic construction and dedicated RERA escrow governance."
+        ]
     }
 };
 
 export function getSemanticContentForSlug(slug: string) {
     const blocks = [];
+
+    // Prioritize dedicated Joyville Hinjewadi cluster block
+    if (slug.includes('joyville-homes-hinjewadi') || slug === 'shapoorji-pallonji-joyville-homes-hinjewadi-pune') {
+        blocks.push(SEMANTIC_BLOCKS.joyvilleHinjewadiCluster);
+    }
     
     // Always add specific micro-market content first if matched
     if (slug.includes('hinjewadi') || slug.includes('maan-road') || slug.includes('wakad')) {

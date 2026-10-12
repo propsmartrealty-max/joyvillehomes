@@ -130,7 +130,11 @@ const PROJECT_SEEDS = {
         "Wildernest Pune", "Wildernest SP Kingstown", "SP Kingstown Pune", "Wildernest Villas"
     ],
     HINJAWADI_LEGACY: [
-        "Joyville Hinjawadi", "Joyville Hinjawadi Resale", "Joyville Hinjawadi Ready Possession"
+        "Shapoorji Joyville Homes Hinjewadi", "Shapoorji Joyville Hinjewadi", "Joyville Homes Hinjewadi",
+        "Joyville Hinjewadi", "Joyville Hinjewadi Phase 1", "Shapoorji Hinjewadi Phase 1",
+        "Joyville Hinjawadi", "Joyville Hinjawadi Resale", "Joyville Hinjawadi Ready Possession",
+        "Joyville Hinjewadi 2 BHK Price", "Joyville Hinjewadi 3 BHK Price", "Joyville Hinjewadi Floor Plan",
+        "Joyville Hinjewadi Brochure", "Joyville Hinjewadi Price List"
     ],
     VYOMORA: [
         "Shapoorji Vyomora", "Vyomora Pune", "Vyomora Hinjawadi", "Vyomora Hinjawadi Phase 1",

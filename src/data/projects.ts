@@ -758,20 +758,41 @@ export const projects: Project[] = [
             "joyville sensorium pune", "joyville sensorium price list", "joyville sensorium brochure", "joyville sensorium master plan", "joyville sensorium location", "joyville sensorium 2 bhk price", "joyville sensorium 3 bhk price", "joyville sensorium hinjewadi investment", "joyville sensorium amenities", "shapoorji pallonji pune projects", "shapoorji pallonji joyville pune", "joyville homes pune", "joyville shapoorji pallonji pune", "joyville projects pune", "joyville apartments pune", "joyville residential projects pune", "joyville real estate pune", "joyville township pune", "flats in hinjewadi", "apartments in hinjewadi", "luxury flats hinjewadi", "flats near hinjewadi phase 1", "flats near hinjewadi phase 2", "flats near hinjewadi it park", "flats near rajiv gandhi infotech park", "apartments near hinjewadi it park", "property investment hinjewadi", "best investment flats pune", "buy flats in hinjewadi", "buy joyville apartments pune", "joyville flats for sale pune", "joyville booking pune",
             "Joyville Sensorium sample flat video", "Sensorium Hinjewadi rental yield", "Mivan construction projects Pune", "Joyville Sensorium Hinjewadi site office address",
             "biophilic homes Hinjewadi", "luxury township Hinjewadi Phase 1", "Shapoorji Pallonji Sensorium Hinjewadi", "Joyville Sensorium construction status", "ready to move 2BHK Hinjewadi", "ready to move 3BHK Hinjewadi", "best luxury flats Hinjewadi", "Pune west real estate investment", "Hinjewadi real estate market", "Joyville Sensorium flat price", "Sensorium Hinjewadi brochure download", "Shapoorji Pallonji Pune west projects", "premium residential projects Hinjewadi", "Hinjewadi flats with amenities", "top 10 projects in Hinjewadi", "investment potential Hinjewadi", "high rise apartments Hinjewadi", "Joyville homes Hinjewadi price", "Sensorium by Shapoorji Hinjewadi", "biophilic living Pune", "nature friendly homes Pune", "modern apartments Hinjewadi", "smart homes Hinjewadi", "automation flats Hinjewadi", "Hinjewadi Phase 1 premium towers", "Joyville Sensorium RERA number", "Joyville Sensorium possession timeline", "flats near Wipro circle Hinjewadi price", "luxury homes Pune west", "Joyville Sensorium amenities list PDF", "Joyville Sensorium floor plan download",
-            "Joyville Sensorium Hinjewadi all inclusive price", "Joyville Sensorium Hinjewadi cost sheet", "Joyville Sensorium Hinjewadi payment plan", "Joyville Sensorium Hinjewadi ROI analysis", "Joyville Sensorium Hinjewadi Mivan technology", "Joyville Sensorium Hinjewadi biophilic homes", "Joyville Sensorium Hinjewadi smart homes Pune", "Joyville Sensorium Hinjewadi clubhouse list", "Joyville Sensorium Hinjewadi RERA number registration", "Joyville Sensorium Hinjewadi genuine reviews", "Joyville Sensorium Hinjewadi Tower B floor plan"
+            "Joyville Sensorium Hinjewadi all inclusive price", "Joyville Sensorium Hinjewadi cost sheet", "Joyville Sensorium Hinjewadi payment plan", "Joyville Sensorium Hinjewadi ROI analysis", "Joyville Sensorium Hinjewadi Mivan technology", "Joyville Sensorium Hinjewadi biophilic homes", "Joyville Sensorium Hinjewadi smart homes Pune", "Joyville Sensorium Hinjewadi clubhouse list", "Joyville Sensorium Hinjewadi RERA number registration", "Joyville Sensorium Hinjewadi genuine reviews", "Joyville Sensorium Hinjewadi Tower B floor plan",
+            "Shapoorji Joyville Homes Hinjewadi", "Shapoorji Joyville Hinjewadi", "Joyville Homes Hinjewadi Phase 1", "Shapoorji Hinjewadi Phase 1", "Joyville Hinjewadi 2 BHK Price", "Joyville Hinjewadi 3 BHK Price", "Joyville Hinjewadi Floor Plan", "Joyville Hinjewadi Brochure PDF"
         ],
         faqs: [
             {
-                question: "Where exactly is Joyville Sensorium located in Hinjewadi Phase 1?",
-                answer: "Joyville Sensorium is strategically located in Hinjewadi Phase 1, Pune, offering seamless connectivity to the Rajiv Gandhi Infotech Park and major global IT hubs."
+                question: "What are the MahaRERA registration numbers for Joyville Sensorium Hinjewadi?",
+                answer: "Joyville Sensorium is registered across multiple MahaRERA phase registrations including P52100027234, P52100024965, P52100024963, P52100027244, P52100024964, P52100045257, and P52100049547. All statutory certificates and building approvals are verified on the official MahaRERA authority portal."
             },
             {
-                question: "What is the price for luxury flats in Joyville Sensorium by Shapoorji Pallonji?",
-                answer: "Premium 2 BHK and 3 BHK luxury residences at Joyville Sensorium Hinjewadi start from ₹1.10 Cr onwards, reflecting its status as a premier biophilic project."
+                question: "What are the flat configurations and carpet areas available at Joyville Sensorium?",
+                answer: "Joyville Sensorium offers thoughtfully planned 2 BHK Luxe (700 to 750 sq. ft. carpet area) and 3 BHK Royale residences (950 to 1,050 sq. ft. carpet area). Both configurations feature biophilic balconies, zero-wastage circulation corridors, and cross-ventilation."
             },
             {
-                question: "Is Joyville Sensorium a RERA registered project in Pune?",
-                answer: "Yes, Joyville Sensorium is fully RERA compliant and approved, backed by the 150-year engineering legacy of Shapoorji Pallonji Real Estate."
+                question: "What is the price for luxury flats in Joyville Sensorium Hinjewadi?",
+                answer: "Residences at Joyville Sensorium start from ₹1.10 Cr onwards for 2 BHK Luxe apartments, while spacious 3 BHK Royale homes range from ₹1.35 Cr to ₹1.45 Cr*. Flexible construction-linked and bank-approved payment plans are available."
+            },
+            {
+                question: "Where is Joyville Sensorium located and how far is it from Hinjewadi IT parks?",
+                answer: "Joyville Sensorium is located off Maan Village Road in Hinjewadi Phase 1, Pune. It is approximately 1.5 km from Infosys Circle Phase 1, 3.0 km from Wipro Circle, 800 meters from the upcoming Hinjewadi Metro Line 3 station, and 4.5 km from the Mumbai-Pune Expressway."
+            },
+            {
+                question: "What is the unique biophilic design concept of Joyville Sensorium?",
+                answer: "Sensorium is Pune's first dedicated biophilic luxury community, spanning 10.5 acres with over 75% open greens. Key highlights include an iconic 2.8-acre multi-tier sunken garden, 1.8 km walking boulevard, reflexology paths, aroma gardens, and an infinity-edge swimming pool overlooking the Mula River valley."
+            },
+            {
+                question: "Is Joyville Sensorium an EDGE Certified Green Building?",
+                answer: "Yes, Joyville Sensorium is certified under the IFC EDGE Green Building standards. The development delivers 20% lower energy and water consumption benchmarks through solar lighting, rainwater harvesting, sewage treatment plants (STP), and thermal-insulated facades."
+            },
+            {
+                question: "What construction technology is used in Joyville Sensorium?",
+                answer: "Every tower at Joyville Sensorium is engineered using 100% monolithic Mivan aluminum formwork technology. This ensures monolithic seismic resistance, precision wall finishes, zero brick joints to prevent water seepage, and soundproof Tostem anodized Japanese windows."
+            },
+            {
+                question: "What is the expected rental yield and appreciation for Joyville Sensorium?",
+                answer: "Given its walk-to-work proximity to Infosys, Wipro, and TCS, 2 and 3 BHK homes in Joyville Sensorium command 4.8% to 5.2% annual rental yields with executive tech professionals. Capital appreciation is projected at 11% to 13% YoY, further boosted by the commercial launch of Pune Metro Line 3."
             }
         ],
         latitude: 18.559385,

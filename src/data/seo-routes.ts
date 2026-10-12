@@ -764,10 +764,21 @@ export const SEO_ROUTES = [
     },
     {
         slug: 'shapoorji-pallonji-joyville-homes-hinjewadi-pune',
-        title: 'Shapoorji Pallonji Joyville Homes Hinjewadi Pune',
-        description: 'Discover Shapoorji Pallonji Joyville Homes in Hinjewadi, Pune. Explore premium 2 & 3 BHK luxury apartments, smart homes, and biophilic living in Phase 1.',
+        title: 'Shapoorji Pallonji Joyville Homes Hinjewadi Pune | Official 2026 Price List & Plans',
+        description: 'Explore Shapoorji Pallonji Joyville Homes in Hinjewadi Phase 1, Pune. Discover Joyville Sensorium & Joyville Vyomora 2, 3 BHK & Duplex Sky Villas from ₹88.19 L*. Official MahaRERA details & floor plans.',
         h1: 'Shapoorji Pallonji Joyville Homes Hinjewadi Pune',
-        keywords: ['Shapoorji Pallonji Joyville Homes Hinjewadi Pune', 'Joyville Hinjewadi', 'Shapoorji Pallonji Hinjewadi', 'Joyville Homes Pune'],
+        keywords: [
+            'Shapoorji Pallonji Joyville Homes Hinjewadi Pune',
+            'Shapoorji Joyville Homes Hinjewadi',
+            'Joyville Hinjewadi',
+            'Joyville Homes Hinjewadi Phase 1',
+            'Shapoorji Pallonji Hinjewadi',
+            'Joyville Sensorium Hinjewadi',
+            'Joyville Vyomora Hinjewadi',
+            'flats in Hinjewadi Phase 1',
+            '2 BHK Hinjewadi Joyville price',
+            '3 BHK duplex Hinjewadi'
+        ],
         filters: { locationMatch: 'Hinjewadi', typeMatch: '' }
     }
 ];

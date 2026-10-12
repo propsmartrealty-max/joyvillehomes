@@ -49,7 +49,9 @@ export const localities: LocalityData[] = [
             "flats near Cognizant Hinjewadi", "Hinjewadi Phase 1 property appreciation 2026",
             "smart home apartments Hinjewadi", "gated community Hinjewadi", "Pune West luxury residences 2026",
             "Joyville Sensorium price 2026", "best IT corridor apartments Pune", "Hinjewadi rental demand 2026",
-            "Shapoorji Pallonji Hinjewadi investment", "10 acre township Hinjewadi Phase 1"
+            "Shapoorji Pallonji Hinjewadi investment", "10 acre township Hinjewadi Phase 1",
+            "Shapoorji Joyville Homes Hinjewadi", "Shapoorji Joyville Hinjewadi", "Joyville Homes Hinjewadi Phase 1",
+            "Joyville Vyomora Hinjewadi", "Joyville Sensorium vs Joyville Vyomora", "Shapoorji Hinjewadi Phase 1 flats"
         ],
         description: "Hinjewadi is the epicenter of Pune's IT revolution. Home to the sprawling Rajiv Gandhi Infotech Park — housing campuses of Infosys, Wipro, TCS, and 200+ MNCs — it boasts an incredible walk-to-work culture. With the upcoming Metro Line 3 (Maan to Civil Court) and the 170km Pune Ring Road, Hinjewadi is positioned for 12-15% annual capital appreciation. Property rates have surged 53% over the last 5 years, making it Pune's most lucrative investment hub.",
         infrastructure: [
@@ -59,7 +61,7 @@ export const localities: LocalityData[] = [
             { label: "Education", value: "Blossom Public School & Mercedes-Benz International" }
         ],
         marketTrend: "Exponential Growth. The 'Maan-Mahalunge Smart City' initiative and Metro Line 3 are driving a massive influx of premium workforce, boosting both rental demand (4.5-5.5% yield) and resale value.",
-        priceRange: "₹85 Lakhs – ₹1.45 Cr",
+        priceRange: "₹85 Lakhs – ₹1.85 Cr",
         avgPricePerSqFt: "₹12,250",
         yoyAppreciation: "8.5%",
         latitude: 18.5913,
@@ -67,7 +69,8 @@ export const localities: LocalityData[] = [
         geoBox: { minLat: 18.57, minLng: 73.70, maxLat: 18.62, maxLng: 73.78 },
         sameAs: "https://en.wikipedia.org/wiki/Hinjewadi",
         faqs: [
-            { q: 'Is Hinjewadi safe for families and IT professionals?', a: 'Hinjewadi is extremely safe with 24/7 dedicated police patrolling, integrated CCTV surveillance in IT phases, and high-security gated communities like Joyville Sensorium. The walk-to-work culture further enhances safety during late shifts.' },
+            { q: 'Which Shapoorji Joyville projects are available in Hinjewadi Phase 1?', a: 'Shapoorji Pallonji features two landmark developments under the Joyville banner in Hinjewadi Phase 1: 1. Joyville Sensorium (10.5 acres of biophilic luxury, 2.8-acre sunken garden, EDGE certified, ₹1.10 Cr+). 2. Joyville Vyomora (25-acre grand master community with 80% open spaces, 32,000+ sq. ft. clubhouse, and 3 BHK Duplex Sky Villas, starting from ₹88.19 L*).' },
+            { q: 'Is Hinjewadi safe for families and IT professionals?', a: 'Hinjewadi is extremely safe with 24/7 dedicated police patrolling, integrated CCTV surveillance in IT phases, and high-security gated communities like Joyville Sensorium and Joyville Vyomora. The walk-to-work culture further enhances safety during late shifts.' },
             { q: 'What is the future potential of Hinjewadi real estate by 2030?', a: 'With the completion of Metro Line 3 and the Pune Ring Road, Hinjewadi is expected to transition into a "City-within-a-City," with property values projected to grow by 40-50% by 2030 as infrastructure matures.' },
             { q: 'Are there any hidden costs in buying a flat in Hinjewadi?', a: 'Beyond the base price, typical costs include MSEB charges, society maintenance deposits, stamp duty (approx 7%), and registration fees. Joyville provides a transparent cost sheet for all buyers.' },
         ],

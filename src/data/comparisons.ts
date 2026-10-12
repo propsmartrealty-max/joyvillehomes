@@ -38,5 +38,32 @@ export const comparisons: ComparisonData[] = [
             { label: 'Connectivity', joyville: 'On Highway', competitor: 'Internal Road', winner: 'joyville' }
         ],
         summary: "Amanora offers a larger ecosystem, but Joyville Hadapsar Annexe provides a more focused, lower-density luxury experience with better price-to-value appreciation potential."
+    },
+    {
+        id: 'sensorium-vs-vyomora',
+        joyvilleProject: 'Joyville Sensorium',
+        competitorProject: 'Joyville Vyomora',
+        developer: 'Shapoorji Pallonji (Internal Portfolio)',
+        metrics: [
+            { label: 'Master Acreage', joyville: '10.5 Acres (75% Open)', competitor: '25 Acres (80% Open)', winner: 'competitor' },
+            { label: 'Entry Price', joyville: '₹1.10 Cr Onwards', competitor: '₹88.19 L Onwards (Pre-Launch ₹84.99 L*)', winner: 'competitor' },
+            { label: 'Signature Format', joyville: 'Biophilic 2.8-Acre Sunken Garden', competitor: '3 BHK Duplex Sky Villas & 32k sq.ft. Club', winner: 'neutral' },
+            { label: 'Possession Horizon', joyville: 'Nearing Handover / Mature Phase', competitor: 'Brand New Launch Phase 1', winner: 'joyville' },
+            { label: 'IT Park Proximity', joyville: '1.5km Infosys / 800m Metro', competitor: '0.8km Infosys / 400m Metro', winner: 'competitor' }
+        ],
+        summary: "Both projects represent Shapoorji Pallonji's gold-standard engineering in Hinjewadi Phase 1. Choose Joyville Sensorium for earlier move-in dates and mature biophilic parks, or Joyville Vyomora for lower entry prices, 25-acre community scale, and exclusive duplex sky villas."
+    },
+    {
+        id: 'joyville-hinjewadi-vs-godrej-elements',
+        joyvilleProject: 'Joyville Hinjewadi (Sensorium & Vyomora)',
+        competitorProject: 'Godrej Elements / Godrej 24',
+        developer: 'Godrej Properties',
+        metrics: [
+            { label: 'Construction Quality', joyville: '100% Monolithic Aluform / Mivan', competitor: 'Standard Subcontracted RCC', winner: 'joyville' },
+            { label: 'Open Green Ratio', joyville: '75% to 80% Breathing Space', competitor: '50% to 60% Density', winner: 'joyville' },
+            { label: 'Special Typologies', joyville: '3 BHK Duplex Sky Villas Available', competitor: 'Standard Apartments Only', winner: 'joyville' },
+            { label: 'Builder Heritage', joyville: '160+ Years (RBI, Parliament Builder)', competitor: '35+ Years Real Estate Division', winner: 'joyville' }
+        ],
+        summary: "While Godrej provides recognizable branding in Hinjewadi, Shapoorji Pallonji's Joyville developments deliver unmatched structural integrity via 100% in-house Mivan engineering, higher open space ratios, and rare duplex inventory."
     }
 ];
