@@ -1,25 +1,30 @@
 # Cloudflare Pages Edge Headers Configuration
+# Hardened Enterprise Security & Performance Directives
 
-# Global Security & SEO Headers
+# Global Security, SEO & Edge Cache Policy
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1, notranslate
   X-DNS-Prefetch-Control: on
+  Cross-Origin-Opener-Policy: same-origin
+  X-Permitted-Cross-Domain-Policies: none
+  Content-Security-Policy: default-src 'self' https://joyville-homes.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https: http:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://joyville-homes.com https://www.google-analytics.com https://formsubmit.co https://api.whatsapp.com https://region1.google-analytics.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'
+  Cache-Control: public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400
   Timing-Allow-Origin: *
   Server-Timing: cf-edge;dur=1
 
-# Immutable Next.js Static Chunks
+# Immutable Next.js Static Chunks (1 Year Cache)
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Immutable Images
+# Immutable Images & Floor Plans
 /images/*
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
 
 # Immutable Fonts
@@ -27,6 +32,7 @@
   Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
 
-# API Security: No indexing
+# API Security: Strictly No Caching, No Indexing
 /api/*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
   X-Robots-Tag: noindex, nofollow
