@@ -228,7 +228,14 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     "highPrice": highPrice,
                     "offerCount": "100",
                     "priceRange": project.price,
-                    "priceValidUntil": project.lastPriceUpdate ? new Date(new Date(project.lastPriceUpdate).getTime() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0] : new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+                    "priceValidUntil": project.lastPriceUpdate ? new Date(new Date(project.lastPriceUpdate).getTime() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0] : new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+                    "itemCondition": "https://schema.org/NewCondition",
+                    "availability": project.status.toLowerCase().includes('ready') ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Shapoorji Pallonji Real Estate",
+                        "url": siteUrl
+                    }
                 },
                 "aggregateRating": {
                     "@type": "AggregateRating",

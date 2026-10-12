@@ -12,19 +12,20 @@ export async function GET() {
 
     // Add placemarks for the projects
     projects.forEach((project) => {
-        // Parse the simulated coordinates or use generic Hinjewadi/Hadapsar ones
-        let lat = 18.5913;
-        let lng = 73.7389;
+        let lat = project.latitude || 18.5913;
+        let lng = project.longitude || 73.7389;
 
-        if (project.location.includes('Hadapsar') || project.location.includes('Shewalewadi')) {
-            lat = 18.5089;
-            lng = 73.9259;
-        } else if (project.location.includes('Bavdhan')) {
-            lat = 18.5158;
-            lng = 73.7819;
-        } else if (project.location.includes('Purandar')) {
-            lat = 18.2818;
-            lng = 73.9877;
+        if (!project.latitude || !project.longitude) {
+            if (project.location.includes('Hadapsar') || project.location.includes('Shewalewadi')) {
+                lat = 18.5089;
+                lng = 73.9259;
+            } else if (project.location.includes('Bavdhan')) {
+                lat = 18.5158;
+                lng = 73.7819;
+            } else if (project.location.includes('Purandar')) {
+                lat = 18.2818;
+                lng = 73.9877;
+            }
         }
 
         kml += `

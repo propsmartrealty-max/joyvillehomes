@@ -1,6 +1,8 @@
 import { projects } from '@/data/projects';
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-static';
+
 export async function GET() {
     const baseUrl = 'https://joyville-homes.com';
 

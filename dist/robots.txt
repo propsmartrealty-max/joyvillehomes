@@ -77,5 +77,6 @@ Disallow: /
 
 Host: https://joyville-homes.com
 Sitemap: https://joyville-homes.com/sitemap.xml
+Sitemap: https://joyville-homes.com/image-sitemap.xml
 Sitemap: https://joyville-homes.com/google-products.xml
 Sitemap: https://joyville-homes.com/aggregator-feed.xml
