@@ -966,15 +966,18 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                             )}
                         </div>
 
-                        <div className="bg-[#EEF2F6] border border-[#C5A059]/60 p-8 rounded-sm shrink-0 lg:min-w-[350px] shadow-2xl relative">
-                            <div className="absolute -top-5 -right-5 bg-[#1A1A2E] text-[#FFFFFF] px-5 py-3 rounded-sm shadow-xl border border-[#C5A059]/60 z-10 max-w-[280px]">
-                                <div className="flex items-center gap-2 mb-1">
-                                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_5px_#22c55e]"></span>
-                                    <p className="text-[9px] uppercase tracking-widest text-[#FFFFFF]/70">Verified Asset</p>
+                        <div className="bg-[#EEF2F6] border border-[#C5A059]/60 p-8 rounded-sm shrink-0 lg:min-w-[350px] shadow-2xl relative overflow-hidden">
+                            {/* Verified RERA Header Badge */}
+                            <div className="flex items-center justify-between pb-4 mb-5 border-b border-[#C5A059]/30">
+                                <div className="flex items-center gap-2">
+                                    <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_8px_#10b981]"></span>
+                                    <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#1D4F9C]">Verified Asset</span>
                                 </div>
-                                <p className="text-[11px] font-bold tracking-wider leading-tight">MahaRERA: <span className="text-[#C5A059]">{Array.isArray(project.reraNumber) ? project.reraNumber[0] + (project.reraNumber.length > 1 ? ', ...' : '') : project.reraNumber}</span></p>
+                                <span className="text-[11px] font-mono font-bold text-[#1E293B] bg-white px-2.5 py-1 rounded border border-[#C5A059]/40 shadow-xs">
+                                    RERA: {Array.isArray(project.reraNumber) ? project.reraNumber[0] + (project.reraNumber.length > 1 ? ', ...' : '') : project.reraNumber}
+                                </span>
                             </div>
-                            <p className="text-[#1A1A1A] font-light text-xs tracking-[0.2em] uppercase mb-2 mt-2">Starting From</p>
+                            <p className="text-[#1A1A1A] font-light text-xs tracking-[0.2em] uppercase mb-2">Starting From</p>
                             <p className="text-4xl text-[#1D4F9C] font-serif italic text-gradient mb-4 font-medium">
                                 <PriceDisplay price={project.price} />
                             </p>
@@ -1001,16 +1004,24 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
                 {/* Feature Image Banner */}
                 <div className="max-w-7xl mx-auto px-6 mb-24">
-                    <div className="w-full aspect-[21/9] lg:aspect-[3/1] relative overflow-hidden rounded-sm border border-[#C5A059]/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+                    <div className="w-full aspect-[21/9] lg:aspect-[24/9] relative overflow-hidden rounded-sm border border-[#C5A059]/60 shadow-[0_20px_50px_rgba(0,0,0,0.15)] group">
                         <Image
                             src={project.image}
                             alt={`${project.title} Hero Banner`}
                             fill
-                            className="object-cover opacity-90 mix-blend-multiply"
+                            className="object-cover object-center group-hover:scale-102 transition-transform duration-700 ease-out"
                             sizes="100vw"
                             priority={true}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#FFFFFF] via-transparent to-transparent pointer-events-none" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+                        <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between pointer-events-none">
+                            <span className="px-3.5 py-1.5 bg-[#1D4F9C]/90 backdrop-blur-md text-white text-[11px] uppercase tracking-[0.2em] font-semibold rounded-sm shadow-md">
+                                {project.type}
+                            </span>
+                            <span className="px-3.5 py-1.5 bg-black/60 backdrop-blur-md text-[#C5A059] text-[11px] font-mono tracking-wider rounded-sm border border-[#C5A059]/40">
+                                {project.location}
+                            </span>
+                        </div>
                     </div>
                 </div>
 

@@ -5,31 +5,27 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { PhoneCall, Menu, X, ChevronDown, MapPin } from "lucide-react";
+import { PhoneCall, Menu, X, ChevronDown, MapPin, Sparkles, Building2, Calculator, BookOpen, Compass } from "lucide-react";
 import dynamic from "next/dynamic";
 import { projects } from "@/data/projects";
-
 import CurrencyToggle from "./CurrencyToggle";
 
 const QuickEnquireModal = dynamic(() => import("./QuickEnquireModal"), {
-    ssr: false, // Defer hydration until client to reduce Main Thread blocking
+    ssr: false,
 });
 
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isProjectsHovered, setIsProjectsHovered] = useState(false);
-    const [isDecisionHovered, setIsDecisionHovered] = useState(false);
+    const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const [isEnquireModalOpen, setIsEnquireModalOpen] = useState(false);
     const pathname = usePathname();
 
-    // Check if the current page is the homepage (where transparent nav looks best before scroll)
     const isHomePage = pathname === "/";
 
     useEffect(() => {
-        const handleScroll = () => setIsScrolled(window.scrollY > 50);
+        const handleScroll = () => setIsScrolled(window.scrollY > 40);
         window.addEventListener("scroll", handleScroll);
-        // Trigger once on mount
         handleScroll();
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
@@ -41,99 +37,222 @@ export default function Navigation() {
         } else {
             document.body.style.overflow = 'unset';
         }
-        return () => { document.body.style.overflow = 'unset' };
+        return () => { document.body.style.overflow = 'unset'; };
     }, [isMobileMenuOpen]);
 
-    const navBackground = (isScrolled || !isHomePage)
-        ? 'bg-[#EEF2F6]/95 backdrop-blur-2xl backdrop-saturate-[1.8] border border-[#C5A059]/50 shadow-[0_15px_40px_rgba(0,0,0,0.1)] py-2'
-        : 'bg-[#FFFFFF]/90 backdrop-blur-md border border-[#C5A059]/30 shadow-md py-2';
+    // Close dropdown on route change
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setActiveDropdown(null);
+            setIsMobileMenuOpen(false);
+        }, 0);
+        return () => clearTimeout(timer);
+    }, [pathname]);
 
-    const textColor = (isScrolled || !isHomePage) ? 'text-[#323334] font-medium' : 'text-[#323334] font-medium';
+    // Top 4 flagship projects for the sleek mega-dropdown
+    const flagshipProjects = projects.slice(0, 4);
 
     return (
         <>
             <header
-                className={`fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-[100] transition-all duration-700 ease-out px-5 md:px-8 rounded-full ${navBackground}`}
-                onMouseLeave={() => {
-                    setIsProjectsHovered(false);
-                    setIsDecisionHovered(false);
-                }}
+                className={`fixed top-3 left-1/2 -translate-x-1/2 w-[96%] max-w-7xl z-[100] transition-all duration-500 ease-out px-4 sm:px-6 py-2.5 rounded-2xl border ${
+                    isScrolled || !isHomePage
+                        ? 'bg-white/95 backdrop-blur-xl border-[#C5A059]/30 shadow-[0_12px_40px_rgba(29,79,156,0.1)]'
+                        : 'bg-white/90 backdrop-blur-lg border-slate-200/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)]'
+                }`}
+                onMouseLeave={() => setActiveDropdown(null)}
             >
-                {/* Backdrop Overlay when menus are open */}
-                <AnimatePresence>
-                    {(isProjectsHovered || isDecisionHovered) && (
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            transition={{ duration: 0.3 }}
-                            className="fixed inset-0 w-screen h-[100dvh] bg-[#323334]/10 backdrop-blur-[2px] -z-10 top-full -left-1/2 translate-x-1/2 pointer-events-none"
-                            style={{ position: 'fixed', top: '100%', left: '50%', transform: 'translateX(-50%)', width: '100vw', height: '100vh', zIndex: -10 }}
-                        />
-                    )}
-                </AnimatePresence>
-
-                <nav aria-label="Main Navigation" className="max-w-7xl mx-auto flex justify-between items-center relative">
-
-                    {/* Logo & Branding */}
-                    <Link href="/" aria-label="Joyville Pune Home" className="flex flex-col z-20 focus:outline-none group">
+                <nav aria-label="Main Navigation" className="flex justify-between items-center relative">
+                    {/* Brand Logo */}
+                    <Link href="/" aria-label="Joyville Pune Home" className="flex items-center shrink-0 z-20 group">
                         <Image 
                             src="/logo.svg" 
                             alt="Joyville by Shapoorji Pallonji" 
-                            width={120} 
-                            height={45} 
-                            className="object-contain transition-opacity duration-500 group-hover:opacity-80"
+                            width={118} 
+                            height={42} 
+                            className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                             priority
                             unoptimized
                         />
                     </Link>
 
-                    {/* Desktop Navigation Links */}
-                    <div className={`hidden lg:flex items-center gap-12 text-xs tracking-[0.2em] uppercase font-light ${textColor}`}>
-                        {/* Mega Menu Trigger */}
+                    {/* Streamlined Desktop Navigation Links (Uncluttered & High-Impact) */}
+                    <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-[11px] tracking-[0.16em] uppercase font-medium text-[#2C3E50]">
+                        
+                        {/* 1. Projects Dropdown */}
                         <div
-                            className="relative h-full py-4 flex items-center gap-1 group/trigger"
-                            onMouseEnter={() => setIsProjectsHovered(true)}
-                            onMouseLeave={() => setIsProjectsHovered(false)}
-                            onFocus={() => setIsProjectsHovered(true)}
-                            onBlur={() => setIsProjectsHovered(false)}
+                            className="relative py-2 flex items-center gap-1 cursor-pointer group"
+                            onMouseEnter={() => setActiveDropdown('projects')}
+                            onClick={() => setActiveDropdown(activeDropdown === 'projects' ? null : 'projects')}
                         >
-                            <Link href="/projects" className="hover:text-[#1D4F9C] transition-colors duration-300 focus-visible:ring-2 focus-visible:ring-[#1D4F9C] focus-visible:outline-none rounded-sm px-1">Portfolios</Link>
-                            <ChevronDown size={14} className={`transition-transform duration-300 ${isProjectsHovered ? 'rotate-180 text-[#1D4F9C]' : ''}`} />
+                            <Link href="/projects" className="hover:text-[#1D4F9C] transition-colors py-1">
+                                Projects
+                            </Link>
+                            <ChevronDown size={13} className={`transition-transform duration-300 ${activeDropdown === 'projects' ? 'rotate-180 text-[#1D4F9C]' : 'text-slate-400'}`} />
+
+                            <AnimatePresence>
+                                {activeDropdown === 'projects' && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 12 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: 8 }}
+                                        transition={{ duration: 0.2 }}
+                                        className="absolute top-full -left-20 w-[640px] pt-3 z-50 pointer-events-auto"
+                                        onMouseEnter={() => setActiveDropdown('projects')}
+                                        onMouseLeave={() => setActiveDropdown(null)}
+                                    >
+                                        <div className="bg-white border border-[#C5A059]/25 shadow-[0_20px_50px_rgba(29,79,156,0.15)] rounded-xl p-5 overflow-hidden">
+                                            <div className="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+                                                <span className="text-[10px] tracking-[0.2em] font-bold text-[#1D4F9C] flex items-center gap-1.5">
+                                                    <Building2 size={13} /> Flagship Pune Residences
+                                                </span>
+                                                <Link href="/projects" className="text-[10px] font-semibold tracking-wider text-[#C5A059] hover:text-[#1D4F9C] transition-colors">
+                                                    View All 10 Projects →
+                                                </Link>
+                                            </div>
+
+                                            <div className="grid grid-cols-2 gap-3">
+                                                {flagshipProjects.map((proj) => (
+                                                    <Link 
+                                                        key={proj.id} 
+                                                        href={`/projects/${proj.slug}`}
+                                                        className="group/card flex items-center gap-3 p-2.5 rounded-lg border border-slate-100 hover:border-[#C5A059]/50 hover:bg-[#F8FAFC] transition-all"
+                                                        onClick={() => setActiveDropdown(null)}
+                                                    >
+                                                        <div className="w-16 h-14 relative rounded-md overflow-hidden shrink-0 bg-slate-100">
+                                                            <Image 
+                                                                src={proj.image} 
+                                                                alt={proj.title} 
+                                                                fill 
+                                                                className="object-cover group-hover/card:scale-105 transition-transform duration-500" 
+                                                                sizes="64px"
+                                                            />
+                                                        </div>
+                                                        <div className="min-w-0">
+                                                            <span className="block text-[11px] font-bold text-[#1E293B] truncate group-hover/card:text-[#1D4F9C] transition-colors">
+                                                                {proj.title}
+                                                            </span>
+                                                            <span className="block text-[9px] text-[#64748B] tracking-normal normal-case truncate">
+                                                                {proj.location.split(',')[0]} • {proj.type}
+                                                            </span>
+                                                            <span className="block text-[10px] font-semibold text-[#C5A059] mt-0.5">
+                                                                {proj.price}
+                                                            </span>
+                                                        </div>
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
                         </div>
 
+                        {/* 2. Locations Dropdown */}
                         <div
-                            className="relative h-full py-4 flex items-center gap-1 group/trigger"
-                            onMouseEnter={() => setIsDecisionHovered(true)}
-                            onMouseLeave={() => setIsDecisionHovered(false)}
-                            onFocus={() => setIsDecisionHovered(true)}
-                            onBlur={() => setIsDecisionHovered(false)}
+                            className="relative py-2 flex items-center gap-1 cursor-pointer group"
+                            onMouseEnter={() => setActiveDropdown('locations')}
+                            onClick={() => setActiveDropdown(activeDropdown === 'locations' ? null : 'locations')}
                         >
-                            <span className="hover:text-[#1D4F9C] transition-colors duration-300 cursor-pointer">Decision Hub</span>
-                            <ChevronDown size={14} className={`transition-transform duration-300 ${isDecisionHovered ? 'rotate-180 text-[#1D4F9C]' : ''}`} />
-                            
+                            <span className="hover:text-[#1D4F9C] transition-colors py-1">
+                                Micro-Markets
+                            </span>
+                            <ChevronDown size={13} className={`transition-transform duration-300 ${activeDropdown === 'locations' ? 'rotate-180 text-[#1D4F9C]' : 'text-slate-400'}`} />
+
                             <AnimatePresence>
-                                {isDecisionHovered && (
+                                {activeDropdown === 'locations' && (
                                     <motion.div
-                                        initial={{ opacity: 0, y: 10 }}
+                                        initial={{ opacity: 0, y: 12 }}
                                         animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: 5 }}
-                                        className="absolute top-full left-0 w-64 pt-2"
-                                        onMouseEnter={() => setIsDecisionHovered(true)}
-                                        onMouseLeave={() => setIsDecisionHovered(false)}
+                                        exit={{ opacity: 0, y: 8 }}
+                                        transition={{ duration: 0.2 }}
+                                        className="absolute top-full left-0 w-64 pt-3 z-50 pointer-events-auto"
+                                        onMouseEnter={() => setActiveDropdown('locations')}
+                                        onMouseLeave={() => setActiveDropdown(null)}
                                     >
-                                        <div className="bg-white border border-[#C5A059]/20 shadow-2xl p-4 rounded-sm space-y-4">
-                                            <Link href="/insights/matchmaker" className="block p-3 hover:bg-[#EEF2F6] rounded-sm transition-colors group/item">
-                                                <span className="block text-[10px] font-bold text-[#1D4F9C] mb-1">Investment Matchmaker</span>
-                                                <span className="block text-[9px] text-[#323334]/60 normal-case tracking-normal">60-second persona-based project matching.</span>
+                                        <div className="bg-white border border-[#C5A059]/25 shadow-2xl rounded-xl p-3 space-y-1">
+                                            <Link href="/locality/hinjewadi" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                                                <MapPin size={14} className="text-[#1D4F9C] shrink-0" />
+                                                <div>
+                                                    <span className="block text-[11px] font-bold text-[#1E293B]">Hinjewadi</span>
+                                                    <span className="block text-[9px] text-slate-500 normal-case tracking-normal">IT Corridor • Phase 1</span>
+                                                </div>
                                             </Link>
-                                            <Link href="/insights/joyville-vs-competitors" className="block p-3 hover:bg-[#EEF2F6] rounded-sm transition-colors group/item">
-                                                <span className="block text-[10px] font-bold text-[#1D4F9C] mb-1">ROI Simulator</span>
-                                                <span className="block text-[9px] text-[#323334]/60 normal-case tracking-normal">10-year capital appreciation & yield modeling.</span>
+                                            <Link href="/locality/hadapsar" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                                                <MapPin size={14} className="text-[#1D4F9C] shrink-0" />
+                                                <div>
+                                                    <span className="block text-[11px] font-bold text-[#1E293B]">Hadapsar</span>
+                                                    <span className="block text-[9px] text-slate-500 normal-case tracking-normal">East Pune • Townships</span>
+                                                </div>
                                             </Link>
-                                            <Link href="/insights" className="block p-3 hover:bg-[#EEF2F6] rounded-sm transition-colors group/item">
-                                                <span className="block text-[10px] font-bold text-[#1D4F9C] mb-1">Authority Guide</span>
-                                                <span className="block text-[9px] text-[#323334]/60 normal-case tracking-normal">Expert market reviews & IT corridor analysis.</span>
+                                            <Link href="/locality/bavdhan" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                                                <MapPin size={14} className="text-[#1D4F9C] shrink-0" />
+                                                <div>
+                                                    <span className="block text-[11px] font-bold text-[#1E293B]">Bavdhan</span>
+                                                    <span className="block text-[9px] text-slate-500 normal-case tracking-normal">Nature Valley • 1000 Acres</span>
+                                                </div>
+                                            </Link>
+                                            <div className="pt-2 mt-1 border-t border-slate-100">
+                                                <Link href="/location" className="block text-[10px] text-center font-bold text-[#C5A059] hover:text-[#1D4F9C] transition-colors py-1">
+                                                    Pune Connectivity Map →
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
+
+                        {/* 3. Buyer Hub Dropdown */}
+                        <div
+                            className="relative py-2 flex items-center gap-1 cursor-pointer group"
+                            onMouseEnter={() => setActiveDropdown('buyerHub')}
+                            onClick={() => setActiveDropdown(activeDropdown === 'buyerHub' ? null : 'buyerHub')}
+                        >
+                            <span className="hover:text-[#1D4F9C] transition-colors py-1">
+                                Buyer Hub
+                            </span>
+                            <ChevronDown size={13} className={`transition-transform duration-300 ${activeDropdown === 'buyerHub' ? 'rotate-180 text-[#1D4F9C]' : 'text-slate-400'}`} />
+
+                            <AnimatePresence>
+                                {activeDropdown === 'buyerHub' && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 12 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: 8 }}
+                                        transition={{ duration: 0.2 }}
+                                        className="absolute top-full left-0 w-72 pt-3 z-50 pointer-events-auto"
+                                        onMouseEnter={() => setActiveDropdown('buyerHub')}
+                                        onMouseLeave={() => setActiveDropdown(null)}
+                                    >
+                                        <div className="bg-white border border-[#C5A059]/25 shadow-2xl rounded-xl p-3 space-y-1">
+                                            <Link href="/roi-calculator" className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                                                <Calculator size={15} className="text-[#1D4F9C] shrink-0" />
+                                                <div>
+                                                    <span className="block text-[11px] font-bold text-[#1E293B]">ROI & EMI Calculator</span>
+                                                    <span className="block text-[9px] text-slate-500 normal-case tracking-normal">Simulate returns & monthly outflow</span>
+                                                </div>
+                                            </Link>
+                                            <Link href="/locality/compare" className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                                                <Compass size={15} className="text-[#1D4F9C] shrink-0" />
+                                                <div>
+                                                    <span className="block text-[11px] font-bold text-[#1E293B]">Market Comparison Matrix</span>
+                                                    <span className="block text-[9px] text-slate-500 normal-case tracking-normal">Side-by-side micro-market analysis</span>
+                                                </div>
+                                            </Link>
+                                            <Link href="/insights/matchmaker" className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                                                <Sparkles size={15} className="text-[#C5A059] shrink-0" />
+                                                <div>
+                                                    <span className="block text-[11px] font-bold text-[#1E293B]">Investment Matchmaker</span>
+                                                    <span className="block text-[9px] text-slate-500 normal-case tracking-normal">60-second home recommendation</span>
+                                                </div>
+                                            </Link>
+                                            <Link href="/insights/nri/region/nri-uae-dubai" className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                                                <BookOpen size={15} className="text-[#1D4F9C] shrink-0" />
+                                                <div>
+                                                    <span className="block text-[11px] font-bold text-[#1E293B]">Global NRI Desk</span>
+                                                    <span className="block text-[9px] text-slate-500 normal-case tracking-normal">FEMA & Dubai/USA investment guidance</span>
+                                                </div>
                                             </Link>
                                         </div>
                                     </motion.div>
@@ -141,138 +260,124 @@ export default function Navigation() {
                             </AnimatePresence>
                         </div>
 
-                        <Link href="/amenities" className="hover:text-[#1D4F9C] hover:font-bold transition-all duration-300 py-4 focus-visible:ring-2 focus-visible:ring-[#1D4F9C] focus-visible:outline-none rounded-sm px-1">Amenities</Link>
-                        <Link href="/roi-calculator" className="hover:text-[#1D4F9C] hover:font-bold transition-all duration-300 py-4 focus-visible:ring-2 focus-visible:ring-[#1D4F9C] focus-visible:outline-none rounded-sm px-1">ROI Calculator</Link>
-                        <Link href="/locality/compare" className="hover:text-[#1D4F9C] hover:font-bold transition-all duration-300 py-4 font-bold border-b-2 border-[#1D4F9C]/0 hover:border-[#1D4F9C]/100 focus-visible:ring-2 focus-visible:ring-[#1D4F9C] focus-visible:outline-none rounded-sm px-1">Market Matrix</Link>
-                        <Link href="/press-research" className="hover:text-[#1D4F9C] hover:font-bold transition-all duration-300 py-4 focus-visible:ring-2 focus-visible:ring-[#1D4F9C] focus-visible:outline-none rounded-sm px-1">Research Hub</Link>
-                        <Link href="/location" className="hover:text-[#1D4F9C] hover:font-bold transition-all duration-300 py-4 focus-visible:ring-2 focus-visible:ring-[#1D4F9C] focus-visible:outline-none rounded-sm px-1">Location</Link>
-                        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-                        <a href="/#floor-plans" className="hover:text-[#1D4F9C] hover:font-bold transition-all duration-300 py-4 focus-visible:ring-2 focus-visible:ring-[#1D4F9C] focus-visible:outline-none rounded-sm px-1">Floor Plans</a>
+                        {/* 4. Amenities */}
+                        <Link href="/amenities" className="hover:text-[#1D4F9C] transition-colors py-2">
+                            Amenities
+                        </Link>
+
+                        {/* 5. Insights */}
+                        <Link href="/insights" className="hover:text-[#1D4F9C] transition-colors py-2">
+                            Insights
+                        </Link>
                     </div>
 
-                    {/* Currency, Enquire Button & Mobile Toggle */}
-                    <div className="flex items-center gap-4 md:gap-6 z-20">
+                    {/* Right Action Bar (Currency + Sleek Luxury CTA + Mobile Toggle) */}
+                    <div className="flex items-center gap-2.5 sm:gap-4 shrink-0 z-20">
                         <CurrencyToggle />
 
                         <button
                             onClick={() => setIsEnquireModalOpen(true)}
                             aria-label="Enquire Now"
-                            className={`hidden sm:flex items-center gap-3 px-8 py-3 rounded-sm font-bold text-[10px] tracking-[0.2em] uppercase transition-all duration-500 group border ${(isScrolled || !isHomePage) ? 'bg-[#1D4F9C] text-[#FFFFFF] border-[#C5A059] hover:bg-transparent hover:text-[#1D4F9C]' : 'bg-[#1D4F9C] text-[#FFFFFF] border-[#C5A059] hover:bg-transparent hover:text-[#1D4F9C]'}`}
+                            className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-[10px] tracking-[0.16em] uppercase bg-[#1D4F9C] text-white hover:bg-[#153a73] transition-all duration-300 shadow-[0_4px_14px_rgba(29,79,156,0.3)] hover:shadow-[0_6px_20px_rgba(29,79,156,0.4)] border border-[#C5A059]/40 active:scale-95"
                         >
-                            <PhoneCall size={14} className="group-hover:animate-pulse" />
-                            <span>Enquire Now</span>
+                            <PhoneCall size={12} className="text-[#C5A059]" />
+                            <span>Schedule Visit</span>
                         </button>
 
                         <button
-                            className={`lg:hidden flex items-center justify-center w-10 h-10 border rounded-full transition-colors duration-300 ${(isScrolled || !isHomePage || isMobileMenuOpen) ? 'border-[#C5A059]/30 text-[#1D4F9C] hover:bg-[#1D4F9C] hover:text-[#FFFFFF]' : 'border-[#323334]/30 text-[#323334] hover:border-[#C5A059] hover:text-[#1D4F9C]'}`}
+                            className="lg:hidden flex items-center justify-center w-9 h-9 rounded-xl border border-slate-200 text-[#1E293B] hover:text-[#1D4F9C] hover:border-[#1D4F9C] transition-colors"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                             aria-label="Toggle Menu"
                         >
-                            {isMobileMenuOpen ? <X size={20} strokeWidth={1.5} /> : <Menu size={20} strokeWidth={1.5} />}
+                            {isMobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
                         </button>
                     </div>
-
-                    {/* --- DESKTOP MEGA MENU OVERLAY --- */}
-                    <AnimatePresence>
-                        {isProjectsHovered && (
-                            <motion.div
-                                initial={{ opacity: 0, y: 15 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: 10 }}
-                                transition={{ duration: 0.3, ease: "easeOut" }}
-                                className="absolute top-[100%] left-0 w-full pt-2"
-                                onMouseEnter={() => setIsProjectsHovered(true)}
-                                onMouseLeave={() => setIsProjectsHovered(false)}
-                            >
-                                <div className="bg-[#FFFFFF] border border-[#C5A059]/20 shadow-[0_20px_50px_rgba(29,79,156,0.15)] rounded-sm overflow-hidden p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 relative">
-                                    {projects.map((proj) => (
-                                        <Link href={`/projects/${proj.slug}`} key={proj.id} className="group/dropdown overflow-hidden block relative border border-[#E0E5EC] hover:border-[#C5A059]/50 bg-[#FFFFFF] rounded-sm transition-all duration-300 hover:shadow-lg" onClick={() => setIsProjectsHovered(false)}>
-                                            <div className="aspect-[4/3] relative overflow-hidden">
-                                                <div className="absolute inset-0 bg-cover bg-center opacity-90 group-hover/dropdown:opacity-100 group-hover/dropdown:scale-105 transition-all duration-500" style={{ backgroundImage: `url(${proj.image})` }} />
-                                            </div>
-                                            <div className="p-4 bg-[#FFFFFF]">
-                                                <div className="flex justify-between items-start mb-1">
-                                                    <div className="text-[#1D4F9C] text-[9px] uppercase tracking-[0.15em] font-medium flex items-center gap-1.5"><MapPin size={10} /> {proj.location.split(',')[0]}</div>
-                                                    {proj.status === "Brand New Launch" && (
-                                                        <span className="bg-[#1D4F9C] text-[#FFFFFF] text-[7px] px-1.5 py-0.5 rounded-full font-bold animate-pulse">NEW</span>
-                                                    )}
-                                                </div>
-                                                <h4 className="text-[#323334] font-serif text-sm font-medium">{proj.title}</h4>
-                                            </div>
-                                        </Link>
-                                    ))}
-                                    <div className="md:col-span-2 lg:col-span-4 flex justify-end mt-4 pt-4 border-t border-[#C5A059]/30">
-                                        <Link href="/projects" aria-label="View Full Joyville Portfolio" className="text-xs uppercase tracking-[0.2em] text-[#1D4F9C] hover:text-[#323334] font-medium flex items-center gap-2 group/all focus-visible:ring-2 focus-visible:ring-[#1D4F9C] focus-visible:outline-none rounded-sm px-2 py-1">
-                                            View Full Portfolio <span className="w-6 h-[1px] bg-[#1D4F9C] group-hover/all:w-10 transition-all duration-300" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
                 </nav>
             </header>
 
-            {/* Global Quick Enquire Modal */}
+            {/* Quick Enquire Modal */}
             <QuickEnquireModal
                 isOpen={isEnquireModalOpen}
                 onClose={() => setIsEnquireModalOpen(false)}
                 projectName="Joyville Pune Collection"
-                source="Global Header Enquiry"
+                source="Global Navbar Enquiry"
             />
 
-            {/* --- MOBILE FULL-SCREEN DRAWER --- */}
+            {/* --- REFINED MOBILE DRAWER --- */}
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
-                        initial={{ opacity: 0, clipPath: "circle(0% at 100% 0)" }}
-                        animate={{ opacity: 1, clipPath: "circle(150% at 100% 0)" }}
-                        exit={{ opacity: 0, clipPath: "circle(0% at 100% 0)" }}
-                        transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
-                        className="fixed inset-0 z-[90] bg-[#FFFFFF] flex flex-col justify-center px-10 pb-[max(env(safe-area-inset-bottom),_2rem)] overflow-y-auto overscroll-contain"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.3 }}
+                        className="fixed inset-0 z-[95] bg-white/98 backdrop-blur-2xl flex flex-col pt-24 px-6 pb-8 overflow-y-auto"
                     >
-                        {/* Drawer Background Pattern */}
-                        <div className="absolute inset-0 bg-[url('/images/desktop-poster.webp')] bg-cover bg-center opacity-5 mix-blend-luminosity pointer-events-none" />
+                        <div className="max-w-md mx-auto w-full space-y-6">
+                            <div>
+                                <span className="text-[10px] uppercase tracking-[0.25em] text-[#C5A059] font-bold block mb-3">
+                                    Residences & Locations
+                                </span>
+                                <div className="grid grid-cols-2 gap-2">
+                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/projects" className="p-3 bg-slate-50 rounded-xl text-xs font-bold text-[#1E293B] hover:text-[#1D4F9C] border border-slate-100">
+                                        All Projects
+                                    </Link>
+                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/locality/hinjewadi" className="p-3 bg-slate-50 rounded-xl text-xs font-bold text-[#1E293B] hover:text-[#1D4F9C] border border-slate-100">
+                                        Hinjewadi
+                                    </Link>
+                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/locality/hadapsar" className="p-3 bg-slate-50 rounded-xl text-xs font-bold text-[#1E293B] hover:text-[#1D4F9C] border border-slate-100">
+                                        Hadapsar
+                                    </Link>
+                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/locality/bavdhan" className="p-3 bg-slate-50 rounded-xl text-xs font-bold text-[#1E293B] hover:text-[#1D4F9C] border border-slate-100">
+                                        Bavdhan
+                                    </Link>
+                                </div>
+                            </div>
 
-                        <div className="relative z-10 flex flex-col gap-10">
-                            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3 }} className="text-[#1D4F9C] text-xs tracking-[0.3em] uppercase font-light border-b border-[#C5A059]/30 pb-4">
-                                Navigate
-                            </motion.div>
+                            <div>
+                                <span className="text-[10px] uppercase tracking-[0.25em] text-[#C5A059] font-bold block mb-3">
+                                    Buyer Tools & Insights
+                                </span>
+                                <div className="space-y-1.5">
+                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/roi-calculator" className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 text-sm font-medium text-slate-700">
+                                        <span>ROI & EMI Calculator</span>
+                                        <ChevronDown size={14} className="-rotate-90 text-slate-400" />
+                                    </Link>
+                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/locality/compare" className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 text-sm font-medium text-slate-700">
+                                        <span>Market Matrix</span>
+                                        <ChevronDown size={14} className="-rotate-90 text-slate-400" />
+                                    </Link>
+                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/amenities" className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 text-sm font-medium text-slate-700">
+                                        <span>60+ Amenities</span>
+                                        <ChevronDown size={14} className="-rotate-90 text-slate-400" />
+                                    </Link>
+                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/insights" className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 text-sm font-medium text-slate-700">
+                                        <span>Research & Articles</span>
+                                        <ChevronDown size={14} className="-rotate-90 text-slate-400" />
+                                    </Link>
+                                </div>
+                            </div>
 
-                            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }}>
-                                <Link onClick={() => setIsMobileMenuOpen(false)} href="/" className="text-4xl sm:text-5xl font-serif text-[#323334] font-light hover:text-[#1D4F9C] transition-colors inline-block py-2">Home</Link>
-                            </motion.div>
-                            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5 }}>
-                                <Link onClick={() => setIsMobileMenuOpen(false)} href="/projects" className="text-4xl sm:text-5xl font-serif text-[#323334] font-light hover:text-[#1D4F9C] transition-colors inline-block py-2">Portfolios</Link>
-                            </motion.div>
-                            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6 }}>
-                                <Link onClick={() => setIsMobileMenuOpen(false)} href="/amenities" className="text-4xl sm:text-5xl font-serif text-[#323334] font-light hover:text-[#1D4F9C] transition-colors inline-block py-2">Amenities</Link>
-                            </motion.div>
-                            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6 }}>
-                                <Link onClick={() => setIsMobileMenuOpen(false)} href="/roi-calculator" className="text-4xl sm:text-5xl font-serif text-[#323334] font-light hover:text-[#1D4F9C] transition-colors inline-block py-2">ROI Calculator</Link>
-                            </motion.div>
-                            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6 }}>
-                                <Link onClick={() => setIsMobileMenuOpen(false)} href="/locality/compare" className="text-4xl sm:text-5xl font-serif text-[#1D4F9C] font-bold inline-block py-2 italic underline underline-offset-8 decoration-[#C5A059]">Market Matrix</Link>
-                            </motion.div>
-                            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.7 }}>
-                                <Link onClick={() => setIsMobileMenuOpen(false)} href="/press-research" className="text-4xl sm:text-5xl font-serif text-[#323334] font-light hover:text-[#1D4F9C] transition-colors inline-block py-2">Research Hub</Link>
-                            </motion.div>
-                            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.8 }}>
-                                <Link onClick={() => setIsMobileMenuOpen(false)} href="/location" className="text-4xl sm:text-5xl font-serif text-[#323334] font-light hover:text-[#1D4F9C] transition-colors inline-block py-2">Location</Link>
-                            </motion.div>
-
-                            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.8 }} className="mt-10">
+                            <div className="pt-4 border-t border-slate-100 space-y-3">
                                 <button
                                     onClick={() => {
                                         setIsMobileMenuOpen(false);
                                         setIsEnquireModalOpen(true);
                                     }}
-                                    aria-label="Schedule a Call"
-                                    className="w-full bg-[#1D4F9C] text-[#FFFFFF] uppercase tracking-[0.2em] text-xs font-bold py-5 shadow-[0_10px_30px_rgba(197,160,89,0.2)]"
+                                    className="w-full py-4 rounded-xl bg-[#1D4F9C] text-white font-bold text-xs uppercase tracking-[0.2em] shadow-lg shadow-[#1D4F9C]/25 flex items-center justify-center gap-2"
                                 >
-                                    Schedule a Call
+                                    <PhoneCall size={14} className="text-[#C5A059]" />
+                                    <span>Schedule Site Visit</span>
                                 </button>
-                            </motion.div>
+                                <a
+                                    href="https://wa.me/912067431149?text=Hi%2C%20I%20want%20details%20about%20Joyville%20Pune%20homes"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full py-3.5 rounded-xl border border-emerald-500/30 text-emerald-700 bg-emerald-50/50 font-bold text-xs uppercase tracking-[0.16em] flex items-center justify-center gap-2"
+                                >
+                                    <span>Chat on WhatsApp</span>
+                                </a>
+                            </div>
                         </div>
                     </motion.div>
                 )}

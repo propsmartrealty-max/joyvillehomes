@@ -1,18 +1,48 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, MapPin, Sparkles, Compass } from "lucide-react";
 import PriceDisplay from "@/components/PriceDisplay";
 import { projects } from "@/data/projects";
 import { generateUnitSlug } from "@/utils/seo-utils";
 
-const ITEMS_PER_PAGE = 2; // Strict pagination constraint for elegant display
+type LocalityFilter = "all" | "hinjewadi" | "hadapsar" | "bavdhan" | "purandar";
+
+interface FilterTab {
+    id: LocalityFilter;
+    label: string;
+    sublabel: string;
+}
+
+const FILTER_TABS: FilterTab[] = [
+    { id: "all", label: "All Developments", sublabel: "Pune Portfolio" },
+    { id: "hinjewadi", label: "Hinjewadi", sublabel: "IT Corridor" },
+    { id: "hadapsar", label: "Hadapsar", sublabel: "East Pune" },
+    { id: "bavdhan", label: "Bavdhan", sublabel: "West Pune" },
+    { id: "purandar", label: "Purandar", sublabel: "Gated Plots" },
+];
 
 export default function ProjectsPortfolioClient() {
-    const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
-    const currentProjects = projects.slice(0, visibleCount);
+    const [selectedFilter, setSelectedFilter] = useState<LocalityFilter>("all");
+
+    const filteredProjects = useMemo(() => {
+        if (selectedFilter === "all") return projects;
+        if (selectedFilter === "hinjewadi") {
+            return projects.filter(p => p.location.toLowerCase().includes("hinjewadi") || p.title.toLowerCase().includes("vyomora") || p.title.toLowerCase().includes("sensorium"));
+        }
+        if (selectedFilter === "hadapsar") {
+            return projects.filter(p => p.location.toLowerCase().includes("hadapsar") || p.location.toLowerCase().includes("shewalewadi") || p.title.toLowerCase().includes("hadapsar") || p.title.toLowerCase().includes("celestia") || p.title.toLowerCase().includes("skyluxe"));
+        }
+        if (selectedFilter === "bavdhan") {
+            return projects.filter(p => p.location.toLowerCase().includes("bavdhan") || p.title.toLowerCase().includes("vanaha"));
+        }
+        if (selectedFilter === "purandar") {
+            return projects.filter(p => p.location.toLowerCase().includes("purandar") || p.title.toLowerCase().includes("plot") || p.type.toLowerCase().includes("plot"));
+        }
+        return projects;
+    }, [selectedFilter]);
 
     // Dynamic JSON-LD for the Portfolio
     const jsonLd = {
@@ -21,8 +51,8 @@ export default function ProjectsPortfolioClient() {
             {
                 "@type": ["ItemList", "CollectionPage"],
                 "@id": "https://joyville-homes.com/projects/#portfolio",
-                "name": "Joyville Homes Pune Residential Projects",
-                "description": "Explore Shapoorji Pallonji's premium portfolio of luxury residential projects across Pune, Hinjewadi, Hadapsar, and Bavdhan. Find luxury 2 & 3 BHK flats.",
+                "name": "Joyville Homes Pune Residential Projects Portfolio",
+                "description": "Explore Shapoorji Pallonji's premium portfolio of luxury residential projects across Pune, Hinjewadi, Hadapsar, and Bavdhan. Find luxury 2 & 3 BHK flats and villas.",
                 "url": "https://joyville-homes.com/projects",
                 "publisher": {
                     "@id": "https://joyville-homes.com/#organization"
@@ -47,108 +77,182 @@ export default function ProjectsPortfolioClient() {
     };
 
     return (
-        <article className="min-h-[100dvh] bg-[#FFFFFF] pt-32 pb-24 text-[#323334] selection:bg-[#1D4F9C] selection:text-[#FFFFFF]">
+        <article className="min-h-[100dvh] bg-[#FAFBFC] pt-32 pb-24 text-[#1E293B] selection:bg-[#1D4F9C] selection:text-[#FFFFFF]">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-            <header className="max-w-7xl mx-auto px-6 mb-24 text-center">
-                <div className="inline-flex items-center gap-4 text-[#1D4F9C] font-light text-xs tracking-[0.3em] uppercase mb-6">
-                    <span className="w-8 h-[1px] bg-[#1D4F9C]" /> Pune Real Estate Portfolio <span className="w-8 h-[1px] bg-[#1D4F9C]" />
+            {/* Header section */}
+            <header className="max-w-7xl mx-auto px-6 mb-16 text-center">
+                <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-[#1D4F9C]/5 border border-[#1D4F9C]/15 text-[#1D4F9C] font-semibold text-xs tracking-[0.25em] uppercase mb-6">
+                    <Sparkles size={12} className="text-[#C5A059]" />
+                    <span>Shapoorji Pallonji Real Estate</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C5A059]" />
+                    <span>Pune Portfolio</span>
                 </div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif mb-8 text-[#323334] font-light">
-                    Joyville Pune <span className="text-[#1D4F9C] italic text-gradient">Projects</span>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#1E293B] font-normal tracking-tight mb-6">
+                    Signature Residential <span className="text-[#1D4F9C] italic">Masterpieces</span>
                 </h1>
-                <p className="text-[#323334] text-lg max-w-3xl mx-auto font-light leading-relaxed">
-                    Discover the definitive collection of Joyville Pune residential projects. From the IT hubs of Hinjewadi Phase 1 to Hadapsar, explore our premium 2 & 3 BHK flats crafted with the 150-year legacy of Shapoorji Pallonji Pune.
+                <p className="text-[#475569] text-base md:text-lg max-w-3xl mx-auto font-light leading-relaxed">
+                    Explore curated living spaces crafted with the 160-year engineering legacy of Shapoorji Pallonji. From high-growth IT corridors in Hinjewadi to expansive township residences in Hadapsar and Bavdhan.
                 </p>
+
+                {/* Filter Tabs */}
+                <div className="mt-12 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                    {FILTER_TABS.map((tab) => {
+                        const isActive = selectedFilter === tab.id;
+                        return (
+                            <button
+                                key={tab.id}
+                                onClick={() => setSelectedFilter(tab.id)}
+                                className={`px-5 py-2.5 rounded-full text-xs font-medium tracking-wider uppercase transition-all duration-300 flex items-center gap-2 border ${
+                                    isActive
+                                        ? "bg-[#1D4F9C] text-white border-[#1D4F9C] shadow-lg shadow-[#1D4F9C]/20 scale-102"
+                                        : "bg-white text-[#475569] border-[#E2E8F0] hover:border-[#C5A059] hover:text-[#1D4F9C] shadow-xs"
+                                }`}
+                            >
+                                <Compass size={13} className={isActive ? "text-[#C5A059]" : "text-gray-400"} />
+                                <span>{tab.label}</span>
+                                <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${
+                                    isActive ? "bg-white/20 text-white" : "bg-gray-100 text-gray-500"
+                                }`}>
+                                    {tab.id === "all" ? projects.length : 
+                                     tab.id === "hinjewadi" ? projects.filter(p => p.location.toLowerCase().includes("hinjewadi") || p.title.toLowerCase().includes("vyomora") || p.title.toLowerCase().includes("sensorium")).length :
+                                     tab.id === "hadapsar" ? projects.filter(p => p.location.toLowerCase().includes("hadapsar") || p.location.toLowerCase().includes("shewalewadi") || p.title.toLowerCase().includes("hadapsar") || p.title.toLowerCase().includes("celestia") || p.title.toLowerCase().includes("skyluxe")).length :
+                                     tab.id === "bavdhan" ? projects.filter(p => p.location.toLowerCase().includes("bavdhan") || p.title.toLowerCase().includes("vanaha")).length :
+                                     projects.filter(p => p.location.toLowerCase().includes("purandar") || p.title.toLowerCase().includes("plot") || p.type.toLowerCase().includes("plot")).length}
+                                </span>
+                            </button>
+                        );
+                    })}
+                </div>
             </header>
 
-            <main className="max-w-5xl mx-auto px-6 space-y-16 mb-24">
-                {currentProjects.length === 0 && (
-                    <div className="flex flex-col items-center justify-center py-20 text-center bg-[#F8FAFC] border border-[#C5A059]/20 rounded-sm">
+            {/* Project Grid */}
+            <main className="max-w-6xl mx-auto px-6 space-y-12 mb-24">
+                {filteredProjects.length === 0 && (
+                    <div className="flex flex-col items-center justify-center py-20 text-center bg-white border border-[#E2E8F0] rounded-lg shadow-sm">
                         <MapPin size={48} className="text-[#C5A059] mb-4 opacity-50" />
-                        <h3 className="text-2xl font-serif text-[#323334] mb-2">No Projects Found</h3>
-                        <p className="text-[#323334]/70 font-light text-sm max-w-md">We couldn&apos;t find any projects matching your current criteria. Please adjust your filters or check back later.</p>
+                        <h3 className="text-2xl font-serif text-[#1E293B] mb-2">No Developments Found</h3>
+                        <p className="text-[#64748B] font-light text-sm max-w-md">We couldn&apos;t find any projects matching your selected filter. View all developments to explore the full portfolio.</p>
+                        <button
+                            onClick={() => setSelectedFilter("all")}
+                            className="mt-6 px-6 py-2.5 bg-[#1D4F9C] text-white text-xs font-semibold uppercase tracking-wider rounded-full hover:bg-[#153a75] transition-colors"
+                        >
+                            View All Projects
+                        </button>
                     </div>
                 )}
-                {currentProjects.map((project) => (
-                    <div key={project.id} className="group flex flex-col md:flex-row bg-[#FFFFFF] border border-[#C5A059]/30 shadow-lg hover:shadow-2xl overflow-hidden rounded-sm hover:border-[#C5A059]/80 transition-all duration-500 block relative">
-                        <div className="md:w-5/12 relative aspect-[4/3] md:min-h-[300px] overflow-hidden bg-[#F8FAFC]">
+
+                {filteredProjects.map((project) => (
+                    <div 
+                        key={project.id} 
+                        className="group flex flex-col lg:flex-row bg-white border border-[#E2E8F0] hover:border-[#C5A059]/70 rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 relative"
+                    >
+                        {/* Image Showcase */}
+                        <div className="lg:w-1/2 relative aspect-[16/10] lg:aspect-auto lg:min-h-[380px] overflow-hidden bg-gray-900">
                             <Image
                                 src={project.image}
                                 alt={`Shapoorji Pallonji ${project.title} - ${project.type} in ${project.location}`}
                                 fill
-                                className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
-                                sizes="(max-width: 768px) 100vw, 50vw"
+                                className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                                 priority={true}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF]/20 to-transparent pointer-events-none md:w-3/4" />
-                            <div className="absolute top-6 left-6 flex gap-3 z-10">
-                                <span className="px-4 py-1.5 bg-[#1D4F9C] text-[#FFFFFF] text-[10px] uppercase tracking-[0.2em] font-bold shadow-lg shadow-[#1D4F9C]/30 rounded-sm">{project.status}</span>
+                            {/* Subtle dark gradient overlay only on bottom for legible badge */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
+
+                            {/* Top Badges */}
+                            <div className="absolute top-5 left-5 right-5 flex items-center justify-between pointer-events-none">
+                                <span className="px-3.5 py-1.5 bg-[#1D4F9C]/95 backdrop-blur-md text-white text-[10px] uppercase tracking-[0.2em] font-bold rounded shadow-md border border-white/10">
+                                    {project.status}
+                                </span>
+                                <span className="px-3 py-1.5 bg-[#0F172A]/90 backdrop-blur-md text-white text-[10px] uppercase tracking-wider font-semibold rounded border border-[#C5A059]/50 shadow-md flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_6px_#34d399]" />
+                                    <span>MahaRERA: {Array.isArray(project.reraNumber) ? project.reraNumber[0] + (project.reraNumber.length > 1 ? ', ...' : '') : project.reraNumber}</span>
+                                </span>
                             </div>
-                            <div className="absolute top-6 right-6 flex flex-col items-end z-10 text-right max-w-[60%] sm:max-w-none">
-                                <span className="px-3 py-1.5 bg-[#1A1A2E]/80 backdrop-blur-md text-[#FFFFFF] text-[10px] uppercase tracking-wider font-bold shadow-lg rounded-sm border border-[#C5A059]/60 flex items-center gap-2 max-w-full">
-                                    <span className="w-1.5 h-1.5 flex-shrink-0 bg-green-500 rounded-full animate-pulse shadow-[0_0_5px_#22c55e]"></span>
-                                    <span className="truncate">MahaRERA: {Array.isArray(project.reraNumber) ? project.reraNumber[0] + (project.reraNumber.length > 1 ? ', ...' : '') : project.reraNumber}</span>
+
+                            {/* Bottom Type Badge */}
+                            <div className="absolute bottom-5 left-5 pointer-events-none">
+                                <span className="px-3 py-1 bg-white/90 backdrop-blur-md text-[#1D4F9C] text-[11px] font-semibold tracking-wider uppercase rounded shadow-sm">
+                                    {project.type}
                                 </span>
                             </div>
                         </div>
 
-                        <div className="md:w-7/12 p-10 md:p-12 flex flex-col justify-center">
-                            <div className="flex items-center gap-2 text-[#1D4F9C] text-xs font-light tracking-[0.2em] uppercase mb-4">
-                                <MapPin size={12} /> {project.location}
+                        {/* Content Details */}
+                        <div className="lg:w-1/2 p-8 lg:p-10 flex flex-col justify-between">
+                            <div>
+                                <div className="flex items-center gap-2 text-[#1D4F9C] text-xs font-semibold tracking-[0.2em] uppercase mb-3">
+                                    <MapPin size={13} className="text-[#C5A059]" />
+                                    <span>{project.location}</span>
+                                </div>
+
+                                <Link href={`/projects/${project.slug}`}>
+                                    <h2 className="text-2xl lg:text-3xl font-serif text-[#1E293B] font-normal hover:text-[#1D4F9C] transition-colors cursor-pointer mb-3">
+                                        {project.title}
+                                    </h2>
+                                </Link>
+
+                                <div className="mb-5 flex items-baseline gap-3">
+                                    <PriceDisplay price={project.price} className="text-2xl text-[#1D4F9C] font-serif font-medium block" />
+                                    {project.constructionUpdate && (
+                                        <span className="text-[11px] text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200 font-medium">
+                                            {project.constructionUpdate.percentage}% Completed
+                                        </span>
+                                    )}
+                                </div>
+
+                                <p className="text-[#64748B] font-light text-sm leading-relaxed mb-6 line-clamp-3">
+                                    {project.description}
+                                </p>
+
+                                {/* Highlights grid */}
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6 pb-6 border-b border-gray-100">
+                                    {project.highlights.slice(0, 4).map((hl, i) => (
+                                        <div key={i} className="flex items-start gap-2 text-xs text-[#334155] font-light">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-[#C5A059] mt-1.5 shrink-0" />
+                                            <span>{hl}</span>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
-                             <Link href={`/projects/${project.slug}`}>
-                                <h2 className="text-3xl lg:text-4xl font-serif mb-4 text-[#323334] font-light hover:text-[#1D4F9C] transition-colors cursor-pointer">{project.title}</h2>
-                            </Link>
-                            <PriceDisplay price={project.price} className="text-xl text-[#1D4F9C] mb-6 font-serif italic text-gradient block" />
 
-                            <p className="text-[#323334] font-light text-sm leading-relaxed mb-8 line-clamp-3">
-                                {project.description}
-                            </p>
+                            <div>
+                                {/* Floor Plan Quick Links */}
+                                <div className="flex flex-wrap gap-2 mb-6">
+                                    {project.floorPlans.slice(0, 3).map((plan, i) => (
+                                        <Link 
+                                            key={i} 
+                                            href={`/properties/unit/${generateUnitSlug(project.title, plan.type, project.location)}`}
+                                            className="px-3 py-1.5 bg-[#F8FAFC] border border-[#E2E8F0] hover:border-[#1D4F9C] hover:bg-[#1D4F9C] text-[#1D4F9C] hover:text-white text-[10px] font-semibold uppercase tracking-wider rounded transition-colors"
+                                        >
+                                            {plan.type} ({plan.carpetArea.split(' ')[0]} sq.ft)
+                                        </Link>
+                                    ))}
+                                </div>
 
-                            <div className="grid grid-cols-2 gap-4 mb-10 pb-10 border-b border-[#C5A059]/60">
-                                {project.highlights.slice(0, 4).map((hl, i) => (
-                                    <div key={i} className="flex items-start gap-3">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-[#1D4F9C] mt-1.5 flex-shrink-0" />
-                                        <span className="text-[#323334] text-xs font-light tracking-wide">{hl}</span>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="flex flex-wrap gap-2 mb-8">
-                                {project.floorPlans.slice(0, 3).map((plan, i) => (
+                                {/* Primary CTA Actions */}
+                                <div className="flex items-center justify-between pt-2">
                                     <Link 
-                                        key={i} 
-                                        href={`/properties/unit/${generateUnitSlug(project.title, plan.type, project.location)}`}
-                                        className="px-3 py-3 md:py-1.5 min-h-[44px] md:min-h-0 flex items-center justify-center bg-[#EEF2F6] border border-[#C5A059]/30 text-[#1D4F9C] text-[9px] font-bold uppercase tracking-wider hover:bg-[#1D4F9C] hover:text-[#FFFFFF] transition-all rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A059]"
+                                        href={`/projects/${project.slug}`}
+                                        className="inline-flex items-center gap-2.5 text-[#1D4F9C] font-bold uppercase tracking-[0.2em] text-xs hover:text-[#0F172A] transition-colors group/link"
                                     >
-                                        {plan.type} Floor Plan
+                                        <span>Explore Project Details</span>
+                                        <ArrowRight size={14} className="group-hover/link:translate-x-1.5 transition-transform duration-300" />
                                     </Link>
-                                ))}
-                            </div>
 
-                            <Link 
-                                href={`/projects/${project.slug}`}
-                                className="inline-flex items-center gap-4 text-[#1D4F9C] font-semibold uppercase tracking-[0.2em] text-xs hover:text-[#1A1A1A] transition-colors self-start mt-auto cursor-pointer"
-                            >
-                                View Project Details <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform duration-300" />
-                            </Link>
+                                    <Link
+                                        href={`/projects/${project.slug}#floor-plans`}
+                                        className="text-[11px] font-semibold text-[#64748B] hover:text-[#1D4F9C] uppercase tracking-wider"
+                                    >
+                                        View Floor Plans &rarr;
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 ))}
             </main>
-
-            {visibleCount < projects.length && (
-                <div className="flex justify-center mt-12 mb-12">
-                    <button
-                        onClick={() => setVisibleCount(prev => prev + ITEMS_PER_PAGE)}
-                        className="px-8 py-4 bg-transparent border border-[#C5A059] text-[#1D4F9C] font-semibold tracking-widest uppercase text-sm hover:bg-[#1D4F9C] hover:text-[#FFFFFF] transition-all duration-500 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4F9C] focus-visible:ring-offset-4"
-                        aria-label="Load More Projects"
-                    >
-                        Load More Projects
-                    </button>
-                </div>
-            )}
         </article>
     );
 }

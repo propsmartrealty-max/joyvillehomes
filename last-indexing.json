@@ -1,7 +1,7 @@
 {
-  "lastRun": "2026-07-16T16:48:32.569Z",
-  "totalUrls": 179,
-  "successCount": 28,
+  "lastRun": "2026-10-12T05:56:57.257Z",
+  "totalUrls": 185,
+  "successCount": 22,
   "failCount": 1,
   "details": [
     {
@@ -90,7 +90,22 @@
       "error": null
     },
     {
+      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-2-bhk-suite-hinjewadi-phase-1-pune",
+      "status": 200,
+      "error": null
+    },
+    {
       "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-2-bhk-premium-hinjewadi-phase-1-pune",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-2-bhk-grand-hinjewadi-phase-1-pune",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-2-bhk-royale-hinjewadi-phase-1-pune",
       "status": 200,
       "error": null
     },
@@ -100,52 +115,7 @@
       "error": null
     },
     {
-      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-3-bhk-duplex-hinjewadi-phase-1-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-sensorium-2-bhk-luxe-off-maan-village-road-hinjewadi-phase-1-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-sensorium-3-bhk-royale-off-maan-village-road-hinjewadi-phase-1-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-hadapsar-annexe-1-bhk-joy-shewalewadi-hadapsar-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-hadapsar-annexe-2-bhk-delight-shewalewadi-hadapsar-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-hadapsar-annexe-3-bhk-grande-shewalewadi-hadapsar-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-celestia-2-bhk-smart-shewalewadi-off-pune-solapur-highway-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-celestia-2-bhk-luxury-shewalewadi-off-pune-solapur-highway-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-celestia-3-bhk-grand-shewalewadi-off-pune-solapur-highway-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-skyluxe-edition-3-bhk-skyluxe-shewalewadi-off-pune-solapur-highway-pune",
+      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-3-bhk-premium-hinjewadi-phase-1-pune",
       "status": 429,
       "error": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:821268771090'."
     }

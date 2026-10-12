@@ -277,7 +277,10 @@ export default function HomeClient() {
 
           <div className="relative aspect-[21/9] w-full bg-[#EEF2F6] border border-[#C5A059]/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)] group overflow-hidden rounded-sm">
             {/* Dark, sophisticated master layout blueprint visualization */}
-            <div className="absolute inset-0 bg-[url('/images/joyville_hinjawadi_projectcard.webp')] bg-cover bg-center opacity-40 mix-blend-color-dodge group-hover:scale-105 transition-all duration-[2000ms]" />
+            <div 
+              style={{ backgroundImage: "url('/images/joyville_hinjawadi_projectcard.webp')" }}
+              className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-color-dodge group-hover:scale-105 transition-all duration-[2000ms]" 
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-[#FFFFFF] via-transparent to-transparent" />
 
             <div className="absolute top-[30%] left-[40%] flex items-center justify-center group-hover:scale-110 transition-transform duration-500 cursor-pointer">

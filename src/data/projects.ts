@@ -178,78 +178,253 @@ export const projects: Project[] = [
         topicIDs: ['hinjewadi-it-hub', 'pune-rental-market'],
         title: "Joyville Vyomora",
         location: "Hinjewadi Phase 1, Pune",
-        price: "₹84.99 L Onwards",
+        price: "₹88.19 L Onwards",
         type: "2, 3 BHK & 3 BHK Duplex",
         status: "Brand New Launch",
         reraNumber: "PR1260002600999",
-        image: "/images/joyville_hinjawadi_projectcard.webp",
+        image: "/images/projects/vyomora/desktop_banner.webp",
         highlights: [
-            "Premium IT Lifeline Location (High ROI)",
-            "3 BHK Duplex Configurations",
-            "Mivan Technology Construction",
-            "24/7 Elite Security & Smart Surge"
+            "25-Acre Master-Planned Community with 80% Open Breathing Space",
+            "Grand 32,000+ Sq. Ft. Clubhouse & Elevated Eco-Deck",
+            "48 Curated Lifestyle Amenities across Health, Sports & Leisure",
+            "Aluform / Mivan Monolithic Earthquake-Resistant Engineering"
         ],
-        description: "Premium large-format residential community spread across 25 acres in Hinjawadi, Pune by Shapoorji Pallonji Real Estate. Spacious flats and duplexes of 685 sq. ft. and 1434 sq. ft., minutes from Hinjewadi Phase 1 and the Mumbai-Pune Expressway.",
+        description: "Premium large-format residential community spread across 25 acres in Hinjawadi, Pune by Shapoorji Pallonji Real Estate. Spacious flats and duplexes from 685 sq. ft. to 1434 sq. ft., minutes from Hinjewadi Phase 1, Rajiv Gandhi Infotech Park, and the Mumbai-Pune Expressway.",
         overview: [
             "Vyomora by Shapoorji Pallonji is envisioned as a large-format residential community spread across 25 acres of thoughtfully planned land.",
             "In a neighbourhood defined by vertical growth, Vyomora brings horizontal breathing space. It is not just apartments within a cluster of towers – it is a master-planned environment shaped around openness, structure, and everyday ease.",
-            "Vyomora offers flats and duplexes ranging from 685 sq. ft. to 1434 sq. ft., perfectly positioned minutes from Hinjewadi Phase 1 and the Mumbai-Pune Expressway."
+            "The vision is simple: create a community where scale feels expansive, yet life feels intimate. Vyomora offers flats and duplexes ranging from 685 sq. ft. to 1434 sq. ft. (63.64 sq. m. to 133.22 sq. m.), perfectly positioned minutes from Hinjewadi Phase 1, Baner, Wakad, and the Mumbai-Pune Expressway."
         ],
         amenities: [
             {
-                category: "The 32,000+ Sq. Ft. Clubhouse",
-                items: ["Lap Pool", "Gymnasium", "Spa", "Mini Theatre", "Digital Dome", "Co-working Lounge"]
+                category: "Health & Wellness",
+                items: [
+                    "Dedicated Yoga Studio",
+                    "Reflexology Path",
+                    "Meditation Deck",
+                    "Wellness Clinic & Spa"
+                ]
+            },
+            {
+                category: "Leisure & Landscapes",
+                items: [
+                    "Olympic-Length Lap Pool & Aqua Gym",
+                    "Bubble Pool & Jacuzzi Seating with Pool Deck",
+                    "Elevated Eco-Deck & Podium Landscapes",
+                    "Maze Gardens & Aroma Pathways",
+                    "Sunken Seating & Interactive Fountain Plaza",
+                    "Pet Park with Gravel Infill",
+                    "Butterfly Lawns & Orchard Walkways",
+                    "Machan-Style Seating Decks & Reading Swings"
+                ]
             },
             {
                 category: "Sports & Fitness",
-                items: ["Pickleball Courts", "Mini Football Turf", "Yoga Studio", "Walking Pathways"]
+                items: [
+                    "Fully Equipped Sky Gymnasium",
+                    "Pickleball Courts",
+                    "Mini Football Turf",
+                    "Multipurpose Court (Basketball & Volleyball)",
+                    "Outdoor Fitness Gym",
+                    "Dedicated Jogging Tracks & Cycling Circuits",
+                    "Cricket Simulator & Games Room",
+                    "Indoor Games Suite & Billiards",
+                    "Indoor Kids' Play Area with Brain Gym"
+                ]
             },
             {
-                category: "Safety & Utility",
-                items: ["24/7 Security & CCTV", "100% Power Backup", "Reception & Car Parking", "High-Speed Wi-Fi Zones"]
+                category: "Community & Entertainment",
+                items: [
+                    "32,000+ Sq. Ft. Signature Clubhouse",
+                    "Digital Dome & Private Mini Theatre",
+                    "Co-Working Lounge & Quiet Work Pods",
+                    "Reading Room with High-Speed Workstations",
+                    "Karaoke Room & Banquet-Ready Halls",
+                    "Community Maidans & Amphitheatre Seating",
+                    "Adventure Park & Trampoline Zone",
+                    "Retail Frontage for Everyday Convenience",
+                    "Senior Citizen Relaxation Pavilions",
+                    "Creche & Guest Suites"
+                ]
             }
         ],
         specifications: [
             {
-                category: "Living & Dining",
-                items: ["Premium vitrified flooring", "Gypsum finished walls with luxury paint", "Large windows for natural light"]
+                category: "Structure & Engineering",
+                items: [
+                    "Earthquake-resistant RCC shear wall design",
+                    "Advanced Aluform / Mivan monolithic construction for smooth finish and zero seepage",
+                    "High floor-to-ceiling clearance with enhanced natural ventilation and Vastu alignment"
+                ]
             },
             {
-                category: "Kitchen & Bath",
-                items: ["Granite platform with SS sink", "Anti-skid tiles in bathrooms", "Branded CP and sanitary fittings"]
+                category: "Flooring & Finishes",
+                items: [
+                    "800x1600mm double-charge vitrified tiles in Living, Dining, Foyer and Bedrooms",
+                    "Imported marble finish in Foyer and Living areas of 3 BHK Duplexes",
+                    "Anti-skid vitrified ceramic tiles in all bathrooms and sun-deck balconies"
+                ]
+            },
+            {
+                category: "Kitchen & Utility",
+                items: [
+                    "Premium granite platform with vitrified counter and stainless steel sink with drainboard",
+                    "Designer ceramic tile dado up to 2 feet above kitchen platform",
+                    "Dedicated utility balcony with washing machine inlet/outlet provisions",
+                    "Provision for RO water purifier and exhaust fan"
+                ]
+            },
+            {
+                category: "Toilets & Bathrooms",
+                items: [
+                    "Branded Jaquar / Kohler / Grohe CP fittings and sanitary ware",
+                    "Wall-hung EWC with concealed cisterns and dual-flush mechanisms",
+                    "Glass shower partitions and hot/cold water diverters",
+                    "Solar water heating connection in Master Bath",
+                    "Grid false ceiling with concealed moisture-resistant LED lighting"
+                ]
+            },
+            {
+                category: "Doors, Windows & Smart Home",
+                items: [
+                    "Main entrance door with designer veneer/laminate finish and biometric digital lock",
+                    "Engineered wooden frames with premium flush shutters for internal rooms",
+                    "Heavy-gauge powder-coated aluminium sliding window frames with mosquito mesh",
+                    "Granite window sills on all openings",
+                    "Fiber-to-the-home (FTTH) high-speed internet and Video Door Phone (VDP) security"
+                ]
+            },
+            {
+                category: "Electrical & Sustainability",
+                items: [
+                    "Concealed copper wiring with Polycab / Havells fire-retardant cables",
+                    "Modular switches from Schneider / Legrand with child-safety shutters",
+                    "100% DG power backup for common lifts, water pumps and essential home lighting",
+                    "EV charging stations, rooftop solar grid, and centralized STP & rainwater harvesting"
+                ]
             }
         ],
         floorPlans: [
-            { type: "2 BHK Premium", carpetArea: "685 - 837 sq. ft.", image: "/images/joyville_hinjawadi_projectcard.webp", description: "Premium 2 BHK layout optimized for IT professionals.", spatialDimension: "Two Dimensional", category: "Apartment", intelligence: { roi: "7.2%", rentalYield: "4.5%", appreciation: "12% YoY" } },
-            { type: "3 BHK Luxury", carpetArea: "1052 - 1088 sq. ft.", image: "/images/joyville_hinjawadi_projectcard.webp", description: "Spacious 3 BHK luxury flats with large decks.", spatialDimension: "Two Dimensional", category: "Apartment", intelligence: { roi: "6.8%", rentalYield: "4.2%", appreciation: "11% YoY" } },
-            { type: "3 BHK Duplex", carpetArea: "1190 - 1434 sq. ft.", image: "/images/joyville_hinjawadi_projectcard.webp", description: "Exclusive 3 BHK duplexes offering villa-like living.", spatialDimension: "Two Dimensional", category: "Duplex", intelligence: { roi: "8.5%", rentalYield: "5.2%", appreciation: "15% YoY" } }
+            { 
+                type: "2 BHK Suite", 
+                carpetArea: "685 sq. ft. (63.64 sq. m.)", 
+                image: "/images/projects/vyomora/floor-plans/2bhk-1.webp", 
+                description: "Thoughtfully configured 2 BHK residence with expansive living-dining space, sun deck, and optimal cross-ventilation.", 
+                spatialDimension: "Two Dimensional", 
+                category: "Apartment", 
+                intelligence: { roi: "7.4%", rentalYield: "4.8%", appreciation: "12.5% YoY" } 
+            },
+            { 
+                type: "2 BHK Premium", 
+                carpetArea: "742 sq. ft.", 
+                image: "/images/projects/vyomora/floor-plans/2bhk-2.webp", 
+                description: "Spacious 2 BHK home featuring master bedroom with walk-in closet space and panoramic balcony views.", 
+                spatialDimension: "Two Dimensional", 
+                category: "Apartment", 
+                intelligence: { roi: "7.2%", rentalYield: "4.6%", appreciation: "12% YoY" } 
+            },
+            { 
+                type: "2 BHK Grand", 
+                carpetArea: "798 sq. ft.", 
+                image: "/images/projects/vyomora/floor-plans/2bhk-3.webp", 
+                description: "Grand 2 BHK corner residence with dual open sides, abundant sunlight, and extended utility deck.", 
+                spatialDimension: "Two Dimensional", 
+                category: "Apartment", 
+                intelligence: { roi: "7.1%", rentalYield: "4.5%", appreciation: "11.8% YoY" } 
+            },
+            { 
+                type: "2 BHK Royale", 
+                carpetArea: "839 sq. ft.", 
+                image: "/images/projects/vyomora/floor-plans/2bhk-4.webp", 
+                description: "Largest 2 BHK layout offering living room extension, wide foyer, and opulent master suite.", 
+                spatialDimension: "Two Dimensional", 
+                category: "Apartment", 
+                intelligence: { roi: "7.0%", rentalYield: "4.4%", appreciation: "11.5% YoY" } 
+            },
+            { 
+                type: "3 BHK Luxury", 
+                carpetArea: "1052 sq. ft.", 
+                image: "/images/projects/vyomora/floor-plans/3bhk-1.webp", 
+                description: "Sophisticated 3 BHK residence with 3 private bedrooms, expansive living deck, and dedicated dining corridor.", 
+                spatialDimension: "Two Dimensional", 
+                category: "Apartment", 
+                intelligence: { roi: "6.9%", rentalYield: "4.3%", appreciation: "11.2% YoY" } 
+            },
+            { 
+                type: "3 BHK Premium", 
+                carpetArea: "1088 sq. ft.", 
+                image: "/images/projects/vyomora/floor-plans/3bhk-2.webp", 
+                description: "Ultra-luxury 3 BHK home featuring three en-suite baths, vast sit-out balcony, and gourmet kitchen layout.", 
+                spatialDimension: "Two Dimensional", 
+                category: "Apartment", 
+                intelligence: { roi: "6.8%", rentalYield: "4.2%", appreciation: "11.0% YoY" } 
+            },
+            { 
+                type: "3 BHK Grand Decks", 
+                carpetArea: "1190 sq. ft.", 
+                image: "/images/projects/vyomora/floor-plans/3bhk-3.webp", 
+                description: "Palatial 3 BHK corner apartment with wraparound decks, overlooking the 8-acre central park.", 
+                spatialDimension: "Two Dimensional", 
+                category: "Apartment", 
+                intelligence: { roi: "6.7%", rentalYield: "4.1%", appreciation: "10.8% YoY" } 
+            },
+            { 
+                type: "3 BHK Duplex Sky Villa", 
+                carpetArea: "1434 sq. ft. (133.22 sq. m.)", 
+                image: "/images/projects/vyomora/floor-plans/3bhk-5.webp", 
+                description: "Exclusive double-height 3 BHK Duplex offering villa-style grandeur, double-height living room, private terrace, and Italian marble finishes.", 
+                spatialDimension: "Two Dimensional", 
+                category: "Duplex", 
+                intelligence: { roi: "8.6%", rentalYield: "5.4%", appreciation: "15.0% YoY" } 
+            }
         ],
-        masterLayout: "/images/joyville_hinjawadi_projectcard.webp",
+        masterLayout: "/images/projects/vyomora/floor-plans/floor-plan1.webp",
         gallery: [
-            "/images/desktop-poster.webp",
-            "/images/desktop-poster.webp"
+            "/images/projects/vyomora/gallery/photo_gallery1.webp",
+            "/images/projects/vyomora/gallery/photo_gallery2.webp",
+            "/images/projects/vyomora/gallery/photo_gallery3.webp",
+            "/images/projects/vyomora/gallery/photo_gallery4.webp",
+            "/images/projects/vyomora/gallery/photo_gallery5.webp",
+            "/images/projects/vyomora/gallery/photo_gallery6.webp",
+            "/images/projects/vyomora/gallery/photo_gallery7.webp",
+            "/images/projects/vyomora/gallery/photo_gallery8.webp",
+            "/images/projects/vyomora/gallery/photo_gallery9.webp",
+            "/images/projects/vyomora/gallery/photo_gallery10.webp",
+            "/images/projects/vyomora/gallery/photo_gallery11.webp"
         ],
         galleryItems: [
-            { url: "/images/desktop-poster.webp", caption: "Joyville Vyomora Hinjewadi Exterior View", alt: "Joyville Vyomora Luxury 2 & 3 BHK Apartments Hinjewadi", category: "Exterior" },
-            { url: "/images/desktop-poster.webp", caption: "Premium Living Room Design Vyomora", alt: "Spacious Living Area Vyomora Hinjewadi", category: "Interior" }
+            { url: "/images/projects/vyomora/gallery/photo_gallery1.webp", caption: "Grand Architectural Facade & 25-Acre Master Community", alt: "Joyville Vyomora Hinjewadi Exterior Master Architecture", category: "Exterior" },
+            { url: "/images/projects/vyomora/gallery/photo_gallery2.webp", caption: "Lush Elevated Eco-Deck & Central Green Landscapes", alt: "Joyville Vyomora Eco Deck and Podium Greenery", category: "Landscape" },
+            { url: "/images/projects/vyomora/gallery/photo_gallery3.webp", caption: "Olympic-Length Lap Pool & Sunken Aqua Loungers", alt: "Joyville Vyomora Swimming Pool and Pool Deck", category: "Amenities" },
+            { url: "/images/projects/vyomora/gallery/photo_gallery4.webp", caption: "32,000+ Sq. Ft. Designer Clubhouse Grand Foyer", alt: "Joyville Vyomora Clubhouse Entrance and Grand Lounge", category: "Clubhouse" },
+            { url: "/images/projects/vyomora/gallery/photo_gallery5.webp", caption: "Double-Height Living & Dining Room in Duplex Residences", alt: "Joyville Vyomora Luxury Living Room Interior", category: "Interior" },
+            { url: "/images/projects/vyomora/gallery/photo_gallery6.webp", caption: "Master Bedroom Suite with Floor-to-Ceiling Windows", alt: "Joyville Vyomora Master Bedroom Suite", category: "Interior" },
+            { url: "/images/projects/vyomora/gallery/photo_gallery7.webp", caption: "Gourmet Modular Kitchen with Dedicated Utility Space", alt: "Joyville Vyomora Modular Kitchen and Dining", category: "Interior" },
+            { url: "/images/projects/vyomora/gallery/photo_gallery8.webp", caption: "Pickleball & Multipurpose Sports Arena", alt: "Joyville Vyomora Pickleball Court and Sports Zone", category: "Sports" },
+            { url: "/images/projects/vyomora/gallery/photo_gallery9.webp", caption: "Digital Dome, Mini Theatre & Media Lounge", alt: "Joyville Vyomora Digital Dome and Mini Theatre", category: "Leisure" },
+            { url: "/images/projects/vyomora/gallery/photo_gallery10.webp", caption: "Serene Meditation Deck & Reflexology Walkways", alt: "Joyville Vyomora Meditation Deck and Zen Garden", category: "Wellness" },
+            { url: "/images/projects/vyomora/gallery/photo_gallery11.webp", caption: "Kids Adventure Park, Trampoline & Brain Gym", alt: "Joyville Vyomora Kids Play Area and Tot Lot", category: "Community" }
         ],
         locationDetails: {
             iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.9!2d73.7!3d18.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb!2sJoyville%20Sensorium!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin",
             landmarks: [
-                { name: "Wipro Phase 1", distance: "0.5 km", wikidataUri: "https://www.wikidata.org/wiki/Q844287" },
-                { name: "Infosys Phase 1", distance: "0.8 km", wikidataUri: "https://www.wikidata.org/wiki/Q183350" },
-                { name: "Pune Metro Line 3 Station", distance: "0.4 km", wikidataUri: "https://www.wikidata.org/wiki/Q65069273" }
+                { name: "Wipro Phase 1 Circle", distance: "0.5 km", wikidataUri: "https://www.wikidata.org/wiki/Q844287" },
+                { name: "Infosys Campus Phase 1", distance: "0.8 km", wikidataUri: "https://www.wikidata.org/wiki/Q183350" },
+                { name: "Upcoming Pune Metro Line 3 Station", distance: "0.4 km", wikidataUri: "https://www.wikidata.org/wiki/Q65069273" },
+                { name: "Mumbai-Pune Expressway Link", distance: "2.1 km", wikidataUri: "https://www.wikidata.org/wiki/Q3630623" },
+                { name: "Ruby Hall Clinic Hinjawadi", distance: "2.4 km" },
+                { name: "Blue Ridge Public School", distance: "1.9 km" }
             ]
         },
         infrastructureScores: {
-            metro: 9.5,
-            ringRoad: 8,
+            metro: 9.8,
+            ringRoad: 8.5,
             itHub: 10
         },
         constructionUpdate: {
-            percentage: 85,
-            statusText: "Advanced Finishing in Phase 1; Structural R.C.C Work for Phase 2",
-            lastUpdated: "March 2026"
+            percentage: 5,
+            statusText: "Brand New Launch: Ground Mobilization Complete; Substructure Piling & Foundation Works Underway",
+            lastUpdated: "October 2026"
         },
         expertReview: {
             rating: 4.8,
@@ -403,17 +578,19 @@ export const projects: Project[] = [
         ],
         constructionUpdates: [
             { 
-                date: "March 2026", 
-                title: "Foundation & Piling", 
-                status: "Excavation and Piling Work in Progress", 
-                percentage: 15,
+                date: "October 2026", 
+                title: "Excavation & Piling Underway", 
+                status: "Brand New Launch: Ground breaking completed; heavy equipment deployed for substructure piling & foundation works.", 
+                percentage: 5,
+                image: "/images/projects/vyomora/home_page_project_asset.webp",
                 videoUrl: "https://youtube.com/watch?v=vyomora-construction-v1"
             },
             { 
-                date: "January 2026", 
-                title: "Site Mobilization", 
-                status: "Sales Gallery & Site Office Operational", 
-                percentage: 100 
+                date: "August 2026", 
+                title: "Site Mobilization & Launch", 
+                status: "Grand Project Launch announced, Sales Gallery & Experience Centre opened to public.", 
+                percentage: 100,
+                image: "/images/projects/vyomora/desktop_banner.webp"
             }
         ],
         socialLinks: [

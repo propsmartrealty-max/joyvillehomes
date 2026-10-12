@@ -95,7 +95,10 @@ export default function LocationPage() {
             <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 mb-32 items-center">
                 {/* Dark Premium Map Area */}
                 <div className="relative h-full min-h-[500px] border border-[#C5A059]/60 bg-[#EEF2F6] shadow-[0_20px_50px_rgba(0,0,0,0.5)] group overflow-hidden rounded-sm p-3">
-                    <div className="absolute inset-0 m-3 bg-[url('/images/joyville_sensorium_projectcard.webp')] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:scale-105 transition-transform duration-[3000ms] rounded-sm" />
+                    <div 
+                        style={{ backgroundImage: "url('/images/joyville_sensorium_projectcard.webp')" }}
+                        className="absolute inset-0 m-3 bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:scale-105 transition-transform duration-[3000ms] rounded-sm" 
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#F4F6F9] via-transparent to-transparent pointer-events-none" />
 
                     {/* Simulated Premium Map Markers */}
