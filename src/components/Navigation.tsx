@@ -107,7 +107,7 @@ export default function Navigation() {
                                                     <Building2 size={13} /> Flagship Pune Residences
                                                 </span>
                                                 <Link href="/projects" className="text-[10px] font-semibold tracking-wider text-[#C5A059] hover:text-[#1D4F9C] transition-colors">
-                                                    View All 10 Projects →
+                                                    View All {projects.length} Projects →
                                                 </Link>
                                             </div>
 
@@ -190,6 +190,13 @@ export default function Navigation() {
                                                 <div>
                                                     <span className="block text-[11px] font-bold text-[#1E293B]">Bavdhan</span>
                                                     <span className="block text-[9px] text-slate-500 normal-case tracking-normal">Nature Valley • 1000 Acres</span>
+                                                </div>
+                                            </Link>
+                                            <Link href="/locality/purandar" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                                                <MapPin size={14} className="text-[#1D4F9C] shrink-0" />
+                                                <div>
+                                                    <span className="block text-[11px] font-bold text-[#1E293B]">Purandar</span>
+                                                    <span className="block text-[9px] text-slate-500 normal-case tracking-normal">Airport Corridor • Plotted Estate</span>
                                                 </div>
                                             </Link>
                                             <div className="pt-2 mt-1 border-t border-slate-100">
@@ -319,17 +326,20 @@ export default function Navigation() {
                                     Residences & Locations
                                 </span>
                                 <div className="grid grid-cols-2 gap-2">
-                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/projects" className="p-3 bg-slate-50 rounded-xl text-xs font-bold text-[#1E293B] hover:text-[#1D4F9C] border border-slate-100">
-                                        All Projects
+                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/projects" className="p-3 bg-slate-50 rounded-xl text-xs font-bold text-[#1E293B] hover:text-[#1D4F9C] border border-slate-100 col-span-2">
+                                        All Flagship Projects ({projects.length})
                                     </Link>
                                     <Link onClick={() => setIsMobileMenuOpen(false)} href="/locality/hinjewadi" className="p-3 bg-slate-50 rounded-xl text-xs font-bold text-[#1E293B] hover:text-[#1D4F9C] border border-slate-100">
-                                        Hinjewadi
+                                        Hinjewadi (West)
                                     </Link>
                                     <Link onClick={() => setIsMobileMenuOpen(false)} href="/locality/hadapsar" className="p-3 bg-slate-50 rounded-xl text-xs font-bold text-[#1E293B] hover:text-[#1D4F9C] border border-slate-100">
-                                        Hadapsar
+                                        Hadapsar (East)
                                     </Link>
                                     <Link onClick={() => setIsMobileMenuOpen(false)} href="/locality/bavdhan" className="p-3 bg-slate-50 rounded-xl text-xs font-bold text-[#1E293B] hover:text-[#1D4F9C] border border-slate-100">
-                                        Bavdhan
+                                        Bavdhan (Valley)
+                                    </Link>
+                                    <Link onClick={() => setIsMobileMenuOpen(false)} href="/locality/purandar" className="p-3 bg-slate-50 rounded-xl text-xs font-bold text-[#1E293B] hover:text-[#1D4F9C] border border-slate-100">
+                                        Purandar (Airport)
                                     </Link>
                                 </div>
                             </div>

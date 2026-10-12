@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | Joyville Homes",
     default: "Joyville Homes Pune | Shapoorji Pallonji Official Residences",
   },
-  description: "Official Joyville Pune by Shapoorji Pallonji Real Estate. Explore 10 premium projects across Hinjewadi, Hadapsar, Bavdhan & Purandar. 2 & 3 BHK flats starting ₹65 Lakhs. RERA approved. Dive into the Pune real estate market today.",
+  description: "Official Joyville Pune & Shapoorji Pallonji platform. Explore 11 premium projects across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1 to 5 BHK residences, villaments, villas & villa plots from ₹65L. RERA approved. Official 2026 cost sheets, verified master layouts & floor plans.",
   keywords: [
     "Shapoorji Pallonji Pune",
     "Joyville Homes Pune",
@@ -42,13 +42,18 @@ export const metadata: Metadata = {
     "Joyville Sensorium Hinjewadi",
     "Joyville Hadapsar Annexe",
     "Vanaha Bavdhan Pune",
+    "Tree Clouds SP Kingstown",
+    "The Vastion SP Kingstown",
+    "Wildernest SP Kingstown",
+    "Shapoorji Treetopia Pune",
     "Shapoorji Pallonji Projects Pune",
     "2 BHK flats in Pune",
-    "3 BHK luxury apartments Pune"
+    "3 BHK luxury apartments Pune",
+    "luxury villas in Pune"
   ],
   openGraph: {
     title: "Joyville Homes Pune | Shapoorji Pallonji Official Residences",
-    description: "Explore Joyville Pune by Shapoorji Pallonji – 10 premium projects across Hinjewadi, Hadapsar & Bavdhan. 2 & 3 BHK flats starting ₹65L. RERA approved.",
+    description: "Explore Joyville & Shapoorji Pune – 11 premium projects across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1, 2, 3, 4 & 5 BHK flats, villaments & villa plots starting ₹65L. MahaRERA approved.",
     url: "https://joyville-homes.com",
     siteName: "Joyville Homes",
     images: [
@@ -65,7 +70,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Joyville Homes Pune | Shapoorji Pallonji | 2 & 3 BHK from ₹65L",
-    description: "9 premium projects across Hinjewadi, Hadapsar & Bavdhan. RERA approved. Check price list & floor plans.",
+    description: "11 premium projects across Hinjewadi, Hadapsar, Bavdhan & Purandar. MahaRERA approved. Check 2026 price list, floor plans & authentic master layouts.",
     images: ["/og-image.jpg"],
   },
   verification: {
@@ -236,9 +241,9 @@ export default function RootLayout({
                 "logo": "https://joyville-homes.com/logo.png",
                 "image": "https://joyville-homes.com/og-image.jpg",
                 "legalName": ENTITIES.DEVELOPER.legalName,
-                "priceRange": "₹65 Lakhs - ₹2.5 Cr",
+                "priceRange": "₹65 Lakhs - ₹6.8 Cr",
                 "foundingDate": ENTITIES.DEVELOPER.foundingDate,
-                "description": "Official Shapoorji Pallonji Joyville Homes Pune platform. Providing premium 1, 2 & 3 BHK residences across Hinjewadi, Hadapsar, and Bavdhan.",
+                "description": "Official Shapoorji Pallonji Joyville Homes Pune platform. Providing premium 1, 2, 3, 4 & 5 BHK residences, villaments, standalone villas, and NA villa plots across Hinjewadi, Hadapsar, Bavdhan, and Purandar.",
                 "telephone": "+912067210000",
                 "address": {
                   "@type": "PostalAddress",
