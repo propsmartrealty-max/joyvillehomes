@@ -80,6 +80,16 @@ export async function onRequest(context: EventContext): Promise<Response> {
       return Response.redirect(url.toString(), 301);
     }
 
+    // 4b. Edge Next/Image Fallback Guard: redirect /_next/image requests to the raw static asset
+    if (pathname === '/_next/image') {
+      const targetUrl = url.searchParams.get('url');
+      if (targetUrl) {
+        const decoded = decodeURIComponent(targetUrl);
+        const redirectUrl = decoded.startsWith('http') ? decoded : new URL(decoded, url.origin).toString();
+        return Response.redirect(redirectUrl, 301);
+      }
+    }
+
     // 5. NRI Geolocation Intelligence & Edge Tagging
     const cf = context.request.cf || {};
     const country = cf.country || 'IN';
