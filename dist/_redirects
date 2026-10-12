@@ -1,7 +1,6 @@
 # Cloudflare Pages Edge Redirects Configuration
 # Syntax: /source /destination [status]
 
-/index.html / 301
 /en-us / 301
 /en-us/ / 301
 /properties/residential-projects-near-hinjewadi-phase-1 /locality/hinjewadi 301

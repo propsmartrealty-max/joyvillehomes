@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const rootDir = path.resolve(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');
@@ -9,6 +10,13 @@ const publicDir = path.join(rootDir, 'public');
 const serverAppDir = path.join(nextDir, 'server', 'app');
 
 console.log('⚡ [Cloudflare Pages Packager] Assembling edge static bundle...');
+
+// 0. Self-healing: compile Next.js if .next/server/app is not present
+if (!fs.existsSync(serverAppDir)) {
+  console.log('⚡ [Cloudflare Pages Packager] Pre-compiled assets not found. Running Next.js build...');
+  execSync('node scripts/compile_blogs.js', { stdio: 'inherit', cwd: rootDir });
+  execSync('npx next build', { stdio: 'inherit', cwd: rootDir });
+}
 
 // 1. Reset dist directory
 if (fs.existsSync(distDir)) {

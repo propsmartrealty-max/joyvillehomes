@@ -109,9 +109,18 @@ export async function onRequest(context: EventContext): Promise<Response> {
     }
     newHeaders.set('X-Robots-Tag', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
 
+    // Handle responses that cannot have a body per HTTP spec (e.g. 304, 204)
+    if ([101, 204, 205, 304].includes(response.status)) {
+      return new Response(null, {
+        status: response.status,
+        statusText: response.statusText,
+        headers: newHeaders,
+      });
+    }
+
     // 7. Edge HTML Transformation via HTMLRewriter for Google Ecosystem & SEO
     const contentType = response.headers.get('content-type') || '';
-    if (contentType.includes('text/html')) {
+    if (response.status === 200 && contentType.includes('text/html')) {
       const canonicalUrl = `https://joyville-homes.com${pathname === '/' ? '' : pathname}`;
 
       // Enterprise Real Estate / Google Merchant / 5-Star Reviews Schema
@@ -228,6 +237,6 @@ export async function onRequest(context: EventContext): Promise<Response> {
     });
   } catch (err) {
     console.error('Edge Middleware Exception:', err);
-    return context.next();
+    return new Response('Edge Gateway Processing', { status: 500 });
   }
 }
