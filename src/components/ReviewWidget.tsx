@@ -54,20 +54,13 @@ export default function ReviewWidget({ reviews, projectName }: ReviewWidgetProps
 
     const currentReview = displayReviews[currentIndex];
 
-    // Generate AggregateRating & Review Schema for rich results
+    // Valid RealEstateAgent Review Schema (Google Guidelines Compliant)
     const reviewSchema = {
         "@context": "https://schema.org",
-        "@type": "Product",
-        "name": projectName || "Joyville by Shapoorji Pallonji Pune",
+        "@type": "RealEstateAgent",
+        "name": projectName || "Joyville Homes Pune Partner Platform",
         "image": "https://joyville-homes.com/og-image.jpg",
-        "description": "Premium 1, 2 & 3 BHK residences by Shapoorji Pallonji Real Estate.",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": (displayReviews.length * 12).toString(), // Stylized count for authority
-            "bestRating": "5",
-            "worstRating": "1"
-        },
+        "description": "Premium residences by Shapoorji Pallonji Real Estate in Pune.",
         "review": displayReviews.map(r => ({
             "@type": "Review",
             "author": { "@type": "Person", "name": r.author },

@@ -766,60 +766,34 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 />
             </div>
 
-            {/* Phase 15: Granular Product Schema with per-configuration Offer entries */}
+            {/* RealEstate Schema Compliant with Google Search Essentials */}
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@type": "Product",
-                "@id": `${siteUrl}/projects/${project.slug}/#product`,
+                "@type": "ApartmentComplex",
+                "@id": `${siteUrl}/projects/${project.slug}/#residence`,
                 "name": `${project.title} — Premium Residences in ${project.location}`,
                 "description": project.description.substring(0, 200),
                 "image": project.image,
                 "url": `${siteUrl}/projects/${project.slug}`,
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": project.location,
+                    "addressRegion": "Maharashtra",
+                    "addressCountry": "IN"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": project.latitude,
+                    "longitude": project.longitude
+                },
                 "brand": {
                     "@type": "Brand",
                     "name": "Shapoorji Pallonji Real Estate",
                     "logo": `${siteUrl}/logo.png`
                 },
-                "manufacturer": {
-                    "@type": "Organization",
-                    "name": ENTITIES.DEVELOPER.name,
-                    "url": ENTITIES.DEVELOPER.url
-                },
-                "category": "Residential Real Estate",
-                "sku": `SPRE-${project.slug.toUpperCase()}`,
-                "offers": project.floorPlans.map((fp, idx) => ({
-                    "@type": "Offer",
-                    "@id": `${siteUrl}/projects/${project.slug}/#offer-${idx}`,
-                    "name": `${project.title} ${fp.type}`,
-                    "description": fp.description || `Premium ${fp.type} residence with carpet area of ${fp.carpetArea} at ${project.title}, ${project.location}.`,
-                    "priceCurrency": "INR",
-                    "price": basePriceINR,
-                    "priceValidUntil": "2026-12-31",
-                    "availability": project.status.toLowerCase().includes('ready') ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-                    "itemCondition": "https://schema.org/NewCondition",
-                    "url": `${siteUrl}/projects/${project.slug}`,
-                    "seller": {
-                        "@type": "Organization",
-                        "name": "Shapoorji Pallonji Real Estate",
-                        "url": "https://www.shapoorjipallonji.com"
-                    },
-                    "areaServed": {
-                        "@type": "City",
-                        "name": "Pune"
-                    },
-                    "eligibleRegion": [
-                        { "@type": "Country", "name": "India" },
-                        { "@type": "Country", "name": "United Arab Emirates" },
-                        { "@type": "Country", "name": "United States" },
-                        { "@type": "Country", "name": "United Kingdom" }
-                    ]
-                })),
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": project.expertReview?.rating || 4.8,
-                    "reviewCount": project.reviews?.length ? (542 + project.reviews.length).toString() : "542",
-                    "bestRating": "5",
-                    "worstRating": "1"
+                "containedInPlace": {
+                    "@type": "City",
+                    "name": "Pune"
                 },
                 "review": project.reviews?.slice(0, 3).map(review => ({
                     "@type": "Review",
@@ -842,18 +816,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                         "value": spec.value
                     })) || [])
                 ]
-            }) }} />
-
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "ClaimReview",
-                "claimReviewed": `${locality?.yoyAppreciation || '12.5%'} appreciation in ${project.location}.`,
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "alternateName": "Verified by Shapoorji Research"
-                },
-                "author": { "@id": "https://joyville-homes.com/#research-desk" }
             }) }} />
 
             {/* Phase 16.1: ImageGallery Schema for Google Images */}
