@@ -124,6 +124,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ];
 
+    const toAbsoluteUrl = (pathOrUrl: string): string => {
+        if (!pathOrUrl) return '';
+        if (pathOrUrl.startsWith('http://') || pathOrUrl.startsWith('https://')) {
+            return pathOrUrl;
+        }
+        return `${baseUrl}${pathOrUrl.startsWith('/') ? '' : '/'}${pathOrUrl}`;
+    };
+
     // Phase 38: Per-project lastModified — capped to prevent future dates
     const projectRoutes: MetadataRoute.Sitemap = projects.map((project) => {
         const rawDate = project.lastDataAudit ? new Date(project.lastDataAudit) : generalLastMod;
@@ -134,11 +142,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 0.9,
         };
-        // Safely add images (Next 14+ natively supports this in XML generation)
+        // Safely add images (Google XML Sitemap specification requires fully qualified absolute URLs)
         if (project.gallery && project.gallery.length > 0) {
-            sitemapEntry.images = project.gallery.map(url => url);
+            sitemapEntry.images = project.gallery
+                .map((img: unknown) => {
+                    const str = typeof img === 'string' ? img : (img && typeof img === 'object' && 'url' in img) ? (img as { url: string }).url : '';
+                    return toAbsoluteUrl(str);
+                })
+                .filter((url: string) => Boolean(url) && url.startsWith('http'));
         } else if (project.image) {
-            sitemapEntry.images = [project.image];
+            const abs = toAbsoluteUrl(project.image);
+            if (abs.startsWith('http')) {
+                sitemapEntry.images = [abs];
+            }
         }
         return sitemapEntry;
     });
