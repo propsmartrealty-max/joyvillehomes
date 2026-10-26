@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: { params: Promise<{ seoSlug: 
         ? (primaryProject.image.startsWith('http') ? primaryProject.image : `${siteUrl}${primaryProject.image}`)
         : `${siteUrl}/images/desktop-poster.webp`;
 
-    // Ensure high-relevance title fits within 50-60 characters without truncation
+    // High-CTR Title formatting tailored for Google SERP display (55-65 chars)
     let absoluteTitle = routeData.title
         .replace(' | Shapoorji Pallonji Joyville', ' | Joyville Pune')
         .replace(' — Shapoorji Treetopia Pune', ' | Treetopia')
@@ -53,12 +53,16 @@ export async function generateMetadata({ params }: { params: Promise<{ seoSlug: 
         .replace(' | Shapoorji Pallonji', ' | Joyville')
         .replace(' | Joyville Hadapsar', ' | Hadapsar');
 
-    if (absoluteTitle.length > 60) {
-        absoluteTitle = absoluteTitle.slice(0, 57).trim() + '...';
+    // Clean up any double suffixes
+    absoluteTitle = absoluteTitle.replace(/ \| Pune West \| Pune West/g, ' | Pune West');
+
+    if (absoluteTitle.length > 68) {
+        const lastSpace = absoluteTitle.lastIndexOf(' ', 65);
+        absoluteTitle = (lastSpace > 40 ? absoluteTitle.substring(0, lastSpace) : absoluteTitle.substring(0, 65)).trim() + '...';
     }
 
     const rawDesc = routeData.description;
-    const truncatedDesc = rawDesc.length > 155 ? rawDesc.substring(0, 152) + "..." : rawDesc;
+    const truncatedDesc = rawDesc.length > 158 ? rawDesc.substring(0, 155) + "..." : rawDesc;
 
     return {
         title: {
@@ -155,17 +159,54 @@ const PAGE_FAQS: Record<string, { q: string; a: string }[]> = {
         { q: 'What are NA bungalow plots?', a: 'NA (Non-Agricultural) plots are land parcels converted for residential use. They allow individual house construction and offer full land ownership — unlike apartments. Treetopia by Shapoorji Pallonji offers gated NA plots from ₹84 Lakhs.' },
         { q: 'Is plotted development a good investment in Pune?', a: 'Yes. NA plots in emerging corridors like Purandar have historically delivered 2-3x returns over 5-7 years. Treetopia offers the added security of a gated community with Shapoorji Pallonji brand backing.' },
         { q: 'What is the price of Shapoorji Treetopia plots?', a: 'Shapoorji Treetopia NA bungalow plots start from ₹84 Lakhs onwards. Multiple plot sizes are available in a fully gated, landscaped community near the Purandar Airport corridor.' },
+    ],
+    'techPark': [
+        { q: 'How far are Joyville Hinjewadi flats from Wipro Circle and Infosys?', a: 'Joyville Sensorium and Joyville Vyomora are situated on Maan Village Road in Hinjewadi Phase 1, just 500 meters to 1.5 km from Wipro Circle and Infosys Circle. Tech professionals enjoy a 5-minute walk-to-work commute, saving up to 2 hours of daily traffic.' },
+        { q: 'What is the commute time to TCS Sahyadri Park and Cognizant from Joyville?', a: 'TCS Sahyadri Park and Cognizant campuses are reachable within 7 to 10 minutes from Joyville Hinjewadi. Dedicated shuttle and cab pickup routes operate directly along the arterial Maan-Hinjewadi road.' },
+        { q: 'What rental income can IT professionals generate from Joyville Hinjewadi homes?', a: '2 BHK apartments at Joyville Sensorium & Vyomora generate monthly rentals of ₹32,000 to ₹38,000, while premium 3 BHK and duplex units command ₹45,000 to ₹55,000+. Rental yield averages 4.8% to 5.4% annually with near-zero tenant vacancy.' },
+        { q: 'Are there work-from-home facilities inside Joyville Hinjewadi?', a: 'Yes. Both developments include dedicated air-conditioned co-working lounges, high-speed fiber internet infrastructure, meeting pods, and quiet reading zones designed for hybrid corporate work.' },
+    ],
+    'duplex': [
+        { q: 'What are the specifications of 3 BHK Duplex Sky Villas at Joyville Vyomora?', a: 'Joyville Vyomora introduces exclusive double-height 3 BHK Duplex Sky Villas ranging up to 1,434 sq. ft. Features include double-height living ceilings, private terrace decks, separation of guest entertaining from family bedrooms, and panoramic Sahyadri hill views.' },
+        { q: 'What is the starting price for 3 BHK Duplex flats in Hinjewadi Phase 1?', a: '3 BHK Duplex Sky Villas at Joyville Vyomora start from ₹1.45 Cr to ₹1.85 Cr* depending on floor rise and terrace deck configuration. Pre-launch cost sheets and flexible payment plans are available.' },
+        { q: 'Why are duplex flats in Hinjewadi considered high-appreciation assets?', a: 'Due to severe land scarcity in Phase 1, horizontal villa plots are non-existent. Duplex Sky Villas satisfy the demand for independent villa living within a 25-acre secure gated community, appreciating 12-15% faster YoY than conventional apartments.' },
+    ],
+    'villas': [
+        { q: 'What luxury villas are offered at The Vastion SP Kingstown Hadapsar?', a: 'The Vastion at SP Kingstown offers ultra-luxury 4 & 5 BHK palatial villaments and signature standalone villas starting from ₹4.70 Cr*. Highlights include private swimming pools, landscaped private gardens, private elevator shafts, and double-height grand entrance foyers.' },
+        { q: 'Is The Vastion MahaRERA approved?', a: 'Yes, The Vastion is fully approved under MahaRERA registration number P52100053978. It features 100% clear land title backed by Shapoorji Pallonji Real Estate.' },
+        { q: 'What township amenities are accessible to The Vastion villa owners?', a: 'Residents enjoy elite access to the 100+ acre SP Kingstown master development, including sports clubs, fine-dining restaurants, concierge assistance, and private wellness spas.' },
+    ],
+    'possession': [
+        { q: 'What are the possession dates for Joyville projects in Pune?', a: 'Joyville Hadapsar Annexe has ready-to-move-in towers with OC received. Joyville Sensorium Hinjewadi is in advanced superstructure stage with handovers underway. Joyville Vyomora is a brand-new launch slated for phased delivery starting 2028.' },
+        { q: 'Are ready-to-move flats at Joyville exempt from GST?', a: 'Yes. Ready possession apartments with an official Occupancy Certificate (OC) are 100% exempt from 5% GST, delivering an immediate cash saving to homebuyers.' },
+        { q: 'Can I inspect the actual sample flat before booking?', a: 'Yes. Fully furnished and unfurnished experience sample flats are open for physical inspection 7 days a week at the Hinjewadi and Hadapsar site sales offices. Complimentary cab pickup is available.' },
+    ],
+    'payment': [
+        { q: 'What is included in the all-inclusive cost sheet for Joyville flats?', a: 'The cost sheet provides full transparency: Base Selling Price (BSP), floor rise, PLC, clubhouse charges, infrastructure development fees, 7% stamp duty, 1% registration, and 5% GST (for under-construction units). There are zero hidden escalations.' },
+        { q: 'Which banks offer home loans for Joyville Pune developments?', a: 'All Joyville projects are pre-approved by tier-1 banks including State Bank of India (SBI), HDFC Bank, ICICI Bank, Axis Bank, and Bank of Baroda. Competitive home loan rates starting from 8.35% are available.' },
+        { q: 'What are the available payment plans?', a: 'Buyers can select Construction-Linked Payment (CLP) plans tied to actual MahaRERA structural milestones, or special builder subvention schemes during pre-launch phases with 70% escrow ring-fencing.' },
+    ],
+    'nriGuide': [
+        { q: 'Can NRIs legally purchase property at Joyville Pune?', a: 'Yes. Under Reserve Bank of India (RBI) and FEMA regulations, NRIs and OCIs can purchase unlimited residential properties in India without prior approvals. Funds can be remitted via NRE, NRO, or FCNR banking channels.' },
+        { q: 'Can NRI investors repatriate rental income and capital gains abroad?', a: 'Yes. Net rental yields and sale proceeds from property can be repatriated up to USD 1 Million per financial year through Form 15CA/15CB under standard FEMA and DTAA tax guidelines.' },
+        { q: 'Can an NRI complete booking and documentation without traveling to India?', a: 'Yes. Joyville offers a 100% digital onboarding process: virtual 3D site walkthroughs, video consultations, online booking payments, and Power of Attorney (POA) registration executed through the local Indian Embassy/Consulate.' },
     ]
 };
 
 function getFaqsForRoute(slug: string): { q: string; a: string }[] {
+    if (slug.includes('wipro') || slug.includes('infosys') || slug.includes('tcs') || slug.includes('cognizant')) return [...PAGE_FAQS['techPark'], ...PAGE_FAQS['hinjewadi']];
+    if (slug.includes('duplex') || slug.includes('sky-villa')) return [...PAGE_FAQS['duplex'], ...PAGE_FAQS['hinjewadi']];
+    if (slug.includes('vastion') || slug.includes('villas') || slug.includes('villaments')) return [...PAGE_FAQS['villas'], ...PAGE_FAQS['hadapsar']];
+    if (slug.includes('possession') || slug.includes('ready-to-move') || slug.includes('resale')) return [...PAGE_FAQS['possession'], ...PAGE_FAQS['general']];
+    if (slug.includes('cost-sheet') || slug.includes('payment-plan') || slug.includes('price')) return [...PAGE_FAQS['payment'], ...PAGE_FAQS['general']];
+    if (slug.includes('nri') || slug.includes('investment') || slug.includes('rental-yield')) return [...PAGE_FAQS['nriGuide'], ...PAGE_FAQS['general']];
     if (slug.includes('hinjewadi') && !slug.includes('-vs-')) return [...PAGE_FAQS['hinjewadi'], ...PAGE_FAQS['general']];
     if (slug.includes('hadapsar') || slug.includes('sp-infocity') || slug.includes('magarpatta') || slug.includes('shewalewadi')) return [...PAGE_FAQS['hadapsar'], ...PAGE_FAQS['general']];
     if (slug.includes('bavdhan') || slug.includes('vanaha') || slug.includes('golfland')) return [...PAGE_FAQS['bavdhan'], ...PAGE_FAQS['general']];
     if (slug.includes('-vs-')) return [...PAGE_FAQS['vs'], ...PAGE_FAQS['general']];
     if (slug.includes('pet-friendly') || slug.includes('work-from-home') || slug.includes('vastu') || slug.includes('senior-citizen')) return [...PAGE_FAQS['lifestyle'], ...PAGE_FAQS['general']];
     if (slug.includes('metro') || slug.includes('ring-road')) return [...PAGE_FAQS['infrastructure'], ...PAGE_FAQS['general']];
-    if (slug.includes('treetopia') || slug.includes('plots') || slug.includes('purandar')) return [...PAGE_FAQS['plots'], ...PAGE_FAQS['general']];
+    if (slug.includes('treetopia') || slug.includes('plots') || slug.includes('purandar') || slug.includes('saswad')) return [...PAGE_FAQS['plots'], ...PAGE_FAQS['general']];
     return PAGE_FAQS['general'];
 }
 
@@ -315,7 +356,10 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
                                                     : routeData.slug.includes('amanora') ? 'Amanora Trendsetter'
                                                         : routeData.slug.includes('pride-purple') ? 'Pride Purple'
                                                             : routeData.slug.includes('gera') ? 'Gera World of Joy'
-                                                                : 'Godrej Evergreen Square'}
+                                                                : routeData.slug.includes('kohinoor') ? 'Kohinoor Coral Hinjewadi'
+                                                                    : routeData.slug.includes('rohan') ? 'Rohan Builders Pune'
+                                                                        : routeData.slug.includes('sensorium-vs-joyville-vyomora') || routeData.slug.includes('sensorium-vs-vyomora') ? 'Joyville Vyomora Hinjewadi'
+                                                                            : 'Godrej Evergreen Square'}
                                         </th>
                                     </tr>
                                 </thead>
@@ -375,6 +419,37 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
                                         ['Green Certification', '✅ EDGE Certified', '❌ No'],
                                         ['RERA Compliance', '✅ All Projects', '✅ All Projects'],
                                         ['Best For', 'IT professionals + investors', 'Young families'],
+                                    ] : routeData.slug.includes('kohinoor') ? [
+                                        ['Developer Legacy', '150 Years (Since 1865)', '30+ Years (Since 1994)'],
+                                        ['Land Area', '10.5 - 25 Acres', '~4 Acres'],
+                                        ['2 BHK Starting Price', '₹84.99 L - 1.10 Cr', '₹68 - 78 Lakhs'],
+                                        ['Construction Quality', '100% Aluform / Mivan (Built Indian Parliament)', 'Conventional RCC'],
+                                        ['Amenities Count', '48 - 60+ (Clubhouse up to 32,000 sq.ft.)', '25+'],
+                                        ['Open Space', '75 - 80% Green Buffer', '~50%'],
+                                        ['Green Certification', 'EDGE Certified / IGBC', 'Basic Compliance'],
+                                        ['Duplex Format', '✅ Available (3 BHK Duplex Sky Villas)', '❌ Not available'],
+                                        ['Rental Yield', '4.8 - 5.4%', '3.8 - 4.2%'],
+                                        ['Best For', 'Long-term luxury & high ROI', 'Entry-level budget buyers'],
+                                    ] : routeData.slug.includes('rohan') ? [
+                                        ['Developer Legacy', '150 Years (Since 1865)', '30+ Years'],
+                                        ['Design Philosophy', 'Biophilic & Master-Planned Townships', 'PLUS Home Concept'],
+                                        ['Land Area', '10.5 - 25 Acres (Hinjewadi) / 21-100 Acres (Hadapsar)', '5 - 12 Acres'],
+                                        ['2 BHK Starting Price', '₹84.99 L - 1.10 Cr', '₹80 - 95 Lakhs'],
+                                        ['Construction Technology', 'Monolithic Aluform RCC', 'Tunnel Form / Aluform'],
+                                        ['Clubhouse Scale', '32,000 - 35,000 Sq. Ft.', '15,000 - 20,000 Sq. Ft.'],
+                                        ['Open Space', '75 - 80%', '~60%'],
+                                        ['EDGE Green Certified', '✅ Yes (20% Resource Savings)', '❌ No'],
+                                        ['Best For', 'Institutional quality & township scale', 'Niche architectural buyers'],
+                                    ] : (routeData.slug.includes('sensorium-vs-joyville-vyomora') || routeData.slug.includes('sensorium-vs-vyomora')) ? [
+                                        ['Project Master Area', '10.5 Acres (Sensorium)', '25 Acres (Vyomora)'],
+                                        ['Open Green Ratio', '75% Open Spaces', '80% Open Breathing Spaces'],
+                                        ['2 BHK Starting Price', '₹1.10 Cr*', '₹88.19 L* (Slots from ₹84.99 L*)'],
+                                        ['3 BHK Starting Price', '₹1.45 Cr*', '₹1.25 Cr*'],
+                                        ['Duplex Sky Villas', '❌ Not Available', '✅ Exclusive 3 BHK Duplex (1434 sq.ft.)'],
+                                        ['Clubhouse Scale', '2.8-Acre Sunken Garden & Boulevard', '32,000+ Sq. Ft. Multi-Tier Clubhouse'],
+                                        ['Construction Status', 'Advanced Superstructure (Near Possession)', 'Brand New Launch (Maximum Capital Runway)'],
+                                        ['MahaRERA Registration', 'P52100027234', 'PR1260002600999'],
+                                        ['Best For', 'Immediate move-in & proven community', 'Accessible pre-launch pricing & high growth'],
                                     ] : [
                                         ['Developer Legacy', '150 Years (Since 1865)', '127 Years (Since 1897)'],
                                         ['Land Area', '10.5 Acres', '~5 Acres'],
@@ -412,7 +487,13 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
                                                 ? 'Joyville by Shapoorji Pallonji outperforms with 150 years of construction legacy, EDGE green certification, and 60+ premium amenities including smart home integration. Pride Purple offers competitive mid-segment pricing but lacks the institutional-grade construction quality. Choose Joyville for long-term investment value; choose Pride Purple for budget-first decisions.'
                                                 : routeData.slug.includes('gera')
                                                     ? 'Joyville by Shapoorji Pallonji and Gera World of Joy both excel in family-focused design. Joyville leads with superior township scale (up to 1,000 acres), EDGE certification, and 60+ amenities. Gera stands out with branded ChildCentric® features. Choose Joyville for premium lifestyle and investment ROI; choose Gera for specialized child-friendly living.'
-                                                    : 'Both are premium developers with strong legacies. Joyville Sensorium edges ahead with its 10.5-acre scale, 60+ amenities, and 1.8km walking boulevard. Godrej Evergreen Square offers compelling green certifications. Choose Sensorium for amenity density; choose Godrej for green-first living.'
+                                                    : routeData.slug.includes('kohinoor')
+                                                        ? 'Joyville by Shapoorji Pallonji offers superior institutional construction quality (100% Aluform), 80% open greens, and exclusive 3 BHK Duplex Sky Villas backed by a 150-year legacy. Kohinoor Coral offers lower entry-level pricing. Choose Joyville for enduring build quality, higher rental yields, and superior appreciation.'
+                                                        : routeData.slug.includes('rohan')
+                                                            ? 'Both Shapoorji Pallonji and Rohan Builders emphasize ventilation and functional layouts. Joyville leads with massive township scale (up to 25 acres in Hinjewadi, 100+ acres in Hadapsar), 32,000+ sq.ft. clubhouses, and EDGE green certification delivering 20% utility savings.'
+                                                            : (routeData.slug.includes('sensorium-vs-joyville-vyomora') || routeData.slug.includes('sensorium-vs-vyomora'))
+                                                                ? 'Choose Joyville Sensorium if you require earlier possession timelines, established 2.8-acre sunken gardens, and mature biophilic living. Choose Joyville Vyomora if you want pre-launch entry pricing under ₹90 Lakhs, rare 3 BHK Duplex Sky Villas, or maximum long-term capital runway across a 25-acre grand community.'
+                                                                : 'Both are premium developers with strong legacies. Joyville Sensorium edges ahead with its 10.5-acre scale, 60+ amenities, and 1.8km walking boulevard. Godrej Evergreen Square offers compelling green certifications. Choose Sensorium for amenity density; choose Godrej for green-first living.'
                                 }
                             </p>
                         </div>

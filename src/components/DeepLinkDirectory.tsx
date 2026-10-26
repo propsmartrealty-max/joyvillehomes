@@ -65,15 +65,15 @@ export default function DeepLinkDirectory() {
 
                     {/* Programmatic SEO Links */}
                     <div className="space-y-6 lg:col-span-2">
-                        <h3 className="text-[10px] font-bold tracking-widest text-[#1D4F9C] uppercase border-b border-[#1D4F9C]/10 pb-2">Investment Insights</h3>
+                        <h3 className="text-[10px] font-bold tracking-widest text-[#1D4F9C] uppercase border-b border-[#1D4F9C]/10 pb-2">High-Intent Property Portfolios</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            {SEO_ROUTES.slice(0, 12).map((r, i) => (
+                            {SEO_ROUTES.slice(0, 24).map((r, i) => (
                                 <Link 
                                     key={i} 
                                     href={`/properties/${r.slug}`} 
                                     className="text-[11px] text-[#323334]/60 hover:text-[#1D4F9C] transition-colors font-light leading-snug"
                                 >
-                                    {r.title.split('|')[0]}
+                                    {r.title.split('|')[0].trim()}
                                 </Link>
                             ))}
                         </div>

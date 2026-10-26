@@ -54,6 +54,62 @@ export const SEMANTIC_BLOCKS = {
             "Joyville Sensorium spans 10.5 acres with 75% open greens, spotlighting Pune's first 2.8-acre multi-tier sunken garden, an infinity-edge pool, and EDGE green building certification. Offering premium 2 & 3 BHK residences from ₹1.10 Cr onwards, it caters to buyers desiring mature luxury with imminent possession timelines.",
             "Joyville Vyomora marks the newest mega-expansion, sprawling across 25 master-planned acres with over 80% open spaces. Featuring a 32,000+ sq. ft. signature clubhouse, 48 lifestyle amenities, and rare 3 BHK Duplex Sky Villas, Vyomora delivers accessible pre-launch pricing from ₹88.19 L* (slots from ₹84.99 L*). Both developments benefit from 100% Aluform/Mivan monolithic construction and dedicated RERA escrow governance."
         ]
+    },
+    techParkProximity: {
+        title: "Walk-to-Work Tech Corridor: Proximity to Wipro, Infosys, TCS & Cognizant",
+        content: [
+            "For technology professionals in Pune, daily commute time is the single largest determinant of quality of life. The Rajiv Gandhi Infotech Park in Hinjewadi Phase 1 accommodates over 400,000 tech employees. Both Joyville Sensorium and Joyville Vyomora are strategically situated on Maan Village Road, merely 500 meters to 1.5 kilometers from Wipro Circle, Infosys Circle, and the TCS Sahyadri Park campus.",
+            "This hyper-proximity translates into a genuine 5 to 10-minute walk or cycle commute, completely bypassing the peak-hour gridlocks of Wakad bridge and Bhumkar Chowk. Beyond saving 90 to 120 minutes of daily travel time, residences within this 1.5 km corridor command a 20% to 25% rental premium and experience zero vacancy rates, delivering consistent 4.8% to 5.4% rental yields.",
+            "Furthermore, executive staff and senior consultants working at Cognizant, Tech Mahindra, and Capgemini prioritize integrated townships offering high-speed fiber internet, dedicated co-working hubs, and 24/7 power backup, making Joyville communities the preferred residential destination in Pune West."
+        ]
+    },
+    duplexSkyVillas: {
+        title: "3 BHK Duplex Living in Hinjewadi: Spatial Luxury & Sky Villa Architecture",
+        content: [
+            "The demand for large-format residences in Pune West has catalyzed a architectural shift from conventional single-level apartments toward multi-level Sky Villas. Joyville Vyomora in Hinjewadi Phase 1 introduces exclusive 3 BHK Duplex Sky Villas, featuring double-height ceiling voids in the living pavilion that create an expansive, villa-like vertical volume.",
+            "By physically separating the entertaining and public living areas on the lower level from the private family suites on the upper mezzanine, duplex architecture provides unprecedented privacy for multi-generational families and hybrid corporate executives. Floor-to-ceiling panoramic fenestrations capture uninhibited views of the surrounding Sahyadri hills and green podiums.",
+            "From an investment perspective, duplex residences represent a scarce commodity in Hinjewadi's predominantly high-density micro-market. Historical secondary market transactions demonstrate that duplex and sky-villa typologies appreciate 12% to 15% faster year-on-year compared to standard flats due to structural supply scarcity."
+        ]
+    },
+    purandarPlotsTreetopia: {
+        title: "Purandar Airport Infrastructure Boom: NA Bungalow Plots & Land Scarcity",
+        content: [
+            "South-East Pune is undergoing the most ambitious infrastructure expansion in Maharashtra's history, centered on the proposed Chhatrapati Sambhaji Raje International Airport at Purandar and the 128-kilometer Pune Ring Road. Shapoorji Pallonji's Treetopia estate in Jadhavwadi / Purandar represents a rare institutional-grade opportunity in gated NA (Non-Agricultural) residential villa plots.",
+            "Spanning approximately 105 acres with a natural 25-acre freshwater lake, Treetopia offers clear, unencumbered 7/12 title deeds, MahaRERA approvals, and complete underground utility infrastructure (water conduits, electricity cabling, stormwater drains, and wide asphalted avenues). Buyers enjoy 100% freehold land ownership backed by the 150-year legacy of Shapoorji Pallonji.",
+            "Empirical land valuation trajectories indicate that plotting corridors adjacent to greenfield international airports (such as Navi Mumbai and Bengaluru Devanahalli) witness a 2.5x to 3.5x capital multiplier over a 5 to 7-year infrastructure gestation cycle. Treetopia provides early-mover investors with optimal land security and generational wealth appreciation from ₹99 Lakhs onwards."
+        ]
+    },
+    theVastionLuxuryVillas: {
+        title: "Ultra-Luxury Villas & Villaments in East Pune: The Vastion at SP Kingstown",
+        content: [
+            "East Pune's luxury landscape has been elevated with the launch of The Vastion at SP Kingstown, situated off Shewalewadi Road in Hadapsar Annexe. Designed for visionary industrialists, C-suite corporate leaders, and elite NRI families, The Vastion presents a curated sanctuary of 4 & 5 BHK palatial villaments and signature standalone villas starting from ₹4.70 Cr*.",
+            "Each signature villa is engineered with bespoke private swimming pools, manicured personal lawns, private elevator shafts, double-height grand entrance foyers, and four-car sheltered parking bays. The architectural design ensures zero overlooking from adjacent towers, guaranteeing absolute discretion and tranquility.",
+            "Residents gain unfettered access to the 100+ acre SP Kingstown master township ecosystem, featuring international-standard sports arenas, fine dining clubs, dedicated concierge desks, and private wellness spas. With MahaRERA registration (P52100053978) and institutional engineering, The Vastion stands as East Pune's definitive luxury address."
+        ]
+    },
+    costSheetPaymentIntelligence: {
+        title: "Transparent Cost Sheets & Flexible Payment Plans: Making Smart Investments",
+        content: [
+            "Navigating real estate acquisition requires total financial transparency. Shapoorji Pallonji Joyville enforces an all-inclusive cost structure that eliminates hidden escalations. A standard Joyville cost sheet clearly outlines the Base Selling Price (BSP), floor rise premiums, preferential location charges (PLC), clubhouse membership, infrastructure development charges, and statutory governmental levies.",
+            "Statutory charges in Maharashtra currently comprise 7% Stamp Duty (inclusive of Local Body Tax and metro cess) and 1% Registration (capped at ₹30,000 for residential properties). For under-construction projects, GST is pegged at 5% (with zero input tax credit), whereas ready-to-move-in towers possessing an Occupancy Certificate (OC) attract 0% GST, delivering an immediate 5% cost saving.",
+            "Buyers benefit from construction-linked payment milestones (CLP) aligned with MahaRERA escrow account governance, where 70% of all customer collections are ring-fenced exclusively for project construction. Additionally, all Joyville developments are pre-approved by tier-1 banking institutions including SBI, HDFC Bank, ICICI Bank, and Axis Bank, offering home loans with competitive interest rates from 8.35% onwards."
+        ]
+    },
+    competitorEvaluationBenchmark: {
+        title: "Strategic Developer Benchmark: Shapoorji Pallonji 150-Year Legacy vs Competitors",
+        content: [
+            "When evaluating residential investments across Pune's competitive landscape—against regional developers such as Kolte Patil, VTP, Godrej, Amanora, Kohinoor, and Rohan Builders—Shapoorji Pallonji distinguishes itself through three structural pillars: engineering pedigree, construction technology, and open space allocation.",
+            "While many regional builders utilize conventional brick masonry with external plastering, Shapoorji Pallonji employs 100% monolithic Aluform / Mivan RCC shear wall engineering. This delivers superior seismic resistance (Zone 3 compliance), precision wall alignments, zero brick joints that eliminate water seepage, and up to 8% higher usable carpet area efficiency.",
+            "Furthermore, whereas typical high-density developments allocate 40% to 55% of land to open greens, Joyville projects commit 75% to 80% of master acreage to biophilic landscapes, sunken gardens, and lifestyle podiums. Combined with EDGE (Excellence in Design for Greater Efficiencies) green building certification that cuts residential utility costs by 20%, Shapoorji Pallonji residences command higher tenant desirability and superior resale valuations."
+        ]
+    },
+    readyPossessionResale: {
+        title: "Ready Possession vs Under Construction: Immediate Move-In & Rental Cash Flow",
+        content: [
+            "For home seekers deciding between ready-possession homes and newly launched developments, the Pune real estate market presents distinct financial advantages for each pathway. Ready-to-move-in residences at Joyville Hadapsar Annexe and select towers of Joyville Sensorium provide immediate handover with an official Occupancy Certificate (OC).",
+            "The primary financial benefit of purchasing an OC-received ready home is the total exemption from Goods and Services Tax (GST), representing an instant 5% net saving on the agreement value. Furthermore, ready possession eliminates construction delay risk and enables buyers to immediately claim full home loan tax deductions under Section 24(b) (up to ₹2 Lakhs on interest) and Section 80C (up to ₹1.5 Lakhs on principal repayment).",
+            "For rental investors, ready units generate instantaneous cash flow from day one, with 2 BHK residences in Hinjewadi fetching ₹32,000 to ₹38,000 monthly and Hadapsar apartments yielding ₹22,000 to ₹28,000 monthly. Conversely, buyers seeking maximum capital appreciation and lower initial capital outlay can leverage pre-launch pricing at Joyville Vyomora with phased milestone payments."
+        ]
     }
 };
 
@@ -63,6 +119,41 @@ export function getSemanticContentForSlug(slug: string) {
     // Prioritize dedicated Joyville Hinjewadi cluster block
     if (slug.includes('joyville-homes-hinjewadi') || slug === 'shapoorji-pallonji-joyville-homes-hinjewadi-pune') {
         blocks.push(SEMANTIC_BLOCKS.joyvilleHinjewadiCluster);
+    }
+
+    // Tech corridor & corporate campus routes
+    if (slug.includes('wipro') || slug.includes('infosys') || slug.includes('tcs') || slug.includes('cognizant') || slug.includes('it-park')) {
+        blocks.push(SEMANTIC_BLOCKS.techParkProximity);
+    }
+
+    // Duplex, sky villa & penthouse routes
+    if (slug.includes('duplex') || slug.includes('penthouse') || slug.includes('sky-villa')) {
+        blocks.push(SEMANTIC_BLOCKS.duplexSkyVillas);
+    }
+
+    // Purandar airport & plotted land routes
+    if (slug.includes('treetopia') || slug.includes('plots') || slug.includes('purandar') || slug.includes('saswad')) {
+        blocks.push(SEMANTIC_BLOCKS.purandarPlotsTreetopia);
+    }
+
+    // The Vastion luxury villas
+    if (slug.includes('vastion') || slug.includes('villas') || slug.includes('villaments')) {
+        blocks.push(SEMANTIC_BLOCKS.theVastionLuxuryVillas);
+    }
+
+    // Pricing, payment plans & cost sheet routes
+    if (slug.includes('cost-sheet') || slug.includes('payment-plan') || slug.includes('price') || slug.includes('under-1-crore') || slug.includes('under-90-lakhs')) {
+        blocks.push(SEMANTIC_BLOCKS.costSheetPaymentIntelligence);
+    }
+
+    // Ready possession & resale routes
+    if (slug.includes('ready-possession') || slug.includes('ready-to-move') || slug.includes('resale') || slug.includes('possession-date')) {
+        blocks.push(SEMANTIC_BLOCKS.readyPossessionResale);
+    }
+
+    // Competitor comparison routes
+    if (slug.includes('-vs-') || slug.includes('competitors') || slug.includes('benchmark')) {
+        blocks.push(SEMANTIC_BLOCKS.competitorEvaluationBenchmark);
     }
     
     // Always add specific micro-market content first if matched
@@ -77,7 +168,7 @@ export function getSemanticContentForSlug(slug: string) {
     }
     
     // Add Intent based content
-    if (slug.includes('nri') || slug.includes('investment') || slug.includes('roi')) {
+    if (slug.includes('nri') || slug.includes('investment') || slug.includes('roi') || slug.includes('rental-yield')) {
         blocks.push(SEMANTIC_BLOCKS.nri);
     }
     if (slug.includes('luxury') || slug.includes('premium') || slug.includes('duplex') || slug.includes('penthouse')) {

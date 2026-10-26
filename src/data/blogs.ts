@@ -36,7 +36,7 @@ const baseBlogs: BlogPost[] = [
     {
         id: "insights-001",
         slug: "rental-yields-hinjewadi-2025-nri-investment-guide",
-        title: "Rental Yields in Hinjewadi 2025: A Data-Driven Guide for NRI Investors",
+        title: "Rental Yields in Hinjewadi 2026: A Data-Driven Guide for NRI Investors",
         excerpt: "Discover why Hinjewadi Phase 1 continues to outpace other Pune micro-markets in rental demand and capital appreciation. An essential guide for high-net-worth investors.",
         content: [
             "<h2 class='text-2xl font-bold text-[#1D4F9C] mb-4 mt-8'>The Evolution of Hinjewadi: From IT Park to Premium Residential Hub</h2>",
@@ -187,7 +187,7 @@ const baseBlogs: BlogPost[] = [
     {
         id: "insights-004",
         slug: "best-residential-projects-hinjewadi-2025-complete-guide",
-        title: "Best Residential Projects in Hinjewadi 2025 — A Complete Buyer's Guide",
+        title: "Best Residential Projects in Hinjewadi 2026 — A Complete Buyer's Guide",
         excerpt: "An objective, data-backed comparison of the top residential projects in Hinjewadi Phase 1 for 2025. From Joyville Sensorium to Kolte Patil Life Republic, we break down price, amenities, construction quality, and ROI potential.",
         content: [
             "<h2 class='text-2xl font-bold text-[#1D4F9C] mb-4 mt-8'>Hinjewadi Phase 1: India's Most Sought-After IT Residential Corridor</h2>",
@@ -259,7 +259,7 @@ const baseBlogs: BlogPost[] = [
     {
         id: "insights-006",
         slug: "pune-property-price-trends-2025-micro-market-analysis",
-        title: "Pune Property Price Trends 2025 — Micro-Market Analysis: Hinjewadi vs Hadapsar vs Bavdhan",
+        title: "Pune Property Price Trends 2026 — Micro-Market Analysis: Hinjewadi vs Hadapsar vs Bavdhan",
         excerpt: "A data-driven deep dive into Pune's three hottest residential micro-markets. Which one offers the best ROI? Where are prices headed? And where should you invest your next crore?",
         content: [
             "<h2 class='text-2xl font-bold text-[#1D4F9C] mb-4 mt-8'>The Three Engines of Pune's Real Estate Growth</h2>",

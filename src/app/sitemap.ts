@@ -161,12 +161,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Phase 38: Programmatic SEO routes — pointing to canonical /properties/[seoSlug]
     const programmaticRoutes: MetadataRoute.Sitemap = SEO_ROUTES.map((route) => {
-        const isCorporate = route.slug.includes('wipro') || route.slug.includes('infosys') || route.slug.includes('tcs') || route.slug.includes('cognizant');
+        const isHighIntent = route.slug.includes('wipro') || route.slug.includes('infosys') || route.slug.includes('tcs') || route.slug.includes('cognizant') || route.slug.includes('duplex') || route.slug.includes('cost-sheet') || route.slug.includes('possession') || route.slug.includes('villas');
         return {
             url: `${baseUrl}/properties/${route.slug}`,
             lastModified: today,
             changeFrequency: 'weekly',
-            priority: isCorporate ? 0.92 : 0.85, // High priority for transactional programmatic routes
+            priority: isHighIntent ? 0.92 : 0.85, // High priority for transactional programmatic routes
         };
     });
 
