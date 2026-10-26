@@ -91,11 +91,6 @@ export default function ComparisonMatrix() {
                 "name": "Joyville ROI Simulator 2026",
                 "operatingSystem": "Web",
                 "applicationCategory": "FinanceApplication",
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.9",
-                    "reviewCount": "1040"
-                },
                 "offers": {
                     "@type": "Offer",
                     "price": "0",

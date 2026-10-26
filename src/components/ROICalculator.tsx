@@ -33,13 +33,6 @@ export default function ROICalculator() {
         "applicationCategory": "FinanceApplication",
         "browserRequirements": "Requires JavaScript",
         "softwareVersion": "2026.1.0",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "1240",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
         "featureList": [
             "Capital Appreciation Projection V3",
             "Rental Yield Calculation (IT Corridors)",

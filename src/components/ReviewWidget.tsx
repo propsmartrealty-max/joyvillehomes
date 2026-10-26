@@ -54,26 +54,6 @@ export default function ReviewWidget({ reviews, projectName }: ReviewWidgetProps
 
     const currentReview = displayReviews[currentIndex];
 
-    // Valid RealEstateAgent Review Schema (Google Guidelines Compliant)
-    const reviewSchema = {
-        "@context": "https://schema.org",
-        "@type": "RealEstateAgent",
-        "name": projectName || "Joyville Homes Pune Partner Platform",
-        "image": "https://joyville-homes.com/og-image.jpg",
-        "description": "Premium residences by Shapoorji Pallonji Real Estate in Pune.",
-        "review": displayReviews.map(r => ({
-            "@type": "Review",
-            "author": { "@type": "Person", "name": r.author },
-            "datePublished": r.date,
-            "reviewBody": r.comment,
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": r.rating,
-                "bestRating": "5"
-            }
-        }))
-    };
-
     // Helper for persona labels
     const personaLabels: Record<string, string> = {
         'NRI': 'NRI Investor',
@@ -88,10 +68,6 @@ export default function ReviewWidget({ reviews, projectName }: ReviewWidgetProps
 
     return (
         <section className="py-24 bg-[#FFFFFF] border-y border-[#C5A059]/20 relative overflow-hidden font-sans">
-            <script 
-                type="application/ld+json" 
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} 
-            />
             <div className="absolute top-0 right-0 w-1/3 h-full bg-[#1D4F9C]/5 blur-[100px] pointer-events-none rounded-bl-full" />
             
             <div className="max-w-7xl mx-auto px-6 relative z-10">

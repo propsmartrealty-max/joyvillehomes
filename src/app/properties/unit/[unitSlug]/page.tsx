@@ -151,13 +151,6 @@ export default async function UnitDetailPage({ params }: { params: Promise<{ uni
                 "@type": "QuantitativeValue",
                 "value": plan.carpetArea.split(' ')[0],
                 "unitCode": "FTK"
-            },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "640",
-                "bestRating": "5",
-                "worstRating": "1"
             }
         },
         "offers": {

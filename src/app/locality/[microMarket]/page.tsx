@@ -210,19 +210,6 @@ export default async function LocalityPage({
                 "@type": "GeoCoordinates",
                 "latitude": locality.latitude,
                 "longitude": locality.longitude
-            },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "reviewCount": "1250",
-                "bestRating": "5",
-                "worstRating": "1"
-            },
-            "claimReviewed": `${locality.yoyAppreciation} annual property appreciation in ${locality.name}.`,
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "alternateName": "Verified Market Data"
             }
         }
     ];
@@ -270,17 +257,6 @@ export default async function LocalityPage({
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
             {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "ClaimReview",
-                "claimReviewed": `${locality.yoyAppreciation} annual capital appreciation in ${locality.name}.`,
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "alternateName": "Market Analytics Verified"
-                },
-                "author": { "@id": "https://joyville-homes.com/#research-desk" }
-            }) }} />
 
             <header className="max-w-7xl mx-auto px-6 mb-16">
                 <Breadcrumbs items={[

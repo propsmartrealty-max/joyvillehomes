@@ -223,21 +223,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     "@type": "City",
                     "name": "Pune"
                 },
-                ...(project.expertReview ? {
-                    "review": {
-                        "@type": "Review",
-                        "reviewRating": {
-                            "@type": "Rating",
-                            "ratingValue": project.expertReview.rating,
-                            "bestRating": "5"
-                        },
-                        "author": {
-                            "@type": "Person",
-                            "name": project.expertReview.expertId ? getExpertById(project.expertReview.expertId)?.name : 'Research Desk'
-                        },
-                        "reviewBody": project.expertReview.summary
-                    }
-                } : {}),
                 "offers": {
                     "@type": "AggregateOffer",
                     "priceCurrency": "INR",
@@ -253,13 +238,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                         "name": "Shapoorji Pallonji Real Estate",
                         "url": siteUrl
                     }
-                },
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.9",
-                    "reviewCount": project.reviews?.length ? (542 + project.reviews.length).toString() : "542",
-                    "bestRating": "5",
-                    "worstRating": "1"
                 },
                 ...(project.interactionSignals ? {
                     "interactionStatistic": [
@@ -292,45 +270,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     }))),
                     { "@id": `${siteUrl}/projects/${project.slug}/#place` },
                     ...(project.siteOffice ? [{ "@id": `${siteUrl}/projects/${project.slug}/#localbusiness` }] : []),
-                    ...(project.expertReview ? [
-                        {
-                            "@type": "Review",
-                            "reviewRating": {
-                                "@type": "Rating",
-                                "ratingValue": project.expertReview.rating,
-                                "bestRating": "5"
-                            },
-                            "author": { "@id": "https://joyville-homes.com/#research-desk" },
-                            "reviewBody": project.expertReview.summary,
-                            ...(project.sentimentClustering ? {
-                                "positiveNotes": {
-                                    "@type": "ItemList",
-                                    "itemListElement": project.sentimentClustering.map((c, i) => ({
-                                        "@type": "ListItem",
-                                        "position": i + 1,
-                                        "name": c.category,
-                                        "description": c.summary
-                                    }))
-                                }
-                            } : {})
-                        },
-                    ] : []),
-                    ...(project.claims ? project.claims.map((claim, i) => ({
-                        "@type": "ClaimReview",
-                        "url": `${siteUrl}/projects/${project.slug}/#claim-${i}`,
-                        "claimReviewed": claim.claim,
-                        "reviewRating": {
-                            "@type": "Rating",
-                            "ratingValue": "5",
-                            "bestRating": "5",
-                            "alternateName": "Verified by Institutional Research"
-                        },
-                        "itemReviewed": {
-                            "@type": "CreativeWork",
-                            "author": { "@id": "https://joyville-homes.com/#organization" },
-                            "datePublished": claim.date
-                        }
-                    })) : []),
                     {
                         "@type": "SoftwareApplication",
                         "name": `${project.title} ROI & Appreciation Calculator`,
@@ -574,37 +513,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                         ]
                     }))
                 },
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.9",
-                    "reviewCount": project.reviews?.length ? (542 + project.reviews.length).toString() : "542",
-                    "bestRating": "5",
-                    "worstRating": "1"
-                },
-                "review": project.reviews?.map(review => ({
-                    "@type": "Review",
-                    "author": {
-                        "@type": "Person",
-                        "name": review.author
-                    },
-                    "datePublished": review.date,
-                    "reviewBody": review.comment,
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": review.rating,
-                        "bestRating": "5"
-                    },
-                    "itemReviewed": {
-                        "@type": "LocalBusiness",
-                        "name": project.title,
-                        "image": project.image,
-                        "geo": {
-                            "@type": "GeoCoordinates",
-                            "latitude": project.latitude,
-                            "longitude": project.longitude
-                        }
-                    }
-                })),
                 ...(project.videoUrl ? {
                     "subjectOf": { "@id": `${siteUrl}/projects/${project.slug}/#video` }
                 } : {}),
@@ -795,17 +703,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     "@type": "City",
                     "name": "Pune"
                 },
-                "review": project.reviews?.slice(0, 3).map(review => ({
-                    "@type": "Review",
-                    "author": { "@type": "Person", "name": review.author },
-                    "datePublished": review.date,
-                    "reviewBody": review.comment,
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": review.rating,
-                        "bestRating": "5"
-                    }
-                })),
                 "additionalProperty": [
                     { "@type": "PropertyValue", "name": "RERA Status", "value": "MahaRERA Approved" },
                     { "@type": "PropertyValue", "name": "Construction Technology", "value": "Mivan / Aluform Monolithic" },

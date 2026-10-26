@@ -54,12 +54,7 @@ export default function GoogleBusinessAutomation({
                 "opens": "09:00",
                 "closes": "20:00"
             }
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": rating,
-            "reviewCount": reviewCount
-        }
+        ]
     };
 
     return (

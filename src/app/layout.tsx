@@ -271,12 +271,7 @@ export default function RootLayout({
                 "memberOf": [
                   { "@type": "Organization", "name": "CREDAI Pune Metro", "url": "https://credaipune.org/" },
                   { "@type": "Organization", "name": "MahaRERA", "url": "https://maharera.mahaonline.gov.in/" }
-                ],
-                "aggregateRating": {
-                  "@type": "AggregateRating",
-                  "ratingValue": "4.8",
-                  "reviewCount": "2450"
-                }
+                ]
               },
               {
                 "@type": "AnalysisNewsArticle",
