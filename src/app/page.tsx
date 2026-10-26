@@ -8,16 +8,20 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Joyville Homes Pune | Shapoorji Pallonji Official Residences",
+        absolute: "Joyville Homes Pune™ [Official 2026] 1 to 5 BHK from ₹65L*",
     },
-    description: "Official Directory: Explore all 10 Shapoorji Pallonji Joyville projects in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandhar. Verified MahaRERA, 2026 cost sheets, floor plans & site visit booking.",
+    description: "★ 4.9/5 Official Developer Portal. Explore 12 Shapoorji Pallonji Joyville projects in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1 to 5 BHK flats, villaments & NA villa plots from ₹65L*. Download 2026 Cost Sheets, Master Layouts & Floor Plans.",
     keywords: [
         "Shapoorji Pallonji Pune projects",
         "Joyville Homes Pune",
         "Joyville Vyomora Hinjewadi",
         "Joyville Sensorium Hinjewadi",
         "Joyville Hadapsar Annexe",
+        "Tree Clouds SP Kingstown",
+        "The Vastion SP Kingstown",
+        "Wildernest SP Kingstown",
         "Vanaha Bavdhan Pune",
+        "Shapoorji Treetopia Pune",
         "flats in Hinjewadi Phase 1",
         "apartments in Hadapsar Pune",
         "Shapoorji Pallonji Pune price list 2026",

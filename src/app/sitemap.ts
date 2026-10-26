@@ -143,16 +143,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
         return sitemapEntry;
     });
 
-    // Phase 38: PSEO routes — tiered down from 1.0 to prevent priority dilution
+    // Phase 38: Programmatic SEO routes — pointing to canonical /properties/[seoSlug]
     const programmaticRoutes: MetadataRoute.Sitemap = SEO_ROUTES.map((route) => {
         const isCorporate = route.slug.includes('wipro') || route.slug.includes('infosys') || route.slug.includes('tcs') || route.slug.includes('cognizant');
         return {
-            url: `${baseUrl}/flats-near-${route.slug}`,
+            url: `${baseUrl}/properties/${route.slug}`,
             lastModified: today,
             changeFrequency: 'weekly',
-            priority: isCorporate ? 0.92 : 0.75, // Higher priority for high-intent corporate routes
+            priority: isCorporate ? 0.92 : 0.85, // High priority for transactional programmatic routes
         };
     });
+
+    // Landmark proximity landing pages
+    const landmarkRoutes: MetadataRoute.Sitemap = [
+        'infosys-hinjewadi',
+        'wtc-pune',
+        'magarpatta-city',
+        'symbiosis-university',
+        'bavdhan-highway'
+    ].map((slug) => ({
+        url: `${baseUrl}/flats-near-${slug}`,
+        lastModified: today,
+        changeFrequency: 'weekly',
+        priority: 0.8,
+    }));
 
     // Blog routes use actual publication dates for genuine freshness
     // Phase 38: Blog routes — cap future dates to today
@@ -203,5 +217,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }))
     );
 
-    return [...baseRoutes, ...projectRoutes, ...blogRoutes, ...localityRoutes, ...programmaticRoutes, ...authorRoutes, ...topicRoutes, ...regionalNRIRoutes, ...unitRoutes];
+    return [...baseRoutes, ...projectRoutes, ...blogRoutes, ...localityRoutes, ...programmaticRoutes, ...landmarkRoutes, ...authorRoutes, ...topicRoutes, ...regionalNRIRoutes, ...unitRoutes];
 }

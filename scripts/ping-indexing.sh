@@ -4,7 +4,7 @@
 
 SITE_URL="https://joyville-homes.com"
 SITEMAP_URL="${SITE_URL}/sitemap.xml"
-INDEXNOW_KEY="a8f4e2b1c9d7e3f5a0b6c4d8e2f1a3b5"
+INDEXNOW_KEY="582cfba9a2c34255959929007f3bc6cf"
 
 echo "🔍 Phase 38: Indexing Velocity Accelerator"
 echo "============================================"

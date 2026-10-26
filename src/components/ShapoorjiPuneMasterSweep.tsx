@@ -113,7 +113,7 @@ export default function ShapoorjiPuneMasterSweep() {
                 "@type": "ItemList",
                 "@id": "https://joyville-homes.com/#shapoorji-pune-projects-list",
                 "name": "Shapoorji Pallonji Entire Pune Projects Master Directory 2026",
-                "description": "Authoritative directory of all 10 Shapoorji Pallonji residential and plotted developments across Hinjewadi, Hadapsar, Bavdhan, and Purandhar in Pune.",
+                "description": "Authoritative directory of all 12 Shapoorji Pallonji residential and plotted developments across Hinjewadi, Hadapsar, Bavdhan, and Purandar in Pune.",
                 "numberOfItems": projects.length,
                 "itemListElement": projects.map((p, index) => ({
                     "@type": "ListItem",

@@ -7,7 +7,7 @@ import { projects } from '@/data/projects';
 
 export const metadata: Metadata = {
     title: "Shapoorji Pallonji Pune Projects (2026) | Complete Joyville Price List & Floor Plans",
-    description: "Explore all 10 Shapoorji Pallonji residential developments in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandhar. Verified MahaRERA numbers, starting prices from ₹65L, floor plans & instant site visit booking.",
+    description: "Explore all 12 Shapoorji Pallonji residential developments in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandar. Verified MahaRERA numbers, starting prices from ₹65L, floor plans & instant site visit booking.",
     keywords: [
         "Shapoorji Pallonji projects Pune",
         "Joyville Pune all projects",

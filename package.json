@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "index": "npx tsx scripts/google-indexing-api.ts",
+    "ping:search": "node scripts/ping-search-engines.mjs",
     "blog:generate": "node scripts/ai_blog_agent.js",
     "blog:compile": "node scripts/compile_blogs.js",
     "blast": "npx tsx scripts/off-page-seo-blaster.ts",

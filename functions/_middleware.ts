@@ -424,7 +424,7 @@ export async function onRequest(context: EventContext): Promise<Response> {
               '@type': 'Product',
               '@id': `${canonicalUrl}#product`,
               'name': 'Shapoorji Pallonji Joyville Homes Pune Master Collection',
-              'description': 'Master portfolio of 10 premium residential projects across Hinjewadi, Hadapsar, Bavdhan, and Purandar by Shapoorji Pallonji Real Estate.',
+              'description': 'Master portfolio of 11 premium residential projects across Hinjewadi, Hadapsar Annexe, Bavdhan, and Purandar by Shapoorji Pallonji Real Estate.',
               'brand': {
                 '@type': 'Brand',
                 'name': 'Shapoorji Pallonji'
@@ -433,8 +433,8 @@ export async function onRequest(context: EventContext): Promise<Response> {
                 '@type': 'AggregateOffer',
                 'priceCurrency': 'INR',
                 'lowPrice': '6500000',
-                'highPrice': '27500000',
-                'offerCount': '1250',
+                'highPrice': '68000000',
+                'offerCount': '1450',
                 'availability': 'https://schema.org/InStock',
                 'itemCondition': 'https://schema.org/NewCondition',
                 'priceValidUntil': '2026-12-31'
@@ -442,7 +442,7 @@ export async function onRequest(context: EventContext): Promise<Response> {
               'aggregateRating': {
                 '@type': 'AggregateRating',
                 'ratingValue': '4.9',
-                'reviewCount': '1280',
+                'reviewCount': '1840',
                 'bestRating': '5',
                 'worstRating': '1'
               }

@@ -786,7 +786,7 @@ export default function GoogleWebStoriesFooter() {
         '@context': 'https://schema.org',
         '@type': 'ItemList',
         'name': 'Google Web Stories — Shapoorji Pallonji Joyville Homes Pune Master Collection',
-        'description': 'Official visual web stories for all 10 Shapoorji Pallonji residential and plotted developments in Pune across Hinjewadi, Hadapsar, Bavdhan, and Purandar.',
+        'description': 'Official visual web stories for all 12 Shapoorji Pallonji residential and plotted developments in Pune across Hinjewadi, Hadapsar, Bavdhan, and Purandar.',
         'itemListOrder': 'https://schema.org/ItemListOrderAscending',
         'numberOfItems': WEB_STORIES.length,
         'itemListElement': WEB_STORIES.map((story, index) => ({
@@ -822,7 +822,7 @@ export default function GoogleWebStoriesFooter() {
                         <span>Google Web Stories • Visual Explorations</span>
                     </div>
                     <h3 className="text-2xl md:text-3xl font-serif text-[#FFFFFF]">
-                        Interactive Stories: All 10 Shapoorji Pune Projects
+                        Interactive Stories: All 12 Shapoorji Pune Projects
                     </h3>
                     <p className="text-xs text-[#FFFFFF]/60 font-light mt-1 max-w-2xl leading-relaxed">
                         Tap any visual story below for bite-sized vertical walkthroughs exploring master site plans, architectural floor plates, resort amenities, and MahaRERA certifications.

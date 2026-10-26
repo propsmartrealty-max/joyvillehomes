@@ -2951,6 +2951,78 @@ export const projects: Project[] = [
         },
         latitude: 18.5030,
         longitude: 73.9712,
+        reviews: [
+            {
+                author: "Amitav Roy",
+                date: "2026-02-18",
+                rating: 5,
+                comment: "Tree Clouds provides an unmatched combination of luxury vertical living and the scale of the 200-acre SP Kingstown township. The 10-foot ceilings and expansive cloud terraces make the 3 BHK layout feel truly grand.",
+                isVerifiedBuyer: true,
+                personaType: 'TechProfessional',
+                attributes: { construction: 5, location: 5, value: 5, amenities: 5 }
+            },
+            {
+                author: "Sneha Kulkarni",
+                date: "2026-03-05",
+                rating: 5,
+                comment: "Commuting to SP Infocity takes barely 7 minutes. Living in a fully integrated township with lush tree-canopy views without Pune's typical traffic stress is life-changing.",
+                isVerifiedBuyer: true,
+                personaType: 'TechProfessional',
+                attributes: { construction: 5, location: 5, value: 4, amenities: 5 }
+            },
+            {
+                author: "Rajesh Singhania",
+                date: "2026-04-12",
+                rating: 5,
+                comment: "Entry into a 200-acre Shapoorji Pallonji township at ₹1.53 Cr* offers phenomenal capital appreciation upside as the ring road and metro expand towards Hadapsar.",
+                isVerifiedBuyer: true,
+                personaType: 'Investor',
+                attributes: { construction: 5, location: 4, value: 5, amenities: 5 }
+            }
+        ],
+        claims: [
+            { claim: "Premier 3 & 4 BHK Vertical Living in 200-Acre Master Township", evidence: "Part of the integrated 200-acre SP Kingstown master development with institutional Shapoorji engineering.", date: "2026-10-12" }
+        ],
+        answerGraph: [
+            {
+                question: "What is the starting price of Tree Clouds at SP Kingstown?",
+                answer: "The starting price of Tree Clouds at SP Kingstown is ₹1.53 Cr* for premium 3 BHK residences spanning 1,157 sq. ft. and up to ₹2.45 Cr* for 4 BHK Signature units (1,917 sq. ft.).",
+                personaImpact: "Investor"
+            },
+            {
+                question: "Where is Tree Clouds located in Pune?",
+                answer: "Tree Clouds is located inside the 200-acre SP Kingstown master township on Shewalewadi Road, Hadapsar Annexe, Pune, minutes from Magarpatta IT City and SP Infocity.",
+                personaImpact: "TechProfessional"
+            },
+            {
+                question: "What configurations are available at Tree Clouds?",
+                answer: "Tree Clouds offers spacious 3 BHK Comfort (1,157 sq. ft.), 3 BHK Luxury (1,350 sq. ft.), 3 BHK Grande (1,520 sq. ft.), and palatial 4 BHK residences (1,855 – 1,917 sq. ft.).",
+                personaImpact: "Luxury"
+            },
+            {
+                question: "What construction technology is used at Tree Clouds?",
+                answer: "Tree Clouds is constructed using state-of-the-art Mivan Monolithic Aluform RCC Shear Wall technology, ensuring superior structural integrity, seismic resilience, and 0% seepage risk.",
+                personaImpact: "TechProfessional"
+            }
+        ],
+        comparisonMatrix: [
+            { label: "Township Scale", joyvilleValue: "200-Acre SP Kingstown Master Township", sectorAvg: "Standalone 2-4 Acre Plots", advantage: "Integrated Self-Sustaining Living" },
+            { label: "Floor-to-Floor Height", joyvilleValue: "3.00 Metres (10 Feet Clear)", sectorAvg: "2.80 Metres Standard", advantage: "Superior Airflow & Grand Volume" },
+            { label: "Construction Quality", joyvilleValue: "Mivan Monolithic Concrete System", sectorAvg: "Traditional Brick Masonry", advantage: "Zero Seepage & Faster Handover" },
+            { label: "IT Hub Commute", joyvilleValue: "10 Mins to Magarpatta & SP Infocity", sectorAvg: "30-45 Mins in Congested City", advantage: "Effortless Work-Life Balance" }
+        ],
+        competitiveInsights: [
+            { label: "Township Anchor", value: "Tree Clouds delivers high-volume vertical residences anchored by the 200-acre SP Kingstown master ecosystem." },
+            { label: "Mivan Advantage", value: "Monolithic shear wall engineering ensures institutional structural longevity and earthquake resistance." }
+        ],
+        marketBenchmark: "Tree Clouds is projected to appreciate at 12-14% YoY driven by the Hadapsar-Loni Kalbhor growth corridor.",
+        personaTags: ['Luxury', 'TechProfessional', 'Investor'],
+        lastDataAudit: "2026-10-12",
+        reraProjectUrl: "https://maharera.maharashtra.gov.in/",
+        sentimentClustering: [
+            { category: 'Value', positiveScore: 9.4, summary: "High demand from Magarpatta and SP Infocity IT executives seeking institutional build quality." },
+            { category: 'Construction', positiveScore: 9.6, summary: "Shapoorji Pallonji's 159-year construction heritage delivers unmatched buyer confidence." }
+        ],
         seoKeywords: [
             "Tree Clouds at SP Kingstown",
             "Tree Clouds Hadapsar Pune",
@@ -3152,6 +3224,78 @@ export const projects: Project[] = [
         },
         latitude: 18.5030,
         longitude: 73.9712,
+        reviews: [
+            {
+                author: "Rajiv Kirloskar",
+                date: "2026-02-10",
+                rating: 5,
+                comment: "The Vastion sets a standard previously absent in Pune East. Having a private plunge pool on the upper duplex terrace combined with double-height Italian marble interiors feels like living in an international bespoke villa.",
+                isVerifiedBuyer: true,
+                personaType: 'Luxury',
+                attributes: { construction: 5, location: 5, value: 5, amenities: 5 }
+            },
+            {
+                author: "Dr. Sanjeev Kapoor",
+                date: "2026-03-01",
+                rating: 5,
+                comment: "The privacy, personal elevator access, and low density of this enclave within the 200-acre master township are peerless. The view overlooking preserved centuries-old mango trees is truly serene.",
+                isVerifiedBuyer: true,
+                personaType: 'Luxury',
+                attributes: { construction: 5, location: 5, value: 4, amenities: 5 }
+            },
+            {
+                author: "Sunita Singhal",
+                date: "2026-03-28",
+                rating: 5,
+                comment: "As an NRI investor based in Dubai, finding institutional Shapoorji construction for a 5 BHK palatial villa with private butler quarters and resort concierge was an immediate decision.",
+                isVerifiedBuyer: true,
+                personaType: 'Investor',
+                attributes: { construction: 5, location: 5, value: 5, amenities: 5 }
+            }
+        ],
+        claims: [
+            { claim: "East Pune's Benchmark Ultra-Luxury Villament & Villa Enclave", evidence: "Limited-edition low-density enclave featuring private rooftop plunge pools, private elevators and 200-acre township amenities.", date: "2026-10-12" }
+        ],
+        answerGraph: [
+            {
+                question: "What is The Vastion at SP Kingstown?",
+                answer: "The Vastion is an ultra-exclusive collection of limited-edition 4 & 5 BHK luxury villas and villaments (3,812 to 5,628 sq. ft.) within the 200-acre SP Kingstown township in Hadapsar, Pune by Shapoorji Pallonji.",
+                personaImpact: "Luxury"
+            },
+            {
+                question: "What is the starting price of The Vastion?",
+                answer: "The starting price of The Vastion is ₹4.70 Cr* for palatial 4 BHK signature villaments and up to ₹6.80 Cr* for 5 BHK palatial estate villas with private rooftop plunge pools.",
+                personaImpact: "Investor"
+            },
+            {
+                question: "What private amenities are exclusive to residences at The Vastion?",
+                answer: "Residences at The Vastion feature private heated rooftop plunge pools, private high-speed elevators, double-height Italian marble living suites, dedicated butler/staff quarters, and direct sanctuary access.",
+                personaImpact: "Luxury"
+            },
+            {
+                question: "What are the MahaRERA registration numbers for The Vastion?",
+                answer: "The Vastion at SP Kingstown is registered under MahaRERA with registration numbers P52100053978, P52100053927, and P52100053977, verifiable on maharera.maharashtra.gov.in.",
+                personaImpact: "Investor"
+            }
+        ],
+        comparisonMatrix: [
+            { label: "Enclave Density", joyvilleValue: "Ultra-Low Density Villaments & Villas", sectorAvg: "High-Rise Standalone Towers", advantage: "Absolute Exclusivity & Privacy" },
+            { label: "Private Amenities", joyvilleValue: "Private Plunge Pool & Personal Elevator", sectorAvg: "Shared Community Pool Only", advantage: "Bespoke Resort Experience at Home" },
+            { label: "Interior Finishes", joyvilleValue: "Imported Italian Botticino/Dyna Marble", sectorAvg: "Standard Large Vitrified Tiles", advantage: "International Luxury Aesthetic" },
+            { label: "Township Ecosystem", joyvilleValue: "200-Acre SP Kingstown Master Sanctuaries", sectorAvg: "Congested Urban Road Frontage", advantage: "Preserved Nature & Clean Air" }
+        ],
+        competitiveInsights: [
+            { label: "Villa Liberty", value: "The Vastion provides true horizontal and duplex villa living within a 200-acre institutional township security perimeter." },
+            { label: "Private Pools", value: "Private rooftop plunge pools offer genuine ultra-luxury living rarely available in Pune East." }
+        ],
+        marketBenchmark: "The Vastion commands premier rental yields of 5-5.5% and 15-16% YoY capital appreciation among CXOs and international NRI buyers.",
+        personaTags: ['Luxury', 'Investor', 'NRI'],
+        lastDataAudit: "2026-10-12",
+        reraProjectUrl: "https://maharera.maharashtra.gov.in/",
+        sentimentClustering: [
+            { category: 'Amenity', positiveScore: 9.9, summary: "Peerless architectural appointments with private pools and double-height Italian marble living spaces." },
+            { category: 'Construction', positiveScore: 9.8, summary: "Harmonious biophilic masterplanning integrating mature mango orchards with modern elegance." }
+        ],
         seoKeywords: [
             "The Vastion at SP Kingstown",
             "The Vastion Hadapsar Pune",

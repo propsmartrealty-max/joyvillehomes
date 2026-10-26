@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | Joyville Homes",
     default: "Joyville Homes Pune | Shapoorji Pallonji Official Residences",
   },
-  description: "Official Joyville Pune & Shapoorji Pallonji platform. Explore 11 premium projects across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1 to 5 BHK residences, villaments, villas & villa plots from ₹65L. RERA approved. Official 2026 cost sheets, verified master layouts & floor plans.",
+  description: "Official Joyville Pune & Shapoorji Pallonji platform. Explore 12 premium projects across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1 to 5 BHK residences, villaments, villas & villa plots from ₹65L. RERA approved. Official 2026 cost sheets, verified master layouts & floor plans.",
   keywords: [
     "Shapoorji Pallonji Pune",
     "Joyville Homes Pune",
