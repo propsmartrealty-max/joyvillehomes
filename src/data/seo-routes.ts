@@ -38,26 +38,6 @@ export const SEO_ROUTES = [
         filters: { locationMatch: 'Jadhavwadi|Purandar', typeMatch: 'Plots' }
     },
 
-    // NEW Launch Focus
-    {
-        slug: 'joyville-vyomora-hinjewadi',
-        title: 'Joyville Vyomora Hinjewadi Phase 1 | Brand New Launch by Shapoorji Pallonji',
-        description: 'Experience luxury at Joyville Vyomora, Hinjewadi Phase 1. 2 & 3 BHK residences and 3 BHK duplexes. Premium IT lifeline location. Starting ₹84.99 Lakhs. RERA registered.',
-        h1: 'Joyville Vyomora — Brand New Launch in Hinjewadi Phase 1',
-        keywords: [...KEYWORD_MATRIX.TRANSACTIONAL, 'joyville vyomora hinjewadi', 'joyville vyomora price', 'joyville vyomora floor plan', 'new launch hinjewadi'],
-        filters: { locationMatch: 'Hinjewadi', typeMatch: 'Vyomora' }
-    },
-
-    // Brand Dominance
-    {
-        slug: 'shapoorji-pallonji-joyville-home-pune',
-        title: 'Shapoorji Pallonji Joyville Home Pune | Official Brand Portal',
-        description: 'Discover the complete portfolio of Shapoorji Pallonji Joyville homes in Pune. Explore luxury 2 & 3 BHK apartments in Hinjewadi, Hadapsar, and Bavdhan. Book a site visit today.',
-        h1: 'Shapoorji Pallonji Joyville Homes in Pune',
-        keywords: [...KEYWORD_MATRIX.SHAPOORJI_BRAND_DOMINANCE],
-        filters: { locationMatch: 'Pune', typeMatch: '' }
-    },
-
     // Typology pages
     {
         slug: '3-bhk-flats-in-hinjewadi',

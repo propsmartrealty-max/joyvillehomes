@@ -3,9 +3,8 @@ import { MetadataRoute } from 'next';
 export default function robots(): MetadataRoute.Robots {
     const siteUrl = 'https://joyville-homes.com';
 
-    // Disallow parameters to prevent infinite crawl spaces
+    // Disallow parameters and private paths to prevent crawl waste, while NEVER blocking static assets
     const commonDisallow = [
-        '/_next/',
         '/api/',
         '/admin/',
         '/cgi-bin/',
@@ -26,25 +25,25 @@ export default function robots(): MetadataRoute.Robots {
             // Standard Global Rules
             {
                 userAgent: '*',
-                allow: '/',
+                allow: ['/', '/_next/static/', '/_next/image'],
                 disallow: commonDisallow,
             },
             // Primary Search Engines (Google/Bing)
             {
                 userAgent: ['Googlebot', 'Googlebot-Image', 'Googlebot-Video', 'Googlebot-News', 'bingbot', 'YandexBot', 'Slurp'],
-                allow: '/',
+                allow: ['/', '/_next/static/', '/_next/image'],
                 disallow: commonDisallow,
             },
             // Google Advanced Inspection & AI Overviews
             {
                 userAgent: ['Google-InspectionTool', 'Google-Extended'],
-                allow: '/',
-                disallow: ['/_next/', '/api/', '/admin/'], // Minimal blocks to allow full rendering evaluation
+                allow: ['/', '/_next/static/', '/_next/image'],
+                disallow: ['/api/', '/admin/'], // Ensure full rendering evaluation of JS/CSS
             },
             // AI Agents & LLM Scrapers (Throttled but allowed for knowledge graph)
             {
                 userAgent: ['GPTBot', 'ChatGPT-User', 'anthropic-ai', 'ClaudeBot', 'OAI-SearchBot', 'PerplexityBot', 'YouBot'], 
-                allow: ['/', '/ai-manifest.json'],
+                allow: ['/', '/ai-manifest.json', '/_next/static/'],
                 disallow: commonDisallow,
                 crawlDelay: 2, // Protect server bandwidth
             },
@@ -57,7 +56,6 @@ export default function robots(): MetadataRoute.Robots {
         sitemap: [
             `${siteUrl}/sitemap.xml`,
             `${siteUrl}/image-sitemap.xml`,
-            `${siteUrl}/google-products.xml`,
             `${siteUrl}/aggregator-feed.xml`
         ],
         host: siteUrl,

@@ -91,17 +91,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         : project.location.split(',')[0].trim();
 
     // High CTR Title tailored for 50-60 character Google SERP limit
-    const highCtrTitle = `${project.title}™ [Official] ${project.price}* | Plans & Brochure`;
+    const highCtrTitle = `${project.title} | ${project.price}* | Plans & Brochure`;
     const finalTitle = highCtrTitle.length <= 60 
         ? highCtrTitle 
-        : `${project.title}™ Official | ${project.price}* | Plans`;
+        : `${project.title} | ${project.price}* | Plans`;
 
     const reraNumber = Array.isArray(project.reraNumber) 
         ? project.reraNumber[0] 
         : (project.reraNumber || 'Approved');
 
-    // High CTR Meta Description with Star Rating, RERA, Price, Typology & Clear Action
-    const highCtrDescription = `★ 4.9/5 Official Portal. Explore ${project.title} by Shapoorji Pallonji in ${shortLoc}, Pune. ${project.type} from ${project.price}. MahaRERA: ${reraNumber}. Download 2026 Brochure PDF & Verified Floor Plans.`;
+    // High CTR Meta Description with RERA, Price, Typology & Clear Action
+    const highCtrDescription = `Explore ${project.title} by Shapoorji Pallonji in ${shortLoc}, Pune. ${project.type} from ${project.price}. MahaRERA: ${reraNumber}. Download 2026 Brochure PDF & Verified Floor Plans.`;
 
     return {
         title: {

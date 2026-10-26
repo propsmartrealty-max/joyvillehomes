@@ -340,17 +340,17 @@ export async function onRequest(context: EventContext): Promise<Response> {
       const geoPosition = matchedProject ? `${matchedProject.lat};${matchedProject.lng}` : '18.559385;73.723826';
       const geoICBM = matchedProject ? `${matchedProject.lat}, ${matchedProject.lng}` : '18.559385, 73.723826';
 
-      // Enterprise Real Estate / Google Merchant / 5-Star Reviews Schema
+      // Clean, Valid Schema.org Structured Data (Google Real Estate Guidelines Compliant)
       const edgeSchema = {
         '@context': 'https://schema.org',
         '@graph': [
           {
-            '@type': 'RealEstateOrganization',
+            '@type': 'RealEstateAgent',
             '@id': 'https://joyville-homes.com/#organization',
-            'name': 'Shapoorji Pallonji Joyville Homes',
-            'alternateName': 'Joyville Pune',
+            'name': 'Joyville Homes Pune Partner Platform',
+            'alternateName': 'Joyville Pune Residences',
             'url': 'https://joyville-homes.com',
-            'logo': 'https://joyville-homes.com/images/projects/vyomora/logo.svg',
+            'logo': 'https://joyville-homes.com/logo.svg',
             'telephone': '+91-20-6743-1149',
             'email': 'sales@joyville-homes.com',
             'address': {
@@ -360,50 +360,13 @@ export async function onRequest(context: EventContext): Promise<Response> {
               'addressRegion': 'Maharashtra',
               'postalCode': '411057',
               'addressCountry': 'IN'
-            },
-            'aggregateRating': {
-              '@type': 'AggregateRating',
-              'ratingValue': '4.9',
-              'reviewCount': '1280',
-              'bestRating': '5',
-              'worstRating': '1'
             }
           },
           ...(matchedProject ? [
             {
-              '@type': 'Product',
-              '@id': `${canonicalUrl}#product`,
-              'name': matchedProject.name,
-              'description': matchedProject.description,
-              'image': matchedProject.image,
-              'mpn': matchedProject.rera,
-              'sku': matchedProject.rera,
-              'brand': {
-                '@type': 'Brand',
-                'name': 'Shapoorji Pallonji'
-              },
-              'offers': {
-                '@type': 'AggregateOffer',
-                'priceCurrency': 'INR',
-                'lowPrice': matchedProject.lowPrice.toString(),
-                'highPrice': matchedProject.highPrice.toString(),
-                'offerCount': '100',
-                'availability': `https://schema.org/${matchedProject.status}`,
-                'itemCondition': 'https://schema.org/NewCondition',
-                'priceValidUntil': '2026-12-31'
-              },
-              'aggregateRating': {
-                '@type': 'AggregateRating',
-                'ratingValue': '4.9',
-                'reviewCount': matchedProject.reviews.toString(),
-                'bestRating': '5',
-                'worstRating': '1'
-              }
-            },
-            {
               '@type': 'RealEstateListing',
               '@id': `${canonicalUrl}#listing`,
-              'name': matchedProject.title,
+              'name': matchedProject.name,
               'description': matchedProject.description,
               'url': canonicalUrl,
               'image': matchedProject.image,
@@ -421,31 +384,11 @@ export async function onRequest(context: EventContext): Promise<Response> {
             }
           ] : [
             {
-              '@type': 'Product',
-              '@id': `${canonicalUrl}#product`,
+              '@type': 'ItemList',
+              '@id': `${canonicalUrl}#projects-list`,
               'name': 'Shapoorji Pallonji Joyville Homes Pune Master Collection',
-              'description': 'Master portfolio of 11 premium residential projects across Hinjewadi, Hadapsar Annexe, Bavdhan, and Purandar by Shapoorji Pallonji Real Estate.',
-              'brand': {
-                '@type': 'Brand',
-                'name': 'Shapoorji Pallonji'
-              },
-              'offers': {
-                '@type': 'AggregateOffer',
-                'priceCurrency': 'INR',
-                'lowPrice': '6500000',
-                'highPrice': '68000000',
-                'offerCount': '1450',
-                'availability': 'https://schema.org/InStock',
-                'itemCondition': 'https://schema.org/NewCondition',
-                'priceValidUntil': '2026-12-31'
-              },
-              'aggregateRating': {
-                '@type': 'AggregateRating',
-                'ratingValue': '4.9',
-                'reviewCount': '1840',
-                'bestRating': '5',
-                'worstRating': '1'
-              }
+              'description': 'Portfolio of 12 premium residential projects across Hinjewadi, Hadapsar Annexe, Bavdhan, and Purandar in Pune.',
+              'url': 'https://joyville-homes.com/projects'
             }
           ])
         ]

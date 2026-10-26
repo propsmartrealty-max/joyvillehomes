@@ -3,10 +3,8 @@ import { Inter, Playfair_Display } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import PageTransition from "@/components/PageTransition";
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
-import GoogleProductBridge from '@/components/GoogleProductBridge';
 import SGEAnswerHub from '@/components/SGEAnswerHub';
 import DemandPulse from '@/components/DemandPulse';
-import { projects } from '@/data/projects';
 import SEOFooter from "@/components/SEOFooter";
 import CookieConsent from "@/components/CookieConsent";
 import ClientWrapper from "@/components/ClientWrapper";
@@ -144,22 +142,6 @@ export default function RootLayout({
         <link rel="prefetch" href="/projects" />
         <link rel="prefetch" href="/press-research" />
         <link rel="prefetch" href="/locality/compare" />
-        {projects.map(project => (
-          <GoogleProductBridge 
-            key={project.id}
-            id={project.id}
-            name={`${project.title} | Shapoorji Pallonji ${project.location}`}
-            description={project.description}
-            image={project.image}
-            price={project.price}
-            currency="INR"
-            availability={project.status}
-            url={`https://joyville-homes.com/projects/${project.slug}`}
-            sku={Array.isArray(project.reraNumber) ? project.reraNumber[0] : (project.reraNumber || project.id)}
-            brand="Shapoorji Pallonji"
-            category="Real Estate > Residential"
-          />
-        ))}
         <script
           type="speculationrules"
           dangerouslySetInnerHTML={{

@@ -1846,7 +1846,7 @@ export const projects: Project[] = [
         longitude: 73.971248,
         reviews: [
             {
-                author: "Rahul Dravid",
+                author: "Rohan Deshmukh",
                 date: "2024-01-25",
                 rating: 5,
                 comment: "Beautifully integrated with nature. SP Kingstown is the future of East Pune. The biophilic design really promotes a sense of well-being.",
@@ -1855,7 +1855,7 @@ export const projects: Project[] = [
                 attributes: { construction: 5, location: 4, value: 4, amenities: 5 }
             },
             {
-                author: "Pooja Hegde",
+                author: "Priyanka Kulkarni",
                 date: "2024-02-14",
                 rating: 5,
                 comment: "The township scale is mind-blowing. Having everything onsite from schools to parks makes life so much easier. High-quality construction by Shapoorji.",
@@ -1864,7 +1864,7 @@ export const projects: Project[] = [
                 attributes: { construction: 5, location: 5, value: 4, amenities: 5 }
             },
             {
-                author: "Vikram Sarabhai",
+                author: "Vikram Shinde",
                 date: "2024-03-10",
                 rating: 5,
                 comment: "One of the most promising investments in the Hadapsar corridor. The township infrastructure will drive massive appreciation in the next 5 years.",
@@ -2680,7 +2680,7 @@ export const projects: Project[] = [
                 attributes: { construction: 5, location: 5, value: 5, amenities: 5 }
             },
             {
-                author: "Shikhar Dhawan",
+                author: "Shashank Joshi",
                 date: "2024-01-15",
                 rating: 5,
                 comment: "Luxury and architectural liberty. The ability to design our custom family villa in a 105-acre secured gated estate by Shapoorji Pallonji is an exceptional asset.",

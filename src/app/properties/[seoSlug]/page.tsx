@@ -45,21 +45,19 @@ export async function generateMetadata({ params }: { params: Promise<{ seoSlug: 
         ? (primaryProject.image.startsWith('http') ? primaryProject.image : `${siteUrl}${primaryProject.image}`)
         : `${siteUrl}/images/desktop-poster.webp`;
 
-    // Ensure high-CTR title fits within 50-60 characters without truncation
+    // Ensure high-relevance title fits within 50-60 characters without truncation
     let absoluteTitle = routeData.title
-        .replace(' | Shapoorji Pallonji Joyville', '™ | Joyville Pune')
-        .replace(' — Shapoorji Treetopia Pune', '™ | Treetopia')
-        .replace(' — Hinjewadi & Bavdhan | Shapoorji Pallonji', '™ | Pune West')
-        .replace(' | Shapoorji Pallonji', '™ | Official')
-        .replace(' | Joyville Hadapsar', '™ | Hadapsar');
+        .replace(' | Shapoorji Pallonji Joyville', ' | Joyville Pune')
+        .replace(' — Shapoorji Treetopia Pune', ' | Treetopia')
+        .replace(' — Hinjewadi & Bavdhan | Shapoorji Pallonji', ' | Pune West')
+        .replace(' | Shapoorji Pallonji', ' | Joyville')
+        .replace(' | Joyville Hadapsar', ' | Hadapsar');
 
     if (absoluteTitle.length > 60) {
         absoluteTitle = absoluteTitle.slice(0, 57).trim() + '...';
     }
 
-    const rawDesc = routeData.description.startsWith('★') 
-        ? routeData.description 
-        : `★ 4.9/5 Official Portal. ${routeData.description}`;
+    const rawDesc = routeData.description;
     const truncatedDesc = rawDesc.length > 155 ? rawDesc.substring(0, 152) + "..." : rawDesc;
 
     return {
@@ -188,21 +186,6 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
 
     const pageFaqs = getFaqsForRoute(routeData.slug);
 
-    const speakableJsonLd = {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "url": `${siteUrl}/properties/${routeData.slug}`,
-        "publisher": { "@id": `${siteUrl}/#organization` },
-        "author": { "@id": `${siteUrl}/#organization` },
-        "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": [
-                "h1",
-                ".header-description"
-            ]
-        }
-    };
-
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -210,13 +193,6 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
         "description": routeData.description,
         "url": `${siteUrl}/properties/${routeData.slug}`,
         "numberOfItems": matchedProjects.length,
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "1280",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
         "about": matchedProjects.map(p => ({
             "@type": "RealEstateProject",
             "name": p.title,
@@ -284,7 +260,6 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
 
     return (
         <main className="min-h-[100dvh] bg-[#EEF2F6] pt-32 pb-24 text-[#323334]">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />

@@ -1,6 +1,7 @@
 User-Agent: *
 Allow: /
-Disallow: /_next/
+Allow: /_next/static/
+Allow: /_next/image
 Disallow: /api/
 Disallow: /admin/
 Disallow: /cgi-bin/
@@ -18,11 +19,14 @@ User-Agent: Googlebot
 User-Agent: Googlebot-Image
 User-Agent: Googlebot-Video
 User-Agent: Googlebot-News
+User-Agent: Google-InspectionTool
+User-Agent: Google-Extended
 User-Agent: bingbot
 User-Agent: YandexBot
 User-Agent: Slurp
 Allow: /
-Disallow: /_next/
+Allow: /_next/static/
+Allow: /_next/image
 Disallow: /api/
 Disallow: /admin/
 Disallow: /cgi-bin/
@@ -36,13 +40,6 @@ Disallow: /*?*action=*
 Disallow: /*?*session=*
 Disallow: /*?*search=*
 
-User-Agent: Google-InspectionTool
-User-Agent: Google-Extended
-Allow: /
-Disallow: /_next/
-Disallow: /api/
-Disallow: /admin/
-
 User-Agent: GPTBot
 User-Agent: ChatGPT-User
 User-Agent: anthropic-ai
@@ -52,7 +49,7 @@ User-Agent: PerplexityBot
 User-Agent: YouBot
 Allow: /
 Allow: /ai-manifest.json
-Disallow: /_next/
+Allow: /_next/static/
 Disallow: /api/
 Disallow: /admin/
 Disallow: /cgi-bin/
@@ -77,5 +74,4 @@ Disallow: /
 Host: https://joyville-homes.com
 Sitemap: https://joyville-homes.com/sitemap.xml
 Sitemap: https://joyville-homes.com/image-sitemap.xml
-Sitemap: https://joyville-homes.com/google-products.xml
 Sitemap: https://joyville-homes.com/aggregator-feed.xml
