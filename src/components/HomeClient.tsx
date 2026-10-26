@@ -89,9 +89,9 @@ export default function HomeClient() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="text-5xl md:text-7xl lg:text-8xl font-serif text-[#323334] font-light leading-[1.05] tracking-tight mb-8"
             >
-              <span className="block text-[10px] md:text-xs font-bold tracking-[0.5em] text-[#1D4F9C]/50 mb-4 sm:mb-6 uppercase">Shapoorji Pallonji Joyville Pune</span>
-              <span className="text-[#1D4F9C] italic text-gradient">Joyville Vyomora</span> <br />
-              New Launch in Hinjewadi.
+              <span className="block text-[10px] md:text-xs font-bold tracking-[0.5em] text-[#1D4F9C]/70 mb-4 sm:mb-6 uppercase">Shapoorji Pallonji Real Estate</span>
+              <span className="text-[#1D4F9C] italic text-gradient">Joyville Homes Pune</span> <br />
+              Projects &amp; Residences 2026.
             </motion.h1>
 
             <motion.div

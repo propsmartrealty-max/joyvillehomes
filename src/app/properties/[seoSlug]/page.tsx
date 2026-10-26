@@ -45,24 +45,28 @@ export async function generateMetadata({ params }: { params: Promise<{ seoSlug: 
         ? (primaryProject.image.startsWith('http') ? primaryProject.image : `${siteUrl}${primaryProject.image}`)
         : `${siteUrl}/images/desktop-poster.webp`;
 
-    // High-CTR Title formatting tailored for Google SERP display (55-65 chars)
+    // High-CTR Title formatting tailored for Google SERP display (under 60 chars)
     let absoluteTitle = routeData.title
-        .replace(' | Shapoorji Pallonji Joyville', ' | Joyville Pune')
-        .replace(' — Shapoorji Treetopia Pune', ' | Treetopia')
-        .replace(' — Hinjewadi & Bavdhan | Shapoorji Pallonji', ' | Pune West')
-        .replace(' | Shapoorji Pallonji', ' | Joyville')
-        .replace(' | Joyville Hadapsar', ' | Hadapsar');
+        .replace(/\s*\|\s*Shapoorji Pallonji Joyville/g, '')
+        .replace(/\s*—\s*Shapoorji Treetopia Pune/g, ' | Treetopia')
+        .replace(/\s*—\s*Hinjewadi & Bavdhan\s*\|\s*Shapoorji Pallonji/g, ' | Pune West')
+        .replace(/\s*\|\s*Shapoorji Pallonji/g, '')
+        .replace(/\s*\|\s*Joyville Hadapsar Annexe/g, ' | Hadapsar')
+        .replace(/\s*\|\s*Joyville Hadapsar/g, ' | Hadapsar')
+        .replace(/\s*\|\s*Joyville Pune/g, '')
+        .trim();
 
-    // Clean up any double suffixes
-    absoluteTitle = absoluteTitle.replace(/ \| Pune West \| Pune West/g, ' | Pune West');
-
-    if (absoluteTitle.length > 68) {
-        const lastSpace = absoluteTitle.lastIndexOf(' ', 65);
-        absoluteTitle = (lastSpace > 40 ? absoluteTitle.substring(0, lastSpace) : absoluteTitle.substring(0, 65)).trim() + '...';
+    if (absoluteTitle.length > 60) {
+        const lastSpace = absoluteTitle.lastIndexOf(' ', 58);
+        if (lastSpace > 35) {
+            absoluteTitle = absoluteTitle.substring(0, lastSpace).replace(/\s*[-—|:]\s*$/, '').trim();
+        }
     }
 
     const rawDesc = routeData.description;
-    const truncatedDesc = rawDesc.length > 158 ? rawDesc.substring(0, 155) + "..." : rawDesc;
+    const truncatedDesc = rawDesc.length > 158 
+        ? rawDesc.substring(0, rawDesc.lastIndexOf(' ', 155)).replace(/[,;:]$/, '') + '.' 
+        : rawDesc;
 
     return {
         title: {

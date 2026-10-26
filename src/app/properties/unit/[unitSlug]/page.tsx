@@ -53,11 +53,37 @@ export async function generateMetadata({ params }: { params: Promise<{ unitSlug:
         return { title: 'Configuration Not Found | Joyville Pune' };
     }
     
-    const title = `${matchedPlan.type} in ${matchedProject.title} ${matchedProject.location} | Floor Plan, Price & Yield`;
-    const description = `Direct Inventory: ${matchedPlan.type} at ${matchedProject.title}, ${matchedProject.location}. Carpet area ${matchedPlan.carpetArea}. Check price list, floor plan, and projected rental yield. Verified by Shapoorji Pallonji.`;
+    const shortLoc = matchedProject.location.includes('Hinjewadi') ? 'Hinjewadi'
+        : matchedProject.location.includes('Hadapsar') || matchedProject.location.includes('Shewalewadi') ? 'Hadapsar'
+        : matchedProject.location.includes('Bavdhan') ? 'Bavdhan'
+        : matchedProject.location.includes('Purandar') || matchedProject.location.includes('Jadhavwadi') ? 'Purandar'
+        : matchedProject.location.split(',')[0].trim();
+
+    const cleanProj = matchedProject.title
+        .replace(' at SP Kingstown', '')
+        .replace('Shapoorji Pallonji ', '')
+        .replace(' Edition', '')
+        .trim();
+    const projWithLoc = cleanProj.toLowerCase().includes(shortLoc.toLowerCase()) ? cleanProj : `${cleanProj} ${shortLoc}`;
+    
+    // High-CTR 50-60 char title for Google SERP
+    let title = `${matchedPlan.type} | ${projWithLoc} | 2026 Price & Plan`;
+    if (title.length > 60) {
+        title = `${matchedPlan.type} | ${cleanProj} | 2026 Price & Plan`;
+    }
+    if (title.length > 60) {
+        title = `${matchedPlan.type} | ${cleanProj} | Price & Floor Plan`;
+    }
+    if (title.length > 60) {
+        title = `${matchedPlan.type} | ${cleanProj} | 2026 Price`;
+    }
+    
+    const description = `Direct Inventory: ${matchedPlan.type} (${matchedPlan.carpetArea}) at ${cleanProj}, ${shortLoc}. Starting ${matchedPlan.price || matchedProject.price}. Download 2026 floor plan and cost sheet.`;
     
     return {
-        title,
+        title: {
+            absolute: title
+        },
         description,
         keywords: [
             `${matchedProject.title} ${matchedPlan.type} price`,

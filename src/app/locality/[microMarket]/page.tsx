@@ -43,12 +43,19 @@ export async function generateMetadata({ params }: { params: Promise<{ microMark
 
     if (!locality) return { title: 'Locality Not Found' };
 
+    let locTitle = `${locality.name} Real Estate 2026 | Rates, Trends & Projects`;
+    if (locTitle.length > 60) {
+        locTitle = `${locality.name} Real Estate 2026 | Rates & Projects`;
+    }
+
     return {
-        title: `${locality.name} Real Estate 2025-2026 — Property Rates, Trends & Projects | Shapoorji Pallonji`,
+        title: {
+            absolute: locTitle
+        },
         description: locality.description,
         keywords: locality.seoKeywords,
         openGraph: {
-            title: `${locality.name} Real Estate Guide 2025-2026 | Shapoorji Pallonji Joyville`,
+            title: locTitle,
             description: locality.description,
         },
         alternates: {

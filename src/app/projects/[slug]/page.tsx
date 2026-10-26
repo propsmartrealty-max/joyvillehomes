@@ -90,18 +90,44 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         : project.location.includes('Jadhavwadi') || project.location.includes('Purandar') || project.location.includes('Purandhar') ? 'Purandar'
         : project.location.split(',')[0].trim();
 
-    // High CTR Title tailored for 50-60 character Google SERP limit
-    const highCtrTitle = `${project.title} | ${project.price}* | Plans & Brochure`;
-    const finalTitle = highCtrTitle.length <= 60 
-        ? highCtrTitle 
-        : `${project.title} | ${project.price}* | Plans`;
+    // Format short starting price for high CTR
+    const cleanPrice = project.price
+        .replace(/Starting\s*/i, '')
+        .replace(/\s*Onwards/i, '')
+        .replace(/\s*-\s*.*$/, '')
+        .replace(/Lakhs/i, 'L')
+        .replace(/\*/g, '')
+        .trim();
+    const shortPrice = cleanPrice.startsWith('₹') ? `${cleanPrice}*` : `₹${cleanPrice}*`;
+
+    // Clean brand name and ensure location presence
+    const cleanTitle = project.title
+        .replace(' at SP Kingstown', '')
+        .replace('Shapoorji Pallonji ', '')
+        .replace(' Edition', '')
+        .trim();
+    const nameWithLoc = cleanTitle.toLowerCase().includes(shortLoc.toLowerCase())
+        ? cleanTitle
+        : `${cleanTitle} ${shortLoc}`;
+
+    // Generate high-converting 50-60 char title for Google SERP
+    let finalTitle = `${nameWithLoc} | From ${shortPrice} | 2026 Plans & Brochure`;
+    if (finalTitle.length > 60) {
+        finalTitle = `${nameWithLoc} | From ${shortPrice} | 2026 Floor Plans`;
+    }
+    if (finalTitle.length > 60) {
+        finalTitle = `${nameWithLoc} | From ${shortPrice} | 2026 Plans`;
+    }
+    if (finalTitle.length > 60) {
+        finalTitle = `${nameWithLoc} | From ${shortPrice}`;
+    }
 
     const reraNumber = Array.isArray(project.reraNumber) 
         ? project.reraNumber[0] 
         : (project.reraNumber || 'Approved');
 
-    // High CTR Meta Description with RERA, Price, Typology & Clear Action
-    const highCtrDescription = `Explore ${project.title} by Shapoorji Pallonji in ${shortLoc}, Pune. ${project.type} from ${project.price}. MahaRERA: ${reraNumber}. Download 2026 Brochure PDF & Verified Floor Plans.`;
+    // High CTR Meta Description with RERA, Price, Typology & Clear Action (150-155 chars)
+    const highCtrDescription = `Explore ${project.title} by Shapoorji Pallonji in ${shortLoc}, Pune. ${project.type} from ${project.price}. MahaRERA: ${reraNumber}. Download 2026 Floor Plans & Cost Sheet.`;
 
     return {
         title: {

@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://joyville-homes.com'),
   applicationName: "Joyville Homes",
   title: {
-    template: "%s | Joyville Homes",
-    default: "Joyville Homes Pune | Shapoorji Pallonji Official Residences",
+    template: "%s | Joyville Homes Pune",
+    default: "Joyville Homes Pune | Shapoorji Pallonji Projects 2026",
   },
-  description: "Official Joyville Pune & Shapoorji Pallonji platform. Explore 12 premium projects across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1 to 5 BHK residences, villaments, villas & villa plots from ₹65L. RERA approved. Official 2026 cost sheets, verified master layouts & floor plans.",
+  description: "Explore 12 Shapoorji Pallonji Joyville projects in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1 to 5 BHK flats, villaments & NA villa plots from ₹65L*. Download 2026 Cost Sheets, Master Layouts & Floor Plans.",
   keywords: [
     "Shapoorji Pallonji Pune",
     "Joyville Homes Pune",
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
     "luxury villas in Pune"
   ],
   openGraph: {
-    title: "Joyville Homes Pune | Shapoorji Pallonji Official Residences",
-    description: "Explore Joyville & Shapoorji Pune – 11 premium projects across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1, 2, 3, 4 & 5 BHK flats, villaments & villa plots starting ₹65L. MahaRERA approved.",
+    title: "Joyville Homes Pune | Shapoorji Pallonji Projects 2026",
+    description: "Explore 12 Shapoorji Pallonji Joyville projects in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1 to 5 BHK flats, villaments & NA villa plots from ₹65L*. Download 2026 Cost Sheets, Master Layouts & Floor Plans.",
     url: "https://joyville-homes.com",
     siteName: "Joyville Homes",
     images: [
@@ -67,8 +67,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Joyville Homes Pune | Shapoorji Pallonji | 2 & 3 BHK from ₹65L",
-    description: "11 premium projects across Hinjewadi, Hadapsar, Bavdhan & Purandar. MahaRERA approved. Check 2026 price list, floor plans & authentic master layouts.",
+    title: "Joyville Homes Pune | Shapoorji Pallonji Projects 2026",
+    description: "Explore 12 Shapoorji Pallonji Joyville projects in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1 to 5 BHK flats, villaments & NA villa plots from ₹65L*. Download 2026 Cost Sheets, Master Layouts & Floor Plans.",
     images: ["/og-image.jpg"],
   },
   verification: {
@@ -89,12 +89,15 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
       { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
     ],
     apple: [
-      { url: '/icon-192.png' },
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
+    shortcut: '/favicon.ico',
   },
   appleWebApp: {
     capable: true,
@@ -104,7 +107,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#1D4F9C",
+  themeColor: "#D24D14",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -118,6 +121,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="preload" href="/images/desktop-poster.webp" as="image" type="image/webp" />
         <meta name="geo.region" content="IN-MH" />
         <meta name="geo.placename" content="Pune" />

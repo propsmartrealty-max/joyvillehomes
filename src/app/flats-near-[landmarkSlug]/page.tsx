@@ -26,9 +26,20 @@ export async function generateMetadata(
 
     if (!landmark) return { title: 'Premium Flats in Pune | Joyville' };
 
+    const cleanProject = landmark.project.replace(' by Shapoorji', '');
+    let lmTitle = `Flats Near ${landmark.name} from ${landmark.price}* | ${cleanProject}`;
+    if (lmTitle.length > 60) {
+        lmTitle = `Flats Near ${landmark.name} | ${cleanProject} from ${landmark.price}*`;
+    }
+    if (lmTitle.length > 60) {
+        lmTitle = `Flats Near ${landmark.name} | ${cleanProject}`;
+    }
+
     return {
-        title: `Premium Flats near ${landmark.name} | ${landmark.project}`,
-        description: `Looking for flats near ${landmark.name}? Explore ${landmark.project} by Shapoorji Pallonji. Premium 2 & 3 BHK apartments starting at ${landmark.price}.`,
+        title: {
+            absolute: lmTitle
+        },
+        description: `Looking for flats near ${landmark.name}? Explore ${landmark.project} by Shapoorji Pallonji. Premium 2 & 3 BHK apartments starting at ${landmark.price}. Download 2026 cost sheet.`,
         alternates: {
             canonical: `https://joyville-homes.com/flats-near-${landmarkSlug}`
         }

@@ -29,8 +29,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         return { title: 'Article Not Found | Joyville Insights' };
     }
 
+    let blogTitle = blog.title;
+    if (blogTitle.length <= 48) {
+        blogTitle = `${blogTitle} | Joyville`;
+    } else if (blogTitle.length > 60) {
+        const lastSpace = blogTitle.lastIndexOf(' ', 58);
+        if (lastSpace > 35) {
+            blogTitle = blogTitle.substring(0, lastSpace).replace(/\s*[-—|:]\s*$/, '').trim();
+        }
+    }
+
     return {
-        title: `${blog.title} | Market Insights Pune`,
+        title: {
+            absolute: blogTitle
+        },
         description: blog.excerpt,
         keywords: blog.seoKeywords,
         openGraph: {
