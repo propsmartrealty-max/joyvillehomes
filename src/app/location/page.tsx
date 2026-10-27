@@ -4,7 +4,9 @@ import Link from "next/link";
 import { MapPin, Navigation2, Briefcase, ShoppingBag, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Prime Location in Pune | Joyville Homes Hinjewadi Connectivity",
+    title: {
+        absolute: "Joyville Homes Pune Locations | Hinjewadi & Hadapsar Hubs"
+    },
     description: "Unrivaled connectivity for Shapoorji Pallonji's premium residential projects in Pune. Near Infosys, Wakad, and Pune Metro.",
     keywords: [
         "Flats near Infosys Pune",

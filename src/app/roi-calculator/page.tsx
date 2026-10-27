@@ -6,7 +6,9 @@ import { ArrowLeft } from 'lucide-react';
 const siteUrl = 'https://joyville-homes.com';
 
 export const metadata: Metadata = {
-    title: "Pune Real Estate ROI Calculator 2026 | Investment Yield Simulator",
+    title: {
+        absolute: "Pune Real Estate ROI Calculator 2026 | Joyville Homes"
+    },
     description: "Calculate your rental yield, capital appreciation, and absolute ROI for premium Shapoorji Pallonji Joyville flats in Pune. Free data-driven real estate investment calculator.",
     keywords: [
         "Pune real estate ROI calculator",

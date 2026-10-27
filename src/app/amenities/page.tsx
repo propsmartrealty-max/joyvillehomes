@@ -4,7 +4,9 @@ import Link from "next/link";
 import { CheckCircle2, Trees, Droplets, Dumbbell, ShieldCheck, Gamepad2, Coffee, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Premium Luxury Amenities in Pune | Joyville Homes Hinjewadi",
+    title: {
+        absolute: "Joyville Homes Amenities | 60+ World-Class Features Pune"
+    },
     description: "Experience the Shapoorji Pallonji legacy with 60+ world-class luxury amenities at Joyville Homes Hinjewadi. The best residential projects in Pune.",
     keywords: [
         "Luxury amenities flats Pune",

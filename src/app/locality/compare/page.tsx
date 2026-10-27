@@ -4,7 +4,9 @@ import Link from 'next/link';
 import { BarChart3, ShieldCheck, ArrowRight, Zap } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: "Pune Locality Comparison Matrix 2026 | Investment ROI Analysis",
+    title: {
+        absolute: "Pune Locality Comparison 2026 | Hinjewadi vs Hadapsar ROI"
+    },
     description: "Compare Hinjewadi, Hadapsar, and Bavdhan micro-markets for investment potential. Data-backed ROI analysis, infrastructure growth scores, and occupancy rates for 2026.",
     keywords: ["Pune locality comparison", "Hinjewadi vs Hadapsar investment", "Bavdhan vs Hinjewadi real estate", "Pune property appreciation trends 2026"]
 };

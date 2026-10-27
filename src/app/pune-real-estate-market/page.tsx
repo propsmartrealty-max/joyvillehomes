@@ -2,7 +2,9 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: "Pune Real Estate Market 2026 | Ultimate Investment Guide",
+    title: {
+        absolute: "Pune Real Estate Market 2026 | Investment Guide & Trends"
+    },
     description: "The complete guide to the Pune real estate market. Track property trends, capital appreciation, and best investment areas in Pune including Hinjewadi, Hadapsar & Bavdhan.",
     keywords: [
         "Pune real estate market", "Pune property trends", "best place to invest in Pune", "buy property in Pune", "Pune real estate 2026", "real estate developer Pune", "Shapoorji Pallonji Pune"
@@ -43,17 +45,17 @@ export default function PuneRealEstateMarket() {
                         <div className="bg-neutral p-6 rounded-xl">
                             <h3 className="text-xl font-bold mb-2">Hinjewadi</h3>
                             <p className="text-sm text-primary/70 mb-4">The IT capital of Pune, witnessing immense growth due to the upcoming Metro Line 3.</p>
-                            <Link href="/location/hinjewadi" className="text-accent font-medium hover:underline text-sm">Explore Hinjewadi Properties →</Link>
+                            <Link href="/locality/hinjewadi" className="text-accent font-medium hover:underline text-sm">Explore Hinjewadi Properties →</Link>
                         </div>
                         <div className="bg-neutral p-6 rounded-xl">
                             <h3 className="text-xl font-bold mb-2">Hadapsar</h3>
                             <p className="text-sm text-primary/70 mb-4">The eastern commercial hub, strategically positioned near Magarpatta City and SP Infocity.</p>
-                            <Link href="/location/hadapsar" className="text-accent font-medium hover:underline text-sm">Explore Hadapsar Properties →</Link>
+                            <Link href="/locality/hadapsar" className="text-accent font-medium hover:underline text-sm">Explore Hadapsar Properties →</Link>
                         </div>
                         <div className="bg-neutral p-6 rounded-xl">
                             <h3 className="text-xl font-bold mb-2">Bavdhan</h3>
                             <p className="text-sm text-primary/70 mb-4">West Pune&apos;s premium residential enclave, offering excellent connectivity and pristine surroundings.</p>
-                            <Link href="/location/bavdhan" className="text-accent font-medium hover:underline text-sm">Explore Bavdhan Properties →</Link>
+                            <Link href="/locality/bavdhan" className="text-accent font-medium hover:underline text-sm">Explore Bavdhan Properties →</Link>
                         </div>
                     </div>
                 </section>

@@ -187,6 +187,11 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
     }
 
     const siteUrl = 'https://joyville-homes.com';
+    const shortLoc = project.location.includes('Hinjewadi') ? 'Hinjewadi'
+        : project.location.includes('Hadapsar') || project.location.includes('Shewalewadi') ? 'Hadapsar'
+        : project.location.includes('Bavdhan') ? 'Bavdhan'
+        : 'Purandar';
+    const localitySlug = shortLoc.toLowerCase();
     const locality = localities.find(l => l.name.toLowerCase() === project.location.toLowerCase());
     const { lowPrice, highPrice } = parsePriceRangeToINR(project.price);
     const basePriceINR = parsePriceToINR(project.price);
@@ -694,7 +699,10 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 <Breadcrumbs 
                     items={[
                         { label: "Portfolios", href: "/projects" },
-                        { label: project.location.split(',')[0], href: `/locality/${project.location.toLowerCase().split(',')[0]}` },
+                        { 
+                            label: shortLoc, 
+                            href: `/locality/${localitySlug}` 
+                        },
                         { label: project.title, href: `/projects/${project.slug}` }
                     ]}
                 />
@@ -965,7 +973,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <Link 
-                                href={`/properties/${project.slug}-price-list`}
+                                href="#floor-plans"
                                 className="p-6 bg-[#FFFFFF] border border-[#C5A059]/20 rounded-sm hover:border-[#1D4F9C] transition-all group"
                             >
                                 <div className="text-[10px] tracking-[0.2em] font-bold uppercase text-[#1D4F9C] mb-2">Transactional Deep-Dive</div>
@@ -976,7 +984,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                                 </div>
                             </Link>
                             <Link 
-                                href={`/properties/joyville-vs-competitors`}
+                                href={`/insights/joyville-vs-competitors`}
                                 className="p-6 bg-[#1D4F9C] border border-transparent rounded-sm hover:shadow-xl transition-all group text-[#FFFFFF]"
                             >
                                 <div className="text-[10px] tracking-[0.2em] font-bold uppercase text-[#C5A059] mb-2">Comparative ROI</div>
@@ -1693,7 +1701,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     <h3 className="text-2xl font-serif text-[#323334] mb-8">Intent Intelligence & Price Analysis</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <Link 
-                            href={`/properties/${project.slug}-price-list`}
+                            href="#floor-plans"
                             className="p-6 bg-[#FFFFFF] border border-[#C5A059]/20 rounded-sm hover:border-[#1D4F9C] transition-all group"
                         >
                             <div className="text-[10px] tracking-[0.2em] font-bold uppercase text-[#1D4F9C] mb-2">Transactional Deep-Dive</div>

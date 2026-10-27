@@ -53,15 +53,19 @@ const SemanticLinkMesh: React.FC<SemanticLinkMeshProps> = ({ currentSlug }) => {
                             <div className="space-y-3">
                                 <span className="text-[9px] uppercase tracking-widest font-bold text-[#323334]/40 block border-b border-[#E5E7EB] pb-2">Shared Entity Hubs</span>
                                 <div className="flex flex-wrap gap-2 pt-2">
-                                    {group.entities.filter(slug => slug !== currentSlug).map(slug => (
-                                        <Link 
-                                            key={slug} 
-                                            href={slug.includes('joyville') ? `/projects/${slug}` : `/locality/${slug}`}
-                                            className="inline-flex items-center gap-2 text-[11px] font-medium text-[#1D4F9C] hover:text-[#C5A059] transition-colors"
-                                        >
-                                            {slug.split('-').map(word => word.charAt(0) === 'p' && word.length === 1 ? '' : word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} <ArrowRight size={10} />
-                                        </Link>
-                                    ))}
+                                    {group.entities.filter(slug => slug !== currentSlug).map(slug => {
+                                        const isLocality = ['hinjewadi', 'hadapsar', 'bavdhan', 'purandar'].includes(slug.toLowerCase());
+                                        const href = isLocality ? `/locality/${slug}` : `/projects/${slug}`;
+                                        return (
+                                            <Link 
+                                                key={slug} 
+                                                href={href}
+                                                className="inline-flex items-center gap-2 text-[11px] font-medium text-[#1D4F9C] hover:text-[#C5A059] transition-colors"
+                                            >
+                                                {slug.split('-').map(word => word.charAt(0) === 'p' && word.length === 1 ? '' : word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} <ArrowRight size={10} />
+                                            </Link>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </motion.div>

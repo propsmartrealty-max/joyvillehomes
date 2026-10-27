@@ -6,14 +6,16 @@ import ROISimulator from '@/components/ROISimulator';
 import { Target, TrendingUp, Calculator, ShieldAlert, BarChart3, Landmark, Award, Star } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: "Joyville vs Competitors | Real Estate Comparison Pune 2025",
+    title: {
+        absolute: "Joyville vs Competitors | Pune Real Estate 2026"
+    },
     description: "Detailed comparison: Joyville Homes vs Godrej Park Greens, Kolte Patil Life Republic, and Amanora. Compare construction quality, amenities, and ROI.",
     keywords: [
         "Joyville vs Godrej Hinjewadi",
         "Joyville Hadapsar vs Amanora",
         "Shapoorji Pallonji vs Kolte Patil",
         "Best construction quality real estate Pune",
-        "Compare premium flats Pune 2025",
+        "Compare premium flats Pune 2026",
         "Real estate investment ROI Pune comparison",
         "Aluform vs traditional construction Pune"
     ],

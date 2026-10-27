@@ -1,6 +1,7 @@
 # Cloudflare Pages Edge Redirects Configuration
 # Syntax: /source /destination [status]
 
+# Legacy & Canonical SEO 301 Edge Directives
 /en-us / 301
 /en-us/ / 301
 /properties/residential-projects-near-hinjewadi-phase-1 /locality/hinjewadi 301
@@ -10,3 +11,28 @@
 /projects/vanaha-springs-bavdhan /projects/vanaha-springs-pune 301
 /properties/joyville-vyomora-hinjewadi /projects/joyville-vyomora-hinjewadi 301
 /properties/shapoorji-pallonji-joyville-home-pune /projects 301
+
+# Cross-link self-healing redirects
+/properties/joyville-vs-competitors /insights/joyville-vs-competitors 301
+/page/aluform-construction-technology /glossary 301
+/location/hinjewadi /locality/hinjewadi 301
+/location/hadapsar /locality/hadapsar 301
+/location/bavdhan /locality/bavdhan 301
+/properties/3-bhk-duplex-apartments-hinjewadi-pune /properties/3-bhk-duplex-flats-hinjewadi 301
+/properties/joyville-vyomora-hinjewadi-price-configurations /properties/joyville-vyomora-price-list 301
+/properties/unit/joyville-vyomora-hinjewadi-2-bhk-grande-734-sq-ft /properties/unit/joyville-vyomora-2-bhk-grand-hinjewadi-phase-1-pune 301
+/properties/unit/joyville-vyomora-hinjewadi-3-bhk-duplex-1434-sq-ft /properties/unit/joyville-vyomora-3-bhk-duplex-sky-villa-hinjewadi-phase-1-pune 301
+
+# Legacy price-list queries mapped to project floor plans
+/properties/joyville-vyomora-hinjewadi-price-list /projects/joyville-vyomora-hinjewadi#floor-plans 301
+/properties/joyville-sensorium-hinjewadi-price-list /projects/joyville-sensorium-hinjewadi#floor-plans 301
+/properties/joyville-hadapsar-annexe-pune-price-list /projects/joyville-hadapsar-annexe-pune#floor-plans 301
+/properties/joyville-celestia-hadapsar-price-list /projects/joyville-celestia-hadapsar#floor-plans 301
+/properties/joyville-skyluxe-hadapsar-price-list /projects/joyville-skyluxe-hadapsar#floor-plans 301
+/properties/wildernest-sp-kingstown-pune-price-list /projects/wildernest-sp-kingstown-pune#floor-plans 301
+/properties/vanaha-golfland-pune-price-list /projects/vanaha-golfland-pune#floor-plans 301
+/properties/vanaha-springs-pune-price-list /projects/vanaha-springs-pune#floor-plans 301
+/properties/vanaha-pune-price-list /projects/vanaha-pune#floor-plans 301
+/properties/shapoorji-treetopia-pune-price-list /projects/shapoorji-treetopia-pune#floor-plans 301
+/properties/the-vastion-sp-kingstown-pune-price-list /projects/the-vastion-sp-kingstown-pune#floor-plans 301
+/properties/tree-clouds-sp-kingstown-pune-price-list /projects/tree-clouds-sp-kingstown-pune#floor-plans 301

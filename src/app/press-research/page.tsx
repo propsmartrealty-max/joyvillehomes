@@ -4,7 +4,9 @@ import ResearchHub from '@/components/ResearchHub';
 import { ShieldCheck, Globe, Users, Trophy } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: "Press & Institutional Research Hub | Shapoorji Pallonji Pune",
+    title: {
+        absolute: "Press & Market Research Desk | Shapoorji Pallonji Pune"
+    },
     description: "Official real estate research, market whitepapers, and corporate press releases from the Shapoorji Pallonji Institutional Desk. Data-backed ROI reports for Pune micro-markets.",
     keywords: ["Pune real estate whitepapers", "Shapoorji Pallonji press releases", "institutional real estate research Pune", "Pune property market reports 2026"]
 };

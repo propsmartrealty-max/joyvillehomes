@@ -8,16 +8,18 @@ import ROICalculator from '@/components/ROICalculator';
 import { BarChart3, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: "Pune Real Estate Guide 2025 | Investment Analysis & Homebuyer Tips",
-    description: "Complete guide to buying property in Pune 2025. Explore micro-market trends (Hinjewadi, Hadapsar), RERA checklist, stamp duty, and investment ROI analysis.",
+    title: {
+        absolute: "Pune Real Estate Guide 2026 | Rates, RERA & ROI Tips"
+    },
+    description: "Complete guide to buying property in Pune 2026. Explore micro-market trends (Hinjewadi, Hadapsar), RERA checklist, stamp duty, and investment ROI analysis.",
     keywords: [
-        "Pune Real Estate Guide 2025",
+        "Pune Real Estate Guide 2026",
         "How to buy a house in Pune",
         "Real Estate investment Pune ROI",
         "Best areas to live in Pune for families",
-        "Pune property market trends 2025",
+        "Pune property market trends 2026",
         "RERA registered projects Pune checklist",
-        "Stamp duty and registration Pune 2025",
+        "Stamp duty and registration Pune 2026",
         "Ready to move flats Pune advantages"
     ],
     alternates: {
@@ -65,7 +67,7 @@ export default async function HomebuyersGuide({
             ]
         },
         {
-            title: "Market Trends & ROI 2025",
+            title: "Market Trends & ROI 2026",
             icon: <TrendingUp className="text-accent" />,
             content: "With the Pune Metro Line 3 and Ring Road expansion, property values in suburban hubs are projected to appreciate by 12-15% annually. Integrated townships like Joyville Hadapsar Annexe are seeing high demand from both end-users and NRI investors.",
             links: [

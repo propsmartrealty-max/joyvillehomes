@@ -351,6 +351,55 @@ export default function RootLayout({
                     }
                   }
                 ]
+              },
+              {
+                "@type": "ItemList",
+                "@id": "https://joyville-homes.com/#site-nav",
+                "name": "Joyville Homes Primary Navigation",
+                "itemListElement": [
+                  {
+                    "@type": "SiteNavigationElement",
+                    "position": 1,
+                    "name": "Pune Projects 2026",
+                    "description": "All 12 Shapoorji Pallonji residential developments across Hinjewadi, Hadapsar, Bavdhan & Purandar.",
+                    "url": "https://joyville-homes.com/projects"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "position": 2,
+                    "name": "Joyville Vyomora Hinjewadi",
+                    "description": "Premium 2 & 3 BHK flats & luxury duplex sky villas in Hinjewadi Phase 1 starting from ₹88L*.",
+                    "url": "https://joyville-homes.com/projects/joyville-vyomora-hinjewadi"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "position": 3,
+                    "name": "Joyville Sensorium Hinjewadi",
+                    "description": "Biophilic luxury 2 & 3 BHK homes near Rajiv Gandhi Infotech Park Phase 1.",
+                    "url": "https://joyville-homes.com/projects/joyville-sensorium-hinjewadi"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "position": 4,
+                    "name": "Joyville Hadapsar Annexe",
+                    "description": "Sprawling 21-acre integrated township near Magarpatta City & SP Infocity.",
+                    "url": "https://joyville-homes.com/projects/joyville-hadapsar-annexe-pune"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "position": 5,
+                    "name": "Vanaha Bavdhan Pune",
+                    "description": "1,000-acre integrated township with golf course residences near Oxford Golf Resort.",
+                    "url": "https://joyville-homes.com/projects/vanaha-pune"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "position": 6,
+                    "name": "ROI Calculator & Price Lists",
+                    "description": "Data-driven rental yield, appreciation forecast, and cost sheet calculator.",
+                    "url": "https://joyville-homes.com/roi-calculator"
+                  }
+                ]
               }
             ]
           })

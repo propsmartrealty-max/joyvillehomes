@@ -9,7 +9,9 @@ import { TOPIC_HUBS } from '@/data/TopicIntelligence';
 import MicroMarketBulletin from '@/components/MicroMarketBulletin';
 
 export const metadata: Metadata = {
-    title: 'Pune Real Estate Intelligence Hub: Hinjewadi, Hadapsar & Bavdhan Clusters | Joyville',
+    title: {
+        absolute: 'Pune Real Estate Market Insights 2026 | Joyville Homes'
+    },
     description: 'Access deep market analysis across Pune\'s primary project clusters. Expert guides on Hinjewadi IT Lifeline, East Pune Township Corridor, and Bavdhan Nature Valley ROI.',
     keywords: [
         'Pune real estate clusters', 'Hinjewadi IT hub insights', 'Hadapsar township corridor', 'Bavdhan nature valley real estate',
