@@ -48,3 +48,4 @@ last-indexing.json
 # Cloudflare
 .wrangler/
 dist/
+.cache/

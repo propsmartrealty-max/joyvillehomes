@@ -1,123 +1,24 @@
 {
-  "lastRun": "2026-10-12T05:56:57.257Z",
-  "totalUrls": 185,
-  "successCount": 22,
-  "failCount": 1,
-  "details": [
-    {
-      "url": "https://joyville-homes.com",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/flats-in-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/insights",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/pune-real-estate-market",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/locality/compare",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/insights/nri-investment-guide",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects/joyville-vyomora-hinjewadi",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects/joyville-sensorium-hinjewadi",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects/joyville-hadapsar-annexe-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects/joyville-celestia-hadapsar",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects/joyville-skyluxe-hadapsar",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects/wildernest-sp-kingstown-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects/vanaha-golfland-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects/vanaha-springs-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects/vanaha-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/projects/shapoorji-treetopia-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-2-bhk-suite-hinjewadi-phase-1-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-2-bhk-premium-hinjewadi-phase-1-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-2-bhk-grand-hinjewadi-phase-1-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-2-bhk-royale-hinjewadi-phase-1-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-3-bhk-luxury-hinjewadi-phase-1-pune",
-      "status": 200,
-      "error": null
-    },
-    {
-      "url": "https://joyville-homes.com/properties/unit/joyville-vyomora-3-bhk-premium-hinjewadi-phase-1-pune",
-      "status": 429,
-      "error": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:821268771090'."
-    }
-  ]
+  "timestamp": "2026-10-29T08:29:21.627Z",
+  "totalCanonicalUrls": 268,
+  "tierBreakdown": {
+    "tier1": 39,
+    "tier2": 86,
+    "tier3": 143
+  },
+  "googleWebSubStatus": "Google WebSub Hub pinged (2/2 feeds accepted)",
+  "googleIndexingApi": {
+    "authenticated": true,
+    "successCount": 198,
+    "failCount": 2,
+    "quotaReached": true
+  },
+  "indexNowBroadcast": {
+    "urlsDispatched": 268,
+    "engines": [
+      "api.indexnow.org",
+      "bing.com",
+      "yandex.com"
+    ]
+  }
 }

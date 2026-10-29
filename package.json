@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "index": "npx tsx scripts/google-indexing-api.ts",
+    "index:google": "npx tsx scripts/enterprise-google-indexing.ts",
+    "index:all": "npx tsx scripts/enterprise-google-indexing.ts && node scripts/ping-search-engines.mjs",
     "ping:search": "node scripts/ping-search-engines.mjs",
     "blog:generate": "node scripts/ai_blog_agent.js",
     "blog:compile": "node scripts/compile_blogs.js",
