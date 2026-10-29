@@ -153,7 +153,11 @@ function buildTieredUrlMatrix(): { tier1: string[]; tier2: string[]; tier3: stri
   ];
 
   SEO_ROUTES.forEach((r) => {
-    const isPriority = priorityPseoPrefixes.some((pref) => r.slug.startsWith(pref));
+    const isPriority =
+      priorityPseoPrefixes.some((pref) => r.slug.startsWith(pref)) ||
+      r.slug.includes('-price-list-') ||
+      r.slug.includes('-floor-plans-') ||
+      r.slug.includes('-maharera-');
     if (isPriority) {
       tier1Set.add(`${SITE_URL}/properties/${r.slug}`);
     } else if (
@@ -508,11 +512,22 @@ export async function runEnterpriseIndexing(options: EnterpriseIndexingOptions =
       await submitSitemapsViaGSC(authClient);
 
       // Select URLs to submit via Google Indexing API
-      // Priority algorithm: Tier 1 always; then Tier 2; then Tier 3 rotated
+      // Priority algorithm: unsubmitted & newly created URLs first within each tier
+      const prioritizeQueue = (urls: string[], tier: 1 | 2 | 3) => {
+        return urls
+          .map((url) => ({
+            url,
+            tier,
+            lastSubmitted: ledger.entries[url]?.lastSubmitted ? new Date(ledger.entries[url].lastSubmitted!).getTime() : 0,
+          }))
+          .sort((a, b) => a.lastSubmitted - b.lastSubmitted)
+          .map(({ url, tier }) => ({ url, tier }));
+      };
+
       const queue: { url: string; tier: 1 | 2 | 3 }[] = [
-        ...matrix.tier1.map((url) => ({ url, tier: 1 as const })),
-        ...matrix.tier2.map((url) => ({ url, tier: 2 as const })),
-        ...matrix.tier3.map((url) => ({ url, tier: 3 as const })),
+        ...prioritizeQueue(matrix.tier1, 1),
+        ...prioritizeQueue(matrix.tier2, 2),
+        ...prioritizeQueue(matrix.tier3, 3),
       ];
 
       const maxBatch = options.maxBatch || 200;

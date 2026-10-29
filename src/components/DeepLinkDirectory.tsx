@@ -92,6 +92,51 @@ export default function DeepLinkDirectory() {
                     </div>
                 </div>
 
+                {/* 12-Project Specific Authority Hubs (Crawl Equity Propagation) */}
+                <div className="mt-16 pt-10 border-t border-[#1D4F9C]/10">
+                    <h3 className="text-xs font-bold tracking-widest text-[#1D4F9C] uppercase mb-8">
+                        Shapoorji Pallonji Pune Project Authority Hubs & Cost Sheets (2026)
+                    </h3>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        {[
+                            { name: 'Joyville Vyomora', slugPrefix: 'joyville-vyomora' },
+                            { name: 'Joyville Sensorium', slugPrefix: 'joyville-sensorium' },
+                            { name: 'Joyville Hadapsar Annexe', slugPrefix: 'joyville-hadapsar-annexe' },
+                            { name: 'Joyville Celestia', slugPrefix: 'joyville-celestia' },
+                            { name: 'Joyville Skyluxe Edition', slugPrefix: 'joyville-skyluxe' },
+                            { name: 'Wildernest SP Kingstown', slugPrefix: 'wildernest-sp-kingstown' },
+                            { name: 'Vanaha Golfland', slugPrefix: 'vanaha-golfland' },
+                            { name: 'Vanaha Springs', slugPrefix: 'vanaha-springs' },
+                            { name: 'Vanaha Bavdhan Township', slugPrefix: 'vanaha-bavdhan' },
+                            { name: 'Tree Clouds SP Kingstown', slugPrefix: 'tree-clouds-sp-kingstown' },
+                            { name: 'The Vastion SP Kingstown', slugPrefix: 'the-vastion-sp-kingstown' },
+                            { name: 'Shapoorji Treetopia', slugPrefix: 'shapoorji-treetopia' },
+                        ].map((cluster) => {
+                            const clusterRoutes = SEO_ROUTES.filter(r => r.slug.startsWith(cluster.slugPrefix));
+                            return (
+                                <div key={cluster.name} className="space-y-2">
+                                    <h4 className="text-[11px] font-semibold text-[#323334] border-b border-[#C5A059]/20 pb-1">
+                                        {cluster.name}
+                                    </h4>
+                                    <ul className="space-y-1.5">
+                                        {clusterRoutes.map(r => (
+                                            <li key={r.slug}>
+                                                <Link 
+                                                    href={`/properties/${r.slug}`}
+                                                    className="text-[10px] text-[#323334]/70 hover:text-[#1D4F9C] transition-colors font-light line-clamp-1"
+                                                    title={r.title}
+                                                >
+                                                    {r.h1.replace(/^(Joyville|Shapoorji Pallonji|Vanaha|Wildernest|Tree Clouds|The Vastion)\s*/i, '').trim()}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+
                 <div className="mt-20 pt-10 border-t border-[#C5A059]/10 text-center">
                     <p className="text-[10px] tracking-[0.2em] uppercase text-[#323334]/30 font-medium">
                         © 2026 Shapoorji Pallonji Real Estate | Technical SEO Sovereign Node | Verified Joyville Pune Cluster

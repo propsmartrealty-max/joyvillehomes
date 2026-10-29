@@ -1,20 +1,20 @@
 {
-  "timestamp": "2026-10-29T08:29:21.627Z",
-  "totalCanonicalUrls": 268,
+  "timestamp": "2026-10-29T12:41:47.722Z",
+  "totalCanonicalUrls": 334,
   "tierBreakdown": {
-    "tier1": 39,
-    "tier2": 86,
-    "tier3": 143
+    "tier1": 71,
+    "tier2": 99,
+    "tier3": 164
   },
   "googleWebSubStatus": "Google WebSub Hub pinged (2/2 feeds accepted)",
   "googleIndexingApi": {
     "authenticated": true,
-    "successCount": 198,
-    "failCount": 2,
+    "successCount": 3,
+    "failCount": 1,
     "quotaReached": true
   },
   "indexNowBroadcast": {
-    "urlsDispatched": 268,
+    "urlsDispatched": 334,
     "engines": [
       "api.indexnow.org",
       "bing.com",

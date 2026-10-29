@@ -20,6 +20,39 @@ const siteUrl = 'https://joyville-homes.com';
 
 // Data handled via centralized registry in src/data/seo-routes.ts
 
+function getMatchedProjects(filters: { locationMatch?: string; typeMatch?: string; projectMatch?: string }) {
+    let matched = projects.filter(project => {
+        if (filters.projectMatch) {
+            const matchesSlug = new RegExp(filters.projectMatch, 'i').test(project.slug);
+            const matchesTitle = new RegExp(filters.projectMatch, 'i').test(project.title);
+            if (!matchesSlug && !matchesTitle) return false;
+        }
+        const matchesLocation = filters.locationMatch ? new RegExp(filters.locationMatch, 'i').test(project.location) : true;
+        const matchesType = filters.typeMatch ? new RegExp(filters.typeMatch, 'i').test(project.type) : true;
+        return matchesLocation && matchesType;
+    });
+
+    // If projectMatch was specified but no project matched (e.g. strict type filter), fallback to projectMatch alone
+    if (matched.length === 0 && filters.projectMatch) {
+        matched = projects.filter(project => 
+            new RegExp(filters.projectMatch!, 'i').test(project.slug) ||
+            new RegExp(filters.projectMatch!, 'i').test(project.title)
+        );
+    }
+
+    // Secondary fallback: if still empty, match location
+    if (matched.length === 0 && filters.locationMatch) {
+        matched = projects.filter(project => new RegExp(filters.locationMatch!, 'i').test(project.location));
+    }
+
+    // Tertiary fallback: if still empty, return all projects
+    if (matched.length === 0) {
+        matched = projects;
+    }
+
+    return matched;
+}
+
 export async function generateStaticParams() {
     return SEO_ROUTES.map((route) => ({
         seoSlug: route.slug,
@@ -34,11 +67,7 @@ export async function generateMetadata({ params }: { params: Promise<{ seoSlug: 
         return { title: 'Properties | Joyville Pune' };
     }
 
-    const matchedProjects = projects.filter(project => {
-        const matchesLocation = routeData.filters.locationMatch ? new RegExp(routeData.filters.locationMatch, 'i').test(project.location) : true;
-        const matchesType = routeData.filters.typeMatch ? new RegExp(routeData.filters.typeMatch, 'i').test(project.type) : true;
-        return matchesLocation && matchesType;
-    });
+    const matchedProjects = getMatchedProjects(routeData.filters);
 
     const primaryProject = matchedProjects[0];
     const ogImageUrl = primaryProject?.image 
@@ -225,11 +254,7 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
     }
 
     // Filter projects based on the programmatic route logic
-    const matchedProjects = projects.filter(project => {
-        const matchesLocation = routeData.filters.locationMatch ? new RegExp(routeData.filters.locationMatch, 'i').test(project.location) : true;
-        const matchesType = routeData.filters.typeMatch ? new RegExp(routeData.filters.typeMatch, 'i').test(project.type) : true;
-        return matchesLocation && matchesType;
-    });
+    const matchedProjects = getMatchedProjects(routeData.filters);
 
     const pageFaqs = getFaqsForRoute(routeData.slug);
 
