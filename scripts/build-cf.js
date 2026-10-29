@@ -24,7 +24,13 @@ if (fs.existsSync(distDir)) {
 }
 fs.mkdirSync(distDir, { recursive: true });
 
-// 2. Copy Next.js static chunks (_next/static)
+// 2. Copy public assets first (headers, redirects, images, robots, icons)
+if (fs.existsSync(publicDir)) {
+  fs.cpSync(publicDir, distDir, { recursive: true, force: true });
+  console.log('✅ Synchronized public/ base assets, _headers, and _redirects');
+}
+
+// 3. Copy Next.js static chunks (_next/static)
 const nextStaticDir = path.join(nextDir, 'static');
 const distNextStaticDir = path.join(distDir, '_next', 'static');
 if (fs.existsSync(nextStaticDir)) {
@@ -33,7 +39,7 @@ if (fs.existsSync(nextStaticDir)) {
   console.log('✅ Copied _next/static to dist/_next/static/');
 }
 
-// 3. Walk .next/server/app and extract HTML pages
+// 4. Walk .next/server/app and extract HTML/XML/JSON pages (overwriting public fallbacks)
 let pageCount = 0;
 
 function safeWriteFile(target, content) {
@@ -83,13 +89,14 @@ function processServerDirectory(dir, routePrefix = '') {
 processServerDirectory(serverAppDir);
 console.log(`✅ Extracted ${pageCount} pre-rendered routes (HTML, XML, JSON)`);
 
-// 4. Copy public assets on top (headers, redirects, images, robots, sitemap, icons)
-if (fs.existsSync(publicDir)) {
-  fs.cpSync(publicDir, distDir, { recursive: true, force: true });
-  console.log('✅ Synchronized public/ assets, _headers, and _redirects');
+// 5. Keep public/sitemap.xml synchronized with generated dist/sitemap.xml
+const distSitemap = path.join(distDir, 'sitemap.xml');
+if (fs.existsSync(distSitemap)) {
+  fs.copyFileSync(distSitemap, path.join(publicDir, 'sitemap.xml'));
+  console.log('✅ Synchronized public/sitemap.xml from compiled edge bundle');
 }
 
-// 5. Ensure root index.html exists
+// 6. Ensure root index.html exists
 if (fs.existsSync(path.join(distDir, 'index.html'))) {
   console.log('✅ Verified root index.html present');
 }

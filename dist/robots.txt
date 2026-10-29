@@ -19,8 +19,6 @@ User-Agent: Googlebot
 User-Agent: Googlebot-Image
 User-Agent: Googlebot-Video
 User-Agent: Googlebot-News
-User-Agent: Google-InspectionTool
-User-Agent: Google-Extended
 User-Agent: bingbot
 User-Agent: YandexBot
 User-Agent: Slurp
@@ -39,6 +37,14 @@ Disallow: /*?*ref=*
 Disallow: /*?*action=*
 Disallow: /*?*session=*
 Disallow: /*?*search=*
+
+User-Agent: Google-InspectionTool
+User-Agent: Google-Extended
+Allow: /
+Allow: /_next/static/
+Allow: /_next/image
+Disallow: /api/
+Disallow: /admin/
 
 User-Agent: GPTBot
 User-Agent: ChatGPT-User

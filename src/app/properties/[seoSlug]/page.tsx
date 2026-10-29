@@ -198,18 +198,20 @@ const PAGE_FAQS: Record<string, { q: string; a: string }[]> = {
 };
 
 function getFaqsForRoute(slug: string): { q: string; a: string }[] {
-    if (slug.includes('wipro') || slug.includes('infosys') || slug.includes('tcs') || slug.includes('cognizant')) return [...PAGE_FAQS['techPark'], ...PAGE_FAQS['hinjewadi']];
+    if (slug.includes('under-') || slug.includes('maintenance')) return [...PAGE_FAQS['payment'], ...PAGE_FAQS['general']];
+    if (slug.includes('wipro') || slug.includes('infosys') || slug.includes('tcs') || slug.includes('cognizant') || slug.includes('tech-mahindra') || slug.includes('persistent') || slug.includes('capgemini') || slug.includes('cybercity')) return [...PAGE_FAQS['techPark'], ...PAGE_FAQS['hinjewadi']];
     if (slug.includes('duplex') || slug.includes('sky-villa')) return [...PAGE_FAQS['duplex'], ...PAGE_FAQS['hinjewadi']];
     if (slug.includes('vastion') || slug.includes('villas') || slug.includes('villaments')) return [...PAGE_FAQS['villas'], ...PAGE_FAQS['hadapsar']];
     if (slug.includes('possession') || slug.includes('ready-to-move') || slug.includes('resale')) return [...PAGE_FAQS['possession'], ...PAGE_FAQS['general']];
     if (slug.includes('cost-sheet') || slug.includes('payment-plan') || slug.includes('price')) return [...PAGE_FAQS['payment'], ...PAGE_FAQS['general']];
     if (slug.includes('nri') || slug.includes('investment') || slug.includes('rental-yield')) return [...PAGE_FAQS['nriGuide'], ...PAGE_FAQS['general']];
+    if (slug.includes('balcony') || slug.includes('mivan') || slug.includes('garden') || slug.includes('sample-flat')) return [...PAGE_FAQS['lifestyle'], ...PAGE_FAQS['general']];
     if (slug.includes('hinjewadi') && !slug.includes('-vs-')) return [...PAGE_FAQS['hinjewadi'], ...PAGE_FAQS['general']];
     if (slug.includes('hadapsar') || slug.includes('sp-infocity') || slug.includes('magarpatta') || slug.includes('shewalewadi')) return [...PAGE_FAQS['hadapsar'], ...PAGE_FAQS['general']];
     if (slug.includes('bavdhan') || slug.includes('vanaha') || slug.includes('golfland')) return [...PAGE_FAQS['bavdhan'], ...PAGE_FAQS['general']];
     if (slug.includes('-vs-')) return [...PAGE_FAQS['vs'], ...PAGE_FAQS['general']];
     if (slug.includes('pet-friendly') || slug.includes('work-from-home') || slug.includes('vastu') || slug.includes('senior-citizen')) return [...PAGE_FAQS['lifestyle'], ...PAGE_FAQS['general']];
-    if (slug.includes('metro') || slug.includes('ring-road')) return [...PAGE_FAQS['infrastructure'], ...PAGE_FAQS['general']];
+    if (slug.includes('metro') || slug.includes('ring-road') || slug.includes('expressway') || slug.includes('highway') || slug.includes('railway') || slug.includes('flyover')) return [...PAGE_FAQS['infrastructure'], ...PAGE_FAQS['general']];
     if (slug.includes('treetopia') || slug.includes('plots') || slug.includes('purandar') || slug.includes('saswad')) return [...PAGE_FAQS['plots'], ...PAGE_FAQS['general']];
     return PAGE_FAQS['general'];
 }
@@ -312,7 +314,7 @@ export default async function ProgrammaticSEOPage({ params }: { params: Promise<
             <div className="max-w-7xl mx-auto px-6 mb-8 pt-6">
                 <Breadcrumbs 
                     items={[
-                        { label: 'Properties', href: '/properties' },
+                        { label: 'Properties', href: '/projects' },
                         { label: routeData.h1.length > 30 ? routeData.h1.substring(0, 27) + '...' : routeData.h1, href: `/properties/${routeData.slug}` }
                     ]} 
                 />

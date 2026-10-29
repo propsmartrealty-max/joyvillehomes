@@ -110,6 +110,38 @@ export const SEMANTIC_BLOCKS = {
             "The primary financial benefit of purchasing an OC-received ready home is the total exemption from Goods and Services Tax (GST), representing an instant 5% net saving on the agreement value. Furthermore, ready possession eliminates construction delay risk and enables buyers to immediately claim full home loan tax deductions under Section 24(b) (up to ₹2 Lakhs on interest) and Section 80C (up to ₹1.5 Lakhs on principal repayment).",
             "For rental investors, ready units generate instantaneous cash flow from day one, with 2 BHK residences in Hinjewadi fetching ₹32,000 to ₹38,000 monthly and Hadapsar apartments yielding ₹22,000 to ₹28,000 monthly. Conversely, buyers seeking maximum capital appreciation and lower initial capital outlay can leverage pre-launch pricing at Joyville Vyomora with phased milestone payments."
         ]
+    },
+    budgetAffordabilityIntelligence: {
+        title: "Pune Residential Price Brackets 2026: From ₹50L Entry to ₹2 Cr+ Luxury",
+        content: [
+            "Navigating Pune's residential real estate requires a granular understanding of micro-market pricing tiers. In the entry-luxury bracket (₹50 Lakhs to ₹75 Lakhs), projects like Joyville Hadapsar Annexe dominate East Pune with 1 BHK (430 sq.ft.) and compact 2 BHK layouts offering integrated township security and 60+ lifestyle amenities.",
+            "In the core IT bracket (₹80 Lakhs to ₹1.25 Cr), Hinjewadi Phase 1 represents the prime sweet spot. Joyville Vyomora offers pre-launch 2 BHK Royale and Grande configurations (685 - 754 sq.ft.) starting from ₹88.19 L* (allocation slots from ₹84.99 L*), engineered with monolithic Aluform construction and low-maintenance smart building designs.",
+            "For premium and duplex buyers (₹1.40 Cr to ₹2.50 Cr), Vanaha Golfland in Bavdhan and Joyville Vyomora Duplex Sky Villas deliver expansive 3 & 4 BHK layouts, hill-facing balconies, and private family lounges, commanding robust long-term capital preservation."
+        ]
+    },
+    transitInfrastructureIntelligence: {
+        title: "Transit-Oriented Growth: Pune Metro Line 3, Ring Road & Arterial Highways",
+        content: [
+            "Infrastructure velocity is the single strongest catalyst for real estate capital appreciation in Pune. The 23.3-kilometer elevated Pune Metro Line 3 (Hinjewadi to Shivajinagar) connects the Rajiv Gandhi Infotech Park directly to Pune Central, slashing inter-city transit times from 90 minutes to under 30 minutes.",
+            "Properties situated within a 1.5 km radius of Metro Line 3 stations—including Joyville Sensorium and Joyville Vyomora on Maan Village Road—are forecasted to experience an accelerated 14% to 18% appreciation premium upon commercial commissioning. Simultaneously, the 128-km Pune Ring Road directly links Hinjewadi, Bavdhan, and Purandar.",
+            "In East Pune, the expansion of the Pune-Solapur Highway and the Shewalewadi transit junction ensures frictionless transit to Magarpatta Cybercity, SP Infocity, and Pune Railway Station, driving sustained rental demand from multinational corporate employees."
+        ]
+    },
+    techCorridorEmploymentIntelligence: {
+        title: "Employer Proximity Index: Commute Analytics for TCS, Infosys, Wipro & Magarpatta",
+        content: [
+            "Corporate IT professionals consistently prioritize residential developments that minimize daily commute friction. In Hinjewadi Phase 1, major campuses including Infosys, Wipro, TCS Sahyadri Park, Cognizant, Tech Mahindra, and Persistent Systems employ over 400,000 tech engineers within a tight 3-kilometer radius.",
+            "Residences at Joyville Sensorium and Joyville Vyomora are strategically positioned just 500 meters to 1.5 km from Wipro and Infosys circles, enabling a genuine 5-minute walk-to-work commute that bypasses congestion at Bhumkar Chowk and Wakad flyover.",
+            "In East Pune, Joyville Hadapsar Annexe provides convenient 10-to-15 minute transit to SP Infocity Phursungi (IBM, Accenture, Amdocs) and Magarpatta Cybercity, resulting in zero-vacancy rental absorption and steady 4.8% to 5.4% yields."
+        ]
+    },
+    developerBenchmarkingIntelligence: {
+        title: "Developer Due Diligence: 150-Year Shapoorji Pallonji Legacy vs Industry Peers",
+        content: [
+            "In an evolving regulatory market governed by MahaRERA, developer pedigree and balance sheet strength are paramount. Shapoorji Pallonji Real Estate stands apart with an illustrious 150-year engineering heritage dating back to 1865, responsible for iconic global landmarks including the Reserve Bank of India, Mumbai's The Imperial twin towers, and the Palace of the Sultan of Oman.",
+            "Unlike localized developers reliant on subcontractors, Joyville projects utilize in-house construction capabilities with 100% Aluform (Mivan) monolithic aluminum formwork. This guarantees structural longevity, precision alignment, seismic resilience, and glass-smooth wall finishes.",
+            "Every rupee invested in Joyville is secured in project-specific MahaRERA escrow accounts, eliminating financial redirection and ensuring guaranteed, on-schedule delivery backed by corporate integrity."
+        ]
     }
 };
 
@@ -121,9 +153,26 @@ export function getSemanticContentForSlug(slug: string) {
         blocks.push(SEMANTIC_BLOCKS.joyvilleHinjewadiCluster);
     }
 
-    // Tech corridor & corporate campus routes
-    if (slug.includes('wipro') || slug.includes('infosys') || slug.includes('tcs') || slug.includes('cognizant') || slug.includes('it-park')) {
+    // Budget and affordability routes
+    if (slug.includes('under-') || slug.includes('affordab') || slug.includes('budget') || slug.includes('lakhs')) {
+        blocks.push(SEMANTIC_BLOCKS.budgetAffordabilityIntelligence);
+    }
+
+    // Transit, Metro & infrastructure routes
+    if (slug.includes('metro') || slug.includes('ring-road') || slug.includes('expressway') || slug.includes('highway') || slug.includes('flyover') || slug.includes('railway')) {
+        blocks.push(SEMANTIC_BLOCKS.transitInfrastructureIntelligence);
+    }
+
+    // Tech corridor, IT park & corporate employer routes
+    if (slug.includes('wipro') || slug.includes('infosys') || slug.includes('tcs') || slug.includes('cognizant') || slug.includes('it-park') || slug.includes('tech-mahindra') || slug.includes('capgemini') || slug.includes('persistent') || slug.includes('cybercity')) {
+        blocks.push(SEMANTIC_BLOCKS.techCorridorEmploymentIntelligence);
         blocks.push(SEMANTIC_BLOCKS.techParkProximity);
+    }
+
+    // Developer benchmarking & comparison
+    if (slug.includes('-vs-') || slug.includes('competitors') || slug.includes('benchmark') || slug.includes('builder') || slug.includes('legacy')) {
+        blocks.push(SEMANTIC_BLOCKS.developerBenchmarkingIntelligence);
+        blocks.push(SEMANTIC_BLOCKS.competitorEvaluationBenchmark);
     }
 
     // Duplex, sky villa & penthouse routes
@@ -142,7 +191,7 @@ export function getSemanticContentForSlug(slug: string) {
     }
 
     // Pricing, payment plans & cost sheet routes
-    if (slug.includes('cost-sheet') || slug.includes('payment-plan') || slug.includes('price') || slug.includes('under-1-crore') || slug.includes('under-90-lakhs')) {
+    if (slug.includes('cost-sheet') || slug.includes('payment-plan') || slug.includes('price') || slug.includes('maintenance')) {
         blocks.push(SEMANTIC_BLOCKS.costSheetPaymentIntelligence);
     }
 

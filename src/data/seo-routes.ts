@@ -965,5 +965,335 @@ export const SEO_ROUTES = [
         h1: 'High Rental Income Flats in Hinjewadi IT Corridor',
         keywords: ['rental yield flats Hinjewadi', 'high rental income property Pune', 'buy flat for rent Hinjewadi Phase 1', 'Joyville Hinjewadi rental demand'],
         filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+
+    // 10,000 Daily Impressions Expansion: Budget & Affordability Query Clusters
+    {
+        slug: 'flats-under-60-lakhs-pune',
+        title: 'Flats Under 60 Lakhs in Pune | 1 & 2 BHK Joyville Hadapsar',
+        description: 'Explore premium flats under 60 Lakhs in Pune by Shapoorji Pallonji. Joyville Hadapsar Annexe offers 1 & 2 BHK residences with 60+ amenities and MahaRERA approval.',
+        h1: 'Flats Under 60 Lakhs in Pune — Shapoorji Pallonji Joyville',
+        keywords: ['flats under 60 lakhs in Pune', '1 BHK under 60 lakhs Pune', 'cheap flats in Pune', 'Joyville Hadapsar 1 BHK price', 'budget flats Pune 2026'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '1|2' }
+    },
+    {
+        slug: 'flats-under-70-lakhs-pune',
+        title: 'Flats Under 70 Lakhs in Pune | Joyville Homes from ₹65L*',
+        description: 'Buy premium 1 & 2 BHK flats under 70 Lakhs in Pune. Gated community living at Joyville Hadapsar Annexe with clubhouse, swimming pool, and easy IT connectivity.',
+        h1: 'Flats Under 70 Lakhs in Pune — Premium Joyville Residences',
+        keywords: ['flats under 70 lakhs in Pune', '2 BHK under 70 lakhs Pune', 'Joyville Hadapsar flats', 'affordable luxury homes Pune', 'Shapoorji flats under 70L'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '1|2' }
+    },
+    {
+        slug: 'flats-under-80-lakhs-pune',
+        title: 'Flats Under 80 Lakhs in Pune | Hinjewadi & Hadapsar Joyville',
+        description: 'Verified 2 BHK flats under 80 Lakhs in Pune across Hinjewadi Phase 1 and Hadapsar. Shapoorji Pallonji construction with zero brokerage and transparent pricing.',
+        h1: 'Flats Under 80 Lakhs in Pune — Hinjewadi & Hadapsar Clusters',
+        keywords: ['flats under 80 lakhs in Pune', '2 BHK under 80 lakhs Hinjewadi', 'Joyville flats under 80 Lakhs', 'Pune real estate under 80L'],
+        filters: { locationMatch: 'Hinjewadi|Hadapsar', typeMatch: '1|2' }
+    },
+    {
+        slug: 'flats-under-90-lakhs-hinjewadi',
+        title: 'Flats Under 90 Lakhs in Hinjewadi Phase 1 | Joyville Vyomora',
+        description: 'Discover new launch 2 BHK flats under 90 Lakhs in Hinjewadi Phase 1. Joyville Vyomora pre-launch slots from ₹84.99 L* with walk-to-work IT convenience.',
+        h1: 'Flats Under 90 Lakhs in Hinjewadi Phase 1 — Joyville Vyomora',
+        keywords: ['flats under 90 lakhs in Hinjewadi', '2 BHK under 90 lakhs Hinjewadi Phase 1', 'Joyville Vyomora 2 BHK price', 'new launch Hinjewadi under 90L'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2' }
+    },
+    {
+        slug: 'flats-under-1-crore-pune',
+        title: 'Flats Under 1 Crore in Pune 2026 | Hinjewadi & Hadapsar Joyville',
+        description: 'Best 2 & 3 BHK flats under 1 Crore in Pune by Shapoorji Pallonji. Premium gated communities in Hinjewadi Phase 1 and Hadapsar Annexe with 60+ world-class amenities.',
+        h1: 'Flats Under 1 Crore in Pune — Top Joyville Projects 2026',
+        keywords: ['flats under 1 crore in Pune', '2 BHK under 1 crore Pune', 'best flats under 1 cr Hinjewadi', 'Shapoorji Pallonji under 1 crore'],
+        filters: { locationMatch: 'Hinjewadi|Hadapsar|Bavdhan', typeMatch: '2|3' }
+    },
+    {
+        slug: 'flats-under-1-point-5-crore-pune',
+        title: 'Flats Under 1.5 Crore in Pune | 3 BHK Sensorium & Vyomora',
+        description: 'Explore spacious 3 BHK luxury flats under 1.5 Crore in Pune. Joyville Sensorium & Vyomora in Hinjewadi and Vanaha in Bavdhan with grand balconies and nature views.',
+        h1: 'Flats Under 1.5 Crore in Pune — 3 BHK Luxury Residences',
+        keywords: ['flats under 1.5 crore in Pune', '3 BHK under 1.5 cr Pune West', 'Joyville Sensorium 3 BHK', 'Vanaha Bavdhan 3 BHK under 1.5 cr'],
+        filters: { locationMatch: 'Hinjewadi|Bavdhan', typeMatch: '3' }
+    },
+    {
+        slug: 'flats-under-2-crore-pune',
+        title: 'Luxury Flats Under 2 Crore in Pune | Sky Duplex & Golf Suites',
+        description: 'Ultra-premium 3 & 4 BHK apartments and duplex sky villas under 2 Crore in Pune. Joyville Vyomora Duplex and Vanaha Golfland with world-class clubhouse privileges.',
+        h1: 'Luxury Flats & Duplex Sky Villas Under 2 Crore in Pune',
+        keywords: ['luxury flats under 2 crore Pune', '3 BHK duplex under 2 cr Hinjewadi', 'Vanaha Golfland luxury apartments', 'sky villas Pune under 2 crore'],
+        filters: { locationMatch: 'Hinjewadi|Bavdhan|Hadapsar', typeMatch: '3|4' }
+    },
+    {
+        slug: 'flats-under-50-lakhs-hadapsar',
+        title: 'Flats Under 50 Lakhs in Hadapsar Pune | 1 BHK Joyville Units',
+        description: 'Affordable 1 BHK flats under 50 Lakhs in Hadapsar, Pune. Joyville Hadapsar Annexe Joy units from ₹44.5L* with swimming pool, gym, and 24/7 security.',
+        h1: 'Flats Under 50 Lakhs in Hadapsar Pune — Joyville 1 BHK',
+        keywords: ['flats under 50 lakhs in Hadapsar', '1 BHK under 50 lakhs Pune', 'Joyville Hadapsar 1 BHK', 'cheap apartments in Hadapsar'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '1' }
+    },
+
+    // 10,000 Daily Impressions Expansion: Top Tech Employers & Walk-to-Work Corridors
+    {
+        slug: 'flats-near-tech-mahindra-hinjewadi',
+        title: 'Flats Near Tech Mahindra Hinjewadi | Joyville Homes Phase 1',
+        description: 'Explore premium 2 & 3 BHK walk-to-work flats near Tech Mahindra campus in Hinjewadi. Joyville Sensorium & Vyomora offer 5-minute commute and biophilic luxury.',
+        h1: 'Flats Near Tech Mahindra Hinjewadi Phase 1 & 3',
+        keywords: ['flats near Tech Mahindra Hinjewadi', 'apartments near Tech Mahindra Pune', 'Joyville Hinjewadi Tech Mahindra commute', 'walk to work flats Hinjewadi'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'flats-near-tcs-sahyadri-park-hinjewadi',
+        title: 'Flats Near TCS Sahyadri Park Hinjewadi | 5-Min Walk to Work',
+        description: '2 & 3 BHK luxury residences near TCS Sahyadri Park Hinjewadi Phase 1. Joyville Vyomora and Sensorium provide seamless door-to-door access in under 7 minutes.',
+        h1: 'Flats Near TCS Sahyadri Park Hinjewadi — Joyville Homes',
+        keywords: ['flats near TCS Hinjewadi', 'apartments near TCS Sahyadri Park Pune', 'Joyville Vyomora TCS commute', 'TCS Hinjewadi residential projects'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'flats-near-cognizant-hinjewadi-phase-1',
+        title: 'Flats Near Cognizant Hinjewadi Phase 1 | Joyville Residences',
+        description: 'Premium flats near Cognizant Hinjewadi Phase 1 campus. Joyville Sensorium & Vyomora offer zero-traffic commute, high-speed fiber internet, and co-working pods.',
+        h1: 'Flats Near Cognizant Hinjewadi Phase 1 — Walk to Work',
+        keywords: ['flats near Cognizant Hinjewadi', 'apartments near Cognizant Pune', 'Joyville Sensorium Cognizant', 'Hinjewadi Phase 1 tech park flats'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'flats-near-persistent-systems-hinjewadi',
+        title: 'Flats Near Persistent Systems Hinjewadi | Walk-to-Work Homes',
+        description: 'Live minutes from Persistent Systems in Hinjewadi Phase 1. Premium 2 & 3 BHK flats at Joyville Sensorium and Vyomora with resort-style amenities.',
+        h1: 'Flats Near Persistent Systems Hinjewadi — Joyville Homes',
+        keywords: ['flats near Persistent Systems Hinjewadi', 'apartments near Persistent Pune', 'Joyville Hinjewadi IT corridor', 'buy flat near Persistent Hinjewadi'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'flats-near-capgemini-hinjewadi',
+        title: 'Flats Near Capgemini Hinjewadi Phase 1 | Joyville Homes',
+        description: 'Cut daily commute times with luxury 2 & 3 BHK flats near Capgemini Hinjewadi. Joyville Vyomora offers pre-launch prices starting ₹84.99 L* with world-class lifestyle.',
+        h1: 'Flats Near Capgemini Hinjewadi — Premium Residences',
+        keywords: ['flats near Capgemini Hinjewadi', 'apartments near Capgemini Pune', 'Joyville Vyomora Capgemini commute', 'Hinjewadi flats walk to work'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'flats-near-cybercity-magarpatta',
+        title: 'Flats Near Cybercity Magarpatta | Joyville Hadapsar Annexe',
+        description: 'Apartments near Cybercity Magarpatta Hadapsar. Joyville Hadapsar Annexe provides 1, 2 & 3 BHK flats from ₹65L* just 4.5 km from Magarpatta IT SEZ.',
+        h1: 'Flats Near Cybercity Magarpatta Hadapsar — Joyville Annexe',
+        keywords: ['flats near Cybercity Magarpatta', 'apartments near Magarpatta IT Park', 'Joyville Hadapsar Magarpatta commute', 'flats in Hadapsar near Magarpatta'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '1|2|3' }
+    },
+    {
+        slug: 'flats-near-hadapsar-industrial-estate',
+        title: 'Flats Near Hadapsar Industrial Estate | Joyville Annexe',
+        description: 'Premium residences near Hadapsar Industrial Estate and Mundhwa. Joyville Hadapsar Annexe offers 21 acres of gated township living with 60+ amenities.',
+        h1: 'Flats Near Hadapsar Industrial Estate & Mundhwa',
+        keywords: ['flats near Hadapsar Industrial Estate', 'apartments near Hadapsar MIDC', 'Joyville Hadapsar Annexe location', 'East Pune industrial corridor flats'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '1|2|3' }
+    },
+    {
+        slug: 'flats-near-eon-free-zone-kharadi-hadapsar',
+        title: 'Flats Near EON IT Park & Kharadi | Joyville Hadapsar Corridor',
+        description: 'Strategic residential connectivity to EON Free Zone Kharadi and World Trade Center Pune. Joyville Hadapsar Annexe delivers superior pricing and township scale.',
+        h1: 'Flats Near EON Free Zone Kharadi from Hadapsar Corridor',
+        keywords: ['flats near EON IT Park Kharadi', 'apartments near WTC Pune', 'Joyville Hadapsar to Kharadi connectivity', 'East Pune IT corridor homes'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '2|3' }
+    },
+
+    // 10,000 Daily Impressions Expansion: Transit, Metro & Infrastructure Corridors
+    {
+        slug: 'flats-near-hinjewadi-metro-station-line-3',
+        title: 'Flats Near Hinjewadi Metro Station Line 3 | Joyville Homes',
+        description: 'Capitalize on Pune Metro Line 3 (Hinjewadi to Shivajinagar). Joyville Sensorium & Vyomora are situated within 1.5 km of the planned metro terminus on Maan Road.',
+        h1: 'Flats Near Pune Metro Line 3 Station in Hinjewadi',
+        keywords: ['flats near Hinjewadi metro station', 'Pune Metro Line 3 property investment', 'apartments near Hinjewadi metro line 3', 'Joyville Hinjewadi metro proximity'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'flats-near-pune-ring-road-corridor',
+        title: 'Flats Near Pune Ring Road Corridor | High Growth Investment',
+        description: 'Invest along the 128-km Pune Ring Road growth corridor. Seamless connectivity linking Hinjewadi, Bavdhan (Vanaha), and Purandar (Treetopia plots) with 15%+ ROI.',
+        h1: 'Properties Along the 128-km Pune Ring Road Corridor',
+        keywords: ['flats near Pune Ring Road', 'Pune Ring Road property appreciation', 'Vanaha Bavdhan Ring Road', 'Shapoorji Treetopia Ring Road corridor'],
+        filters: { locationMatch: 'Hinjewadi|Bavdhan|Purandar', typeMatch: '' }
+    },
+    {
+        slug: 'flats-near-mumbai-pune-expressway-bavdhan',
+        title: 'Flats Near Mumbai-Pune Expressway Bavdhan | Vanaha Township',
+        description: 'Luxury residences near the Mumbai-Pune Expressway in Bavdhan. Vanaha by Shapoorji Pallonji offers scenic valley living, 1000-acre scale, and rapid Mumbai access.',
+        h1: 'Flats Near Mumbai-Pune Expressway in Bavdhan — Vanaha',
+        keywords: ['flats near Mumbai Pune Expressway', 'apartments near Expressway Bavdhan', 'Vanaha Bavdhan expressway connectivity', 'West Pune luxury flats'],
+        filters: { locationMatch: 'Bavdhan', typeMatch: '2|3|4' }
+    },
+    {
+        slug: 'flats-near-chandani-chowk-flyover-bavdhan',
+        title: 'Flats Near Chandani Chowk Flyover Bavdhan | Vanaha by Shapoorji',
+        description: 'Experience effortless city connectivity via the upgraded multi-tier Chandani Chowk flyover. Vanaha Bavdhan provides fast access to Kothrud, Deccan, and Hinjewadi.',
+        h1: 'Flats Near Chandani Chowk Flyover in Bavdhan, Pune',
+        keywords: ['flats near Chandani Chowk Bavdhan', 'apartments near Chandani Chowk flyover', 'Vanaha Bavdhan Kothrud access', 'Bavdhan property rates 2026'],
+        filters: { locationMatch: 'Bavdhan', typeMatch: '2|3' }
+    },
+    {
+        slug: 'flats-near-pune-solapur-highway-shewalewadi',
+        title: 'Flats Near Pune-Solapur Highway Shewalewadi | Joyville Hadapsar',
+        description: 'Gated community flats directly off Pune-Solapur Highway in Shewalewadi, Hadapsar. Joyville Hadapsar Annexe & Celestia feature unmatched east-west transit.',
+        h1: 'Flats Near Pune-Solapur Highway in Shewalewadi, Hadapsar',
+        keywords: ['flats near Pune Solapur highway', 'apartments in Shewalewadi Hadapsar', 'Joyville Hadapsar highway connectivity', 'Hadapsar property for sale'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '1|2|3' }
+    },
+    {
+        slug: 'flats-near-hadapsar-railway-station',
+        title: 'Flats Near Hadapsar Railway Station | Joyville Annexe Homes',
+        description: 'Flats near Hadapsar Railway Station terminal upgrade. Joyville Hadapsar Annexe provides convenient regional rail and road access for commuting professionals.',
+        h1: 'Flats Near Hadapsar Railway Station & Mega Terminal',
+        keywords: ['flats near Hadapsar railway station', 'apartments near Hadapsar station Pune', 'Joyville Hadapsar rail connectivity', 'Hadapsar terminal property'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '1|2|3' }
+    },
+
+    // 10,000 Daily Impressions Expansion: Architecture, Features & Lifestyle
+    {
+        slug: '3-bhk-flats-with-large-balcony-hinjewadi',
+        title: '3 BHK Flats with Large Balcony Hinjewadi | Joyville Vyomora',
+        description: 'Spacious 3 BHK apartments with expansive deck balconies in Hinjewadi Phase 1. Joyville Vyomora offers panoramic Sahyadri hill views and double-height sky duplexes.',
+        h1: '3 BHK Flats with Large Deck Balconies in Hinjewadi Phase 1',
+        keywords: ['3 BHK flats with large balcony Hinjewadi', 'apartments with big balcony Hinjewadi', 'Joyville Vyomora grand decks', 'luxury 3 BHK Hinjewadi views'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '3' }
+    },
+    {
+        slug: '2-bhk-flats-with-balcony-hinjewadi-phase-1',
+        title: '2 BHK Flats with Balcony Hinjewadi Phase 1 | Joyville Homes',
+        description: 'Find premium 2 BHK flats with private balconies in Hinjewadi Phase 1. Joyville Sensorium & Vyomora feature cross-ventilated layouts and sunken garden vistas.',
+        h1: '2 BHK Flats with Balcony in Hinjewadi Phase 1 — Joyville',
+        keywords: ['2 BHK flats with balcony Hinjewadi', 'Joyville Sensorium 2 BHK balcony', '2 BHK with deck Hinjewadi Phase 1', 'flats with open view Hinjewadi'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2' }
+    },
+    {
+        slug: 'garden-facing-apartments-in-pune',
+        title: 'Garden Facing Apartments in Pune | Biophilic Joyville Homes',
+        description: 'Wake up to lush green vistas. Biophilic garden-facing 2 & 3 BHK apartments at Joyville Sensorium Hinjewadi with a 2.8-acre sunken garden and 75% open greens.',
+        h1: 'Garden Facing Apartments in Pune — Joyville Biophilic Homes',
+        keywords: ['garden facing apartments in Pune', 'park view flats Pune', 'Joyville Sensorium sunken garden', 'biophilic homes in Hinjewadi'],
+        filters: { locationMatch: 'Hinjewadi|Bavdhan', typeMatch: '2|3' }
+    },
+    {
+        slug: 'high-rise-apartments-with-hill-view-pune',
+        title: 'High-Rise Apartments with Hill View Pune | Sensorium & Vanaha',
+        description: 'Spectacular hill-view apartments in West Pune. Joyville Sensorium in Hinjewadi and Vanaha in Bavdhan offer elevated tower living with uninterrupted nature vistas.',
+        h1: 'High-Rise Apartments with Hill Views in Pune West',
+        keywords: ['high rise apartments with hill view Pune', 'hill view flats Hinjewadi', 'Vanaha Bavdhan hill view apartments', 'scenic view luxury flats Pune'],
+        filters: { locationMatch: 'Hinjewadi|Bavdhan', typeMatch: '2|3|4' }
+    },
+    {
+        slug: 'mivan-construction-flats-in-hinjewadi',
+        title: 'Mivan Construction Flats in Hinjewadi | Monolithic Quality',
+        description: '100% Aluform (Mivan) monolithic RCC construction at Joyville Hinjewadi. Earthquake-resistant Zone 3 shear walls, zero brick seepage, and smooth architectural finishes.',
+        h1: 'Mivan Monolithic Construction Flats in Hinjewadi Phase 1',
+        keywords: ['Mivan construction flats Hinjewadi', 'Aluform technology apartments Pune', 'monolithic concrete homes Joyville', 'seepage proof flats Hinjewadi'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'gated-community-townships-in-pune',
+        title: 'Best Gated Community Townships in Pune | Shapoorji Joyville',
+        description: 'Explore Pune’s finest integrated townships: Joyville Hadapsar Annexe (21 acres) and Vanaha Bavdhan (1,000 acres). 60+ amenities, schools, and multi-tier security.',
+        h1: 'Best Gated Community Townships in Pune — Shapoorji Pallonji',
+        keywords: ['gated community townships in Pune', 'integrated townships Pune', 'Joyville Hadapsar 21 acre township', 'Vanaha 1000 acre township Bavdhan'],
+        filters: { locationMatch: 'Hadapsar|Bavdhan', typeMatch: '1|2|3|4' }
+    },
+    {
+        slug: 'ready-possession-2-bhk-in-hadapsar',
+        title: 'Ready Possession 2 BHK Flats in Hadapsar | OC Received Units',
+        description: 'Immediate move-in 2 BHK flats at Joyville Hadapsar Annexe. OC received, zero GST, fully functional 35,000 sq.ft. clubhouse and instant registration.',
+        h1: 'Ready Possession 2 BHK Flats in Hadapsar with OC',
+        keywords: ['ready possession 2 BHK Hadapsar', 'ready to move 2 BHK Pune with OC', 'Joyville Hadapsar ready flats', 'zero GST flats in Hadapsar'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '2' }
+    },
+    {
+        slug: 'ready-possession-3-bhk-in-hadapsar',
+        title: 'Ready Possession 3 BHK Flats in Hadapsar | Zero GST Luxury',
+        description: 'Spacious ready-to-move 3 BHK residences at Joyville Hadapsar Annexe. Move in today with zero construction delay risk, OC received, and instant tax benefits.',
+        h1: 'Ready Possession 3 BHK Flats in Hadapsar — Immediate Move-In',
+        keywords: ['ready possession 3 BHK Hadapsar', 'ready to move 3 BHK Pune', 'Joyville Hadapsar 3 BHK ready', 'luxury ready flats Hadapsar'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '3' }
+    },
+
+    // 10,000 Daily Impressions Expansion: Cost Sheets, Maintenance & Due Diligence
+    {
+        slug: 'shapoorji-pallonji-pune-projects-cost-sheet-2026',
+        title: 'Shapoorji Pallonji Pune Projects Cost Sheet 2026 | All Plans',
+        description: 'Download the comprehensive 2026 cost sheet across all 12 Shapoorji Pallonji projects in Pune. Clear breakdown of base price, stamp duty, registration, and payment milestones.',
+        h1: 'Official Shapoorji Pallonji Pune Projects Cost Sheet 2026',
+        keywords: ['Shapoorji Pallonji Pune cost sheet', 'Joyville Pune price list 2026', 'Shapoorji flat price breakdown Pune', 'Joyville payment plans 2026'],
+        filters: { locationMatch: '', typeMatch: '' }
+    },
+    {
+        slug: 'joyville-sensorium-sample-flat-photos',
+        title: 'Joyville Sensorium Sample Flat Photos & Virtual Video Tour',
+        description: 'Take a virtual walk through the actual 2 & 3 BHK sample flats at Joyville Sensorium Hinjewadi Phase 1. High-resolution interior photos, carpet layouts, and specifications.',
+        h1: 'Joyville Sensorium Sample Flat Photos & 3D Tour',
+        keywords: ['Joyville Sensorium sample flat photos', 'Joyville Sensorium video tour', 'Joyville Sensorium 2 BHK sample flat', 'Sensorium Hinjewadi interior photos'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'joyville-vyomora-sample-flat-site-office',
+        title: 'Joyville Vyomora Sample Flat & Site Office Tour Hinjewadi',
+        description: 'Visit the Joyville Vyomora site experience centre in Hinjewadi Phase 1. Inspect actual 2 & 3 BHK duplex layout models, construction progress, and book site visit with cab pickup.',
+        h1: 'Joyville Vyomora Sample Flat & Experience Centre Visit',
+        keywords: ['Joyville Vyomora sample flat', 'Joyville Vyomora site office address', 'Joyville Vyomora site visit booking', 'Vyomora Hinjewadi experience centre'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'joyville-hadapsar-maintenance-charges-review',
+        title: 'Joyville Hadapsar Maintenance Charges & Society Fees 2026',
+        description: 'Complete transparency on maintenance charges, society sinking fund, and clubhouse operational fees at Joyville Hadapsar Annexe. Verified cost per sq.ft. schedule.',
+        h1: 'Joyville Hadapsar Annexe Maintenance Charges & Cost Review',
+        keywords: ['Joyville Hadapsar maintenance charges', 'Joyville Hadapsar society fees', 'Joyville Hadapsar maintenance per sq ft', 'Joyville Hadapsar review 2026'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '1|2|3' }
+    },
+    {
+        slug: 'joyville-sensorium-maintenance-charges-carpet',
+        title: 'Joyville Sensorium Maintenance Charges & Carpet Breakup',
+        description: 'Review official maintenance estimates and RERA carpet area efficiency for Joyville Sensorium Hinjewadi Phase 1. Understand monthly society outgoings before booking.',
+        h1: 'Joyville Sensorium Maintenance Charges & Monthly Costs',
+        keywords: ['Joyville Sensorium maintenance charges', 'Joyville Sensorium monthly maintenance', 'Sensorium Hinjewadi society charges', 'Joyville Sensorium carpet area review'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'joyville-sensorium-vs-t-homes-hinjewadi',
+        title: 'Joyville Sensorium vs T Projects Hinjewadi [2026 Review]',
+        description: 'Head-to-head evaluation: Joyville Sensorium by Shapoorji Pallonji vs other Phase 1 towers in Hinjewadi. Compare biophilic scale, open space ratio, RERA track record, and ROI.',
+        h1: 'Joyville Sensorium vs Competitor Towers in Hinjewadi Phase 1',
+        keywords: ['Joyville Sensorium comparison Hinjewadi', 'best projects Hinjewadi Phase 1', 'Joyville vs other builders Hinjewadi', 'Sensorium vs competitors 2026'],
+        filters: { locationMatch: 'Hinjewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'joyville-hadapsar-vs-nyati-hadapsar',
+        title: 'Joyville Hadapsar vs Nyati Hadapsar [2026 Comparison]',
+        description: 'Detailed analysis: Joyville Hadapsar Annexe by Shapoorji Pallonji vs Nyati developments in Hadapsar/Undri. Construction technology, township amenities, and resale value.',
+        h1: 'Joyville Hadapsar Annexe vs Nyati Projects — Buyer Guide',
+        keywords: ['Joyville Hadapsar vs Nyati', 'Nyati vs Shapoorji Hadapsar', 'best project in Hadapsar 2026', 'Joyville vs Nyati comparison'],
+        filters: { locationMatch: 'Hadapsar|Shewalewadi', typeMatch: '2|3' }
+    },
+    {
+        slug: 'vanaha-bavdhan-vs-kolte-patil-stargaze',
+        title: 'Vanaha Bavdhan vs Kolte Patil Stargaze [Bavdhan Comparison]',
+        description: 'Compare Vanaha by Shapoorji Pallonji and Kolte Patil Stargaze in Bavdhan. 1,000-acre nature valley scale, golf course amenities, connectivity, and appreciation potential.',
+        h1: 'Vanaha Bavdhan vs Kolte Patil Stargaze — In-Depth Analysis',
+        keywords: ['Vanaha vs Kolte Patil Stargaze', 'Vanaha Bavdhan vs Stargaze', 'best project in Bavdhan', 'Bavdhan luxury apartment comparison'],
+        filters: { locationMatch: 'Bavdhan', typeMatch: '2|3|4' }
+    },
+    {
+        slug: 'shapoorji-pune-vs-godrej-properties-pune',
+        title: 'Shapoorji Pallonji vs Godrej Properties Pune [2026 Review]',
+        description: 'Brand comparison: Shapoorji Pallonji Real Estate vs Godrej Properties in Pune. Construction quality, Aluform technology, handover track record, and customer satisfaction.',
+        h1: 'Shapoorji Pallonji vs Godrej Properties Pune — Developer Audit',
+        keywords: ['Shapoorji Pallonji vs Godrej Properties Pune', 'Godrej vs Joyville Hinjewadi', 'Shapoorji vs Godrej Pune', 'best real estate brand in Pune'],
+        filters: { locationMatch: 'Hinjewadi|Hadapsar|Bavdhan', typeMatch: '' }
+    },
+    {
+        slug: 'shapoorji-pune-vs-lodha-pune',
+        title: 'Shapoorji Pallonji vs Lodha Pune [2026 Developer Comparison]',
+        description: 'Institutional analysis: Shapoorji Pallonji Real Estate vs Lodha Group in Pune. 150-year engineering heritage, project scale, maintenance efficiency, and capital safety.',
+        h1: 'Shapoorji Pallonji vs Lodha Pune — Institutional Comparison',
+        keywords: ['Shapoorji Pallonji vs Lodha Pune', 'Lodha vs Joyville', 'Shapoorji vs Lodha quality', 'top luxury developers in Pune 2026'],
+        filters: { locationMatch: 'Hinjewadi|Hadapsar|Bavdhan', typeMatch: '' }
     }
 ];

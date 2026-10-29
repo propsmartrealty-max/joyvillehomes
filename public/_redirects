@@ -2,6 +2,8 @@
 # Syntax: /source /destination [status]
 
 # Legacy & Canonical SEO 301 Edge Directives
+/properties /projects 301
+/properties/ /projects 301
 /en-us / 301
 /en-us/ / 301
 /properties/residential-projects-near-hinjewadi-phase-1 /locality/hinjewadi 301

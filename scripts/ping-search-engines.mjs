@@ -5,10 +5,32 @@
  * Pings Google, Bing, and dispatches full project & PSEO URLs via IndexNow protocol.
  */
 
+import fs from 'fs';
+import path from 'path';
+
 const SITE_URL = 'https://joyville-homes.com';
 const SITEMAP_URL = `${SITE_URL}/sitemap.xml`;
 const INDEXNOW_KEY = '582cfba9a2c34255959929007f3bc6cf';
 const KEY_LOCATION = `${SITE_URL}/${INDEXNOW_KEY}.txt`;
+
+function getAllSitemapUrls() {
+    const sitemapPaths = [
+        path.resolve(process.cwd(), 'dist/sitemap.xml'),
+        path.resolve(process.cwd(), 'public/sitemap.xml')
+    ];
+    for (const p of sitemapPaths) {
+        if (fs.existsSync(p)) {
+            const xml = fs.readFileSync(p, 'utf8');
+            const matches = xml.match(/<loc>(.*?)<\/loc>/g);
+            if (matches && matches.length > 0) {
+                const urls = matches.map(m => m.replace(/<\/?loc>/g, '').trim());
+                console.log(`📋 Found ${urls.length} URLs in ${path.basename(p)}`);
+                return Array.from(new Set(urls));
+            }
+        }
+    }
+    return [];
+}
 
 const PRIORITY_URLS = [
     `${SITE_URL}`,
@@ -76,11 +98,14 @@ async function pingBingSitemap() {
 }
 
 async function submitIndexNow() {
+    const sitemapUrls = getAllSitemapUrls();
+    const urlsToSubmit = sitemapUrls.length > 0 ? sitemapUrls : PRIORITY_URLS;
+
     const payload = {
         host: 'joyville-homes.com',
         key: INDEXNOW_KEY,
         keyLocation: KEY_LOCATION,
-        urlList: PRIORITY_URLS
+        urlList: urlsToSubmit
     };
 
     const endpoints = [
@@ -89,7 +114,7 @@ async function submitIndexNow() {
         'https://yandex.com/indexnow'
     ];
 
-    console.log(`\n📡 Submitting ${PRIORITY_URLS.length} URLs to IndexNow...`);
+    console.log(`\n📡 Submitting ${urlsToSubmit.length} URLs to IndexNow...`);
 
     for (const endpoint of endpoints) {
         try {
