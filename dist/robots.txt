@@ -81,3 +81,4 @@ Host: https://joyville-homes.com
 Sitemap: https://joyville-homes.com/sitemap.xml
 Sitemap: https://joyville-homes.com/image-sitemap.xml
 Sitemap: https://joyville-homes.com/aggregator-feed.xml
+Sitemap: https://joyville-homes.com/feed.xml

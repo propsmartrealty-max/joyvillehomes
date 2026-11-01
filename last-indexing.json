@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-29T12:41:47.722Z",
+  "timestamp": "2026-11-01T08:35:32.868Z",
   "totalCanonicalUrls": 334,
   "tierBreakdown": {
     "tier1": 71,
@@ -9,8 +9,8 @@
   "googleWebSubStatus": "Google WebSub Hub pinged (2/2 feeds accepted)",
   "googleIndexingApi": {
     "authenticated": true,
-    "successCount": 3,
-    "failCount": 1,
+    "successCount": 200,
+    "failCount": 0,
     "quotaReached": true
   },
   "indexNowBroadcast": {

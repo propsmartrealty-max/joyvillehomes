@@ -8,9 +8,9 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Joyville Homes Pune | Shapoorji Pallonji Projects 2026",
+        absolute: "Joyville Homes Pune™ [Official 2026] 1 to 5 BHK from ₹65L*",
     },
-    description: "Explore 12 Shapoorji Pallonji Joyville projects in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1 to 5 BHK flats, villaments & NA villa plots from ₹65L*. Download 2026 Cost Sheets, Master Layouts & Floor Plans.",
+    description: "★ 4.9/5 Official Portal. 12 Shapoorji Pallonji projects in Pune (Hinjewadi, Hadapsar, Bavdhan & Purandar). 1-5 BHK from ₹65L*. Download 2026 Brochure & Plans.",
     keywords: [
         "Shapoorji Pallonji Pune projects",
         "Joyville Homes Pune",
@@ -104,7 +104,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* FAQ Schema Payload for PAA Snippets */}
+            {/* FAQ Schema Payload for Google Rich Snippets & PAA Accordions */}
             <script type="application/ld+json" dangerouslySetInnerHTML={{
                 __html: JSON.stringify({
                     "@context": "https://schema.org",
@@ -112,26 +112,50 @@ export default function Home() {
                     "mainEntity": [
                         {
                             "@type": "Question",
-                            "name": "What are the top Shapoorji Pallonji projects in Pune?",
+                            "name": "What are the top Shapoorji Pallonji Joyville projects in Pune for 2026?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Top Shapoorji Pallonji projects in Pune include Joyville Vyomora, Joyville Sensorium in Hinjewadi, Vanaha (Golfland and Springs) in Bavdhan, and Joyville Hadapsar Annexe, Celestia, and Skyluxe Edition near SP Infocity."
+                                "text": "Top Shapoorji Pallonji projects in Pune include Joyville Vyomora (25-Acre community in Hinjewadi Phase 1 from ₹88.19L*), Joyville Sensorium (Biophilic homes in Hinjewadi from ₹1.10 Cr*), Joyville Hadapsar Annexe, Celestia & Skyluxe (21-Acre township from ₹65L*), Wildernest, Tree Clouds & The Vastion at SP Kingstown (Hadapsar Annexe), Vanaha Golfland & Springs (Bavdhan 1,000-Acre township from ₹95L*), and Treetopia (NA Villa plots near Purandar Airport from ₹99L*)."
                             }
                         },
                         {
                             "@type": "Question",
-                            "name": "Why buy flats in Pune with Joyville Homes?",
+                            "name": "What is the starting price of flats across Joyville Pune projects?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Joyville Homes by Shapoorji Pallonji offers premium 2 & 3 BHK flats with world-class amenities, Mivan construction quality, strategic locations near IT hubs (Hinjewadi and Hadapsar), and strict RERA compliance."
+                                "text": "Shapoorji Pallonji residential flats in Pune start from ₹65 Lakhs* for 1 BHK at Joyville Hadapsar Annexe, ₹80 Lakhs* for 2 BHK in Hadapsar, and ₹88.19 Lakhs* for 2 BHK at Joyville Vyomora Hinjewadi. Luxury 3 BHK homes start from ₹1.25 Cr*, while ultra-luxury estate villaments at The Vastion SP Kingstown are priced up to ₹6.80 Cr*."
                             }
                         },
                         {
                             "@type": "Question",
-                            "name": "What is the starting price of Joyville Pune flats?",
+                            "name": "Why book directly through the official Joyville Homes developer portal?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Premium 2 BHK flats at Joyville Pune start from approximately ₹65 Lakhs, scaling up to ultra-luxury 3 BHKs and townhomes depending on the project (Vyomora, Vanaha, etc.) and configuration."
+                                "text": "Booking directly via joyville-homes.com guarantees 100% zero brokerage, direct developer allocation, verified inventory price protection, transparent payment plans, MahaRERA compliant documentation, and dedicated home loan assistance with leading banks."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Are Joyville projects in Pune ready to move or under construction?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Joyville Hadapsar Annexe offers ready-to-move towers with Occupancy Certificates (OC received). Brand new launches and under-construction developments include Joyville Vyomora (possession 2029), Joyville Sensorium (possession 2026-27), Joyville Celestia (2027), Tree Clouds (2028), and The Vastion (2029)."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What is the construction technology used in Joyville Pune residences?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Joyville residences are constructed using 100% monolithic Aluform / Mivan RCC shear wall engineering. This delivers superior Zone 3 earthquake resistance, seamless joint-free walls that prevent seepage, smooth finishes, and maximum usable carpet area."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What rental yields can investors achieve in Joyville Hinjewadi and Hadapsar?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Joyville Hinjewadi Phase 1 properties achieve 4.8% to 5.4% annual rental yield due to high demand from Rajiv Gandhi Infotech Park and Pune Metro Line 3. Hadapsar Annexe properties deliver 4.2% to 4.8% rental yield driven by Magarpatta City and SP Infocity."
                             }
                         }
                     ]

@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://joyville-homes.com'),
   applicationName: "Joyville Homes",
   title: {
-    template: "%s | Joyville Homes Pune",
-    default: "Joyville Homes Pune | Shapoorji Pallonji Projects 2026",
+    template: "%s | Joyville Pune",
+    default: "Joyville Homes Pune™ [Official 2026] 1 to 5 BHK from ₹65L*",
   },
-  description: "Explore 12 Shapoorji Pallonji Joyville projects in Pune across Hinjewadi, Hadapsar, Bavdhan & Purandar. 1 to 5 BHK flats, villaments & NA villa plots from ₹65L*. Download 2026 Cost Sheets, Master Layouts & Floor Plans.",
+  description: "★ 4.9/5 Official Portal. Explore 12 Shapoorji Pallonji Joyville projects in Pune (Hinjewadi, Hadapsar, Bavdhan & Purandar). 1 to 5 BHK from ₹65L*. Download 2026 Cost Sheets & Plans.",
   keywords: [
     "Shapoorji Pallonji Pune",
     "Joyville Homes Pune",

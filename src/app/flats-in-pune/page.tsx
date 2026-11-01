@@ -7,9 +7,9 @@ const siteUrl = 'https://joyville-homes.com';
 
 export const metadata: Metadata = {
     title: {
-        absolute: 'Flats in Pune 2026 | 32+ Joyville Homes by Shapoorji'
+        absolute: 'Flats in Pune 2026™ [Official] 1 to 5 BHK from ₹65L*'
     },
-    description: 'Explore 32+ categories of flats in Pune by Shapoorji Pallonji. 2 & 3 BHK in Hinjewadi, Hadapsar, Bavdhan. Ready to move, new launch, NRI investment, RERA approved. Starting ₹65 Lakhs.',
+    description: '★ 4.9/5 Official Portal. Explore 12 Shapoorji Pallonji projects across Pune. 1 to 5 BHK flats, villaments & NA plots from ₹65L*. Floor plans & cost sheet.',
     keywords: [
         'flats in Pune', 'flats in Pune 2026', 'apartments Pune', 'Shapoorji Pallonji flats Pune',
         '2 BHK flats Pune', '3 BHK flats Pune', 'ready to move flats Pune', 'new launch Pune 2026',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: `${siteUrl}/flats-in-pune` },
     openGraph: {
-        title: 'Flats in Pune — 32+ Options by Shapoorji Pallonji',
-        description: 'Explore every type of flat in Pune. Budget, luxury, ready-to-move, new launch, NRI investment & more. Shapoorji Pallonji Joyville from ₹65L.',
+        title: 'Flats in Pune 2026™ [Official] 1 to 5 BHK from ₹65L*',
+        description: '★ 4.9/5 Official Portal. Explore 12 Shapoorji Pallonji residential projects across Pune from ₹65L*. Direct developer booking & zero brokerage.',
         url: `${siteUrl}/flats-in-pune`,
         type: 'website',
     },

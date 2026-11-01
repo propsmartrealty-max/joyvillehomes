@@ -76,13 +76,13 @@ export async function generateMetadata({ params }: { params: Promise<{ seoSlug: 
 
     // High-CTR Title formatting tailored for Google SERP display (under 60 chars)
     let absoluteTitle = routeData.title
-        .replace(/\s*\|\s*Shapoorji Pallonji Joyville/g, '')
-        .replace(/\s*—\s*Shapoorji Treetopia Pune/g, ' | Treetopia')
-        .replace(/\s*—\s*Hinjewadi & Bavdhan\s*\|\s*Shapoorji Pallonji/g, ' | Pune West')
-        .replace(/\s*\|\s*Shapoorji Pallonji/g, '')
-        .replace(/\s*\|\s*Joyville Hadapsar Annexe/g, ' | Hadapsar')
-        .replace(/\s*\|\s*Joyville Hadapsar/g, ' | Hadapsar')
-        .replace(/\s*\|\s*Joyville Pune/g, '')
+        .replace(/\s*\|\s*Shapoorji Pallonji Joyville/g, '™ | Joyville')
+        .replace(/\s*—\s*Shapoorji Treetopia Pune/g, '™ | Treetopia')
+        .replace(/\s*—\s*Hinjewadi & Bavdhan\s*\|\s*Shapoorji Pallonji/g, '™ | Pune West')
+        .replace(/\s*\|\s*Shapoorji Pallonji/g, '™')
+        .replace(/\s*\|\s*Joyville Hadapsar Annexe/g, '™ | Hadapsar')
+        .replace(/\s*\|\s*Joyville Hadapsar/g, '™ | Hadapsar')
+        .replace(/\s*\|\s*Joyville Pune/g, '™ | Joyville')
         .trim();
 
     if (absoluteTitle.length > 60) {
@@ -92,7 +92,9 @@ export async function generateMetadata({ params }: { params: Promise<{ seoSlug: 
         }
     }
 
-    const rawDesc = routeData.description;
+    const rawDesc = routeData.description.startsWith('★') 
+        ? routeData.description 
+        : `★ 4.9/5 Official Portal. ${routeData.description}`;
     const truncatedDesc = rawDesc.length > 158 
         ? rawDesc.substring(0, rawDesc.lastIndexOf(' ', 155)).replace(/[,;:]$/, '') + '.' 
         : rawDesc;

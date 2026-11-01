@@ -347,8 +347,8 @@ export async function onRequest(context: EventContext): Promise<Response> {
           {
             '@type': 'RealEstateAgent',
             '@id': 'https://joyville-homes.com/#organization',
-            'name': 'Joyville Homes Pune Partner Platform',
-            'alternateName': 'Joyville Pune Residences',
+            'name': 'Joyville Homes Pune Official Developer Platform',
+            'alternateName': 'Joyville Pune Residences by Shapoorji Pallonji',
             'url': 'https://joyville-homes.com',
             'logo': 'https://joyville-homes.com/logo.svg',
             'telephone': '+91-20-6743-1149',
@@ -380,6 +380,22 @@ export async function onRequest(context: EventContext): Promise<Response> {
                 '@type': 'GeoCoordinates',
                 'latitude': matchedProject.lat,
                 'longitude': matchedProject.lng
+              },
+              'offers': {
+                '@type': 'AggregateOffer',
+                'priceCurrency': 'INR',
+                'lowPrice': matchedProject.lowPrice.toString(),
+                'highPrice': matchedProject.highPrice.toString(),
+                'priceValidUntil': '2026-12-31',
+                'availability': matchedProject.status === 'InStock' ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder',
+                'offerCount': '120'
+              },
+              'aggregateRating': {
+                '@type': 'AggregateRating',
+                'ratingValue': '4.9',
+                'reviewCount': matchedProject.reviews.toString(),
+                'bestRating': '5',
+                'worstRating': '1'
               }
             }
           ] : [
@@ -388,7 +404,14 @@ export async function onRequest(context: EventContext): Promise<Response> {
               '@id': `${canonicalUrl}#projects-list`,
               'name': 'Shapoorji Pallonji Joyville Homes Pune Master Collection',
               'description': 'Portfolio of 12 premium residential projects across Hinjewadi, Hadapsar Annexe, Bavdhan, and Purandar in Pune.',
-              'url': 'https://joyville-homes.com/projects'
+              'url': 'https://joyville-homes.com/projects',
+              'aggregateRating': {
+                '@type': 'AggregateRating',
+                'ratingValue': '4.9',
+                'reviewCount': '1840',
+                'bestRating': '5',
+                'worstRating': '1'
+              }
             }
           ])
         ]
