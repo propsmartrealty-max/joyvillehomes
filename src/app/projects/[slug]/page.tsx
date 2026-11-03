@@ -238,7 +238,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 ]
             }] : []),
             {
-                "@type": "RealEstateListing",
+                "@type": ["RealEstateListing", "Product"],
                 "@id": `${siteUrl}/projects/${project.slug}/#listing`,
                 "name": project.title,
                 "image": project.image,

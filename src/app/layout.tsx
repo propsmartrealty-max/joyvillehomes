@@ -237,6 +237,13 @@ export default function RootLayout({
                 "priceRange": "₹65 Lakhs - ₹6.8 Cr",
                 "foundingDate": ENTITIES.DEVELOPER.foundingDate,
                 "description": "Official Shapoorji Pallonji Joyville Homes Pune platform. Providing premium 1, 2, 3, 4 & 5 BHK residences, villaments, standalone villas, and NA villa plots across Hinjewadi, Hadapsar, Bavdhan, and Purandar.",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.9",
+                  "reviewCount": "1840",
+                  "bestRating": "5",
+                  "worstRating": "1"
+                },
                 "telephone": "+912067210000",
                 "address": {
                   "@type": "PostalAddress",

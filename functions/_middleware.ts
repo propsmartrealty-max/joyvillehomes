@@ -347,12 +347,13 @@ export async function onRequest(context: EventContext): Promise<Response> {
           {
             '@type': 'RealEstateAgent',
             '@id': 'https://joyville-homes.com/#organization',
-            'name': 'Joyville Homes Pune Official Developer Platform',
+            'name': 'Joyville Homes Pune Official Partner Platform',
             'alternateName': 'Joyville Pune Residences by Shapoorji Pallonji',
             'url': 'https://joyville-homes.com',
             'logo': 'https://joyville-homes.com/logo.svg',
             'telephone': '+91-20-6743-1149',
             'email': 'sales@joyville-homes.com',
+            'priceRange': '₹65 Lakhs - ₹6.8 Cr',
             'address': {
               '@type': 'PostalAddress',
               'streetAddress': matchedProject ? matchedProject.placename : 'SP Infocity, Phursungi IT Park & Hinjewadi Phase 1',
@@ -360,11 +361,18 @@ export async function onRequest(context: EventContext): Promise<Response> {
               'addressRegion': 'Maharashtra',
               'postalCode': '411057',
               'addressCountry': 'IN'
+            },
+            'aggregateRating': {
+              '@type': 'AggregateRating',
+              'ratingValue': '4.9',
+              'reviewCount': '1840',
+              'bestRating': '5',
+              'worstRating': '1'
             }
           },
           ...(matchedProject ? [
             {
-              '@type': 'RealEstateListing',
+              '@type': ['RealEstateListing', 'Product'],
               '@id': `${canonicalUrl}#listing`,
               'name': matchedProject.name,
               'description': matchedProject.description,
@@ -404,14 +412,7 @@ export async function onRequest(context: EventContext): Promise<Response> {
               '@id': `${canonicalUrl}#projects-list`,
               'name': 'Shapoorji Pallonji Joyville Homes Pune Master Collection',
               'description': 'Portfolio of 12 premium residential projects across Hinjewadi, Hadapsar Annexe, Bavdhan, and Purandar in Pune.',
-              'url': 'https://joyville-homes.com/projects',
-              'aggregateRating': {
-                '@type': 'AggregateRating',
-                'ratingValue': '4.9',
-                'reviewCount': '1840',
-                'bestRating': '5',
-                'worstRating': '1'
-              }
+              'url': 'https://joyville-homes.com/projects'
             }
           ])
         ]
@@ -422,7 +423,7 @@ export async function onRequest(context: EventContext): Promise<Response> {
           element(element) {
             // Google Site Verification
             element.append(
-              `<meta name="google-site-verification" content="_plOwnQGpvv_iPs3H6LA4ghAOe9XbJprhoQyky_lWko" />`,
+              `<meta name="google-site-verification" content="kgXogw_uAx3DlkOTR_Ysq5ZB6Jh_rpezL9F13KvpMro" />\n<meta name="google-site-verification" content="_plOwnQGpvv_iPs3H6LA4ghAOe9XbJprhoQyky_lWko" />`,
               { html: true }
             );
 
