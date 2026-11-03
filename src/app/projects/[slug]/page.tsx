@@ -107,13 +107,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         .replace(' Edition', '')
         .trim();
 
-    // Generate high-converting 50-60 char neuromarketing title for Google SERP Position 1
-    let finalTitle = `${cleanTitle}™ [Official 2026] ${shortLoc} from ${shortPrice}`;
+    // Generate high-converting 50-60 char neuromarketing title for Google SERP Position 1 (Compliant Entity Tagging)
+    let finalTitle = `${cleanTitle}™ [Official Partner] ${shortLoc} from ${shortPrice}`;
     if (finalTitle.length > 60) {
-        finalTitle = `${cleanTitle}™ [Official] ${shortLoc} from ${shortPrice}`;
+        finalTitle = `${cleanTitle}™ [Official Partner] from ${shortPrice}`;
     }
     if (finalTitle.length > 60) {
-        finalTitle = `${cleanTitle}™ [Official] from ${shortPrice}`;
+        finalTitle = `${cleanTitle}™ ${shortLoc} from ${shortPrice}`;
     }
     if (finalTitle.length > 60) {
         finalTitle = `${cleanTitle}™ from ${shortPrice}`;
@@ -124,7 +124,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         : (project.reraNumber || 'Approved');
 
     // High CTR Meta Description starting with Rating Badge (150-155 chars)
-    const rawDescription = `★ 4.9/5 Official Portal. Explore ${project.title} in ${shortLoc}, Pune. ${project.type} from ${shortPrice}. MahaRERA: ${reraNumber}. Download 2026 Brochure PDF & Plans.`;
+    const rawDescription = `★ 4.9/5 Official Partner Portal. Explore ${project.title} in ${shortLoc}, Pune. ${project.type} from ${shortPrice}. MahaRERA: ${reraNumber}. Download 2026 Brochure PDF & Plans.`;
     const highCtrDescription = rawDescription.length > 158 
         ? rawDescription.substring(0, rawDescription.lastIndexOf(' ', 155)).replace(/[,;:]$/, '') + '.'
         : rawDescription;

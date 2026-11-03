@@ -72,7 +72,10 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   verification: {
-    google: "kgXogw_uAx3DlkOTR_Ysq5ZB6Jh_rpezL9F13KvpMro",
+    google: [
+      "kgXogw_uAx3DlkOTR_Ysq5ZB6Jh_rpezL9F13KvpMro",
+      "_plOwnQGpvv_iPs3H6LA4ghAOe9XbJprhoQyky_lWko"
+    ],
   },
   manifest: "/manifest.json",
   robots: {

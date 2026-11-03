@@ -8,9 +8,9 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Joyville Homes Pune™ [Official 2026] 1 to 5 BHK from ₹65L*",
+        absolute: "Joyville Homes Pune™ [Official Partner] 1-5 BHK from ₹65L*",
     },
-    description: "★ 4.9/5 Official Portal. 12 Shapoorji Pallonji projects in Pune (Hinjewadi, Hadapsar, Bavdhan & Purandar). 1-5 BHK from ₹65L*. Download 2026 Brochure & Plans.",
+    description: "★ 4.9/5 Official Partner Portal. 12 Shapoorji Pallonji projects in Pune (Hinjewadi, Hadapsar, Bavdhan & Purandar). 1-5 BHK from ₹65L*. Download 2026 Plans & Brochure.",
     keywords: [
         "Shapoorji Pallonji Pune projects",
         "Joyville Homes Pune",
