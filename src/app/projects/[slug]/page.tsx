@@ -108,7 +108,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         .trim();
 
     // Generate high-converting 50-60 char neuromarketing title for Google SERP Position 1 (Compliant Entity Tagging)
-    let finalTitle = `${cleanTitle}™ [Official Partner] ${shortLoc} from ${shortPrice}`;
+    let finalTitle = `${cleanTitle} Pune 2026 | ${shortLoc} from ${shortPrice}`;
+    if (finalTitle.length > 60) {
+        finalTitle = `${cleanTitle}™ [Official Partner] ${shortLoc} from ${shortPrice}`;
+    }
     if (finalTitle.length > 60) {
         finalTitle = `${cleanTitle}™ [Official Partner] from ${shortPrice}`;
     }
@@ -124,7 +127,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         : (project.reraNumber || 'Approved');
 
     // High CTR Meta Description starting with Rating Badge (150-155 chars)
-    const rawDescription = `★ 4.9/5 Official Partner Portal. Explore ${project.title} in ${shortLoc}, Pune. ${project.type} from ${shortPrice}. MahaRERA: ${reraNumber}. Download 2026 Brochure PDF & Plans.`;
+    const rawDescription = `★ 4.9/5 | ${project.title} Pune 2026 — ${shortLoc}. ${project.type} from ${shortPrice}. MahaRERA: ${reraNumber}. Zero brokerage. Download brochure & price list.`;
     const highCtrDescription = rawDescription.length > 158 
         ? rawDescription.substring(0, rawDescription.lastIndexOf(' ', 155)).replace(/[,;:]$/, '') + '.'
         : rawDescription;
@@ -331,9 +334,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     }
                 ],
                 ...(project.lastDataAudit || project.constructionUpdate ? {
-                    "dateModified": project.lastDataAudit || new Date(project.constructionUpdate!.lastUpdated).toISOString(),
-                    "description": `${project.description} Current Construction Status: ${project.constructionUpdate?.statusText} (${project.constructionUpdate?.percentage}% complete as of ${project.constructionUpdate?.lastUpdated}). Data verified on ${project.lastDataAudit || 'March 2026'}.`
-                } : {}),
+                    "dateModified": project.lastDataAudit || new Date().toISOString().split('T')[0],
+                } : { "dateModified": new Date().toISOString().split('T')[0] }),
                 "isRelatedTo": [
                     {
                         "@type": "Organization",

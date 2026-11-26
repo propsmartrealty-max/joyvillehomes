@@ -10,11 +10,12 @@ export const metadata: Metadata = {
     title: {
         absolute: "Joyville Homes Pune™ [Official Partner] 1-5 BHK from ₹65L*",
     },
-    description: "★ 4.9/5 Official Partner Portal. 12 Shapoorji Pallonji projects in Pune (Hinjewadi, Hadapsar, Bavdhan & Purandar). 1-5 BHK from ₹65L*. Download 2026 Plans & Brochure.",
+    description: "★ 4.9/5 | Shapoorji Pallonji Pune 2026: Joyville Vyomora Hinjewadi from ₹88L*, Sensorium, Hadapsar Annexe, Vanaha Bavdhan, Treetopia. 12 projects, 1-5 BHK. Zero brokerage.",
     keywords: [
         "Shapoorji Pallonji Pune projects",
         "Joyville Homes Pune",
         "Joyville Vyomora Hinjewadi",
+        "Joyville Vyomora price 2026",
         "Joyville Sensorium Hinjewadi",
         "Joyville Hadapsar Annexe",
         "Tree Clouds SP Kingstown",
@@ -25,7 +26,9 @@ export const metadata: Metadata = {
         "flats in Hinjewadi Phase 1",
         "apartments in Hadapsar Pune",
         "Shapoorji Pallonji Pune price list 2026",
-        "Joyville Pune floor plans"
+        "Joyville Pune floor plans",
+        "joyville-homes.com",
+        "shapoorji pallonji new launch pune 2026"
     ],
     alternates: {
         canonical: 'https://joyville-homes.com',

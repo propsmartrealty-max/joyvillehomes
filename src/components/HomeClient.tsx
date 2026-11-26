@@ -91,7 +91,7 @@ export default function HomeClient() {
             >
               <span className="block text-[10px] md:text-xs font-bold tracking-[0.5em] text-[#1D4F9C]/70 mb-4 sm:mb-6 uppercase">Shapoorji Pallonji Real Estate</span>
               <span className="text-[#1D4F9C] italic text-gradient">Joyville Homes Pune</span> <br />
-              Projects &amp; Residences 2026.
+              1-5 BHK Flats from ₹65 Lakhs.
             </motion.h1>
 
             <motion.div
@@ -100,7 +100,7 @@ export default function HomeClient() {
               className="space-y-8"
             >
               <p className="text-lg md:text-xl text-[#323334] max-w-lg font-light tracking-wide leading-relaxed border-l-2 border-[#C5A059]/60 pl-6">
-                Experience the brand new launch of <span className="font-medium">Joyville Vyomora</span> in Hinjewadi Phase 1. Discover premium 2 & 3 BHK residences and exclusive 3 BHK duplexes starting from <span className="font-bold">{formatPrice('₹84.99 Lakhs*')}</span>, featuring 60+ world-class amenities and Pune&apos;s finest IT address.
+                Explore <span className="font-medium">Joyville Vyomora</span> &amp; <span className="font-medium">Sensorium</span> in Hinjewadi, <span className="font-medium">Vanaha</span> in Bavdhan, and <span className="font-medium">Treetopia</span> in Purandar — 12 premium Shapoorji Pallonji projects with 2 &amp; 3 BHK residences starting from <span className="font-bold">{formatPrice('₹65 Lakhs*')}</span>. Zero brokerage.
               </p>
 
               <div className="pt-4 flex items-center gap-8">

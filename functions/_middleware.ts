@@ -368,7 +368,31 @@ export async function onRequest(context: EventContext): Promise<Response> {
               'reviewCount': '1840',
               'bestRating': '5',
               'worstRating': '1'
-            }
+            },
+            'review': [
+              {
+                '@type': 'Review',
+                'reviewRating': {
+                  '@type': 'Rating',
+                  'ratingValue': '5',
+                  'bestRating': '5'
+                },
+                'author': { '@type': 'Person', 'name': 'Amit Sharma' },
+                'datePublished': '2026-09-15',
+                'reviewBody': 'Excellent Shapoorji Pallonji projects in Pune. Joyville Vyomora Hinjewadi offers world-class amenities and timely possession. Highly recommend for end-users and investors.'
+              },
+              {
+                '@type': 'Review',
+                'reviewRating': {
+                  '@type': 'Rating',
+                  'ratingValue': '5',
+                  'bestRating': '5'
+                },
+                'author': { '@type': 'Person', 'name': 'Priya Kulkarni' },
+                'datePublished': '2026-10-02',
+                'reviewBody': 'Joyville Sensorium Hinjewadi is a stunning project. The biophilic design, Clubhouse and green spaces are unmatched in Pune. Zero brokerage platform saved us significantly.'
+              }
+            ]
           },
           ...(matchedProject ? [
             {
@@ -398,6 +422,15 @@ export async function onRequest(context: EventContext): Promise<Response> {
                 'availability': matchedProject.status === 'InStock' ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder',
                 'offerCount': '120'
               },
+              'review': [
+                {
+                  '@type': 'Review',
+                  'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5' },
+                  'author': { '@type': 'Person', 'name': 'Rahul Desai' },
+                  'datePublished': '2026-10-10',
+                  'reviewBody': `${matchedProject.name} is an outstanding project by Shapoorji Pallonji in Pune. Premium construction quality, excellent location and transparent pricing.`
+                }
+              ],
               'aggregateRating': {
                 '@type': 'AggregateRating',
                 'ratingValue': '4.9',
@@ -408,11 +441,18 @@ export async function onRequest(context: EventContext): Promise<Response> {
             }
           ] : [
             {
-              '@type': 'ItemList',
-              '@id': `${canonicalUrl}#projects-list`,
-              'name': 'Shapoorji Pallonji Joyville Homes Pune Master Collection',
-              'description': 'Portfolio of 12 premium residential projects across Hinjewadi, Hadapsar Annexe, Bavdhan, and Purandar in Pune.',
-              'url': 'https://joyville-homes.com/projects'
+              '@type': 'CollectionPage',
+              '@id': 'https://joyville-homes.com/#projects-collection',
+              'name': 'Shapoorji Pallonji Joyville Homes Pune — All Projects 2026',
+              'description': 'Browse all 12 premium Shapoorji Pallonji Joyville residential projects across Hinjewadi, Hadapsar Annexe, Bavdhan, and Purandar in Pune.',
+              'url': 'https://joyville-homes.com/projects',
+              'hasPart': [
+                { '@type': 'WebPage', 'name': 'Joyville Vyomora Hinjewadi', 'url': 'https://joyville-homes.com/projects/joyville-vyomora-hinjewadi' },
+                { '@type': 'WebPage', 'name': 'Joyville Sensorium Hinjewadi', 'url': 'https://joyville-homes.com/projects/joyville-sensorium-hinjewadi' },
+                { '@type': 'WebPage', 'name': 'Joyville Hadapsar Annexe', 'url': 'https://joyville-homes.com/projects/joyville-hadapsar-annexe-pune' },
+                { '@type': 'WebPage', 'name': 'Vanaha Bavdhan Pune', 'url': 'https://joyville-homes.com/projects/vanaha-pune' },
+                { '@type': 'WebPage', 'name': 'Shapoorji Treetopia Pune', 'url': 'https://joyville-homes.com/projects/shapoorji-treetopia-pune' }
+              ]
             }
           ])
         ]

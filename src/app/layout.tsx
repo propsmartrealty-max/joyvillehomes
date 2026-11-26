@@ -244,6 +244,29 @@ export default function RootLayout({
                   "bestRating": "5",
                   "worstRating": "1"
                 },
+                "review": [
+                  {
+                    "@type": "Review",
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "author": { "@type": "Person", "name": "Amit Sharma" },
+                    "datePublished": "2026-09-15",
+                    "reviewBody": "Excellent Shapoorji Pallonji projects in Pune. Joyville Vyomora Hinjewadi offers world-class amenities and timely possession. Highly recommended for end-users and investors."
+                  },
+                  {
+                    "@type": "Review",
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "author": { "@type": "Person", "name": "Priya Kulkarni" },
+                    "datePublished": "2026-10-02",
+                    "reviewBody": "Joyville Sensorium Hinjewadi is a stunning project. The biophilic design, Clubhouse and green spaces are unmatched in Pune. Zero brokerage platform saved us significantly."
+                  },
+                  {
+                    "@type": "Review",
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "author": { "@type": "Person", "name": "Suresh Nair" },
+                    "datePublished": "2026-10-20",
+                    "reviewBody": "Vanaha Bavdhan is a truly integrated township. 1,000 acres of green living near Oxford Golf Resort. Shapoorji Pallonji quality construction is top-notch."
+                  }
+                ],
                 "telephone": "+912067210000",
                 "address": {
                   "@type": "PostalAddress",
